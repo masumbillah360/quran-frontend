@@ -1,9 +1,19 @@
 'use client';
 
 import { ThemeMode } from '@/types';
+import { FontSettings } from '@/types/fonts.types';
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface AppContextType {
+  fontSettings: FontSettings;
+  setFontSettings: (s: FontSettings) => void;
+  isRightPanelOpen: boolean;
+  setIsRightPanelOpen: (v: boolean) => void;
+  updateFontSettings: (partial: Partial<FontSettings>) => void;
+  isFontSettingsExpanded: boolean;
+  setIsFontSettingsExpanded: (v: boolean) => void;
+  viewMode: 'translation' | 'reading';
+  setViewMode: (m: 'translation' | 'reading') => void;
   isSearchOpen: boolean;
   setIsSearchOpen: (v: boolean) => void;
   isMobileMenuOpen: boolean;
@@ -15,13 +25,22 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | null>(null);
 
+const DEFAULT_FONT_SETTINGS: FontSettings = {
+  arabicFont: 'kfgq',
+  arabicFontSize: 30,
+  translationFontSize: 17,
+};
 
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+  const [fontSettings, setFontSettingsState] = useState<FontSettings>(DEFAULT_FONT_SETTINGS);
+  const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isFontSettingsExpanded, setIsFontSettingsExpanded] = useState(true);
+  const [viewMode, setViewMode] = useState<'translation' | 'reading'>('translation');
   const [theme, setThemeState] = useState<ThemeMode>('dark');
-  const [resolvedTheme, setResolvedTheme] = useState<'dark' | 'light' | 'sepia'>('dark');
+  const [resolvedTheme, setResolvedTheme] = useState<ThemeMode>('dark');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('quran_theme') as ThemeMode | null;
@@ -55,13 +74,36 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, [theme]);
 
 
+  const setFontSettings = useCallback((s: FontSettings) => {
+    setFontSettingsState(s);
+    localStorage.setItem('quran_font_settings', JSON.stringify(s));
+  }, []);
+
+  const updateFontSettings = useCallback((partial: Partial<FontSettings>) => {
+    setFontSettingsState(prev => {
+      const next = { ...prev, ...partial };
+      localStorage.setItem('quran_font_settings', JSON.stringify(next));
+      return next;
+    });
+  }, []);
+
+
 
   return (
     <AppContext.Provider value={{
+      fontSettings,
+      setFontSettings,
+      updateFontSettings,
+      isRightPanelOpen,
+      setIsRightPanelOpen,
       isSearchOpen,
       setIsSearchOpen,
       isMobileMenuOpen,
       setIsMobileMenuOpen,
+      isFontSettingsExpanded,
+      setIsFontSettingsExpanded,
+      viewMode,
+      setViewMode,
       theme,
       setTheme,
       resolvedTheme,

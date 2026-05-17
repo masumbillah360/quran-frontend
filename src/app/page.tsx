@@ -2,6 +2,7 @@
 
 import Header from '@/components/layout/Header';
 import IconSidebar from '@/components/layout/IconSidebar';
+import RightPanel from '@/components/settings/RightPanel';
 import SearchModal from '@/components/search/SearchModal';
 import { useApp } from '@/context/AppContext';
 import { useEffect } from 'react';
@@ -27,6 +28,15 @@ function AppLayout() {
       {/* Right Column: Spans remaining horizontal viewport space */}
       <div className="flex flex-col flex-1 overflow-hidden">
         <Header />
+
+        {/* Main Application Body Workspace */}
+        <div className="flex flex-1 overflow-hidden">
+          <div>Surah sidebar</div>
+          <div className="flex flex-1 overflow-hidden">
+            <div className='w-full'>Left Side Full</div>
+            <RightPanel />
+          </div>
+        </div>
       </div>
       <SearchModal />
     </div>
