@@ -84,7 +84,7 @@ export default function SurahReader() {
     <main className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
       <div ref={topRef} className="scroll-mt-0" />
 
-      <div className="relative overflow-hidden bg-linear-to-b from-(--gradient-header-from) to-(--bg-canvas) border-b border-(--border-default)">
+      <div className="relative overflow-hidden border-b border-(--border-default)">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-72 bg-(--bg-accent)/8 rounded-full blur-3xl" />
         </div>

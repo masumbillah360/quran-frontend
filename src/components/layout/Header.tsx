@@ -1,8 +1,8 @@
 'use client';
+import { ThemeMode } from '@/types';
+import { useApp } from '@/context/AppContext';
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, Sun, Moon, Contrast, Menu, X, Settings, Monitor } from 'lucide-react';
-import { useApp } from '@/context/AppContext';
-import { ThemeMode } from '@/types';
 
 const THEME_OPTIONS: { id: ThemeMode; icon: typeof Sun; label: string }[] = [
   { id: 'dark', icon: Moon, label: 'Dark' },

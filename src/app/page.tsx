@@ -1,16 +1,19 @@
 'use client';
 
+import { useEffect } from 'react';
+import { useApp } from '@/context/AppContext';
 import Header from '@/components/layout/Header';
+import SurahReader from '@/components/reader/SurahReader';
 import IconSidebar from '@/components/layout/IconSidebar';
 import RightPanel from '@/components/settings/RightPanel';
 import SearchModal from '@/components/search/SearchModal';
-import { useApp } from '@/context/AppContext';
-import { useEffect } from 'react';
 import SurahSidebar from '@/components/reader/SurahSidebar';
-import SurahReader from '@/components/reader/SurahReader';
+import AudioPlayerBar from '@/components/audio/AudioPlayerBar';
 
 function AppLayout() {
-  const { setIsSearchOpen } = useApp();
+  const { audioState, setIsSearchOpen } = useApp();
+  const hasAudio = audioState.currentAyah !== null || audioState.isPlaying;
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
@@ -41,6 +44,7 @@ function AppLayout() {
         </div>
       </div>
       <SearchModal />
+      {hasAudio && <AudioPlayerBar />}
     </div>
   );
 }
