@@ -7,6 +7,7 @@ import SearchModal from '@/components/search/SearchModal';
 import { useApp } from '@/context/AppContext';
 import { useEffect } from 'react';
 import SurahSidebar from '@/components/reader/SurahSidebar';
+import SurahReader from '@/components/reader/SurahReader';
 
 function AppLayout() {
   const { setIsSearchOpen } = useApp();
@@ -34,7 +35,7 @@ function AppLayout() {
         <div className="flex flex-1 overflow-hidden">
           <SurahSidebar />
           <div className="flex flex-1 overflow-hidden">
-            <div className='w-full'>Left Side Full</div>
+            <SurahReader />
             <RightPanel />
           </div>
         </div>

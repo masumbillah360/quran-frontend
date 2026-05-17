@@ -1,7 +1,6 @@
 'use client';
 
-import { ThemeMode } from '@/types';
-import { FontSettings } from '@/types/fonts.types';
+import { ThemeMode, FontSettings } from '@/types';
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface AppContextType {
