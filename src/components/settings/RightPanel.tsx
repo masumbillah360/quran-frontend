@@ -11,7 +11,7 @@ import { useApp } from "@/context/AppContext";
 import { SliderControl } from "./SliderControl";
 import { PreviewSection } from "./PreviewSection";
 import FontPicker from "../ui/font-picker";
-
+import { ThemePicker } from "./ThemePicker";
 
 /* ── Main RightPanel component ── */
 export default function RightPanel() {
@@ -95,6 +95,19 @@ export default function RightPanel() {
             ))}
           </div>
         )}
+      </div>
+
+      {/* ── Theme Settings ── */}
+      <div className="border-b border-(--border-default)">
+        <div className="px-4 py-3.5">
+          <div className="flex items-center gap-2.5 mb-3">
+            <Sun size={15} className="text-(--text-accent)" />
+            <span className="text-sm font-bold text-(--text-accent)">
+              Theme
+            </span>
+          </div>
+          <ThemePicker theme={theme} onChange={setTheme} />
+        </div>
       </div>
 
       {/* ── Font Settings ── */}
