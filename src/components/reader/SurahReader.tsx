@@ -1,14 +1,15 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useApp } from '@/context/AppContext';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, Play, Pause, AlertCircle, RefreshCw } from 'lucide-react';
 import { ARABIC_FONTS } from '@/constants/fonts';
-
-import { AyahDetail, SurahAudio } from '@/types';
 import AyahSkeleton from '../ui/ayah-skeleton';
 import AyahCard from './AyahCard';
+import { AyahDetail } from '@/types';
+import { fetchSurah } from '@/services/quranApi';
+import { SURAHS } from '@/data/surahs';
 
 const NO_BISMILLAH = [1, 9];
 
@@ -17,20 +18,43 @@ export default function SurahReader() {
     currentSurah,
     setCurrentSurah,
     fontSettings,
-    viewMode,
+    viewMode
   } = useApp();
 
-
+  const [ayahs, setAyahs] = useState<AyahDetail[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const topRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const cancelled = { current: false };
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLoading(true);
+    setError(null);
+    setAyahs([]);
+
+    fetchSurah(currentSurah).then((data) => {
+      if (!cancelled.current) {
+        setAyahs(data.ayahs);
+        setLoading(false);
+      }
+    }).catch(() => {
+      if (!cancelled.current) {
+        setError('Failed to load surah. Please check your internet connection and try again.');
+        setLoading(false);
+      }
+    });
+
     topRef.current?.scrollIntoView({ behavior: 'instant' });
     return () => { cancelled.current = true; };
   }, [currentSurah]);
 
   const arabicFont = ARABIC_FONTS.find(f => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
+  const surahMeta = SURAHS.find(s => s.number === currentSurah);
+
+  const prevSurah = currentSurah > 1 ? SURAHS[currentSurah - 2] : null;
+  const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
 
   return (
     <main className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
@@ -43,7 +67,7 @@ export default function SurahReader() {
 
         <div className="relative flex flex-col lg:flex-row items-center justify-between gap-4 px-4 sm:px-6 py-6">
           <div className="relative w-28 sm:w-36 lg:w-44 aspect-376/254 shrink-0 opacity-80">
-            {'Meccan' === 'Meccan' ? (
+            {surahMeta?.revelationType === 'Meccan' ? (
               <Image src="/makkah.avif" alt="Makkah" fill className="object-contain" sizes="(max-width: 640px) 112px, (max-width: 1024px) 144px, 176px" />
             ) : (
               <Image src="/madinah.avif" alt="Madinah" fill className="object-contain" sizes="(max-width: 640px) 112px, (max-width: 1024px) 144px, 176px" />
@@ -52,27 +76,27 @@ export default function SurahReader() {
 
           <div className="flex flex-col items-center text-center">
             <h1 className="text-xl sm:text-2xl font-bold text-(--text-primary)">
-              {true ? `Surah Faatiha` : `Surah ${currentSurah}`}
+              {surahMeta ? `Surah ${surahMeta.englishName}` : `Surah ${currentSurah}`}
             </h1>
             <p className="mt-1 text-sm text-(--text-quaternary)">
-              Ayah‑{'100'},{' '}
-              {'Meccan' === 'Meccan' ? 'Makkah' : 'Madinah'}
+              Ayah‑{surahMeta?.numberOfAyahs ?? '…'},{' '}
+              {surahMeta?.revelationType === 'Meccan' ? 'Makkah' : 'Madinah'}
             </p>
 
             <div className="flex items-center gap-3 mt-4">
               <button
-                onClick={() => { }}
-                disabled={false}
+                onClick={() => prevSurah && setCurrentSurah(currentSurah - 1)}
+                disabled={!prevSurah}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all"
               >
                 <ChevronLeft size={13} />
-                {'Previous'}
+                {prevSurah ? prevSurah.englishName : 'Previous'}
               </button>
 
               <button
                 className={`flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-lg border transition-all ${false
                   ? 'bg-(--bg-accent) border-(--accent)/50 text-white'
-                  : false
+                  : true && !false
                     ? 'bg-(--bg-active)/50 border-(--accent)/30 text-(--text-accent)'
                     : 'bg-(--bg-surface) border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-accent) hover:border-(--accent)/50 disabled:opacity-40 disabled:cursor-not-allowed'
                   }`}
@@ -82,11 +106,11 @@ export default function SurahReader() {
               </button>
 
               <button
-                onClick={() => false && setCurrentSurah(currentSurah + 1)}
-                disabled={false}
+                onClick={() => nextSurah && setCurrentSurah(currentSurah + 1)}
+                disabled={!nextSurah}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all"
               >
-                {false ? 'Name' : 'Next'}
+                {nextSurah ? nextSurah.englishName : 'Next'}
                 <ChevronRight size={13} />
               </button>
             </div>
@@ -100,15 +124,27 @@ export default function SurahReader() {
         </div>
       </div>
 
-      {true ? (
+      {loading ? (
         <>
           {Array.from({ length: 6 }).map((_, i) => <AyahSkeleton key={i} />)}
         </>
-      ) : false ? (
+      ) : error ? (
         <div className="flex flex-col items-center justify-center py-24 gap-4 px-6 text-center">
           <AlertCircle size={36} className="text-(--text-danger)" />
-          <p className="text-(--text-tertiary) text-sm max-w-sm">{"ERROR"}</p>
+            <p className="text-(--text-tertiary) text-sm max-w-sm">{error}</p>
           <button
+              onClick={() => {
+                setLoading(true);
+                setError(null);
+                setAyahs([]);
+                fetchSurah(currentSurah).then((data) => {
+                  setAyahs(data.ayahs);
+                  setLoading(false);
+                }).catch(() => {
+                  setError('Failed to load surah. Please check your internet connection and try again.');
+                  setLoading(false);
+                });
+              }}
             className="flex items-center gap-2 px-4 py-2 bg-(--bg-elevated) hover:bg-(--border-accent) text-(--text-primary) text-sm rounded-lg border border-(--border-accent) transition-all"
           >
             <RefreshCw size={14} />
@@ -123,17 +159,17 @@ export default function SurahReader() {
             lang="ar"
             dir="rtl"
           >
-            {[["A", "B"]].map((ayah, i) => (
-              <span key={i}>
-                {ayah.map((word) => (
-                  <span key={word} >{word}</span>
+                {ayahs.map((ayah) => (
+                  <span key={ayah.ayahId}>
+                    {ayah.wbws.map((word) => (
+                      <span key={word.wordId} dangerouslySetInnerHTML={{ __html: word.uthmani }} />
                 ))}
                 {' '}
                 <span
                   className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-(--accent-dark)/60 text-(--text-accent) mx-1"
                   style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', verticalAlign: 'middle' }}
                 >
-                  {ayah}
+                      {ayah.ayahId}
                 </span>
                 {' '}
               </span>
@@ -142,9 +178,9 @@ export default function SurahReader() {
         </div>
       ) : (
         <div>
-          {["Ayah"].map((ayah) => (
+                {ayahs.map((ayah) => (
             <AyahCard
-              key={ayah}
+                    key={ayah.ayahId}
               ayah={ayah}
               surahNumber={currentSurah}
             />
@@ -152,7 +188,32 @@ export default function SurahReader() {
         </div>
       )}
 
+      {!loading && !error && ayahs.length > 0 && (
+        <div className="flex items-center justify-between px-4 sm:px-6 py-6 border-t border-(--border-default) mt-2">
+          <button
+            onClick={() => prevSurah && setCurrentSurah(currentSurah - 1)}
+            disabled={!prevSurah}
+            className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-sm text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          >
+            <ChevronLeft size={15} />
+            <span className="hidden sm:inline">{prevSurah?.englishName ?? 'Previous'}</span>
+            <span className="sm:hidden">Prev</span>
+          </button>
+          <span className="text-xs text-(--text-muted) font-mono">{currentSurah} / 114</span>
+          <button
+            onClick={() => nextSurah && setCurrentSurah(currentSurah + 1)}
+            disabled={!nextSurah}
+            className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-sm text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+          >
+            <span className="hidden sm:inline">{nextSurah?.englishName ?? 'Next'}</span>
+            <span className="sm:hidden">Next</span>
+            <ChevronRight size={15} />
+          </button>
+        </div>
+      )}
+
       <div className="h-32 md:h-4" />
     </main>
   );
 }
+
