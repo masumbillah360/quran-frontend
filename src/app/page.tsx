@@ -1,5 +1,6 @@
 'use client';
 
+import Header from "@/components/layout/Header";
 import IconSidebar from "@/components/layout/IconSidebar";
 
 function AppLayout() {
@@ -12,6 +13,7 @@ function AppLayout() {
 
       {/* Right Column: Spans remaining horizontal viewport space */}
       <div className="flex flex-col flex-1 overflow-hidden">
+        <Header />
       </div>
     </div>
   );
