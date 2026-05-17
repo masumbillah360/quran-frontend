@@ -21,7 +21,7 @@ export default function AudioPlayerBar() {
   const [duration, setDuration] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const { audioState, pauseAudio, resumeAudio, stopAudio, currentAudioRef } =
+  const { audioState, pauseAudio, resumeAudio, stopAudio, currentAudioRef, goToNextAyah, goToPrevAyah } =
     useApp();
 
   const surah = SURAHS.find((s) => s.number === audioState.currentSurah);
@@ -145,6 +145,7 @@ export default function AudioPlayerBar() {
 
         <div className="flex items-center gap-2 shrink-0">
           <button
+            onClick={goToPrevAyah}
             className="text-(--text-muted) hover:text-(--text-tertiary) transition-colors hidden sm:block"
             title="Previous Ayah">
             <SkipBack size={15} />
@@ -159,6 +160,7 @@ export default function AudioPlayerBar() {
             )}
           </button>
           <button
+            onClick={goToNextAyah}
             className="text-(--text-muted) hover:text-(--text-tertiary) transition-colors hidden sm:block"
             title="Next Ayah">
             <SkipForward size={15} />

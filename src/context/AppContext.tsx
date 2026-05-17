@@ -25,6 +25,8 @@ interface AppContextType {
   pauseAudio: () => void;
   resumeAudio: () => void;
   toggleAyahAudio: (surahNum: number, ayah: AyahDetail) => void;
+  goToNextAyah: () => void;
+  goToPrevAyah: () => void;
   playSurahFrom: (surahNum: number, fromAyahIdx: number) => void;
   stopAudio: () => void;
   setSurahAudioData: (surahNum: number, url: string, ayahs: AyahDetail[]) => void;
@@ -174,6 +176,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
     setAudioState({ isPlaying: false, currentAyah: null, currentSurah: null, currentWord: null });
   }, [stopWordTracking]);
+
+
   const isPlayingRef = useRef(false);
   const currentAyahRef = useRef<number | null>(null);
   const currentWordRef = useRef<number | null>(null);
@@ -351,6 +355,26 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [ensureAudio, startWordTracking]);
 
+  const goToNextAyah = useCallback(() => {
+    const ayahs = ayahsRef.current;
+    const currentIdx = currentAyahIdxRef.current;
+    if (currentIdx < 0 || currentIdx >= ayahs.length - 1) return;
+    const nextAyah = ayahs[currentIdx + 1];
+    if (nextAyah && audioState.currentSurah) {
+      playAyah(audioState.currentSurah, nextAyah);
+    }
+  }, [audioState.currentSurah, playAyah]);
+
+  const goToPrevAyah = useCallback(() => {
+    const ayahs = ayahsRef.current;
+    const currentIdx = currentAyahIdxRef.current;
+    if (currentIdx <= 0 || ayahs.length === 0) return;
+    const prevAyah = ayahs[currentIdx - 1];
+    if (prevAyah && audioState.currentSurah) {
+      playAyah(audioState.currentSurah, prevAyah);
+    }
+  }, [audioState.currentSurah, playAyah]);
+
   const toggleAyahAudio = useCallback((surahNum: number, ayah: AyahDetail) => {
     if (audioState.currentSurah === surahNum && audioState.currentAyah === ayah.ayahId && audioState.isPlaying) {
       pauseAudio();
@@ -394,6 +418,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       pauseAudio,
       resumeAudio,
       toggleAyahAudio,
+      goToNextAyah,
+      goToPrevAyah,
       playSurahFrom,
       stopAudio,
       setSurahAudioData,
