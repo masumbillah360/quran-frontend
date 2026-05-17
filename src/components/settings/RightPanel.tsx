@@ -32,7 +32,7 @@ export default function RightPanel() {
   if (!isRightPanelOpen) return null;
 
   return (
-    <aside className="hidden md:flex flex-col w-72 xl:w-80 shrink-0 bg-(--bg-canvas) border-l border-(--border-default) overflow-y-auto">
+    <aside className="hidden 2xl:flex flex-col w-72 xl:w-80 shrink-0 bg-(--bg-canvas) border-l border-(--border-default) overflow-y-auto">
       {/* ── View mode toggle ── */}
       <div className="p-4 border-b border-(--border-default)">
         <div className="flex bg-(--bg-surface) rounded-xl p-1 gap-1 border border-(--border-subtle)">

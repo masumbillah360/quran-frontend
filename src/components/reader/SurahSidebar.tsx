@@ -65,7 +65,7 @@ export default function SurahSidebar() {
     <>
       {/* Desktop Sidebar */}
       <aside
-        className={`hidden md:flex flex-col shrink-0 bg-(--bg-canvas) border-r border-(--border-default) transition-all duration-300 ease-in-out overflow-hidden ${isSurahSidebarOpen ? 'w-80' : 'w-0'
+        className={`hidden lg:flex flex-col shrink-0 bg-(--bg-canvas) border-r border-(--border-default) transition-all duration-300 ease-in-out overflow-hidden ${isSurahSidebarOpen ? 'w-80' : 'w-0'
           }`}>
         {isSurahSidebarOpen && (
           <SidebarContent
