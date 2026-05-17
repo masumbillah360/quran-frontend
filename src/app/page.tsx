@@ -9,6 +9,7 @@ import RightPanel from '@/components/settings/RightPanel';
 import SearchModal from '@/components/search/SearchModal';
 import SurahSidebar from '@/components/reader/SurahSidebar';
 import AudioPlayerBar from '@/components/audio/AudioPlayerBar';
+import JumpModal from '@/components/search/JumpModal';
 
 function AppLayout() {
   const { audioState, setIsSearchOpen } = useApp();
@@ -44,6 +45,7 @@ function AppLayout() {
         </div>
       </div>
       <SearchModal />
+      <JumpModal />
       {hasAudio && <AudioPlayerBar />}
     </div>
   );

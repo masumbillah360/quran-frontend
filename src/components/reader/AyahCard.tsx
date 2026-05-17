@@ -51,8 +51,8 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
       className={`border-b border-(--border-default) px-6 py-6 transition-colors duration-200 ${isThisAyah ? "bg-(--bg-active)/40" : "hover:bg-(--bg-surface)/40"
         }`}
     >
-      <div className="grid grid-cols-[60px_1fr] gap-6 pt-4">
-        <div className="flex flex-col items-center gap-4">
+      <div className="flex gap-6 pt-4">
+        <div className="hidden md:flex flex-col items-center gap-4">
           <p className="text-sm font-semibold text-(--text-accent)">
             {surahNumber}:{ayah.ayahId}
           </p>
@@ -73,7 +73,7 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
           </button>
         </div>
 
-        <div>
+        <div className="w-full">
           <p
             className="text-right text-(--text-primary) font-arabic mb-4 leading-[2.8]"
             style={{

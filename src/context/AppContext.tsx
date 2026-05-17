@@ -5,6 +5,8 @@ import React, { createContext, useContext, useState, useEffect, useCallback, use
 interface AppContextType {
   currentSurah: number;
   setCurrentSurah: (n: number) => void;
+  currentAyah: number;
+  setCurrentAyah: (n: number) => void;
   fontSettings: FontSettings;
   setFontSettings: (s: FontSettings) => void;
   updateFontSettings: (partial: Partial<FontSettings>) => void;
@@ -14,6 +16,8 @@ interface AppContextType {
   setIsRightPanelOpen: (v: boolean) => void;
   isSearchOpen: boolean;
   setIsSearchOpen: (v: boolean) => void;
+  isJumpOpen: boolean;
+  setIsJumpOpen: (v: boolean) => void;
   isMobileMenuOpen: boolean;
   setIsMobileMenuOpen: (v: boolean) => void;
   isFontSettingsExpanded: boolean;
@@ -48,10 +52,13 @@ const DEFAULT_FONT_SETTINGS: FontSettings = {
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [currentSurah, setCurrentSurahState] = useState<number>(1);
+  const [currentAyah,
+    setCurrentAyah] = useState<number>(1);
   const [fontSettings, setFontSettingsState] = useState<FontSettings>(DEFAULT_FONT_SETTINGS);
   const [isSurahSidebarOpen, setIsSurahSidebarOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isJumpOpen, setIsJumpOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isFontSettingsExpanded, setIsFontSettingsExpanded] = useState(true);
   const [viewMode, setViewMode] = useState<'translation' | 'reading'>('translation');
@@ -398,6 +405,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     <AppContext.Provider value={{
       currentSurah,
       setCurrentSurah,
+      currentAyah,
+      setCurrentAyah,
       fontSettings,
       setFontSettings,
       updateFontSettings,
@@ -407,6 +416,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setIsRightPanelOpen,
       isSearchOpen,
       setIsSearchOpen,
+      isJumpOpen,
+      setIsJumpOpen,
       isMobileMenuOpen,
       setIsMobileMenuOpen,
       isFontSettingsExpanded,

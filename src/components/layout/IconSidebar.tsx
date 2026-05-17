@@ -26,11 +26,16 @@ export default function IconSidebar() {
         setIsSurahSidebarOpen,
         isSurahSidebarOpen,
         resolvedTheme,
+        isJumpOpen,
+        setIsJumpOpen
     } = useApp();
 
     const handleClick = (id: string) => {
         if (activeIconTab === id) {
             setIsSurahSidebarOpen(!isSurahSidebarOpen);
+            if (id === 'go_to_ayah') {
+                setIsJumpOpen(!isJumpOpen)
+            }
         } else {
             setActiveIconTab(id);
             setIsSurahSidebarOpen(true);

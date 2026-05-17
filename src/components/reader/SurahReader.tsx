@@ -245,7 +245,7 @@ export default function SurahReader() {
             </button>
           </div>
         ) : viewMode === 'reading' ? (
-            <div className="px-6 sm:px-10 py-10 max-w-3xl mx-auto min-h-4/6 ">
+            <div className="px-6 sm:px-10 py-10 max-w-3xl mx-auto ">
               <p
                 className="text-right leading-[3.2] text-(--text-primary)"
                 style={{
