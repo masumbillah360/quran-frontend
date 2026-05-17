@@ -1,8 +1,8 @@
 'use client';
-import { ThemeMode } from '@/types';
-import { useApp } from '@/context/AppContext';
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, Sun, Moon, Contrast, Menu, X, Settings, Monitor } from 'lucide-react';
+import { useApp } from '@/context/AppContext';
+import { ThemeMode } from '@/types';
 
 const THEME_OPTIONS: { id: ThemeMode; icon: typeof Sun; label: string }[] = [
   { id: 'dark', icon: Moon, label: 'Dark' },
@@ -13,6 +13,7 @@ const THEME_OPTIONS: { id: ThemeMode; icon: typeof Sun; label: string }[] = [
 
 export default function Header() {
   const {
+    setIsSearchOpen,
     isMobileMenuOpen,
     setIsMobileMenuOpen,
     theme,
@@ -66,7 +67,7 @@ export default function Header() {
       <div className="flex items-center gap-2 shrink-0">
         {/* Search Action */}
         <button
-          onClick={() => { }}
+          onClick={() => setIsSearchOpen(true)}
           className="w-10 h-10 rounded-full flex items-center justify-center text-(--text-tertiary) hover:bg-(--bg-surface) transition-all"
           title="Search"
           aria-label="Search"

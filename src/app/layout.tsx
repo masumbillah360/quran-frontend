@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: "Quran Mazid — Read, Study, and Learn The Quran",
@@ -20,10 +21,9 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`h-full antialiased`}
     >
-
       <body className="min-h-full flex flex-col">
         <AppProvider>
-          {children}
+          <TooltipProvider>{children}</TooltipProvider>
         </AppProvider>
       </body>
     </html>

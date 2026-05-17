@@ -4,6 +4,8 @@ import { ThemeMode } from '@/types';
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface AppContextType {
+  isSearchOpen: boolean;
+  setIsSearchOpen: (v: boolean) => void;
   isMobileMenuOpen: boolean;
   setIsMobileMenuOpen: (v: boolean) => void;
   theme: ThemeMode;
@@ -16,6 +18,7 @@ const AppContext = createContext<AppContextType | null>(null);
 
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [theme, setThemeState] = useState<ThemeMode>('dark');
   const [resolvedTheme, setResolvedTheme] = useState<'dark' | 'light' | 'sepia'>('dark');
@@ -55,6 +58,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AppContext.Provider value={{
+      isSearchOpen,
+      setIsSearchOpen,
       isMobileMenuOpen,
       setIsMobileMenuOpen,
       theme,
