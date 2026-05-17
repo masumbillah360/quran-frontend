@@ -1,26 +1,522 @@
 @import "tailwindcss";
 
+/* ── Inter font faces ── */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url(/fonts/83afe278b6a6bb3c-s.p.3a6ba036.woff2) format('woff2');
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local(Arial);
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+  size-adjust: 107.12%;
+}
+
+/* ── Poppins font faces ── */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/a218039a3287bcfd-s.p.4a23d71b.woff2) format('woff2');
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/8e6fa89aa22d24ec-s.p.3aec397d.woff2) format('woff2');
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/e2334d715941921e-s.p.d82a9aff.woff2) format('woff2');
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/47fe1b7cd6e6ed85-s.p.855a563b.woff2) format('woff2');
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poppins Fallback';
+  src: local(Arial);
+  ascent-override: 93.62%;
+  descent-override: 31.21%;
+  line-gap-override: 8.92%;
+  size-adjust: 112.16%;
+}
+
+/* ── Arabic / Quran fonts ── */
+@font-face {
+  font-family: 'kfgq';
+  src: url(/fonts/kfgq-s.p.41396088.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'kfgq Fallback';
+  src: local(Arial);
+  ascent-override: 117.19%;
+  descent-override: 58.59%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'hafs';
+  src: url(/fonts/hafs-s.p.63d99a99.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'hafs Fallback';
+  src: local(Arial);
+  ascent-override: 117.19%;
+  descent-override: 58.59%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'kalpurush';
+  src: url(/fonts/kalpurush-s.p.70a3f8f0.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'kalpurush Fallback';
+  src: local(Arial);
+  ascent-override: 93.72%;
+  descent-override: 37.49%;
+  line-gap-override: 16.4%;
+  size-adjust: 106.7%;
+}
+
+@font-face {
+  font-family: 'Amiri Quran';
+  src: url(/fonts/amiri_quran.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Al Mushaf';
+  src: url(/fonts/al_mushaf.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Al Qalam Quran Majeed';
+  src: url(/fonts/al_qalam_quran_majeed.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ME Quran';
+  src: url(/fonts/me_quran.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PDMS Saleem Quran';
+  src: url(/fonts/pdms_saleem_quran.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PDMS Islamic';
+  src: url(/fonts/pdms_islamic.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cinzelDecorative';
+  src: url(/fonts/cinzel_decorative_semibold-s.p.7e6d5873.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cinzelDecorative Fallback';
+  src: local(Arial);
+  ascent-override: 68.75%;
+  descent-override: 26.21%;
+  line-gap-override: 0%;
+  size-adjust: 141.95%;
+}
+
+@font-face {
+  font-family: 'calligraphy';
+  src: url(/fonts/surah_name_calligraphy-s.p.02376475.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'calligraphy Fallback';
+  src: local(Arial);
+  ascent-override: 82.03%;
+  descent-override: 17.87%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+/* ── CSS variables (HSL triplets matching reference design) ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: 112 39% 36%;
+  --color-primary-foreground: 0 0% 100%;
+  --color-primary-background: 0 0% 100%;
+  --color-secondary-background: 0 0% 96%;
+  --color-card-background: 0 0% 100%;
+  --color-card-shade: 180 4% 97%;
+  --color-subtitle: 160 7% 40%;
+  --color-subtitle-secondary: 154 9% 35%;
+  --color-pure: 100 2% 21%;
+  --color-icon: 160 7% 40%;
+  --color-border: 0 0% 95%;
+  --color-error: 0 70% 50%;
+  --color-success: 142 70% 45%;
+  --dropdown-shadow: 0px 4px 24px 0px #417e3833;
+  --card-bg-gradient: radial-gradient(234.39% 122.83% at 14.63% 11.73%, #eef5ee 0%, #d9ebd9 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root,
+[data-theme="dark"] {
+  --bg-canvas: #0D0D0D;
+  --bg-surface: #0D0D0D;
+  --bg-elevated: #0D0D0D;
+  --bg-active: #1b4332;
+  --bg-accent: #2d6a4f;
+  --text-primary: #e2e8f0;
+  --text-secondary: #c9d1d9;
+  --text-tertiary: #8b949e;
+  --text-muted: #4a5568;
+  --text-quaternary: #6e7681;
+  --text-accent: #52b788;
+  --border-default: #1a2232;
+  --border-subtle: #21262d;
+  --border-accent: #30363d;
+  --accent: #52b788;
+  --accent-dark: #2d6a4f;
+  --scrollbar-thumb: #2d3748;
+  --scrollbar-hover: #4a5568;
+  --skeleton-base: #161b22;
+  --skeleton-shine: #21262d;
+  --range-bg: #21262d;
+  --tooltip-bg: #161b22;
+  --tooltip-border: #30363d;
+  --badge-bg: #1b4332;
+  --text-danger: #f85149;
+  --gradient-header-from: #0f1923;
+  --card-bg-gradient: radial-gradient(234.39% 122.83% at 14.63% 11.73%, #1c221c 0%, #1e241e 100%);
+  --dropdown-shadow: 0px 4px 24px 0px #417e3833;
+
+  --idghamWithGhunnah: #34d399;
+  --idghamWithoutGhunnah: #38bdf8;
+  --iqlab: #a855f7;
+  --izhar: #f87171;
+  --ikhfa: #fb923c;
+  --meemIzhar: #2dd4bf;
+  --meemIdgham: #4ade80;
+  --maddMuttasil: #a78bfa;
+  --maddMunfasil: #c4b5fd;
+  --maddAridh: #22d3ee;
+  --maddLaazim: #ec4899;
+  --qalqalah: #fca5a5;
+  --ghunnah: #06b6d4;
+  --hamzatulWasl: #6b7280;
+  --hamzatulQat: #9ca3af;
+  --idghamMutajanisayn: #4ade80;
+  --idghamMutaqaribayn: #a3e635;
+  --tafkhim: #e879f9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+[data-theme="light"] {
+  --bg-canvas: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-elevated: #e8eaed;
+  --bg-active: #c8e6c9;
+  --bg-accent: #1b8a4b;
+  --text-primary: #1a1a2e;
+  --text-secondary: #2d2d44;
+  --text-tertiary: #5f6368;
+  --text-muted: #80868b;
+  --text-quaternary: #9aa0a6;
+  --text-accent: #1b8a4b;
+  --border-default: #f2f2f2;
+  --border-subtle: #e8eaed;
+  --border-accent: #dadce0;
+  --accent: #1b8a4b;
+  --accent-dark: #0d6b2e;
+  --scrollbar-thumb: #c4c7cc;
+  --scrollbar-hover: #a8abb0;
+  --skeleton-base: #e8eaed;
+  --skeleton-shine: #f1f3f4;
+  --range-bg: #d1d5db;
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #dadce0;
+  --badge-bg: #e8f5e9;
+  --text-danger: #d93025;
+  --gradient-header-from: #eef1f5;
+  --card-bg-gradient: radial-gradient(234.39% 122.83% at 14.63% 11.73%, #eef5ee 0%, #d9ebd9 100%);
+  --dropdown-shadow: 0px 4px 24px 0px #417e3833;
+
+  --idghamWithGhunnah: #16a34a;
+  --idghamWithoutGhunnah: #0ea5e9;
+  --iqlab: #9333ea;
+  --izhar: #ef4444;
+  --ikhfa: #ea580c;
+  --meemIzhar: #14b8a6;
+  --meemIdgham: #22c55f;
+  --maddMuttasil: #8b5cf6;
+  --maddMunfasil: #a78bfa;
+  --maddAridh: #0ea5a6;
+  --maddLaazim: #db2777;
+  --qalqalah: #b91c1c;
+  --ghunnah: #0891b2;
+  --hamzatulWasl: #cfd6df;
+  --hamzatulQat: #334155;
+  --idghamMutajanisayn: #22c55e;
+  --idghamMutaqaribayn: #84cc16;
+  --tafkhim: #b71bc0;
+}
+
+[data-theme="sepia"] {
+  --bg-canvas: #F8F5EC;
+  --bg-surface: #F8F5EC;
+  --bg-elevated: #F8F5EC;
+  --bg-active: #f6eedb;
+  --bg-accent: #8b6f47;
+  --text-primary: #3b2c1e;
+  --text-secondary: #4a3728;
+  --text-tertiary: #6b5c4a;
+  --text-muted: #8b7d6b;
+  --text-quaternary: #9e8f7a;
+  --text-accent: #8b6f47;
+  --border-default: #e3e0d6;
+  --border-subtle: #e0cc9e;
+  --border-accent: #c8b690;
+  --accent: #8b6f47;
+  --accent-dark: #6b5230;
+  --scrollbar-thumb: #c8b690;
+  --scrollbar-hover: #b8a680;
+  --skeleton-base: #e0cc9e;
+  --skeleton-shine: #ebd8b5;
+  --range-bg: #d4c5a0;
+  --tooltip-bg: #f5e6c8;
+  --tooltip-border: #c8b690;
+  --badge-bg: #d4c5a0;
+  --text-danger: #a05030;
+  --gradient-header-from: #f5e6c8;
+  --card-bg-gradient: radial-gradient(234.39% 122.83% at 14.63% 11.73%, #efe8dd 0%, #e4dacc 100%);
+  --dropdown-shadow: 0px 4px 24px 0px #97724e33;
+
+  --idghamWithGhunnah: #6b8e23;
+  --idghamWithoutGhunnah: #5d8aa8;
+  --iqlab: #8a2be2;
+  --izhar: #cd5c5c;
+  --ikhfa: #daa520;
+  --meemIzhar: #5f9ea0;
+  --meemIdgham: #66cdaa;
+  --maddMuttasil: #9370db;
+  --maddMunfasil: #b692c2;
+  --maddAridh: #4682b4;
+  --maddLaazim: #b03060;
+  --qalqalah: #dc143c;
+  --ghunnah: #4682b4;
+  --hamzatulWasl: #a0826d;
+  --hamzatulQat: #5c4a3b;
+  --idghamMutajanisayn: #66cdaa;
+  --idghamMutaqaribayn: #9acd32;
+  --tafkhim: #c71585;
+}
+
+/* ── Tajweed toggle (all tajweed colors → currentColor when off) ── */
+[tajweed="false"] {
+  --idghamWithGhunnah: currentColor;
+  --idghamWithoutGhunnah: currentColor;
+  --iqlab: currentColor;
+  --izhar: currentColor;
+  --ikhfa: currentColor;
+  --meemIzhar: currentColor;
+  --meemIdgham: currentColor;
+  --maddMuttasil: currentColor;
+  --maddMunfasil: currentColor;
+  --maddAridh: currentColor;
+  --maddLaazim: currentColor;
+  --qalqalah: currentColor;
+  --ghunnah: currentColor;
+  --hamzatulWasl: currentColor;
+  --hamzatulQat: currentColor;
+  --idghamMutajanisayn: currentColor;
+  --idghamMutaqaribayn: currentColor;
+  --tafkhim: currentColor;
+}
+
+/* ── Utility classes ── */
+.image-in-dark {
+  mix-blend-mode: multiply;
+}
+
+[data-theme="dark"] .image-in-dark {
+  filter: invert() sepia() hue-rotate(179deg);
+  mix-blend-mode: difference;
+}
+
+[data-theme="sepia"] .image-in-dark {
+  filter: none !important;
+}
+
+/* ── Animations ── */
+@keyframes bg-flash {
+  0%   { background-color: hsl(var(--color-primary) / 0); }
+  50%  { background-color: hsl(var(--color-primary) / 0.07); }
+  100% { background-color: hsl(var(--color-primary) / 0); }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', 'Inter Fallback', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+/* ── Range inputs ── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  background: var(--range-bg);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--bg-canvas);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--bg-canvas);
+}
+
+/* ── Playing indicator pulse ── */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0   rgba(82,183,136,.5); }
+  70%  { box-shadow: 0 0 0 6px rgba(82,183,136,0);  }
+  100% { box-shadow: 0 0 0 0   rgba(82,183,136,0);  }
+}
+.play-pulse { animation: pulse-ring 1.5s ease-in-out infinite; }
+
+/* ── Skeleton shimmer ── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--skeleton-base) 25%, var(--skeleton-shine) 50%, var(--skeleton-base) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+/* ── Sidebar active highlight ── */
+.surah-active {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent-dark) 50%, transparent) 0%, color-mix(in srgb, var(--accent-dark) 20%, transparent) 100%);
+  border-right: 2px solid var(--accent);
+}
+
+/* ── Tooltip (icon sidebar) ── */
+.icon-tooltip {
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--tooltip-bg);
+  border: 1px solid var(--tooltip-border);
+  color: var(--text-primary);
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 100;
+}
+.icon-btn:hover .icon-tooltip { opacity: 1; }
+
+/* ── Ayah card hover reveal ── */
+.ayah-actions {
+  opacity: 0;
+  transition: opacity .18s;
+}
+.ayah-card:hover .ayah-actions { opacity: 1; }
+
+/* ── Safe area for mobile bottom nav ── */
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+.font-calligraphy {
+  font-family: 'SurahCalligraphy', serif;
+}
+
+@font-face {
+  font-family: 'SurahCalligraphy';
+  src: url('/fonts/surah_name_calligraphy-s.p.02376475.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
