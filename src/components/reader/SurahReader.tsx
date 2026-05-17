@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight, Play, Pause, AlertCircle, RefreshCw } from '
 import { ARABIC_FONTS } from '@/constants/fonts';
 import AyahSkeleton from '../ui/ayah-skeleton';
 import AyahCard from './AyahCard';
-import { AyahDetail } from '@/types';
+import { AyahDetail, SurahAudio } from '@/types';
 import { fetchSurah } from '@/services/quranApi';
 import { SURAHS } from '@/data/surahs';
 
@@ -18,10 +18,16 @@ export default function SurahReader() {
     currentSurah,
     setCurrentSurah,
     fontSettings,
-    viewMode
+    viewMode,
+    audioState,
+    playSurahFrom,
+    setSurahAudioData,
+    pauseAudio,
+    resumeAudio,
   } = useApp();
 
   const [ayahs, setAyahs] = useState<AyahDetail[]>([]);
+  const [surahAudio, setSurahAudio] = useState<SurahAudio | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const topRef = useRef<HTMLDivElement>(null);
@@ -32,10 +38,13 @@ export default function SurahReader() {
     setLoading(true);
     setError(null);
     setAyahs([]);
+    setSurahAudio(null);
 
     fetchSurah(currentSurah).then((data) => {
       if (!cancelled.current) {
         setAyahs(data.ayahs);
+        setSurahAudio(data.audio);
+        setSurahAudioData(currentSurah, data.audio.audio_url, data.ayahs);
         setLoading(false);
       }
     }).catch(() => {
@@ -47,11 +56,26 @@ export default function SurahReader() {
 
     topRef.current?.scrollIntoView({ behavior: 'instant' });
     return () => { cancelled.current = true; };
-  }, [currentSurah]);
+  }, [currentSurah, setSurahAudioData]);
 
   const arabicFont = ARABIC_FONTS.find(f => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
   const surahMeta = SURAHS.find(s => s.number === currentSurah);
+
+  const isSurahPlaying = audioState.isPlaying && audioState.currentSurah === currentSurah;
+  const isSurahActive = audioState.currentSurah === currentSurah;
+
+  const handlePlaySurah = () => {
+    if (!surahAudio) return;
+    if (isSurahPlaying) {
+      pauseAudio();
+    } else if (isSurahActive && !isSurahPlaying) {
+      resumeAudio();
+    } else {
+      setSurahAudioData(currentSurah, surahAudio.audio_url, ayahs);
+      playSurahFrom(currentSurah, 0);
+    }
+  };
 
   const prevSurah = currentSurah > 1 ? SURAHS[currentSurah - 2] : null;
   const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
@@ -94,15 +118,17 @@ export default function SurahReader() {
               </button>
 
               <button
-                className={`flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-lg border transition-all ${false
+                onClick={handlePlaySurah}
+                disabled={!surahAudio}
+                className={`flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-lg border transition-all ${isSurahPlaying
                   ? 'bg-(--bg-accent) border-(--accent)/50 text-white'
-                  : true && !false
+                  : isSurahActive && !isSurahPlaying
                     ? 'bg-(--bg-active)/50 border-(--accent)/30 text-(--text-accent)'
                     : 'bg-(--bg-surface) border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-accent) hover:border-(--accent)/50 disabled:opacity-40 disabled:cursor-not-allowed'
                   }`}
               >
-                {true ? <Pause size={13} /> : <Play size={13} />}
-                {true ? 'Pause' : true ? 'Resume' : 'Play Surah'}
+                {isSurahPlaying ? <Pause size={13} /> : <Play size={13} />}
+                {isSurahPlaying ? 'Pause' : isSurahActive ? 'Resume' : 'Play Surah'}
               </button>
 
               <button
@@ -139,6 +165,8 @@ export default function SurahReader() {
                 setAyahs([]);
                 fetchSurah(currentSurah).then((data) => {
                   setAyahs(data.ayahs);
+                  setSurahAudio(data.audio);
+                  setSurahAudioData(currentSurah, data.audio.audio_url, data.ayahs);
                   setLoading(false);
                 }).catch(() => {
                   setError('Failed to load surah. Please check your internet connection and try again.');
@@ -216,4 +244,3 @@ export default function SurahReader() {
     </main>
   );
 }
-
