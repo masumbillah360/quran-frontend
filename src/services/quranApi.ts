@@ -1,4 +1,10 @@
-import { AyahDetail, Surah, SurahAudio, SurahDetailResponse } from '@/types';
+import {
+    AyahDetail,
+    SearchResultItem,
+    Surah,
+    SurahAudio,
+    SurahDetailResponse,
+} from '@/types';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8787';
 
@@ -29,4 +35,19 @@ export async function fetchSurah(surahNumber: number): Promise<{
 
     const json: ApiResponse<SurahDetailResponse> = await res.json();
     return { ayahs: json.data.ayahs, audio: json.data.audio };
+}
+
+export async function searchQuran(query: string): Promise<SearchResultItem[]> {
+    if (!query.trim()) return [];
+
+    try {
+        const res = await fetch(
+            `${API_BASE}/api/search?q=${encodeURIComponent(query)}&lang=en`,
+        );
+        if (!res.ok) throw new Error('Search failed');
+        const json: ApiResponse<SearchResultItem[]> = await res.json();
+        return json.data ?? [];
+    } catch {
+        return [];
+    }
 }
