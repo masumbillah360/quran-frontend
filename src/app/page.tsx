@@ -10,6 +10,7 @@ import SearchModal from '@/components/search/SearchModal';
 import SurahSidebar from '@/components/reader/SurahSidebar';
 import AudioPlayerBar from '@/components/audio/AudioPlayerBar';
 import JumpModal from '@/components/search/JumpModal';
+import IconBottombar from '@/components/layout/IconBottombar';
 
 function AppLayout() {
   const { audioState, setIsSearchOpen } = useApp();
@@ -47,6 +48,7 @@ function AppLayout() {
       <SearchModal />
       <JumpModal />
       {hasAudio && <AudioPlayerBar />}
+      <IconBottombar />
     </div>
   );
 }

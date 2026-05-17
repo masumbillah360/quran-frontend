@@ -101,7 +101,7 @@ export default function AudioPlayerBar() {
   if (audioState.currentAyah === null && !audioState.isPlaying) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 md:left-14 bg-(--bg-canvas)/95 backdrop-blur border-t border-(--border-default) shadow-2xl">
+    <div className="hidden md:fixed bottom-0 left-0 right-0 z-40 md:left-14 bg-(--bg-canvas)/95 backdrop-blur border-t border-(--border-default) shadow-2xl">
       <div
         className="w-full h-1 bg-(--bg-elevated) cursor-pointer group relative"
         onClick={seek}>
