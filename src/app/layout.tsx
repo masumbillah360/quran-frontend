@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { AppProvider } from "@/context/AppContext";
 
 export const metadata: Metadata = {
   title: "Quran Mazid — Read, Study, and Learn The Quran",
@@ -19,7 +20,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+
+      <body className="min-h-full flex flex-col">
+        <AppProvider>
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }
