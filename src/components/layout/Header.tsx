@@ -108,7 +108,7 @@ export default function Header() {
 
         {/* Extra Layout Actions Toggle */}
         <button
-          className="hidden md:flex w-10 h-10 rounded-full items-center justify-center text-(--text-muted) hover:bg-(--bg-surface) hover:text-(--text-tertiary) transition-all"
+          className="flex w-10 h-10 rounded-full items-center justify-center text-(--text-muted) hover:bg-(--bg-surface) hover:text-(--text-tertiary) transition-all"
           onClick={() => setIsRightPanelOpen(!isRightPanelOpen)}
           title="Settings"
         >
