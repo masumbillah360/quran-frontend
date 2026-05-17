@@ -1,36 +1,117 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Search, X, Loader2, AlertCircle } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
+import { fetchSurahsList } from '@/services/quranApi';
+import { Surah } from '@/types/surahs.types';
 
 export default function SurahSidebar() {
   const {
+    currentSurah,
+    setCurrentSurah,
+    isSurahSidebarOpen,
     isMobileMenuOpen,
     setIsMobileMenuOpen,
   } = useApp();
   const [searchQuery, setSearchQuery] = useState('');
-  const [surahs, setSurahs] = useState<[]>([]);
+  const [surahs, setSurahs] = useState<Surah[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const activeRef = useRef<HTMLButtonElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    fetchSurahsList()
+      .then((data) => setSurahs(data))
+      .catch(() => setError('Failed to load surahs'))
+      .finally(() => setLoading(false));
+  }, []);
+
+  const handleSearch = (val: string) => {
+    setSearchQuery(val);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    if (!val.trim()) {
+      setLoading(true);
+      fetchSurahsList()
+        .then(setSurahs)
+        .catch(() => setError('Failed to load surahs'))
+        .finally(() => setLoading(false));
+      return;
+    }
+    setLoading(true);
+    debounceRef.current = setTimeout(() => {
+      fetchSurahsList(val)
+        .then(setSurahs)
+        .catch(() => setError('Failed to load surahs'))
+        .finally(() => setLoading(false));
+    }, 400);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      activeRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+      });
+    }, 350);
+  }, [currentSurah]);
+
+  const handleSurahSelect = (num: number) => {
+    setCurrentSurah(num);
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <>
       {/* Desktop Sidebar */}
       <aside
-        className={`hidden md:flex flex-col shrink-0 bg-(--bg-canvas) border-r border-(--border-default) transition-all duration-300 ease-in-out overflow-hidden ${true ? 'w-80' : 'w-0'
+        className={`hidden md:flex flex-col shrink-0 bg-(--bg-canvas) border-r border-(--border-default) transition-all duration-300 ease-in-out overflow-hidden ${isSurahSidebarOpen ? 'w-80' : 'w-0'
           }`}>
-        <SidebarContent
-          currentSurah={1}
-          searchQuery={searchQuery}
-          setSearchQuery={() => { }}
-          surahs={surahs}
-          loading={loading}
-          error={error}
-          activeRef={activeRef}
-          onSurahSelect={() => { }}
-        />
+        {isSurahSidebarOpen && (
+          <SidebarContent
+            currentSurah={currentSurah}
+            searchQuery={searchQuery}
+            setSearchQuery={handleSearch}
+            surahs={surahs}
+            loading={loading}
+            error={error}
+            activeRef={activeRef}
+            onSurahSelect={handleSurahSelect}
+          />
+        )}
       </aside>
+
+      {/* Mobile Sidebar */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-50 flex md:hidden">
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-xs"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          <aside className="relative w-80 max-w-[85vw] bg-(--bg-canvas) h-full flex flex-col shadow-2xl border-r border-(--border-default)">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-(--border-default) shrink-0">
+              <span className="text-sm font-bold text-(--text-primary)">
+                Quran Navigator
+              </span>
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-8 h-8 rounded-lg flex items-center justify-center text-(--text-muted) hover:bg-(--bg-surface) hover:text-(--text-primary) transition-all">
+                <X size={16} />
+              </button>
+            </div>
+            <SidebarContent
+              currentSurah={currentSurah}
+              searchQuery={searchQuery}
+              setSearchQuery={handleSearch}
+              surahs={surahs}
+              loading={loading}
+              error={error}
+              activeRef={activeRef}
+              onSurahSelect={handleSurahSelect}
+            />
+          </aside>
+        </div>
+      )}
     </>
   );
 }
@@ -48,7 +129,7 @@ function SidebarContent({
   currentSurah: number;
   searchQuery: string;
   setSearchQuery: (q: string) => void;
-  surahs: any[];
+    surahs: Surah[];
   loading: boolean;
   error: string | null;
   activeRef: React.RefObject<HTMLButtonElement | null>;

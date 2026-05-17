@@ -5,11 +5,16 @@ import { FontSettings } from '@/types/fonts.types';
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface AppContextType {
+  currentSurah: number;
+  setCurrentSurah: (n: number) => void;
   fontSettings: FontSettings;
+
   setFontSettings: (s: FontSettings) => void;
   isRightPanelOpen: boolean;
   setIsRightPanelOpen: (v: boolean) => void;
   updateFontSettings: (partial: Partial<FontSettings>) => void;
+  isSurahSidebarOpen: boolean;
+  setIsSurahSidebarOpen: (v: boolean) => void;
   isFontSettingsExpanded: boolean;
   setIsFontSettingsExpanded: (v: boolean) => void;
   viewMode: 'translation' | 'reading';
@@ -33,7 +38,9 @@ const DEFAULT_FONT_SETTINGS: FontSettings = {
 
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+  const [currentSurah, setCurrentSurahState] = useState<number>(1);
   const [fontSettings, setFontSettingsState] = useState<FontSettings>(DEFAULT_FONT_SETTINGS);
+  const [isSurahSidebarOpen, setIsSurahSidebarOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -73,6 +80,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     return () => mq.removeEventListener('change', handler);
   }, [theme]);
 
+  const setCurrentSurah = useCallback((n: number) => {
+    setCurrentSurahState(n);
+    localStorage.setItem('quran_current_surah', String(n));
+  }, []);
+
 
   const setFontSettings = useCallback((s: FontSettings) => {
     setFontSettingsState(s);
@@ -91,9 +103,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AppContext.Provider value={{
+      currentSurah,
+      setCurrentSurah,
       fontSettings,
       setFontSettings,
       updateFontSettings,
+      isSurahSidebarOpen,
+      setIsSurahSidebarOpen,
       isRightPanelOpen,
       setIsRightPanelOpen,
       isSearchOpen,
