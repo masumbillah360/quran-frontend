@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    // Enables static export of the 114 pre-rendered surah pages
+    // output: 'export',
 };
 
 export default nextConfig;

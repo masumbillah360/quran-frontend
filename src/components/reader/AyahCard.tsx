@@ -15,6 +15,7 @@ interface AyahCardProps {
 }
 
 export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
+  console.log("ayah", ayah)
   const { audioState, playAyah, pauseAudio, resumeAudio, fontSettings } = useApp();
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -27,7 +28,7 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFamily = arabicFont?.family ?? '"Amiri Quran", serif';
-  const translation = ayah.translations[0]?.translation ?? "";
+  const translation = ayah?.translations[0]?.translation ?? "";
 
   useEffect(() => {
     if (isThisAyah && cardRef.current) {

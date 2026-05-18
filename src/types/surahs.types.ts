@@ -25,7 +25,9 @@ export interface AyahTranslation {
 export interface AyahAudioTiming {
     timestamp_from: number;
     timestamp_to: number;
-    segments: [number, number, number][];
+    segments: Array<{ wordIndex: number; startTime: number; endTime: number }>;
+    audio_url: string;
+    duration: number;
 }
 
 export interface AyahDetail {

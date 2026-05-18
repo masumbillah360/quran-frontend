@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import { useApp } from '@/context/AppContext';
 import Image from 'next/image';
 import {
@@ -21,10 +22,16 @@ import { cleanArabicText, toArabicNumerals } from '@/utils';
 
 const NO_BISMILLAH = [1, 9];
 
-export default function SurahReader() {
+interface SurahReaderProps {
+  initialAyahs: AyahDetail[];
+  initialAudio: SurahAudio | null;
+  surahNumber: number;
+}
+
+export default function SurahReader({ initialAyahs, initialAudio, surahNumber }: SurahReaderProps) {
+  const router = useRouter();
   const {
     currentSurah,
-    setCurrentSurah,
     fontSettings,
     viewMode,
     audioState,
@@ -32,71 +39,68 @@ export default function SurahReader() {
     setSurahAudioData,
     pauseAudio,
     resumeAudio,
-    handleScroll
+    handleScroll,
   } = useApp();
 
-  const [ayahs, setAyahs] = useState<AyahDetail[]>([]);
-  const [surahAudio, setSurahAudio] = useState<SurahAudio | null>(null);
-  const [loading, setLoading] = useState(true);
+  // ✅ Initialize directly from SSG data — no loading flash on first paint
+  const [ayahs, setAyahs] = useState<AyahDetail[]>(initialAyahs);
+  const [surahAudio, setSurahAudio] = useState<SurahAudio | null>(initialAudio);
+  const [loading, setLoading] = useState(initialAyahs.length === 0);
   const [error, setError] = useState<string | null>(null);
+
   const topRef = useRef<HTMLDivElement>(null);
   const readerRef = useRef<HTMLDivElement>(null);
+  // Track which surah the current state belongs to
+  const loadedSurahRef = useRef<number>(initialAyahs.length > 0 ? surahNumber : -1);
 
-  useEffect(() => {
-    const cancelled = { current: false };
-    // eslint-disable-next-line react-hooks/set-state-in-effect
+  // ── client-side fetch (only when navigating after hydration) ─────────────
+  const doFetch = useCallback(async (surahNum: number) => {
     setLoading(true);
     setError(null);
     setAyahs([]);
     setSurahAudio(null);
-
-    fetchSurah(currentSurah)
-      .then((data) => {
-        if (!cancelled.current) {
-          setAyahs(data.ayahs);
-          setSurahAudio(data.audio);
-          setSurahAudioData(
-            currentSurah,
-            data.audio.audio_url,
-            data.ayahs,
-          );
-          setLoading(false);
-        }
-      })
-      .catch(() => {
-        if (!cancelled.current) {
-            setError(
-              'Failed to load surah. Please check your internet connection and try again.',
-            );
-            setLoading(false);
-          }
-        });
-
     topRef.current?.scrollIntoView({ behavior: 'instant' });
-    return () => {
-      cancelled.current = true;
-    };
-  }, [currentSurah, setSurahAudioData]);
 
+    try {
+      const data = await fetchSurah(surahNum);
+      setAyahs(data.ayahs);
+      setSurahAudio(data.audio);
+      setSurahAudioData(surahNum, data.audio.audio_url, data.ayahs);
+      loadedSurahRef.current = surahNum;
+    } catch {
+      setError('Failed to load surah. Please check your internet connection and try again.');
+    } finally {
+      setLoading(false);
+    }
+  }, [setSurahAudioData]);
+
+  // ── sync when context surah changes (user navigated via sidebar/buttons) ──
+  useEffect(() => {
+    // Skip if this surah's data was already loaded (SSG or previous fetch)
+    if (currentSurah === loadedSurahRef.current) return;
+    doFetch(currentSurah);
+  }, [currentSurah, doFetch]);
+
+  // ── scroll listener ───────────────────────────────────────────────────────
   useEffect(() => {
     const reader = readerRef.current;
     if (!reader) return;
-
     reader.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      reader.removeEventListener('scroll', handleScroll);
-    };
+    return () => reader.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
 
-  const arabicFont = ARABIC_FONTS.find(
-    (f) => f.id === fontSettings.arabicFont,
-  );
+  useEffect(() => {
+    if (initialAudio && initialAyahs.length > 0) {
+      setSurahAudioData(surahNumber, initialAudio.audio_url, initialAyahs);
+      loadedSurahRef.current = surahNumber;
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
   const surahMeta = SURAHS.find((s) => s.number === currentSurah);
 
-  const isSurahPlaying =
-    audioState.isPlaying && audioState.currentSurah === currentSurah;
+  const isSurahPlaying = audioState.isPlaying && audioState.currentSurah === currentSurah;
   const isSurahActive = audioState.currentSurah === currentSurah;
 
   const handlePlaySurah = () => {
@@ -111,9 +115,21 @@ export default function SurahReader() {
     }
   };
 
+  // ✅ Navigation — pushes new URL which loads the next SSG page
+  const handlePrev = () => {
+    if (currentSurah > 1) router.push(`/surah/${currentSurah - 1}`);
+  };
+  const handleNext = () => {
+    if (currentSurah < 114) router.push(`/surah/${currentSurah + 1}`);
+  };
+
   const prevSurah = currentSurah > 1 ? SURAHS[currentSurah - 2] : null;
   const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
 
+  // ── retry handler ─────────────────────────────────────────────────────────
+  const handleRetry = () => doFetch(currentSurah);
+
+  // ── JSX — identical to your original ─────────────────────────────────────
   return (
     <main ref={readerRef} className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
       <div ref={topRef} className="scroll-mt-0" />
@@ -146,23 +162,16 @@ export default function SurahReader() {
 
           <div className="flex flex-col items-center text-center">
             <h1 className="text-xl sm:text-2xl font-bold text-(--text-primary)">
-              {surahMeta
-                ? `Surah ${surahMeta.englishName}`
-                : `Surah ${currentSurah}`}
+              {surahMeta ? `Surah ${surahMeta.englishName}` : `Surah ${currentSurah}`}
             </h1>
             <p className="mt-1 text-sm text-(--text-quaternary)">
               Ayah‑{surahMeta?.numberOfAyahs ?? '…'},{' '}
-              {surahMeta?.revelationType === 'Meccan'
-                ? 'Makkah'
-                : 'Madinah'}
+              {surahMeta?.revelationType === 'Meccan' ? 'Makkah' : 'Madinah'}
             </p>
 
             <div className="flex items-center gap-3 mt-4">
               <button
-                onClick={() =>
-                  prevSurah &&
-                  setCurrentSurah(currentSurah - 1)
-                }
+                onClick={handlePrev}
                 disabled={!prevSurah}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all">
                 <ChevronLeft size={13} />
@@ -178,23 +187,12 @@ export default function SurahReader() {
                     ? 'bg-(--bg-active)/50 border-(--accent)/30 text-(--text-accent)'
                     : 'bg-(--bg-surface) border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-accent) hover:border-(--accent)/50 disabled:opacity-40 disabled:cursor-not-allowed'
                   }`}>
-                {isSurahPlaying ? (
-                  <Pause size={13} />
-                ) : (
-                  <Play size={13} />
-                )}
-                {isSurahPlaying
-                  ? 'Pause'
-                  : isSurahActive
-                    ? 'Resume'
-                    : 'Play Surah'}
+                {isSurahPlaying ? <Pause size={13} /> : <Play size={13} />}
+                {isSurahPlaying ? 'Pause' : isSurahActive ? 'Resume' : 'Play Surah'}
               </button>
 
               <button
-                onClick={() =>
-                  nextSurah &&
-                  setCurrentSurah(currentSurah + 1)
-                }
+                onClick={handleNext}
                 disabled={!nextSurah}
                 className="flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all">
                 {nextSurah ? nextSurah.englishName : 'Next'}
@@ -226,39 +224,16 @@ export default function SurahReader() {
       ) : error ? (
         <div className="flex flex-col items-center justify-center py-24 gap-4 px-6 text-center">
           <AlertCircle size={36} className="text-(--text-danger)" />
-            <p className="text-(--text-tertiary) text-sm max-w-sm">
-              {error}
-            </p>
+            <p className="text-(--text-tertiary) text-sm max-w-sm">{error}</p>
             <button
-              onClick={() => {
-                setLoading(true);
-                setError(null);
-                setAyahs([]);
-                fetchSurah(currentSurah)
-                  .then((data) => {
-                    setAyahs(data.ayahs);
-                    setSurahAudio(data.audio);
-                    setSurahAudioData(
-                      currentSurah,
-                      data.audio.audio_url,
-                      data.ayahs,
-                    );
-                    setLoading(false);
-                  })
-                  .catch(() => {
-                    setError(
-                      'Failed to load surah. Please check your internet connection and try again.',
-                    );
-                    setLoading(false);
-                  });
-              }}
+              onClick={handleRetry}
               className="flex items-center gap-2 px-4 py-2 bg-(--bg-elevated) hover:bg-(--border-accent) text-(--text-primary) text-sm rounded-lg border border-(--border-accent) transition-all">
               <RefreshCw size={14} />
               Retry
             </button>
           </div>
         ) : viewMode === 'reading' ? (
-            <div className="px-6 sm:px-10 py-10 max-w-3xl mx-auto ">
+            <div className="px-6 sm:px-10 py-10 max-w-3xl mx-auto">
               <p
                 className="text-right leading-[3.2] text-(--text-primary)"
                 style={{
@@ -274,18 +249,14 @@ export default function SurahReader() {
                       <span
                         key={word.wordId}
                         dangerouslySetInnerHTML={{
-                          __html: cleanArabicText(
-                            word.uthmani,
-                          ),
+                          __html: cleanArabicText(word.uthmani),
                         }}
                       />
                     ))}{' '}
                     <span
                       className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-(--accent-dark)/60 text-(--text-accent) mx-1"
                       style={{
-                        fontFamily:
-                          ARABIC_FONTS[0]?.family ??
-                          '"Amiri Quran", serif',
+                        fontFamily: ARABIC_FONTS[0]?.family ?? '"Amiri Quran", serif',
                       }}>
                       {toArabicNumerals(ayah.ayahId)}
                     </span>{' '}
@@ -296,11 +267,7 @@ export default function SurahReader() {
           ) : (
               <div className="h-full">
                 {ayahs.map((ayah) => (
-            <AyahCard
-              key={ayah.ayahId}
-              ayah={ayah}
-              surahNumber={currentSurah}
-            />
+                  <AyahCard key={ayah.ayahId} ayah={ayah} surahNumber={currentSurah} />
           ))}
         </div>
       )}
@@ -308,29 +275,19 @@ export default function SurahReader() {
       {!loading && !error && ayahs.length > 0 && (
         <div className="flex items-center justify-between px-4 sm:px-6 py-6 border-t border-(--border-default) mt-2">
           <button
-            onClick={() =>
-              prevSurah && setCurrentSurah(currentSurah - 1)
-            }
+            onClick={handlePrev}
             disabled={!prevSurah}
             className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-sm text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all">
             <ChevronLeft size={15} />
-            <span className="hidden sm:inline">
-              {prevSurah?.englishName ?? 'Previous'}
-            </span>
+            <span className="hidden sm:inline">{prevSurah?.englishName ?? 'Previous'}</span>
             <span className="sm:hidden">Prev</span>
           </button>
-          <span className="text-xs text-(--text-muted) font-mono">
-            {currentSurah} / 114
-          </span>
+          <span className="text-xs text-(--text-muted) font-mono">{currentSurah} / 114</span>
           <button
-            onClick={() =>
-              nextSurah && setCurrentSurah(currentSurah + 1)
-            }
+            onClick={handleNext}
             disabled={!nextSurah}
             className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-(--bg-surface) border border-(--border-subtle) text-sm text-(--text-tertiary) hover:text-(--text-primary) hover:border-(--border-accent) disabled:opacity-30 disabled:cursor-not-allowed transition-all">
-            <span className="hidden sm:inline">
-              {nextSurah?.englishName ?? 'Next'}
-            </span>
+            <span className="hidden sm:inline">{nextSurah?.englishName ?? 'Next'}</span>
             <span className="sm:hidden">Next</span>
             <ChevronRight size={15} />
           </button>

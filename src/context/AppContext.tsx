@@ -1,7 +1,16 @@
 'use client';
 
 import { ThemeMode, FontSettings, AyahDetail, AudioState } from '@/types';
-import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+} from 'react';
+import { useRouter } from 'next/navigation';
+
 interface AppContextType {
   currentSurah: number;
   setCurrentSurah: (n: number) => void;
@@ -42,7 +51,7 @@ interface AppContextType {
   resolvedTheme: 'dark' | 'light' | 'sepia';
   isHeaderVisible: boolean;
   setIsHeaderVisible: (v: boolean) => void;
-  handleScroll: (e: Event) => void
+  handleScroll: (e: Event) => void;
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -54,9 +63,10 @@ const DEFAULT_FONT_SETTINGS: FontSettings = {
 };
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+  const router = useRouter();
+
   const [currentSurah, setCurrentSurahState] = useState<number>(1);
-  const [currentAyah,
-    setCurrentAyah] = useState<number>(1);
+  const [currentAyah, setCurrentAyah] = useState<number>(1);
   const [fontSettings, setFontSettingsState] = useState<FontSettings>(DEFAULT_FONT_SETTINGS);
   const [isSurahSidebarOpen, setIsSurahSidebarOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
@@ -68,7 +78,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [activeIconTab, setActiveIconTab] = useState('quran');
   const [theme, setThemeState] = useState<ThemeMode>('dark');
   const [resolvedTheme, setResolvedTheme] = useState<'dark' | 'light' | 'sepia'>('dark');
-
   const [audioState, setAudioState] = useState<AudioState>({
     isPlaying: false,
     currentAyah: null,
@@ -79,17 +88,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const lastScrollYRef = useRef(0);
 
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
-  const surahAudioUrlRef = useRef<string | null>(null);
-  const ayahsRef = useRef<AyahDetail[]>([]);
-  const rafRef = useRef<number | null>(null);
-  const isSingleAyahMode = useRef(false);
+  const surahAudioDataRef = useRef<{ audioUrl: string; ayahs: AyahDetail[] } | null>(null);
   const currentAyahIdxRef = useRef(-1);
-  const canPlayHandlerRef = useRef<(() => void) | null>(null);
-  const canPlayAttachedRef = useRef(false);
+  const currentSurahRef = useRef<number | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const isPlayingRef = useRef(false);
+  const currentAyahRef = useRef<number | null>(null);
+  const currentWordRef = useRef<number | null>(null);
 
   useEffect(() => {
     const savedSurah = localStorage.getItem('quran_current_surah');
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (savedSurah) setCurrentSurahState(parseInt(savedSurah));
     try {
       const savedFont = localStorage.getItem('quran_font_settings');
@@ -105,10 +113,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    const effective = theme === 'system'
-      ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-      : theme;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
+    const effective =
+      theme === 'system'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        : theme;
     setResolvedTheme(effective);
   }, [theme]);
 
@@ -124,10 +134,14 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     return () => mq.removeEventListener('change', handler);
   }, [theme]);
 
-  const setCurrentSurah = useCallback((n: number) => {
-    setCurrentSurahState(n);
-    localStorage.setItem('quran_current_surah', String(n));
-  }, []);
+  const setCurrentSurah = useCallback(
+    (n: number) => {
+      setCurrentSurahState(n);
+      localStorage.setItem('quran_current_surah', String(n));
+      router.push(`/surah/${n}`);
+    },
+    [router],
+  );
 
   const setFontSettings = useCallback((s: FontSettings) => {
     setFontSettingsState(s);
@@ -135,267 +149,191 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const updateFontSettings = useCallback((partial: Partial<FontSettings>) => {
-    setFontSettingsState(prev => {
+    setFontSettingsState((prev) => {
       const next = { ...prev, ...partial };
       localStorage.setItem('quran_font_settings', JSON.stringify(next));
       return next;
     });
   }, []);
 
-  const setSurahAudioData = useCallback((surahNum: number, url: string, ayahs: AyahDetail[]) => {
-    surahAudioUrlRef.current = url;
-    ayahsRef.current = ayahs;
-  }, []);
-  const getWordAtTime = useCallback((currentTimeMs: number, ayah: AyahDetail): number | null => {
-    for (const seg of ayah.audio.segments) {
-      // seg = [word_index, absStartMs, absEndMs] — all absolute from audio start
-      const [wordId, startMs, endMs] = seg;
-      if (currentTimeMs >= startMs && currentTimeMs < endMs) {
-        return wordId;
-      }
-    }
-    return null;
-  }, []);
+  const setSurahAudioData = useCallback(
+    (_surahNum: number, audioUrl: string, ayahs: AyahDetail[]) => {
+      surahAudioDataRef.current = { audioUrl, ayahs };
+    },
+    [],
+  );
 
-  const findAyahIdxForTime = useCallback((currentTimeMs: number): number => {
-    const ayahs = ayahsRef.current;
-    for (let i = 0; i < ayahs.length; i++) {
-      if (
-        currentTimeMs >= ayahs[i].audio.timestamp_from &&
-        currentTimeMs < ayahs[i].audio.timestamp_to
-      ) {
-        return i;
-      }
-    }
-    return -1;
-  }, []);
-
-  const stopWordTracking = useCallback(() => {
-    if (rafRef.current) {
-      cancelAnimationFrame(rafRef.current);
-      rafRef.current = null;
-    }
-  }, []);
-
-  const stopAudio = useCallback(() => {
-    isSingleAyahMode.current = false;
-    currentAyahIdxRef.current = -1;
-    canPlayHandlerRef.current = null;
-    stopWordTracking();
-    if (currentAudioRef.current) {
-      currentAudioRef.current.pause();
-      currentAudioRef.current.currentTime = 0;
-    }
-    setAudioState({ isPlaying: false, currentAyah: null, currentSurah: null, currentWord: null });
-  }, [stopWordTracking]);
-
-
-  const isPlayingRef = useRef(false);
-  const currentAyahRef = useRef<number | null>(null);
-  const currentWordRef = useRef<number | null>(null);
   useEffect(() => {
     isPlayingRef.current = audioState.isPlaying;
     currentAyahRef.current = audioState.currentAyah;
     currentWordRef.current = audioState.currentWord;
   }, [audioState.isPlaying, audioState.currentAyah, audioState.currentWord]);
 
-  const startWordTracking = useCallback(() => {
-    stopWordTracking();
-
-    const tick = () => {
-      const audio = currentAudioRef.current;
-      if (!audio || !isPlayingRef.current) {
-        rafRef.current = requestAnimationFrame(tick);
-        return;
-      }
-
-      const currentTimeMs = audio.currentTime * 1000;
-      const idx = findAyahIdxForTime(currentTimeMs);
-
-      if (idx >= 0) {
-        const ayah = ayahsRef.current[idx];
-
-        if (currentAyahRef.current !== ayah.ayahId) {
-          currentAyahRef.current = ayah.ayahId;
-          setAudioState(prev => ({ ...prev, currentAyah: ayah.ayahId }));
-        }
-
-        currentAyahIdxRef.current = idx;
-
-        const wordId = getWordAtTime(currentTimeMs, ayah);
-        if (currentWordRef.current !== wordId) {
-          currentWordRef.current = wordId ?? null;
-          setAudioState(prev => ({ ...prev, currentWord: wordId ?? null }));
+  const getWordAtTime = useCallback(
+    (currentTimeMs: number, ayah: AyahDetail): number | null => {
+      for (const seg of ayah.audio.segments) {
+        if (currentTimeMs >= seg.startTime && currentTimeMs <= seg.endTime) {
+          return seg.wordIndex;
         }
       }
-      if (isSingleAyahMode.current && idx === -1 && currentAyahIdxRef.current >= 0) {
-        const lastAyah = ayahsRef.current[currentAyahIdxRef.current];
-        if (lastAyah && currentTimeMs >= lastAyah.audio.timestamp_to + 500) {
-          stopAudio();
-          return;
-        }
-      }
+      return null;
+    },
+    [],
+  );
 
-      rafRef.current = requestAnimationFrame(tick);
-    };
-
-    rafRef.current = requestAnimationFrame(tick);
-  }, [stopWordTracking, findAyahIdxForTime, getWordAtTime, stopAudio]);
-
-  const handleCanPlay = useCallback(() => {
-    canPlayHandlerRef.current?.();
-  }, []);
-
-  const handleAudioEnded = useCallback(() => {
-    stopAudio();
-  }, [stopAudio]);
-
-  const handleAudioError = useCallback(() => {
-    canPlayHandlerRef.current = null;
-    setAudioState({ isPlaying: false, currentAyah: null, currentSurah: null, currentWord: null });
-  }, []);
-
-  const ensureAudio = useCallback((): HTMLAudioElement => {
-    if (!currentAudioRef.current) {
-      currentAudioRef.current = new Audio();
-      currentAudioRef.current.addEventListener('canplay', handleCanPlay);
-      currentAudioRef.current.addEventListener('ended', handleAudioEnded);
-      currentAudioRef.current.addEventListener('error', handleAudioError);
-      canPlayAttachedRef.current = true;
-    } else if (!canPlayAttachedRef.current) {
-      currentAudioRef.current.addEventListener('canplay', handleCanPlay);
-      currentAudioRef.current.addEventListener('ended', handleAudioEnded);
-      currentAudioRef.current.addEventListener('error', handleAudioError);
-      canPlayAttachedRef.current = true;
+  const stopAudioPlayback = useCallback(() => {
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current.currentTime = 0;
+      currentAudioRef.current = null;
     }
-    return currentAudioRef.current;
-  }, [handleCanPlay, handleAudioEnded, handleAudioError]);
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    setAudioState((prev) => ({ ...prev, isPlaying: false, currentWord: null }));
+  }, []);
+
+  const stopAudio = useCallback(() => {
+    stopAudioPlayback();
+    currentAyahIdxRef.current = -1;
+    currentSurahRef.current = null;
+    setAudioState({
+      isPlaying: false,
+      currentSurah: null,
+      currentAyah: null,
+      currentWord: null,
+    });
+  }, [stopAudioPlayback]);
 
   const pauseAudio = useCallback(() => {
-    if (currentAudioRef.current) currentAudioRef.current.pause();
-    stopWordTracking();
+    currentAudioRef.current?.pause();
+    if (rafRef.current) cancelAnimationFrame(rafRef.current);
     isPlayingRef.current = false;
-    setAudioState(prev => ({ ...prev, isPlaying: false }));
-  }, [stopWordTracking]);
+    setAudioState((prev) => ({ ...prev, isPlaying: false }));
+  }, []);
 
   const resumeAudio = useCallback(() => {
-    if (currentAudioRef.current && audioState.currentAyah !== null) {
-      currentAudioRef.current.play().catch(console.error);
+    currentAudioRef.current?.play().then(() => {
       isPlayingRef.current = true;
-      setAudioState(prev => ({ ...prev, isPlaying: true }));
-      startWordTracking();
-    }
-  }, [audioState.currentAyah, startWordTracking]);
+      setAudioState((prev) => ({ ...prev, isPlaying: true }));
+    }).catch(console.error);
+  }, []);
 
-  const playAyah = useCallback((surahNum: number, ayah: AyahDetail) => {
-    const audioUrl = surahAudioUrlRef.current;
-    if (!audioUrl) return;
+  const playAyahAudio = useCallback(
+    (surahNumber: number, ayah: AyahDetail, ayahIndex: number) => {
+      stopAudioPlayback();
 
-    // Resume if same ayah was paused
-    if (
-      audioState.currentSurah === surahNum &&
-      audioState.currentAyah === ayah.ayahId &&
-      !audioState.isPlaying
-    ) {
-      resumeAudio();
-      return;
-    }
+      if (!ayah.audio?.audio_url) return;
 
-    const audio = ensureAudio();
-    audio.pause();
-    const needsLoad = audio.src !== audioUrl;
-    if (needsLoad) {
-      audio.src = audioUrl;
-      audio.load();
-    }
+      const audio = new Audio(ayah.audio.audio_url);
+      currentAudioRef.current = audio;
+      currentAyahIdxRef.current = ayahIndex;
+      currentSurahRef.current = surahNumber;
 
-    isSingleAyahMode.current = true;
-    currentAyahIdxRef.current = ayahsRef.current.findIndex(a => a.ayahId === ayah.ayahId);
+      setAudioState({
+        isPlaying: true,
+        currentSurah: surahNumber,
+        currentAyah: ayah.ayahId,
+        currentWord: null,
+      });
 
-    const onReady = () => {
-      const seekTime = ayah.audio.timestamp_from / 1000;
-      audio.currentTime = seekTime;
+      const updateProgress = () => {
+        if (!audio.paused && audio.duration) {
+          const timeMs = audio.currentTime * 1000;
+          const wordIndex = ayah.audio?.segments
+            ? getWordAtTime(timeMs, ayah)
+            : null;
+          setAudioState((prev) => ({ ...prev, currentWord: wordIndex }));
+          rafRef.current = requestAnimationFrame(updateProgress);
+        }
+      };
+
+      audio.addEventListener('play', () => {
+        rafRef.current = requestAnimationFrame(updateProgress);
+      });
+
+      audio.addEventListener('ended', () => {
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
+        const audioData = surahAudioDataRef.current;
+        if (audioData && ayahIndex < audioData.ayahs.length - 1) {
+          setTimeout(() => {
+            playAyahAudio(surahNumber, audioData.ayahs[ayahIndex + 1], ayahIndex + 1);
+          }, 500);
+        } else {
+          currentSurahRef.current = null;
+          setAudioState((prev) => ({ ...prev, isPlaying: false, currentWord: null }));
+        }
+      });
+
+      audio.addEventListener('error', () => {
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
+        currentSurahRef.current = null;
+        setAudioState({ isPlaying: false, currentAyah: null, currentSurah: null, currentWord: null });
+      });
+
       audio.play().catch(console.error);
-      isPlayingRef.current = true;
-      setAudioState({ isPlaying: true, currentAyah: ayah.ayahId, currentSurah: surahNum, currentWord: null });
-      canPlayHandlerRef.current = null;
-      startWordTracking();
-    };
+    },
+    [stopAudioPlayback, getWordAtTime],
+  );
 
-    if (!needsLoad || audio.readyState >= 2) {
-      // Already loaded (same URL, or browser still has it buffered)
-      onReady();
-    } else {
-      canPlayHandlerRef.current = onReady;
-    }
-  }, [audioState, ensureAudio, resumeAudio, startWordTracking]);
+  const playAyah = useCallback(
+    (surahNumber: number, ayah: AyahDetail) => {
+      const ayahIndex = surahAudioDataRef.current?.ayahs.findIndex(
+        (a) => a.ayahId === ayah.ayahId,
+      ) ?? 0;
+      playAyahAudio(surahNumber, ayah, ayahIndex);
+    },
+    [playAyahAudio],
+  );
 
-  const playSurahFrom = useCallback((surahNum: number, fromAyahIdx: number) => {
-    const audioUrl = surahAudioUrlRef.current;
-    if (!audioUrl || ayahsRef.current.length === 0) return;
-
-    const ayah = ayahsRef.current[fromAyahIdx];
-    if (!ayah) return;
-
-    const audio = ensureAudio();
-    audio.pause();
-
-    // FIX: Same as playAyah — skip reload when URL is unchanged.
-    const needsLoad = audio.src !== audioUrl;
-    if (needsLoad) {
-      audio.src = audioUrl;
-      audio.load();
-    }
-
-    isSingleAyahMode.current = false;
-    currentAyahIdxRef.current = fromAyahIdx;
-
-    const onReady = () => {
-      const seekTime = ayah.audio.timestamp_from / 1000;
-      audio.currentTime = seekTime;
-      audio.play().catch(console.error);
-      isPlayingRef.current = true;
-      setAudioState({ isPlaying: true, currentAyah: ayah.ayahId, currentSurah: surahNum, currentWord: null });
-      canPlayHandlerRef.current = null;
-      startWordTracking();
-    };
-
-    if (!needsLoad || audio.readyState >= 2) {
-      onReady();
-    } else {
-      canPlayHandlerRef.current = onReady;
-    }
-  }, [ensureAudio, startWordTracking]);
+  const playSurahFrom = useCallback(
+    (surahNumber: number, startAyahIndex: number) => {
+      const audioData = surahAudioDataRef.current;
+      if (!audioData || startAyahIndex >= audioData.ayahs.length) return;
+      playAyahAudio(surahNumber, audioData.ayahs[startAyahIndex], startAyahIndex);
+    },
+    [playAyahAudio],
+  );
 
   const goToNextAyah = useCallback(() => {
-    const ayahs = ayahsRef.current;
-    const currentIdx = currentAyahIdxRef.current;
-    if (currentIdx < 0 || currentIdx >= ayahs.length - 1) return;
-    const nextAyah = ayahs[currentIdx + 1];
-    if (nextAyah && audioState.currentSurah) {
-      playAyah(audioState.currentSurah, nextAyah);
+    const audioData = surahAudioDataRef.current;
+    if (!audioData) return;
+    const nextIndex = currentAyahIdxRef.current + 1;
+    if (nextIndex < audioData.ayahs.length && currentSurahRef.current !== null) {
+      playAyahAudio(currentSurahRef.current, audioData.ayahs[nextIndex], nextIndex);
     }
-  }, [audioState.currentSurah, playAyah]);
+  }, [playAyahAudio]);
 
   const goToPrevAyah = useCallback(() => {
-    const ayahs = ayahsRef.current;
-    const currentIdx = currentAyahIdxRef.current;
-    if (currentIdx <= 0 || ayahs.length === 0) return;
-    const prevAyah = ayahs[currentIdx - 1];
-    if (prevAyah && audioState.currentSurah) {
-      playAyah(audioState.currentSurah, prevAyah);
+    const audioData = surahAudioDataRef.current;
+    if (!audioData) return;
+    const prevIndex = currentAyahIdxRef.current - 1;
+    if (prevIndex >= 0 && currentSurahRef.current !== null) {
+      playAyahAudio(currentSurahRef.current, audioData.ayahs[prevIndex], prevIndex);
     }
-  }, [audioState.currentSurah, playAyah]);
+  }, [playAyahAudio]);
 
-  const toggleAyahAudio = useCallback((surahNum: number, ayah: AyahDetail) => {
-    if (audioState.currentSurah === surahNum && audioState.currentAyah === ayah.ayahId && audioState.isPlaying) {
-      pauseAudio();
-    } else if (audioState.currentSurah === surahNum && audioState.currentAyah === ayah.ayahId && !audioState.isPlaying) {
-      resumeAudio();
-    } else {
-      playAyah(surahNum, ayah);
-    }
-  }, [audioState, pauseAudio, resumeAudio, playAyah]);
+  const toggleAyahAudio = useCallback(
+    (surahNum: number, ayah: AyahDetail) => {
+      if (
+        currentSurahRef.current === surahNum &&
+        currentAyahRef.current === ayah.ayahId &&
+        isPlayingRef.current
+      ) {
+        pauseAudio();
+      } else if (
+        currentSurahRef.current === surahNum &&
+        currentAyahRef.current === ayah.ayahId &&
+        !isPlayingRef.current
+      ) {
+        resumeAudio();
+      } else {
+        playAyah(surahNum, ayah);
+      }
+    },
+    [playAyah, pauseAudio, resumeAudio],
+  );
 
   const handleScroll = useCallback((e: Event) => {
     const target = e.target as HTMLElement;
@@ -407,65 +345,67 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       return;
     }
     if (currentScrollY > lastScrollYRef.current + 10) {
-      setIsHeaderVisible(false); // scroll DOWN → hide
+      setIsHeaderVisible(false);
     } else if (currentScrollY < lastScrollYRef.current - 10) {
-      setIsHeaderVisible(true); // scroll UP → show
+      setIsHeaderVisible(true);
     }
     lastScrollYRef.current = currentScrollY;
-  }, []); // ← no deps, stable forever
+  }, []);
 
   useEffect(() => {
     return () => {
-      stopWordTracking();
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
       if (currentAudioRef.current) {
         currentAudioRef.current.pause();
+        currentAudioRef.current.src = '';
       }
     };
-  }, [stopWordTracking]);
+  }, []);
 
   return (
-    <AppContext.Provider value={{
-      currentSurah,
-      setCurrentSurah,
-      currentAyah,
-      setCurrentAyah,
-      fontSettings,
-      setFontSettings,
-      updateFontSettings,
-      isSurahSidebarOpen,
-      setIsSurahSidebarOpen,
-      isRightPanelOpen,
-      setIsRightPanelOpen,
-      isSearchOpen,
-      setIsSearchOpen,
-      isJumpOpen,
-      setIsJumpOpen,
-      isMobileMenuOpen,
-      setIsMobileMenuOpen,
-      isFontSettingsExpanded,
-      setIsFontSettingsExpanded,
-      viewMode,
-      setViewMode,
-      audioState,
-      playAyah,
-      pauseAudio,
-      resumeAudio,
-      toggleAyahAudio,
-      goToNextAyah,
-      goToPrevAyah,
-      playSurahFrom,
-      stopAudio,
-      setSurahAudioData,
-      currentAudioRef,
-      activeIconTab,
-      setActiveIconTab,
-      theme,
-      setTheme,
-      resolvedTheme,
-      isHeaderVisible,
-      setIsHeaderVisible,
-      handleScroll,
-    }}>
+    <AppContext.Provider
+      value={{
+        currentSurah,
+        setCurrentSurah,
+        currentAyah,
+        setCurrentAyah,
+        fontSettings,
+        setFontSettings,
+        updateFontSettings,
+        isSurahSidebarOpen,
+        setIsSurahSidebarOpen,
+        isRightPanelOpen,
+        setIsRightPanelOpen,
+        isSearchOpen,
+        setIsSearchOpen,
+        isJumpOpen,
+        setIsJumpOpen,
+        isMobileMenuOpen,
+        setIsMobileMenuOpen,
+        isFontSettingsExpanded,
+        setIsFontSettingsExpanded,
+        viewMode,
+        setViewMode,
+        audioState,
+        playAyah,
+        pauseAudio,
+        resumeAudio,
+        toggleAyahAudio,
+        goToNextAyah,
+        goToPrevAyah,
+        playSurahFrom,
+        stopAudio,
+        setSurahAudioData,
+        currentAudioRef,
+        activeIconTab,
+        setActiveIconTab,
+        theme,
+        setTheme,
+        resolvedTheme,
+        isHeaderVisible,
+        setIsHeaderVisible,
+        handleScroll,
+      }}>
       {children}
     </AppContext.Provider>
   );
