@@ -1,6 +1,6 @@
 "use client";
 
-import { AyahDetail } from "@/types";
+import { Ayah } from "@/types";
 import { Play, Pause, BookOpen, MoreHorizontal } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { ARABIC_FONTS } from "@/constants/fonts";
@@ -10,40 +10,35 @@ import { cleanArabicText, toArabicNumerals } from "@/utils";
 
 
 interface AyahCardProps {
-  ayah: AyahDetail;
+  ayah: Ayah;
   surahNumber: number;
 }
 
 export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
-  console.log("ayah", ayah)
-  const { audioState, playAyah, pauseAudio, resumeAudio, fontSettings } = useApp();
+  const { audioState, toggleAyahAudio, fontSettings } = useApp();
   const cardRef = useRef<HTMLDivElement>(null);
 
   const isThisAyah =
     audioState.currentSurah === surahNumber &&
-    audioState.currentAyah === ayah.ayahId;
+    audioState.currentAyah === ayah.ayah_number;
 
   const isPlaying = isThisAyah && audioState.isPlaying;
   const activeWord = isThisAyah ? audioState.currentWord : null;
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFamily = arabicFont?.family ?? '"Amiri Quran", serif';
-  const translation = ayah?.translations[0]?.translation ?? "";
+  const translation = ayah?.translation?.translation ?? "";
 
+  const prevPlayingRef = useRef(false);
   useEffect(() => {
-    if (isThisAyah && cardRef.current) {
-      cardRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (isThisAyah && isPlaying && !prevPlayingRef.current && cardRef.current) {
+      cardRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-  }, [isThisAyah]);
+    prevPlayingRef.current = isPlaying && isThisAyah;
+  }, [isThisAyah, isPlaying]);
 
   const handleTogglePlay = () => {
-    if (isPlaying) {
-      pauseAudio();
-    } else if (isThisAyah) {
-      resumeAudio();
-    } else {
-      playAyah(surahNumber, ayah);
-    }
+    toggleAyahAudio(surahNumber, ayah);
   };
 
   return (
@@ -55,7 +50,7 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
       <div className="flex gap-6 pt-4">
         <div className="hidden md:flex flex-col items-center gap-4">
           <p className="text-sm font-semibold text-(--text-accent)">
-            {surahNumber}:{ayah.ayahId}
+            {surahNumber}:{ayah.ayah_number}
           </p>
           <button
             onClick={handleTogglePlay}
@@ -85,18 +80,18 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
             dir="rtl"
             lang="ar"
           >
-            {ayah.wbws.map((word) => {
-              const isWordActive = activeWord === word.wordId;
+            {ayah.words.filter((w) => w.char_type === 'word').map((word) => {
+              const isWordActive = activeWord === word.position;
 
               return (
-                <Tooltip key={word.wordId}>
+                <Tooltip key={word.id}>
                   <TooltipTrigger asChild>
                     <span
                       className={`inline-block cursor-pointer transition-all duration-150 mx-[0.5px] ${isWordActive
                         ? "text-[#52b788] scale-110 font-bold"
                         : "hover:text-(--accent)"
                         }`}
-                      dangerouslySetInnerHTML={{ __html: cleanArabicText(word.arabic_text) }}
+                      dangerouslySetInnerHTML={{ __html: cleanArabicText(word.text) }}
                     />
                   </TooltipTrigger>
 
@@ -114,13 +109,13 @@ export default function AyahCard({ ayah, surahNumber }: AyahCardProps) {
                 fontFamily: ARABIC_FONTS[0]?.family ?? '"Amiri Quran", serif',
               }}
             >
-              {toArabicNumerals(ayah.ayahId)}
+              {toArabicNumerals(ayah.ayah_number)}
             </span>
           </p>
 
           <div className="mt-6 space-y-2">
             <p className="text-xs font-semibold text-(--text-muted) uppercase tracking-wider">
-              {ayah.translations[0]?.name ?? "Saheeh International"}
+              {ayah.translation?.translation_name ?? "Saheeh International"}
             </p>
             <p
               className="text-body leading-relaxed"

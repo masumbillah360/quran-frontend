@@ -1,3 +1,5 @@
+'use client';
+
 function AyahSkeleton() {
     return (
         <div className="flex border-b border-(--border-default) animate-pulse">

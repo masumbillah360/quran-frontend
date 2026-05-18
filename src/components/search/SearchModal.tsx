@@ -1,7 +1,7 @@
 'use client';
 import { SURAHS } from '@/data/surahs';
 import { useApp } from '@/context/AppContext';
-import { SearchResultItem, Surah } from '@/types';
+import { SurahMeta, SearchResultItem } from '@/types';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { fetchSurahsList, searchQuran } from '@/services/quranApi';
 import { Search, X, Loader2, ChevronRight, AlertCircle, BookOpen } from 'lucide-react';
@@ -12,7 +12,7 @@ export default function SearchModal() {
   const { isSearchOpen, setIsSearchOpen, setCurrentSurah } = useApp();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResultItem[]>([]);
-  const [surahResults, setSurahResults] = useState<Surah[]>([]);
+    const [surahResults, setSurahResults] = useState<SurahMeta[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [hasSearched, setHasSearched] = useState(false);
@@ -244,39 +244,41 @@ export default function SearchModal() {
                       Ayahs
                     </div>
                   )}
-                  {results.map((result, idx) => (
-                    <button
-                      key={`${result.surahNumber}:${result.ayahId}-${idx}`}
-                      onClick={() => handleResultClick(result.surahNumber)}
-                      className="w-full flex items-start gap-3 px-4 py-3.5 hover:bg-(--bg-elevated) border-b border-(--border-default) last:border-0 transition-all text-left group"
-                    >
-                      {/* Verse badge */}
-                      <div className="w-11 h-11 rounded-xl bg-(--bg-accent)/15 border border-(--accent-dark)/30 flex flex-col items-center justify-center shrink-0 mt-0.5">
-                        <span className="text-[9px] font-bold text-(--text-accent) leading-tight">{result.surahNumber}</span>
-                        <div className="w-4 h-px bg-(--bg-accent)/50 my-0.5" />
-                        <span className="text-[9px] font-bold text-(--text-accent) leading-tight">{result.ayahId}</span>
-                      </div>
-
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xs font-semibold text-(--text-accent)">
-                            {result.surahEnglishName}
-                          </span>
-                          <span className="text-[10px] text-(--text-muted) font-mono">
-                            {result.surahNumber}:{result.ayahId}
-                          </span>
+                  {results.map((result, idx) => {
+                    const [, aNum] = result.verseKey.split(':').map(Number);
+                    return (
+                      <button
+                        key={`${result.surahNumber}:${aNum}-${idx}`}
+                        onClick={() => handleResultClick(result.surahNumber)}
+                        className="w-full flex items-start gap-3 px-4 py-3.5 hover:bg-(--bg-elevated) border-b border-(--border-default) last:border-0 transition-all text-left group"
+                      >
+                        <div className="w-11 h-11 rounded-xl bg-(--bg-accent)/15 border border-(--accent-dark)/30 flex flex-col items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-[9px] font-bold text-(--text-accent) leading-tight">{result.surahNumber}</span>
+                          <div className="w-4 h-px bg-(--bg-accent)/50 my-0.5" />
+                          <span className="text-[9px] font-bold text-(--text-accent) leading-tight">{aNum}</span>
                         </div>
-                        <p className="text-sm text-(--text-tertiary) group-hover:text-(--text-secondary) leading-relaxed line-clamp-2 transition-colors">
-                          {result.translation}
-                        </p>
-                      </div>
 
-                      <ChevronRight
-                        size={14}
-                        className="text-(--text-muted) group-hover:text-(--text-accent) transition-colors shrink-0 mt-2"
-                      />
-                    </button>
-                  ))}
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs font-semibold text-(--text-accent)">
+                              {result.surahEnglishName}
+                            </span>
+                            <span className="text-[10px] text-(--text-muted) font-mono">
+                              {result.verseKey}
+                            </span>
+                          </div>
+                          <p className="text-sm text-(--text-tertiary) group-hover:text-(--text-secondary) leading-relaxed line-clamp-2 transition-colors">
+                            {result.translation}
+                          </p>
+                        </div>
+
+                        <ChevronRight
+                          size={14}
+                          className="text-(--text-muted) group-hover:text-(--text-accent) transition-colors shrink-0 mt-2"
+                        />
+                      </button>
+                    );
+                  })}
                 </div>
               )}
             </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useApp } from '@/context/AppContext';
 import Header from '@/components/layout/Header';
 import SurahReader from '@/components/reader/SurahReader';
@@ -11,18 +11,18 @@ import SurahSidebar from '@/components/reader/SurahSidebar';
 import AudioPlayerBar from '@/components/audio/AudioPlayerBar';
 import JumpModal from '@/components/search/JumpModal';
 import IconBottombar from '@/components/layout/IconBottombar';
-import { AyahDetail, SurahAudio } from '@/types';
+import { Ayah, SurahAudioItem } from '@/types';
 
 interface AppLayoutProps {
     initialSurah: number;
-    initialAyahs: AyahDetail[];
-    initialAudio: SurahAudio | null;
+    initialAyahs: Ayah[];
+    initialAudio: SurahAudioItem[] | null;
 }
 
 // ── inner layout — identical to your original AppLayout ──────────────────────
 function AppLayoutInner({ initialAyahs, initialAudio, initialSurah }: {
-    initialAyahs: AyahDetail[];
-    initialAudio: SurahAudio | null;
+    initialAyahs: Ayah[];
+    initialAudio: SurahAudioItem[] | null;
     initialSurah: number;
 }) {
     const { audioState, setIsSearchOpen, isHeaderVisible } = useApp();
@@ -85,16 +85,16 @@ function AppLayoutInner({ initialAyahs, initialAudio, initialSurah }: {
 // ── outer wrapper — syncs URL surah into context ──────────────────────────────
 export default function AppLayout({ initialSurah, initialAyahs, initialAudio }: AppLayoutProps) {
     const { setCurrentSurah, setSurahAudioData } = useApp();
+    const mountedRef = useRef(false);
 
     useEffect(() => {
-        // Sync the URL-driven surah number into context on first render
-        setCurrentSurah(initialSurah);
-        // Pre-load audio data from SSG — no extra network request
-        if (initialAudio && initialAyahs.length > 0) {
-            setSurahAudioData(initialSurah, initialAudio.audio_url, initialAyahs);
+        if (!mountedRef.current) {
+            mountedRef.current = true;
+            setCurrentSurah(initialSurah);
+            if (initialAudio && initialAudio.length > 0 && initialAyahs.length > 0) {
+                setSurahAudioData(initialSurah, initialAudio[0].audio_url, initialAyahs);
+            }
         }
-        // We only want this on mount for the initial SSG data
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

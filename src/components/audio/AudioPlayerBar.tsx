@@ -27,7 +27,6 @@ export default function AudioPlayerBar() {
   const surah = SURAHS.find((s) => s.number === audioState.currentSurah);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setProgress(0);
     setCurrentTime(0);
   }, [audioState.currentAyah]);

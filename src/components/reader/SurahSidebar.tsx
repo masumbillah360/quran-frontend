@@ -1,16 +1,16 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { Search, X, Loader2, AlertCircle } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { fetchSurahsList } from '@/services/quranApi';
 import { Surah } from '@/types/surahs.types';
+import Link from 'next/link';
 
 export default function SurahSidebar() {
-  const router = useRouter();
   const {
     currentSurah,
+    setCurrentSurah,
     isSurahSidebarOpen,
     isMobileMenuOpen,
     setIsMobileMenuOpen,
@@ -20,7 +20,6 @@ export default function SurahSidebar() {
   const [surahs, setSurahs] = useState<Surah[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const activeRef = useRef<HTMLButtonElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -50,39 +49,30 @@ export default function SurahSidebar() {
     }, 400);
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      activeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 350);
-  }, [currentSurah]);
-
-  // ✅ Only change: use router.push for SSG navigation
   const handleSurahSelect = (num: number) => {
-    router.push(`/surah/${num}`);
     setIsMobileMenuOpen(false);
+    setCurrentSurah(num);
   };
 
   return (
     <>
-      {/* Desktop Sidebar — identical JSX */}
+      {/* Desktop Sidebar */}
       <aside
         className={`hidden lg:flex flex-col shrink-0 bg-(--bg-canvas) border-r border-(--border-default) transition-all duration-300 ease-in-out overflow-hidden ${isSurahSidebarOpen ? 'w-80' : 'w-0'
           }`}>
         {isSurahSidebarOpen && (
           <SidebarContent
-            currentSurah={currentSurah}
-            searchQuery={searchQuery}
-            setSearchQuery={handleSearch}
             surahs={surahs}
             loading={loading}
             error={error}
-            activeRef={activeRef}
+            searchQuery={searchQuery}
+            setSearchQuery={handleSearch}
             onSurahSelect={handleSurahSelect}
           />
         )}
       </aside>
 
-      {/* Mobile Sidebar — identical JSX */}
+      {/* Mobile Sidebar */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-50 flex md:hidden">
           <div
@@ -99,13 +89,11 @@ export default function SurahSidebar() {
               </button>
             </div>
             <SidebarContent
-              currentSurah={currentSurah}
-              searchQuery={searchQuery}
-              setSearchQuery={handleSearch}
               surahs={surahs}
               loading={loading}
               error={error}
-              activeRef={activeRef}
+              searchQuery={searchQuery}
+              setSearchQuery={handleSearch}
               onSurahSelect={handleSurahSelect}
             />
           </aside>
@@ -115,26 +103,24 @@ export default function SurahSidebar() {
   );
 }
 
-// ── SidebarContent — zero changes ─────────────────────────────────────────────
+// ── SidebarContent ─────────────────────────────────────────────────────────────
 function SidebarContent({
-  currentSurah,
-  searchQuery,
-  setSearchQuery,
   surahs,
   loading,
   error,
-  activeRef,
+  searchQuery,
+  setSearchQuery,
   onSurahSelect,
 }: {
-  currentSurah: number;
-  searchQuery: string;
-  setSearchQuery: (q: string) => void;
-    surahs: Surah[];
+  surahs: Surah[];
   loading: boolean;
   error: string | null;
-  activeRef: React.RefObject<HTMLButtonElement | null>;
+  searchQuery: string;
+  setSearchQuery: (q: string) => void;
   onSurahSelect: (num: number) => void;
 }) {
+  const { currentSurah } = useApp();
+
   return (
     <div className="relative flex h-full flex-col overflow-hidden pt-4">
       <div className="mb-4 px-4 shrink-0">
@@ -175,12 +161,10 @@ function SidebarContent({
           ) : (
             surahs.map((surah) => {
               const isActive = surah.number === currentSurah;
-              const calligraphicCode = String(surah.number).padStart(3, '0');
 
               return (
                 <button
                   key={surah.number}
-                  ref={isActive ? activeRef : null}
                   onClick={() => onSurahSelect(surah.number)}
                   className={`group/card border-(--border-default) flex h-19 w-full min-w-50 cursor-pointer items-center justify-between gap-5 rounded-md border px-4 select-none text-start transition-all duration-150 ${isActive
                     ? 'bg-(--bg-active)/30 border-(--accent)/40'
@@ -214,7 +198,7 @@ function SidebarContent({
                     className={`text-2xl text-right [unicode-bidi:isolate] font-calligraphy transition-colors ${isActive ? 'text-(--text-accent)' : 'text-(--text-secondary)'
                       }`}
                     style={{ fontFamily: "'SurahCalligraphy', serif" }}>
-                    {calligraphicCode}
+                    {String(surah.number).padStart(3, '0')}
                   </span>
                 </button>
               );
