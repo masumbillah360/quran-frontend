@@ -32,6 +32,7 @@ export default function SurahReader() {
     setSurahAudioData,
     pauseAudio,
     resumeAudio,
+    handleScroll
   } = useApp();
 
   const [ayahs, setAyahs] = useState<AyahDetail[]>([]);
@@ -39,6 +40,7 @@ export default function SurahReader() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const topRef = useRef<HTMLDivElement>(null);
+  const readerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const cancelled = { current: false };
@@ -76,6 +78,17 @@ export default function SurahReader() {
     };
   }, [currentSurah, setSurahAudioData]);
 
+  useEffect(() => {
+    const reader = readerRef.current;
+    if (!reader) return;
+
+    reader.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      reader.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
   const arabicFont = ARABIC_FONTS.find(
     (f) => f.id === fontSettings.arabicFont,
   );
@@ -102,7 +115,7 @@ export default function SurahReader() {
   const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
 
   return (
-    <main className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
+    <main ref={readerRef} className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
       <div ref={topRef} className="scroll-mt-0" />
 
       <div className="relative overflow-hidden border-b border-(--border-default)">

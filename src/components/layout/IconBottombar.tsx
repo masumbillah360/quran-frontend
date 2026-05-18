@@ -39,7 +39,7 @@ export default function IconBottombar() {
     };
 
     return (
-        <nav className="fixed bottom-0 left-0 right-0 z-40 flex md:hidden items-center justify-center h-16 bg-(--bg-surface) border-t border-(--border-subtle) pb-safe">
+        <nav className="flex md:hidden items-center justify-center h-16 bg-(--bg-surface) border-t border-(--border-subtle) pb-safe">
             {/* Centered inner wrapper to keep icons clustered together exactly like the screenshot */}
             <div className="flex items-center w-full max-w-70 h-full">
                 {NAV_ITEMS.map(({ id, icon: Icon }) => {

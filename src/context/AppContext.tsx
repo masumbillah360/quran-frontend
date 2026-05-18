@@ -40,6 +40,9 @@ interface AppContextType {
   theme: ThemeMode;
   setTheme: (t: ThemeMode) => void;
   resolvedTheme: 'dark' | 'light' | 'sepia';
+  isHeaderVisible: boolean;
+  setIsHeaderVisible: (v: boolean) => void;
+  handleScroll: (e: Event) => void
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -72,6 +75,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     currentSurah: null,
     currentWord: null,
   });
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const lastScrollYRef = useRef(0);
 
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const surahAudioUrlRef = useRef<string | null>(null);
@@ -392,6 +397,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [audioState, pauseAudio, resumeAudio, playAyah]);
 
+  const handleScroll = useCallback((e: Event) => {
+    const target = e.target as HTMLElement;
+    if (!target) return;
+    const currentScrollY = target.scrollTop;
+    if (currentScrollY < 80) {
+      setIsHeaderVisible(true);
+      lastScrollYRef.current = currentScrollY;
+      return;
+    }
+    if (currentScrollY > lastScrollYRef.current + 10) {
+      setIsHeaderVisible(false); // scroll DOWN → hide
+    } else if (currentScrollY < lastScrollYRef.current - 10) {
+      setIsHeaderVisible(true); // scroll UP → show
+    }
+    lastScrollYRef.current = currentScrollY;
+  }, []); // ← no deps, stable forever
+
   useEffect(() => {
     return () => {
       stopWordTracking();
@@ -440,6 +462,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       theme,
       setTheme,
       resolvedTheme,
+      isHeaderVisible,
+      setIsHeaderVisible,
+      handleScroll,
     }}>
       {children}
     </AppContext.Provider>

@@ -13,7 +13,7 @@ import JumpModal from '@/components/search/JumpModal';
 import IconBottombar from '@/components/layout/IconBottombar';
 
 function AppLayout() {
-  const { audioState, setIsSearchOpen } = useApp();
+  const { audioState, setIsSearchOpen, isHeaderVisible } = useApp();
   const hasAudio = audioState.currentAyah !== null || audioState.isPlaying;
 
   useEffect(() => {
@@ -34,7 +34,11 @@ function AppLayout() {
 
       {/* Right Column: Spans remaining horizontal viewport space */}
       <div className="flex flex-col flex-1 overflow-hidden">
-        <Header />
+        <div
+          style={{ maxHeight: isHeaderVisible ? '96px' : '0px' }}
+          className="overflow-hidden transition-all duration-300">
+          <Header />
+        </div>
 
         {/* Main Application Body Workspace */}
         <div className="flex flex-1 overflow-hidden">
@@ -48,7 +52,12 @@ function AppLayout() {
       <SearchModal />
       <JumpModal />
       {hasAudio && <AudioPlayerBar />}
-      <IconBottombar />
+      {/* Bottom Bar with smooth transition */}
+      <div
+        style={{ transform: isHeaderVisible ? 'translateY(0)' : 'translateY(100%)' }}
+        className="fixed bottom-0 left-0 right-0 z-40 transition-transform duration-300 md:hidden">
+        <IconBottombar />
+      </div>
     </div>
   );
 }
