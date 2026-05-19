@@ -25,6 +25,20 @@ export default function Header() {
 
   const [themeOpen, setThemeOpen] = useState(false);
   const themeRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+
+  // ── Handle Mounting and Click Outside ──
+  useEffect(() => {
+    setMounted(true);
+
+    const handler = (e: MouseEvent) => {
+      if (themeRef.current && !themeRef.current.contains(e.target as Node)) {
+        setThemeOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -35,6 +49,7 @@ export default function Header() {
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, []);
+
 
   const themeIcon = theme === 'dark' || (theme === 'system' && resolvedTheme === 'dark') ? Moon
     : theme === 'light' || (theme === 'system' && resolvedTheme === 'light') ? Sun
@@ -86,7 +101,11 @@ export default function Header() {
             title="Change theme"
             aria-label="Change theme"
           >
-            {React.createElement(themeIcon, { size: 18 })}
+            {mounted ? (
+              React.createElement(themeIcon, { size: 18 })
+            ) : (
+              <div className="w-[18px] h-[18px]" />
+            )}
           </button>
 
           {themeOpen && (
