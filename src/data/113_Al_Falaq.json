@@ -1,0 +1,599 @@
+{
+  "surahNumber": 113,
+  "name": "سُورَةُ الفَلَقِ",
+  "englishName": "Al-Falaq",
+  "englishTranslation": "The Dawn",
+  "arabicName": "سُورَةُ الفَلَقِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 5,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "113:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Say, “I seek refuge with the Lord of the daybreak",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/113001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "250",
+            "610"
+          ],
+          [
+            "2",
+            "620",
+            "1370"
+          ],
+          [
+            "3",
+            "1380",
+            "2220"
+          ],
+          [
+            "4",
+            "2230",
+            "3060"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 250,
+            "endTime": 610
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَعُوذُ",
+          "textIndopak": "اَعُوۡذُ",
+          "translation": "I seek refuge",
+          "transliteration": "aʿūdhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 620,
+            "endTime": 1370
+          }
+        },
+        {
+          "position": 3,
+          "text": "بِرَبِّ",
+          "textIndopak": "بِرَبِّ",
+          "translation": "in (the) Lord",
+          "transliteration": "birabbi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1380,
+            "endTime": 2220
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْفَلَقِ",
+          "textIndopak": "الۡفَلَقِۙ‏",
+          "translation": "(of) the dawn",
+          "transliteration": "l-falaqi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2230,
+            "endTime": 3060
+          }
+        },
+        {
+          "position": 5,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "113:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "from the evil of everything He has created,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/113002.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "40",
+            "700"
+          ],
+          [
+            "2",
+            "710",
+            "1370"
+          ],
+          [
+            "3",
+            "1380",
+            "1700"
+          ],
+          [
+            "4",
+            "1710",
+            "2610"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "From",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 700
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَرِّ",
+          "textIndopak": "شَرِّ",
+          "translation": "(the) evil",
+          "transliteration": "sharri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 710,
+            "endTime": 1370
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "(of) what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1380,
+            "endTime": 1700
+          }
+        },
+        {
+          "position": 4,
+          "text": "خَلَقَ",
+          "textIndopak": "خَلَقَۙ‏",
+          "translation": "He created",
+          "transliteration": "khalaqa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1710,
+            "endTime": 2610
+          }
+        },
+        {
+          "position": 5,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "113:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and from the evil of the dark night when it penetrates,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/113003.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "140",
+            "980"
+          ],
+          [
+            "2",
+            "990",
+            "1630"
+          ],
+          [
+            "3",
+            "1640",
+            "2840"
+          ],
+          [
+            "4",
+            "2850",
+            "3480"
+          ],
+          [
+            "5",
+            "3490",
+            "4280"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمِن",
+          "textIndopak": "وَمِنۡ",
+          "translation": "And from",
+          "transliteration": "wamin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 140,
+            "endTime": 980
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَرِّ",
+          "textIndopak": "شَرِّ",
+          "translation": "(the) evil",
+          "transliteration": "sharri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 990,
+            "endTime": 1630
+          }
+        },
+        {
+          "position": 3,
+          "text": "غَاسِقٍ",
+          "textIndopak": "غَاسِقٍ",
+          "translation": "(of) darkness",
+          "transliteration": "ghāsiqin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1640,
+            "endTime": 2840
+          }
+        },
+        {
+          "position": 4,
+          "text": "إِذَا",
+          "textIndopak": "اِذَا",
+          "translation": "when",
+          "transliteration": "idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2850,
+            "endTime": 3480
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَقَبَ",
+          "textIndopak": "وَقَبَۙ‏",
+          "translation": "it spreads",
+          "transliteration": "waqaba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3490,
+            "endTime": 4280
+          }
+        },
+        {
+          "position": 6,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "113:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and from the evil of the women who blow on the knots,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/113004.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "300",
+            "1170"
+          ],
+          [
+            "2",
+            "1180",
+            "1910"
+          ],
+          [
+            "3",
+            "1920",
+            "3860"
+          ],
+          [
+            "4",
+            "3870",
+            "4080"
+          ],
+          [
+            "5",
+            "4090",
+            "4990"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمِن",
+          "textIndopak": "وَمِنۡ",
+          "translation": "And from",
+          "transliteration": "wamin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 300,
+            "endTime": 1170
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَرِّ",
+          "textIndopak": "شَرِّ",
+          "translation": "(the) evil",
+          "transliteration": "sharri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1180,
+            "endTime": 1910
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلنَّفَّـٰثَـٰتِ",
+          "textIndopak": "النَّفّٰثٰتِ",
+          "translation": "(of) the blowers",
+          "transliteration": "l-nafāthāti",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1920,
+            "endTime": 3860
+          }
+        },
+        {
+          "position": 4,
+          "text": "فِى",
+          "textIndopak": "فِى",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3870,
+            "endTime": 4080
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْعُقَدِ",
+          "textIndopak": "الۡعُقَدِۙ‏",
+          "translation": "the knots",
+          "transliteration": "l-ʿuqadi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4090,
+            "endTime": 4990
+          }
+        },
+        {
+          "position": 6,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "113:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and from the evil of an envier when he envies.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/113005.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "30",
+            "1200"
+          ],
+          [
+            "2",
+            "1210",
+            "1910"
+          ],
+          [
+            "3",
+            "1920",
+            "3490"
+          ],
+          [
+            "4",
+            "3500",
+            "4330"
+          ],
+          [
+            "5",
+            "4340",
+            "5270"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمِن",
+          "textIndopak": "وَمِنۡ",
+          "translation": "And from",
+          "transliteration": "wamin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 1200
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَرِّ",
+          "textIndopak": "شَرِّ",
+          "translation": "(the) evil",
+          "transliteration": "sharri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1210,
+            "endTime": 1910
+          }
+        },
+        {
+          "position": 3,
+          "text": "حَاسِدٍ",
+          "textIndopak": "حَاسِدٍ",
+          "translation": "(of) an envier",
+          "transliteration": "ḥāsidin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1920,
+            "endTime": 3490
+          }
+        },
+        {
+          "position": 4,
+          "text": "إِذَا",
+          "textIndopak": "اِذَا",
+          "translation": "when",
+          "transliteration": "idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3500,
+            "endTime": 4330
+          }
+        },
+        {
+          "position": 5,
+          "text": "حَسَدَ",
+          "textIndopak": "حَسَدَ‏",
+          "translation": "he envies",
+          "transliteration": "ḥasada",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4340,
+            "endTime": 5270
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

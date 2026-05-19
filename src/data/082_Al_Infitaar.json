@@ -1,0 +1,2102 @@
+{
+  "surahNumber": 82,
+  "name": "سُورَةُ الانفِطَارِ",
+  "englishName": "Al-Infitaar",
+  "englishTranslation": "The Cleaving",
+  "arabicName": "سُورَةُ الانفِطَارِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 19,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "82:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "When the sky will be cleft asunder,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "110",
+            "400"
+          ],
+          [
+            "2",
+            "410",
+            "2170"
+          ],
+          [
+            "3",
+            "2180",
+            "3110"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِذَا",
+          "textIndopak": "اِذَا",
+          "translation": "When",
+          "transliteration": "idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 400
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلسَّمَآءُ",
+          "textIndopak": "السَّمَآءُ",
+          "translation": "the sky",
+          "transliteration": "l-samāu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 410,
+            "endTime": 2170
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱنفَطَرَتْ",
+          "textIndopak": "انْفَطَرَتۡۙ‏",
+          "translation": "(is) cleft asunder",
+          "transliteration": "infaṭarat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2180,
+            "endTime": 3110
+          }
+        },
+        {
+          "position": 4,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "82:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "and when the stars will disperse,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082002.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "90",
+            "490"
+          ],
+          [
+            "2",
+            "500",
+            "1590"
+          ],
+          [
+            "3",
+            "1600",
+            "2860"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِذَا",
+          "textIndopak": "وَاِذَا",
+          "translation": "And when",
+          "transliteration": "wa-idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 490
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْكَوَاكِبُ",
+          "textIndopak": "الۡكَوَاكِبُ",
+          "translation": "the stars",
+          "transliteration": "l-kawākibu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 500,
+            "endTime": 1590
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱنتَثَرَتْ",
+          "textIndopak": "انْتَثَرَتۡۙ‏",
+          "translation": "scatter",
+          "transliteration": "intatharat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1600,
+            "endTime": 2860
+          }
+        },
+        {
+          "position": 4,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "82:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "and when the seas will be burst forth,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082003.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "60",
+            "490"
+          ],
+          [
+            "2",
+            "500",
+            "1460"
+          ],
+          [
+            "3",
+            "1470",
+            "2360"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِذَا",
+          "textIndopak": "وَاِذَا",
+          "translation": "And when",
+          "transliteration": "wa-idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 60,
+            "endTime": 490
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْبِحَارُ",
+          "textIndopak": "الۡبِحَارُ",
+          "translation": "the seas",
+          "transliteration": "l-biḥāru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 500,
+            "endTime": 1460
+          }
+        },
+        {
+          "position": 3,
+          "text": "فُجِّرَتْ",
+          "textIndopak": "فُجِّرَتۡۙ‏",
+          "translation": "are made to gush forth",
+          "transliteration": "fujjirat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1470,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 4,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "82:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "and when the graves will be overturned,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082004.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "250",
+            "700"
+          ],
+          [
+            "2",
+            "710",
+            "1590"
+          ],
+          [
+            "3",
+            "1600",
+            "2510"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِذَا",
+          "textIndopak": "وَاِذَا",
+          "translation": "And when",
+          "transliteration": "wa-idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 250,
+            "endTime": 700
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْقُبُورُ",
+          "textIndopak": "الۡقُبُوۡرُ",
+          "translation": "the graves",
+          "transliteration": "l-qubūru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 710,
+            "endTime": 1590
+          }
+        },
+        {
+          "position": 3,
+          "text": "بُعْثِرَتْ",
+          "textIndopak": "بُعۡثِرَتۡۙ‏",
+          "translation": "are overturned",
+          "transliteration": "buʿ'thirat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1600,
+            "endTime": 2510
+          }
+        },
+        {
+          "position": 4,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "82:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "then one will know what he sent ahead and what he left behind.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082005.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "40",
+            "830"
+          ],
+          [
+            "2",
+            "840",
+            "1880"
+          ],
+          [
+            "3",
+            "1890",
+            "2090"
+          ],
+          [
+            "4",
+            "2100",
+            "3060"
+          ],
+          [
+            "5",
+            "3070",
+            "4060"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "عَلِمَتْ",
+          "textIndopak": "عَلِمَتۡ",
+          "translation": "Will know",
+          "transliteration": "ʿalimat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 830
+          }
+        },
+        {
+          "position": 2,
+          "text": "نَفْسٌۭ",
+          "textIndopak": "نَفۡسٌ",
+          "translation": "a soul",
+          "transliteration": "nafsun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 840,
+            "endTime": 1880
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَّا",
+          "textIndopak": "مَّا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1890,
+            "endTime": 2090
+          }
+        },
+        {
+          "position": 4,
+          "text": "قَدَّمَتْ",
+          "textIndopak": "قَدَّمَتۡ",
+          "translation": "it has sent forth",
+          "transliteration": "qaddamat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2100,
+            "endTime": 3060
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَأَخَّرَتْ",
+          "textIndopak": "وَاَخَّرَتۡؕ‏",
+          "translation": "and left behind",
+          "transliteration": "wa-akharat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3070,
+            "endTime": 4060
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "82:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "O man! What has deceived you about your Gracious Lord,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082006.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "230",
+            "1260"
+          ],
+          [
+            "2",
+            "1270",
+            "2530"
+          ],
+          [
+            "3",
+            "2540",
+            "2830"
+          ],
+          [
+            "4",
+            "2840",
+            "3560"
+          ],
+          [
+            "5",
+            "3570",
+            "4470"
+          ],
+          [
+            "6",
+            "4480",
+            "5580"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "textIndopak": "يٰۤاَيُّهَا",
+          "translation": "O",
+          "transliteration": "yāayyuhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 230,
+            "endTime": 1260
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْإِنسَـٰنُ",
+          "textIndopak": "الۡاِنۡسَانُ",
+          "translation": "man",
+          "transliteration": "l-insānu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1270,
+            "endTime": 2530
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "What",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2540,
+            "endTime": 2830
+          }
+        },
+        {
+          "position": 4,
+          "text": "غَرَّكَ",
+          "textIndopak": "غَرَّكَ",
+          "translation": "has deceived you",
+          "transliteration": "gharraka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2840,
+            "endTime": 3560
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِرَبِّكَ",
+          "textIndopak": "بِرَبِّكَ",
+          "translation": "concerning your Lord",
+          "transliteration": "birabbika",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3570,
+            "endTime": 4470
+          }
+        },
+        {
+          "position": 6,
+          "text": "ٱلْكَرِيمِ",
+          "textIndopak": "الۡكَرِيۡمِۙ‏",
+          "translation": "the Most Noble",
+          "transliteration": "l-karīmi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4480,
+            "endTime": 5580
+          }
+        },
+        {
+          "position": 7,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 7,
+      "verseKey": "82:7",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "who created you, then perfected you, then brought you in due proportion?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082007.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "40",
+            "840"
+          ],
+          [
+            "2",
+            "850",
+            "1590"
+          ],
+          [
+            "3",
+            "1600",
+            "2750"
+          ],
+          [
+            "4",
+            "2760",
+            "3690"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 840
+          }
+        },
+        {
+          "position": 2,
+          "text": "خَلَقَكَ",
+          "textIndopak": "خَلَقَكَ",
+          "translation": "created you",
+          "transliteration": "khalaqaka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 850,
+            "endTime": 1590
+          }
+        },
+        {
+          "position": 3,
+          "text": "فَسَوَّىٰكَ",
+          "textIndopak": "فَسَوّٰٮكَ",
+          "translation": "then fashioned you",
+          "transliteration": "fasawwāka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1600,
+            "endTime": 2750
+          }
+        },
+        {
+          "position": 4,
+          "text": "فَعَدَلَكَ",
+          "textIndopak": "فَعَدَلَـكَۙ‏",
+          "translation": "then balanced you",
+          "transliteration": "faʿadalaka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2760,
+            "endTime": 3690
+          }
+        },
+        {
+          "position": 5,
+          "text": "٧",
+          "textIndopak": "٧",
+          "translation": "(7)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 8,
+      "verseKey": "82:8",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "He composed you in whichever form He willed.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082008.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "130",
+            "580"
+          ],
+          [
+            "2",
+            "590",
+            "990"
+          ],
+          [
+            "3",
+            "1000",
+            "2280"
+          ],
+          [
+            "4",
+            "2290",
+            "2540"
+          ],
+          [
+            "5",
+            "2550",
+            "3780"
+          ],
+          [
+            "6",
+            "3790",
+            "4740"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فِىٓ",
+          "textIndopak": "فِىۡۤ",
+          "translation": "In",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 130,
+            "endTime": 580
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَىِّ",
+          "textIndopak": "اَىِّ",
+          "translation": "whatever",
+          "transliteration": "ayyi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 590,
+            "endTime": 990
+          }
+        },
+        {
+          "position": 3,
+          "text": "صُورَةٍۢ",
+          "textIndopak": "صُوۡرَةٍ",
+          "translation": "form",
+          "transliteration": "ṣūratin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1000,
+            "endTime": 2280
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَّا",
+          "textIndopak": "مَّا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2290,
+            "endTime": 2540
+          }
+        },
+        {
+          "position": 5,
+          "text": "شَآءَ",
+          "textIndopak": "شَآءَ",
+          "translation": "He willed",
+          "transliteration": "shāa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2550,
+            "endTime": 3780
+          }
+        },
+        {
+          "position": 6,
+          "text": "رَكَّبَكَ",
+          "textIndopak": "رَكَّبَكَؕ‏",
+          "translation": "He assembled you",
+          "transliteration": "rakkabaka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3790,
+            "endTime": 4740
+          }
+        },
+        {
+          "position": 7,
+          "text": "٨",
+          "textIndopak": "٨",
+          "translation": "(8)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 9,
+      "verseKey": "82:9",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "Never! (i.e. one should never be heedless towards him.) But you deny the Requital,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082009.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "110",
+            "800"
+          ],
+          [
+            "2",
+            "810",
+            "1090"
+          ],
+          [
+            "3",
+            "1100",
+            "2350"
+          ],
+          [
+            "4",
+            "2360",
+            "3060"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "كَلَّا",
+          "textIndopak": "كَلَّا",
+          "translation": "Nay",
+          "transliteration": "kallā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 800
+          }
+        },
+        {
+          "position": 2,
+          "text": "بَلْ",
+          "textIndopak": "بَلۡ",
+          "translation": "But",
+          "transliteration": "bal",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 810,
+            "endTime": 1090
+          }
+        },
+        {
+          "position": 3,
+          "text": "تُكَذِّبُونَ",
+          "textIndopak": "تُكَذِّبُوۡنَ",
+          "translation": "you deny",
+          "transliteration": "tukadhibūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1100,
+            "endTime": 2350
+          }
+        },
+        {
+          "position": 4,
+          "text": "بِٱلدِّينِ",
+          "textIndopak": "بِالدِّيۡنِۙ‏",
+          "translation": "the Judgment",
+          "transliteration": "bil-dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2360,
+            "endTime": 3060
+          }
+        },
+        {
+          "position": 5,
+          "text": "٩",
+          "textIndopak": "٩",
+          "translation": "(9)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 10,
+      "verseKey": "82:10",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "while (appointed) over you there are watchers,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082010.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "180",
+            "1000"
+          ],
+          [
+            "2",
+            "1010",
+            "1910"
+          ],
+          [
+            "3",
+            "1920",
+            "3110"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِنَّ",
+          "textIndopak": "وَاِنَّ",
+          "translation": "And indeed",
+          "transliteration": "wa-inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 180,
+            "endTime": 1000
+          }
+        },
+        {
+          "position": 2,
+          "text": "عَلَيْكُمْ",
+          "textIndopak": "عَلَيۡكُمۡ",
+          "translation": "over you",
+          "transliteration": "ʿalaykum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1010,
+            "endTime": 1910
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَحَـٰفِظِينَ",
+          "textIndopak": "لَحٰـفِظِيۡنَۙ‏",
+          "translation": "(are) surely guardians",
+          "transliteration": "laḥāfiẓīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1920,
+            "endTime": 3110
+          }
+        },
+        {
+          "position": 4,
+          "text": "١٠",
+          "textIndopak": "١٠",
+          "translation": "(10)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 11,
+      "verseKey": "82:11",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "who are noble, writers (of the deeds),",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082011.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "60",
+            "1110"
+          ],
+          [
+            "2",
+            "1120",
+            "2090"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "كِرَامًۭا",
+          "textIndopak": "كِرَامًا",
+          "translation": "Noble",
+          "transliteration": "kirāman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 60,
+            "endTime": 1110
+          }
+        },
+        {
+          "position": 2,
+          "text": "كَـٰتِبِينَ",
+          "textIndopak": "كَاتِبِيۡنَۙ‏",
+          "translation": "recording",
+          "transliteration": "kātibīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1120,
+            "endTime": 2090
+          }
+        },
+        {
+          "position": 3,
+          "text": "١١",
+          "textIndopak": "١١",
+          "translation": "(11)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 12,
+      "verseKey": "82:12",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "who know whatever you do.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082012.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "90",
+            "1120"
+          ],
+          [
+            "2",
+            "1130",
+            "1420"
+          ],
+          [
+            "3",
+            "1430",
+            "2650"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "يَعْلَمُونَ",
+          "textIndopak": "يَعۡلَمُوۡنَ",
+          "translation": "They know",
+          "transliteration": "yaʿlamūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 1120
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "whatever",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1130,
+            "endTime": 1420
+          }
+        },
+        {
+          "position": 3,
+          "text": "تَفْعَلُونَ",
+          "textIndopak": "تَفۡعَلُوۡنَ‏",
+          "translation": "you do",
+          "transliteration": "tafʿalūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1430,
+            "endTime": 2650
+          }
+        },
+        {
+          "position": 4,
+          "text": "١٢",
+          "textIndopak": "١٢",
+          "translation": "(12)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 13,
+      "verseKey": "82:13",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "Surely the righteous will be in bliss,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082013.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "360",
+            "1140"
+          ],
+          [
+            "2",
+            "1150",
+            "2200"
+          ],
+          [
+            "3",
+            "2210",
+            "2700"
+          ],
+          [
+            "4",
+            "2710",
+            "3270"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّ",
+          "textIndopak": "اِنَّ",
+          "translation": "Indeed",
+          "transliteration": "inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 360,
+            "endTime": 1140
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْأَبْرَارَ",
+          "textIndopak": "الۡاَبۡرَارَ",
+          "translation": "the righteous",
+          "transliteration": "l-abrāra",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1150,
+            "endTime": 2200
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَفِى",
+          "textIndopak": "لَفِىۡ",
+          "translation": "(will be) surely in",
+          "transliteration": "lafī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2210,
+            "endTime": 2700
+          }
+        },
+        {
+          "position": 4,
+          "text": "نَعِيمٍۢ",
+          "textIndopak": "نَعِيۡمٍۚ‏",
+          "translation": "bliss",
+          "transliteration": "naʿīmin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2710,
+            "endTime": 3270
+          }
+        },
+        {
+          "position": 5,
+          "text": "١٣",
+          "textIndopak": "١٣",
+          "translation": "(13)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 14,
+      "verseKey": "82:14",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "and the sinners in Hell,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082014.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "220",
+            "1020"
+          ],
+          [
+            "2",
+            "1030",
+            "2140"
+          ],
+          [
+            "3",
+            "2150",
+            "2660"
+          ],
+          [
+            "4",
+            "2670",
+            "3500"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِنَّ",
+          "textIndopak": "وَاِنَّ",
+          "translation": "And indeed",
+          "transliteration": "wa-inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 220,
+            "endTime": 1020
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْفُجَّارَ",
+          "textIndopak": "الۡفُجَّارَ",
+          "translation": "the wicked",
+          "transliteration": "l-fujāra",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1030,
+            "endTime": 2140
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَفِى",
+          "textIndopak": "لَفِىۡ",
+          "translation": "(will be) surely in",
+          "transliteration": "lafī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2150,
+            "endTime": 2660
+          }
+        },
+        {
+          "position": 4,
+          "text": "جَحِيمٍۢ",
+          "textIndopak": "جَحِيۡمٍ ۚۖ‏",
+          "translation": "Hellfire",
+          "transliteration": "jaḥīmin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2670,
+            "endTime": 3500
+          }
+        },
+        {
+          "position": 5,
+          "text": "١٤",
+          "textIndopak": "١٤",
+          "translation": "(14)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 15,
+      "verseKey": "82:15",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "in which they will enter on the Day of Requital,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082015.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "50",
+            "1410"
+          ],
+          [
+            "2",
+            "1420",
+            "1900"
+          ],
+          [
+            "3",
+            "1910",
+            "2830"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "يَصْلَوْنَهَا",
+          "textIndopak": "يَّصۡلَوۡنَهَا",
+          "translation": "They will burn (in) it",
+          "transliteration": "yaṣlawnahā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 50,
+            "endTime": 1410
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَوْمَ",
+          "textIndopak": "يَوۡمَ",
+          "translation": "(on the) Day",
+          "transliteration": "yawma",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1420,
+            "endTime": 1900
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلدِّينِ",
+          "textIndopak": "الدِّيۡنِ‏",
+          "translation": "(of) the Judgment",
+          "transliteration": "l-dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1910,
+            "endTime": 2830
+          }
+        },
+        {
+          "position": 4,
+          "text": "١٥",
+          "textIndopak": "١٥",
+          "translation": "(15)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 16,
+      "verseKey": "82:16",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "and they will not (be able to) keep away from it.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082016.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "150",
+            "660"
+          ],
+          [
+            "2",
+            "670",
+            "1030"
+          ],
+          [
+            "3",
+            "1040",
+            "1810"
+          ],
+          [
+            "4",
+            "1820",
+            "4620"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمَا",
+          "textIndopak": "وَمَا",
+          "translation": "And not",
+          "transliteration": "wamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 660
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُمْ",
+          "textIndopak": "هُمۡ",
+          "translation": "they",
+          "transliteration": "hum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 670,
+            "endTime": 1030
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَنْهَا",
+          "textIndopak": "عَنۡهَا",
+          "translation": "from it",
+          "transliteration": "ʿanhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1040,
+            "endTime": 1810
+          }
+        },
+        {
+          "position": 4,
+          "text": "بِغَآئِبِينَ",
+          "textIndopak": "بِغَآٮِٕبِيۡنَؕ‏",
+          "translation": "(will be) absent",
+          "transliteration": "bighāibīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1820,
+            "endTime": 4620
+          }
+        },
+        {
+          "position": 5,
+          "text": "١٦",
+          "textIndopak": "١٦",
+          "translation": "(16)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 17,
+      "verseKey": "82:17",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "And what may let you know what the Day of Requital is?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082017.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "90",
+            "910"
+          ],
+          [
+            "2",
+            "920",
+            "1610"
+          ],
+          [
+            "3",
+            "1620",
+            "1940"
+          ],
+          [
+            "4",
+            "1950",
+            "2490"
+          ],
+          [
+            "5",
+            "2500",
+            "3030"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمَآ",
+          "textIndopak": "وَمَاۤ",
+          "translation": "And what",
+          "transliteration": "wamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 910
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَدْرَىٰكَ",
+          "textIndopak": "اَدۡرٰٮكَ",
+          "translation": "can make you know",
+          "transliteration": "adrāka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 920,
+            "endTime": 1610
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1620,
+            "endTime": 1940
+          }
+        },
+        {
+          "position": 4,
+          "text": "يَوْمُ",
+          "textIndopak": "يَوۡمُ",
+          "translation": "(is the) Day",
+          "transliteration": "yawmu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1950,
+            "endTime": 2490
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلدِّينِ",
+          "textIndopak": "الدِّيۡنِۙ‏",
+          "translation": "(of) the Judgment",
+          "transliteration": "l-dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2500,
+            "endTime": 3030
+          }
+        },
+        {
+          "position": 6,
+          "text": "١٧",
+          "textIndopak": "١٧",
+          "translation": "(17)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 18,
+      "verseKey": "82:18",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "Again, what may let you know what the Day of Requital is?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082018.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "50",
+            "620"
+          ],
+          [
+            "2",
+            "630",
+            "1130"
+          ],
+          [
+            "3",
+            "1140",
+            "1890"
+          ],
+          [
+            "4",
+            "1900",
+            "2190"
+          ],
+          [
+            "5",
+            "2200",
+            "2890"
+          ],
+          [
+            "6",
+            "2900",
+            "3530"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ثُمَّ",
+          "textIndopak": "ثُمَّ",
+          "translation": "Then",
+          "transliteration": "thumma",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 50,
+            "endTime": 620
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَآ",
+          "textIndopak": "مَاۤ",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 630,
+            "endTime": 1130
+          }
+        },
+        {
+          "position": 3,
+          "text": "أَدْرَىٰكَ",
+          "textIndopak": "اَدۡرٰٮكَ",
+          "translation": "can make you know",
+          "transliteration": "adrāka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1140,
+            "endTime": 1890
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1900,
+            "endTime": 2190
+          }
+        },
+        {
+          "position": 5,
+          "text": "يَوْمُ",
+          "textIndopak": "يَوۡمُ",
+          "translation": "(is the) Day",
+          "transliteration": "yawmu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2200,
+            "endTime": 2890
+          }
+        },
+        {
+          "position": 6,
+          "text": "ٱلدِّينِ",
+          "textIndopak": "الدِّيۡنِؕ‏",
+          "translation": "(of) the Judgment",
+          "transliteration": "l-dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 2900,
+            "endTime": 3530
+          }
+        },
+        {
+          "position": 7,
+          "text": "١٨",
+          "textIndopak": "١٨",
+          "translation": "(18)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 19,
+      "verseKey": "82:19",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 587,
+      "juzNumber": 30,
+      "hizbNumber": 59,
+      "rubNumber": 235,
+      "sajdah": null,
+      "translation": "A Day when no one will have power to do any thing for another! And command, on that Day, will belong to Allah (alone).",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/082019.mp3",
+        "duration": 9,
+        "segments": [
+          [
+            "1",
+            "220",
+            "760"
+          ],
+          [
+            "2",
+            "770",
+            "1080"
+          ],
+          [
+            "3",
+            "1090",
+            "1870"
+          ],
+          [
+            "4",
+            "1880",
+            "2420"
+          ],
+          [
+            "5",
+            "2430",
+            "3780"
+          ],
+          [
+            "6",
+            "3790",
+            "4400"
+          ],
+          [
+            "7",
+            "4410",
+            "5940"
+          ],
+          [
+            "8",
+            "5950",
+            "7070"
+          ],
+          [
+            "9",
+            "7080",
+            "8640"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "يَوْمَ",
+          "textIndopak": "يَوۡمَ",
+          "translation": "(The) Day",
+          "transliteration": "yawma",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 220,
+            "endTime": 760
+          }
+        },
+        {
+          "position": 2,
+          "text": "لَا",
+          "textIndopak": "لَا",
+          "translation": "not",
+          "transliteration": "lā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 770,
+            "endTime": 1080
+          }
+        },
+        {
+          "position": 3,
+          "text": "تَمْلِكُ",
+          "textIndopak": "تَمۡلِكُ",
+          "translation": "will have power",
+          "transliteration": "tamliku",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1090,
+            "endTime": 1870
+          }
+        },
+        {
+          "position": 4,
+          "text": "نَفْسٌۭ",
+          "textIndopak": "نَفۡسٌ",
+          "translation": "a soul",
+          "transliteration": "nafsun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1880,
+            "endTime": 2420
+          }
+        },
+        {
+          "position": 5,
+          "text": "لِّنَفْسٍۢ",
+          "textIndopak": "لِّنَفۡسٍ",
+          "translation": "for a soul",
+          "transliteration": "linafsin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2430,
+            "endTime": 3780
+          }
+        },
+        {
+          "position": 6,
+          "text": "شَيْـًۭٔا ۖ",
+          "textIndopak": "شَيۡـــًٔا​ ؕ",
+          "translation": "anything",
+          "transliteration": "shayan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3790,
+            "endTime": 4400
+          }
+        },
+        {
+          "position": 7,
+          "text": "وَٱلْأَمْرُ",
+          "textIndopak": "وَالۡاَمۡرُ",
+          "translation": "and the Command",
+          "transliteration": "wal-amru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4410,
+            "endTime": 5940
+          }
+        },
+        {
+          "position": 8,
+          "text": "يَوْمَئِذٍۢ",
+          "textIndopak": "يَوۡمَٮِٕذٍ",
+          "translation": "that Day",
+          "transliteration": "yawma-idhin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5950,
+            "endTime": 7070
+          }
+        },
+        {
+          "position": 9,
+          "text": "لِّلَّهِ",
+          "textIndopak": "لِّلَّهِ‏",
+          "translation": "(will be) with Allah",
+          "transliteration": "lillahi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7080,
+            "endTime": 8640
+          }
+        },
+        {
+          "position": 10,
+          "text": "١٩",
+          "textIndopak": "١٩",
+          "translation": "(19)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

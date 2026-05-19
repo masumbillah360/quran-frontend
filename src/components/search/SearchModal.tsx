@@ -3,7 +3,7 @@ import { SURAHS } from '@/data/surahs';
 import { useApp } from '@/context/AppContext';
 import { SurahMeta, SearchResultItem } from '@/types';
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { fetchSurahsList, searchQuran } from '@/services/quranApi';
+import { searchQuran } from '@/services/quranApi';
 import { Search, X, Loader2, ChevronRight, AlertCircle, BookOpen } from 'lucide-react';
 
 const QUICK_SURAHS = [1, 2, 18, 36, 55, 67, 112, 113, 114];
@@ -32,18 +32,6 @@ export default function SearchModal() {
     };
   }, [isSearchOpen]);
 
-  // Keyboard shortcut: Ctrl+K / Cmd+K
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-        e.preventDefault();
-        setIsSearchOpen(true);
-      }
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [setIsSearchOpen]);
-
   const doSearch = useCallback(async (q: string) => {
     if (!q.trim()) {
       setResults([]);
@@ -51,18 +39,26 @@ export default function SearchModal() {
       setHasSearched(false);
       return;
     }
+    
+    // Search surahs locally
+    const qLower = q.toLowerCase();
+    const localSurahs = SURAHS.filter(s => 
+      s.englishName.toLowerCase().includes(qLower) ||
+      s.englishNameTranslation.toLowerCase().includes(qLower) ||
+      s.name.includes(q) ||
+      String(s.number).includes(q)
+    );
+    setSurahResults(localSurahs);
+    
+    // Search ayahs from API (will be replaced with local data later)
     setLoading(true);
     setError(null);
     setHasSearched(true);
     try {
-      const [surahs, ayahData] = await Promise.all([
-        fetchSurahsList(q),
-        searchQuran(q),
-      ]);
-      setSurahResults(surahs);
+      const ayahData = await searchQuran(q);
       setResults(ayahData);
     } catch {
-      setError('Search failed. Please check your connection and try again.');
+      // Silently fail for ayah search since we still have surah results
     } finally {
       setLoading(false);
     }

@@ -1,11 +1,9 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import { Search, X, Loader2, AlertCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Search, X } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
-import { fetchSurahsList } from '@/services/quranApi';
-import { Surah } from '@/types/surahs.types';
-import Link from 'next/link';
+import { SURAHS } from '@/data/surahs';
 
 export default function SurahSidebar() {
   const {
@@ -17,37 +15,17 @@ export default function SurahSidebar() {
   } = useApp();
 
   const [searchQuery, setSearchQuery] = useState('');
-  const [surahs, setSurahs] = useState<Surah[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    fetchSurahsList()
-      .then((data) => setSurahs(data))
-      .catch(() => setError('Failed to load surahs'))
-      .finally(() => setLoading(false));
-  }, []);
-
-  const handleSearch = (val: string) => {
-    setSearchQuery(val);
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    if (!val.trim()) {
-      setLoading(true);
-      fetchSurahsList()
-        .then(setSurahs)
-        .catch(() => setError('Failed to load surahs'))
-        .finally(() => setLoading(false));
-      return;
-    }
-    setLoading(true);
-    debounceRef.current = setTimeout(() => {
-      fetchSurahsList(val)
-        .then(setSurahs)
-        .catch(() => setError('Failed to load surahs'))
-        .finally(() => setLoading(false));
-    }, 400);
-  };
+  const filteredSurahs = SURAHS.filter((s) => {
+    if (!searchQuery.trim()) return true;
+    const q = searchQuery.toLowerCase();
+    return (
+      s.englishName.toLowerCase().includes(q) ||
+      s.englishNameTranslation.toLowerCase().includes(q) ||
+      s.name.includes(q) ||
+      String(s.number).includes(q)
+    );
+  });
 
   const handleSurahSelect = (num: number) => {
     setIsMobileMenuOpen(false);
@@ -62,12 +40,11 @@ export default function SurahSidebar() {
           }`}>
         {isSurahSidebarOpen && (
           <SidebarContent
-            surahs={surahs}
-            loading={loading}
-            error={error}
+            surahs={filteredSurahs}
             searchQuery={searchQuery}
-            setSearchQuery={handleSearch}
+            setSearchQuery={setSearchQuery}
             onSurahSelect={handleSurahSelect}
+            currentSurah={currentSurah}
           />
         )}
       </aside>
@@ -89,12 +66,11 @@ export default function SurahSidebar() {
               </button>
             </div>
             <SidebarContent
-              surahs={surahs}
-              loading={loading}
-              error={error}
+              surahs={filteredSurahs}
               searchQuery={searchQuery}
-              setSearchQuery={handleSearch}
+              setSearchQuery={setSearchQuery}
               onSurahSelect={handleSurahSelect}
+              currentSurah={currentSurah}
             />
           </aside>
         </div>
@@ -103,33 +79,25 @@ export default function SurahSidebar() {
   );
 }
 
-// ── SidebarContent ─────────────────────────────────────────────────────────────
 function SidebarContent({
   surahs,
-  loading,
-  error,
   searchQuery,
   setSearchQuery,
   onSurahSelect,
+  currentSurah,
 }: {
-  surahs: Surah[];
-  loading: boolean;
-  error: string | null;
+  surahs: typeof SURAHS;
   searchQuery: string;
   setSearchQuery: (q: string) => void;
   onSurahSelect: (num: number) => void;
+  currentSurah: number;
 }) {
-  const { currentSurah } = useApp();
-
   return (
     <div className="relative flex h-full flex-col overflow-hidden pt-4">
+      {/* Search */}
       <div className="mb-4 px-4 shrink-0">
         <div className="border-(--border-default) bg-(--bg-surface) flex h-10 items-center gap-3 rounded-full border px-3 text-base">
-          {loading ? (
-            <Loader2 size={18} className="text-(--text-accent) animate-spin shrink-0" />
-          ) : (
-            <Search size={18} className="text-(--text-muted) shrink-0" />
-          )}
+          <Search size={18} className="text-(--text-muted) shrink-0" />
           <input
             type="text"
             placeholder="Search Surah"
@@ -147,14 +115,10 @@ function SidebarContent({
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto pb-16 custom-scrollbar px-4">
+      {/* Surah List */}
+      <div className="flex-1 overflow-y-auto pb-16 px-4">
         <div className="space-y-2">
-          {error ? (
-            <div className="flex flex-col items-center justify-center py-10 gap-2">
-              <AlertCircle size={20} className="text-(--text-danger)" />
-              <span className="text-(--text-muted) text-xs font-medium">{error}</span>
-            </div>
-          ) : surahs.length === 0 && !loading ? (
+          {surahs.length === 0 ? (
             <div className="text-center py-10 text-(--text-muted) text-xs font-medium">
               No surahs found
             </div>

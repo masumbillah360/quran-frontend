@@ -1,0 +1,686 @@
+{
+  "surahNumber": 109,
+  "name": "سُورَةُ الكَافِرُونَ",
+  "englishName": "Al-Kaafiroon",
+  "englishTranslation": "The Disbelievers",
+  "arabicName": "سُورَةُ الكَافِرُونَ",
+  "revelationType": "Meccan",
+  "totalAyahs": 6,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "109:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Say, “O disbelievers,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "210",
+            "540"
+          ],
+          [
+            "2",
+            "550",
+            "2240"
+          ],
+          [
+            "3",
+            "2250",
+            "3580"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 210,
+            "endTime": 540
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَـٰٓأَيُّهَا",
+          "textIndopak": "يٰۤاَيُّهَا",
+          "translation": "O",
+          "transliteration": "yāayyuhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 550,
+            "endTime": 2240
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْكَـٰفِرُونَ",
+          "textIndopak": "الۡكٰفِرُوۡنَۙ‏",
+          "translation": "disbelievers",
+          "transliteration": "l-kāfirūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2250,
+            "endTime": 3580
+          }
+        },
+        {
+          "position": 4,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "109:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "I do not worship that which you worship,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109002.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "90",
+            "480"
+          ],
+          [
+            "2",
+            "490",
+            "1300"
+          ],
+          [
+            "3",
+            "1310",
+            "1640"
+          ],
+          [
+            "4",
+            "1650",
+            "3540"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "لَآ",
+          "textIndopak": "لَاۤ",
+          "translation": "Not",
+          "transliteration": "lā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 480
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَعْبُدُ",
+          "textIndopak": "اَعۡبُدُ",
+          "translation": "I worship",
+          "transliteration": "aʿbudu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 490,
+            "endTime": 1300
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1310,
+            "endTime": 1640
+          }
+        },
+        {
+          "position": 4,
+          "text": "تَعْبُدُونَ",
+          "textIndopak": "تَعۡبُدُوۡنَۙ‏",
+          "translation": "you worship",
+          "transliteration": "taʿbudūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1650,
+            "endTime": 3540
+          }
+        },
+        {
+          "position": 5,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "109:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "nor do you worship the One whom I worship.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109003.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "50",
+            "780"
+          ],
+          [
+            "2",
+            "790",
+            "1960"
+          ],
+          [
+            "3",
+            "1970",
+            "3240"
+          ],
+          [
+            "4",
+            "3250",
+            "3630"
+          ],
+          [
+            "5",
+            "3640",
+            "4530"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَآ",
+          "textIndopak": "وَلَاۤ",
+          "translation": "And not",
+          "transliteration": "walā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 50,
+            "endTime": 780
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَنتُمْ",
+          "textIndopak": "اَنۡـتُمۡ",
+          "translation": "you",
+          "transliteration": "antum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 790,
+            "endTime": 1960
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَـٰبِدُونَ",
+          "textIndopak": "عٰبِدُوۡنَ",
+          "translation": "(are) worshippers",
+          "transliteration": "ʿābidūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1970,
+            "endTime": 3240
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَآ",
+          "textIndopak": "مَاۤ",
+          "translation": "(of) what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3250,
+            "endTime": 3630
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَعْبُدُ",
+          "textIndopak": "اَعۡبُدُ​ ۚ‏",
+          "translation": "I worship",
+          "transliteration": "aʿbudu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3640,
+            "endTime": 4530
+          }
+        },
+        {
+          "position": 6,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "109:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "And neither I am going to worship that which you have worshipped,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109004.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "200",
+            "930"
+          ],
+          [
+            "2",
+            "940",
+            "1340"
+          ],
+          [
+            "3",
+            "1350",
+            "2870"
+          ],
+          [
+            "4",
+            "2880",
+            "3140"
+          ],
+          [
+            "5",
+            "3150",
+            "4420"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَآ",
+          "textIndopak": "وَلَاۤ",
+          "translation": "And not",
+          "transliteration": "walā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 200,
+            "endTime": 930
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَنَا۠",
+          "textIndopak": "اَنَا",
+          "translation": "I am",
+          "transliteration": "anā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 940,
+            "endTime": 1340
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَابِدٌۭ",
+          "textIndopak": "عَابِدٌ",
+          "translation": "a worshipper",
+          "transliteration": "ʿābidun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1350,
+            "endTime": 2870
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَّا",
+          "textIndopak": "مَّا",
+          "translation": "(of) what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2880,
+            "endTime": 3140
+          }
+        },
+        {
+          "position": 5,
+          "text": "عَبَدتُّمْ",
+          "textIndopak": "عَبَدۡتُّمۡۙ‏",
+          "translation": "you worship",
+          "transliteration": "ʿabadttum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3150,
+            "endTime": 4420
+          }
+        },
+        {
+          "position": 6,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "109:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "nor will you worship the One whom I worship.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109005.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "230",
+            "1030"
+          ],
+          [
+            "2",
+            "1040",
+            "2260"
+          ],
+          [
+            "3",
+            "2270",
+            "3600"
+          ],
+          [
+            "4",
+            "3610",
+            "4030"
+          ],
+          [
+            "5",
+            "4040",
+            "4770"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَآ",
+          "textIndopak": "وَ",
+          "translation": "And not",
+          "transliteration": "walā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 230,
+            "endTime": 1030
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَنتُمْ",
+          "textIndopak": "لَاۤ",
+          "translation": "you",
+          "transliteration": "antum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1040,
+            "endTime": 2260
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَـٰبِدُونَ",
+          "textIndopak": "اَنۡـتُمۡ",
+          "translation": "(are) worshippers",
+          "transliteration": "ʿābidūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2270,
+            "endTime": 3600
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَآ",
+          "textIndopak": "عٰبِدُوۡنَ",
+          "translation": "(of) what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3610,
+            "endTime": 4030
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَعْبُدُ",
+          "textIndopak": "مَاۤ اَعۡبُدُ ؕ‏",
+          "translation": "I worship",
+          "transliteration": "aʿbudu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4040,
+            "endTime": 4770
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "109:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "For you is your faith, and for me, my faith.”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/109006.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "60",
+            "820"
+          ],
+          [
+            "2",
+            "830",
+            "2310"
+          ],
+          [
+            "3",
+            "2320",
+            "3170"
+          ],
+          [
+            "4",
+            "3180",
+            "5120"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "لَكُمْ",
+          "textIndopak": "لَـكُمۡ",
+          "translation": "For you",
+          "transliteration": "lakum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 60,
+            "endTime": 820
+          }
+        },
+        {
+          "position": 2,
+          "text": "دِينُكُمْ",
+          "textIndopak": "دِيۡنُكُمۡ",
+          "translation": "(is) your religion",
+          "transliteration": "dīnukum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 830,
+            "endTime": 2310
+          }
+        },
+        {
+          "position": 3,
+          "text": "وَلِىَ",
+          "textIndopak": "وَلِىَ",
+          "translation": "and for me",
+          "transliteration": "waliya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2320,
+            "endTime": 3170
+          }
+        },
+        {
+          "position": 4,
+          "text": "دِينِ",
+          "textIndopak": "دِيۡنِ‏",
+          "translation": "(is) my religion",
+          "transliteration": "dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3180,
+            "endTime": 5120
+          }
+        },
+        {
+          "position": 5,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

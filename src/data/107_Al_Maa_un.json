@@ -1,0 +1,697 @@
+{
+  "surahNumber": 107,
+  "name": "سُورَةُ المَاعُونِ",
+  "englishName": "Al-Maa'un",
+  "englishTranslation": "Almsgiving",
+  "arabicName": "سُورَةُ المَاعُونِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 7,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "107:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Have you seen him who denies the Requital?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "250",
+            "1110"
+          ],
+          [
+            "2",
+            "1120",
+            "1910"
+          ],
+          [
+            "3",
+            "1920",
+            "2860"
+          ],
+          [
+            "4",
+            "2870",
+            "3630"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَرَءَيْتَ",
+          "textIndopak": "اَرَءَيۡتَ",
+          "translation": "Have you seen",
+          "transliteration": "ara-ayta",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 250,
+            "endTime": 1110
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "the one who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1120,
+            "endTime": 1910
+          }
+        },
+        {
+          "position": 3,
+          "text": "يُكَذِّبُ",
+          "textIndopak": "يُكَذِّبُ",
+          "translation": "denies",
+          "transliteration": "yukadhibu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1920,
+            "endTime": 2860
+          }
+        },
+        {
+          "position": 4,
+          "text": "بِٱلدِّينِ",
+          "textIndopak": "بِالدِّيۡنِؕ‏",
+          "translation": "the Judgment",
+          "transliteration": "bil-dīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2870,
+            "endTime": 3630
+          }
+        },
+        {
+          "position": 5,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "107:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "So, he is the one who pushes away the orphan,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107002.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "40",
+            "1020"
+          ],
+          [
+            "2",
+            "1030",
+            "1790"
+          ],
+          [
+            "3",
+            "1800",
+            "2540"
+          ],
+          [
+            "4",
+            "2550",
+            "3730"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَذَٰلِكَ",
+          "textIndopak": "فَذٰلِكَ",
+          "translation": "Then that",
+          "transliteration": "fadhālika",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 1020
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "(is) the one who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1030,
+            "endTime": 1790
+          }
+        },
+        {
+          "position": 3,
+          "text": "يَدُعُّ",
+          "textIndopak": "يَدُعُّ",
+          "translation": "repulses",
+          "transliteration": "yaduʿʿu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1800,
+            "endTime": 2540
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْيَتِيمَ",
+          "textIndopak": "الۡيَتِيۡمَۙ‏",
+          "translation": "the orphan",
+          "transliteration": "l-yatīma",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2550,
+            "endTime": 3730
+          }
+        },
+        {
+          "position": 5,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "107:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and does not persuade (others) to feed the needy.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107003.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "110",
+            "800"
+          ],
+          [
+            "2",
+            "810",
+            "1580"
+          ],
+          [
+            "3",
+            "1590",
+            "2200"
+          ],
+          [
+            "4",
+            "2210",
+            "3020"
+          ],
+          [
+            "5",
+            "3030",
+            "4510"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَا",
+          "textIndopak": "وَ",
+          "translation": "And (does) not",
+          "transliteration": "walā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 800
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَحُضُّ",
+          "textIndopak": "لَا",
+          "translation": "feel the urge",
+          "transliteration": "yaḥuḍḍu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 810,
+            "endTime": 1580
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَلَىٰ",
+          "textIndopak": "يَحُضُّ",
+          "translation": "to",
+          "transliteration": "ʿalā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1590,
+            "endTime": 2200
+          }
+        },
+        {
+          "position": 4,
+          "text": "طَعَامِ",
+          "textIndopak": "عَلٰى",
+          "translation": "feed",
+          "transliteration": "ṭaʿāmi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2210,
+            "endTime": 3020
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْمِسْكِينِ",
+          "textIndopak": "طَعَامِ الۡمِسۡكِيۡنِؕ‏",
+          "translation": "the poor",
+          "transliteration": "l-mis'kīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3030,
+            "endTime": 4510
+          }
+        },
+        {
+          "position": 6,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "107:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "So, Woe to those performers of Salāh,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107004.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "160",
+            "1200"
+          ],
+          [
+            "2",
+            "1210",
+            "2620"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَوَيْلٌۭ",
+          "textIndopak": "فَوَيۡلٌ",
+          "translation": "So woe",
+          "transliteration": "fawaylun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 160,
+            "endTime": 1200
+          }
+        },
+        {
+          "position": 2,
+          "text": "لِّلْمُصَلِّينَ",
+          "textIndopak": "لِّلۡمُصَلِّيۡنَۙ‏",
+          "translation": "to those who pray",
+          "transliteration": "lil'muṣallīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1210,
+            "endTime": 2620
+          }
+        },
+        {
+          "position": 3,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "107:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "who are neglectful of their Salāh,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107005.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "30",
+            "1000"
+          ],
+          [
+            "2",
+            "1010",
+            "1370"
+          ],
+          [
+            "3",
+            "1380",
+            "2370"
+          ],
+          [
+            "4",
+            "2380",
+            "3640"
+          ],
+          [
+            "5",
+            "3650",
+            "5390"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "Those who",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 1000
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُمْ",
+          "textIndopak": "هُمۡ",
+          "translation": "[they]",
+          "transliteration": "hum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1010,
+            "endTime": 1370
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَن",
+          "textIndopak": "عَنۡ",
+          "translation": "about",
+          "transliteration": "ʿan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1380,
+            "endTime": 2370
+          }
+        },
+        {
+          "position": 4,
+          "text": "صَلَاتِهِمْ",
+          "textIndopak": "صَلَاتِهِمۡ",
+          "translation": "their prayers",
+          "transliteration": "ṣalātihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2380,
+            "endTime": 3640
+          }
+        },
+        {
+          "position": 5,
+          "text": "سَاهُونَ",
+          "textIndopak": "سَاهُوۡنَۙ‏",
+          "translation": "(are) neglectful",
+          "transliteration": "sāhūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3650,
+            "endTime": 5390
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "107:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "who (do good only to) show off,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107006.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "90",
+            "1250"
+          ],
+          [
+            "2",
+            "1260",
+            "1670"
+          ],
+          [
+            "3",
+            "1680",
+            "4530"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "Those who",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 1250
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُمْ",
+          "textIndopak": "هُمۡ",
+          "translation": "[they]",
+          "transliteration": "hum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1260,
+            "endTime": 1670
+          }
+        },
+        {
+          "position": 3,
+          "text": "يُرَآءُونَ",
+          "textIndopak": "يُرَآءُوۡنَۙ‏",
+          "translation": "make show",
+          "transliteration": "yurāūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1680,
+            "endTime": 4530
+          }
+        },
+        {
+          "position": 4,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 7,
+      "verseKey": "107:7",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and refuse (to give even) small gifts.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/107007.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "80",
+            "1830"
+          ],
+          [
+            "2",
+            "1840",
+            "4940"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَيَمْنَعُونَ",
+          "textIndopak": "وَيَمۡنَعُوۡنَ",
+          "translation": "And they deny",
+          "transliteration": "wayamnaʿūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 80,
+            "endTime": 1830
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْمَاعُونَ",
+          "textIndopak": "الۡمَاعُوۡنَ‏",
+          "translation": "[the] small kindnesses",
+          "transliteration": "l-māʿūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1840,
+            "endTime": 4940
+          }
+        },
+        {
+          "position": 3,
+          "text": "٧",
+          "textIndopak": "٧",
+          "translation": "(7)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

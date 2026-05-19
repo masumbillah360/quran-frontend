@@ -1,0 +1,572 @@
+{
+  "surahNumber": 114,
+  "name": "سُورَةُ النَّاسِ",
+  "englishName": "An-Naas",
+  "englishTranslation": "Mankind",
+  "arabicName": "سُورَةُ النَّاسِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 6,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "114:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Say, “I seek refuge with the Lord of mankind,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "30",
+            "410"
+          ],
+          [
+            "2",
+            "420",
+            "1260"
+          ],
+          [
+            "3",
+            "1270",
+            "2290"
+          ],
+          [
+            "4",
+            "2300",
+            "3300"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 410
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَعُوذُ",
+          "textIndopak": "اَعُوۡذُ",
+          "translation": "I seek refuge",
+          "transliteration": "aʿūdhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 420,
+            "endTime": 1260
+          }
+        },
+        {
+          "position": 3,
+          "text": "بِرَبِّ",
+          "textIndopak": "بِرَبِّ",
+          "translation": "in (the) Lord",
+          "transliteration": "birabbi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1270,
+            "endTime": 2290
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلنَّاسِ",
+          "textIndopak": "النَّاسِۙ‏",
+          "translation": "(of) mankind",
+          "transliteration": "l-nāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2300,
+            "endTime": 3300
+          }
+        },
+        {
+          "position": 5,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "114:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "the King of mankind,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114002.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "50",
+            "680"
+          ],
+          [
+            "2",
+            "690",
+            "1940"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "مَلِكِ",
+          "textIndopak": "مَلِكِ",
+          "translation": "(The) King",
+          "transliteration": "maliki",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 50,
+            "endTime": 680
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلنَّاسِ",
+          "textIndopak": "النَّاسِۙ‏",
+          "translation": "(of) mankind",
+          "transliteration": "l-nāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 690,
+            "endTime": 1940
+          }
+        },
+        {
+          "position": 3,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "114:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "the God of mankind,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114003.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "40",
+            "930"
+          ],
+          [
+            "2",
+            "940",
+            "3210"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِلَـٰهِ",
+          "textIndopak": "اِلٰهِ",
+          "translation": "(The) God",
+          "transliteration": "ilāhi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 930
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلنَّاسِ",
+          "textIndopak": "النَّاسِۙ‏",
+          "translation": "(of) mankind",
+          "transliteration": "l-nāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 940,
+            "endTime": 3210
+          }
+        },
+        {
+          "position": 3,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "114:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "from the evil of the whisperer who withdraws (when Allah’s name is pronounced),",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114004.mp3",
+        "duration": 6,
+        "segments": [
+          [
+            "1",
+            "400",
+            "1210"
+          ],
+          [
+            "2",
+            "1220",
+            "1900"
+          ],
+          [
+            "3",
+            "1910",
+            "3230"
+          ],
+          [
+            "4",
+            "3240",
+            "5950"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "From",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 400,
+            "endTime": 1210
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَرِّ",
+          "textIndopak": "شَرِّ",
+          "translation": "(the) evil",
+          "transliteration": "sharri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1220,
+            "endTime": 1900
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْوَسْوَاسِ",
+          "textIndopak": "الۡوَسۡوَاسِ  ۙ",
+          "translation": "(of) the whisperer",
+          "transliteration": "l-waswāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1910,
+            "endTime": 3230
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْخَنَّاسِ",
+          "textIndopak": "الۡخَـنَّاسِ ۙ‏",
+          "translation": "the one who withdraws",
+          "transliteration": "l-khanāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3240,
+            "endTime": 5950
+          }
+        },
+        {
+          "position": 5,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "114:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "the one who whispers in the hearts of people,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114005.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "290",
+            "1240"
+          ],
+          [
+            "2",
+            "1250",
+            "2250"
+          ],
+          [
+            "3",
+            "2260",
+            "2660"
+          ],
+          [
+            "4",
+            "2670",
+            "3610"
+          ],
+          [
+            "5",
+            "3620",
+            "5100"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "The one who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 290,
+            "endTime": 1240
+          }
+        },
+        {
+          "position": 2,
+          "text": "يُوَسْوِسُ",
+          "textIndopak": "يُوَسۡوِسُ",
+          "translation": "whispers",
+          "transliteration": "yuwaswisu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1250,
+            "endTime": 2250
+          }
+        },
+        {
+          "position": 3,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2260,
+            "endTime": 2660
+          }
+        },
+        {
+          "position": 4,
+          "text": "صُدُورِ",
+          "textIndopak": "صُدُوۡرِ",
+          "translation": "(the) breasts",
+          "transliteration": "ṣudūri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2670,
+            "endTime": 3610
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلنَّاسِ",
+          "textIndopak": "النَّاسِۙ‏",
+          "translation": "(of) mankind",
+          "transliteration": "l-nāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3620,
+            "endTime": 5100
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "114:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "whether from among the Jinn or Mankind.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/114006.mp3",
+        "duration": 6,
+        "segments": [
+          [
+            "1",
+            "80",
+            "500"
+          ],
+          [
+            "2",
+            "510",
+            "2230"
+          ],
+          [
+            "3",
+            "2240",
+            "5760"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "مِنَ",
+          "textIndopak": "مِنَ",
+          "translation": "From",
+          "transliteration": "mina",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 80,
+            "endTime": 500
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْجِنَّةِ",
+          "textIndopak": "الۡجِنَّةِ",
+          "translation": "the jinn",
+          "transliteration": "l-jinati",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 510,
+            "endTime": 2230
+          }
+        },
+        {
+          "position": 3,
+          "text": "وَٱلنَّاسِ",
+          "textIndopak": "وَالنَّاسِ‏",
+          "translation": "and men",
+          "transliteration": "wal-nāsi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2240,
+            "endTime": 5760
+          }
+        },
+        {
+          "position": 4,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "surahNumber": 108,
+  "name": "سُورَةُ الكَوۡثَرِ",
+  "englishName": "Al-Kawthar",
+  "englishTranslation": "Abundance",
+  "arabicName": "سُورَةُ الكَوۡثَرِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 3,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "108:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "(O Prophet,) surely We have given to you Al-Kauthar.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/108001.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "270",
+            "1970"
+          ],
+          [
+            "2",
+            "1980",
+            "3490"
+          ],
+          [
+            "3",
+            "3500",
+            "4640"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّآ",
+          "textIndopak": "اِنَّاۤ",
+          "translation": "Indeed, We",
+          "transliteration": "innā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 270,
+            "endTime": 1970
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَعْطَيْنَـٰكَ",
+          "textIndopak": "اَعۡطَيۡنٰكَ",
+          "translation": "We have given you",
+          "transliteration": "aʿṭaynāka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1980,
+            "endTime": 3490
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْكَوْثَرَ",
+          "textIndopak": "الۡكَوۡثَرَؕ‏",
+          "translation": "Al-Kauthar",
+          "transliteration": "l-kawthara",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3500,
+            "endTime": 4640
+          }
+        },
+        {
+          "position": 4,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "108:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "So, offer Salāh (prayer) to your Lord, and sacrifice.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/108002.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "150",
+            "1110"
+          ],
+          [
+            "2",
+            "1120",
+            "2160"
+          ],
+          [
+            "3",
+            "2170",
+            "3040"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَصَلِّ",
+          "textIndopak": "فَصَلِّ",
+          "translation": "So pray",
+          "transliteration": "faṣalli",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 1110
+          }
+        },
+        {
+          "position": 2,
+          "text": "لِرَبِّكَ",
+          "textIndopak": "لِرَبِّكَ",
+          "translation": "to your Lord",
+          "transliteration": "lirabbika",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1120,
+            "endTime": 2160
+          }
+        },
+        {
+          "position": 3,
+          "text": "وَٱنْحَرْ",
+          "textIndopak": "وَانۡحَرۡ ؕ‏",
+          "translation": "and sacrifice",
+          "transliteration": "wa-in'ḥar",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2170,
+            "endTime": 3040
+          }
+        },
+        {
+          "position": 4,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "108:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Surely it is your enemy whose traces are cut off.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/108003.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "110",
+            "1100"
+          ],
+          [
+            "2",
+            "1110",
+            "2570"
+          ],
+          [
+            "3",
+            "2580",
+            "3160"
+          ],
+          [
+            "4",
+            "3170",
+            "4900"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّ",
+          "textIndopak": "اِنَّ",
+          "translation": "Indeed",
+          "transliteration": "inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 1100
+          }
+        },
+        {
+          "position": 2,
+          "text": "شَانِئَكَ",
+          "textIndopak": "شَانِئَكَ",
+          "translation": "your enemy ",
+          "transliteration": "shāni-aka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1110,
+            "endTime": 2570
+          }
+        },
+        {
+          "position": 3,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "he (is)",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2580,
+            "endTime": 3160
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْأَبْتَرُ",
+          "textIndopak": "الۡاَبۡتَرُ‏",
+          "translation": "the one cut off",
+          "transliteration": "l-abtaru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3170,
+            "endTime": 4900
+          }
+        },
+        {
+          "position": 5,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

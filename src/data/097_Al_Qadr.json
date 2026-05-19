@@ -1,0 +1,732 @@
+{
+  "surahNumber": 97,
+  "name": "سُورَةُ القَدۡرِ",
+  "englishName": "Al-Qadr",
+  "englishTranslation": "The Power, Fate",
+  "arabicName": "سُورَةُ القَدۡرِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 5,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "97:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 598,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "We have sent it (the Qur’ān) down in the Night of Qadr.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/097001.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "140",
+            "1120"
+          ],
+          [
+            "2",
+            "1130",
+            "2830"
+          ],
+          [
+            "3",
+            "2840",
+            "3250"
+          ],
+          [
+            "4",
+            "3260",
+            "4090"
+          ],
+          [
+            "5",
+            "4100",
+            "4820"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّآ",
+          "textIndopak": "اِنَّاۤ",
+          "translation": "Indeed, We",
+          "transliteration": "innā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 140,
+            "endTime": 1120
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَنزَلْنَـٰهُ",
+          "textIndopak": "اَنۡزَلۡنٰهُ",
+          "translation": "revealed it",
+          "transliteration": "anzalnāhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1130,
+            "endTime": 2830
+          }
+        },
+        {
+          "position": 3,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2840,
+            "endTime": 3250
+          }
+        },
+        {
+          "position": 4,
+          "text": "لَيْلَةِ",
+          "textIndopak": "لَيۡلَةِ",
+          "translation": "(the) Night",
+          "transliteration": "laylati",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3260,
+            "endTime": 4090
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْقَدْرِ",
+          "textIndopak": "الۡقَدۡرِ ۖ ۚ‏",
+          "translation": "(of) Power",
+          "transliteration": "l-qadri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4100,
+            "endTime": 4820
+          }
+        },
+        {
+          "position": 6,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "97:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 598,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "And what may let you know what the Night of Qadr is?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/097002.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "140",
+            "970"
+          ],
+          [
+            "2",
+            "980",
+            "1970"
+          ],
+          [
+            "3",
+            "1980",
+            "2370"
+          ],
+          [
+            "4",
+            "2380",
+            "3190"
+          ],
+          [
+            "5",
+            "3200",
+            "3970"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَمَآ",
+          "textIndopak": "وَمَاۤ",
+          "translation": "And what",
+          "transliteration": "wamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 140,
+            "endTime": 970
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَدْرَىٰكَ",
+          "textIndopak": "اَدۡرٰٮكَ",
+          "translation": "can make you know",
+          "transliteration": "adrāka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 980,
+            "endTime": 1970
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1980,
+            "endTime": 2370
+          }
+        },
+        {
+          "position": 4,
+          "text": "لَيْلَةُ",
+          "textIndopak": "لَيۡلَةُ",
+          "translation": "(the) Night",
+          "transliteration": "laylatu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2380,
+            "endTime": 3190
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْقَدْرِ",
+          "textIndopak": "الۡقَدۡرِؕ‏",
+          "translation": "(of) Power (is)",
+          "transliteration": "l-qadri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3200,
+            "endTime": 3970
+          }
+        },
+        {
+          "position": 6,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "97:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 598,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "The Night of Qadr is much better than one thousand months.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/097003.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "150",
+            "860"
+          ],
+          [
+            "2",
+            "870",
+            "1580"
+          ],
+          [
+            "3",
+            "1590",
+            "2840"
+          ],
+          [
+            "4",
+            "2850",
+            "3150"
+          ],
+          [
+            "5",
+            "3160",
+            "3690"
+          ],
+          [
+            "6",
+            "3700",
+            "4160"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "لَيْلَةُ",
+          "textIndopak": "لَيۡلَةُ",
+          "translation": "(The) Night",
+          "transliteration": "laylatu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 860
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْقَدْرِ",
+          "textIndopak": "الۡقَدۡرِ  ۙ",
+          "translation": "(of) Power",
+          "transliteration": "l-qadri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 870,
+            "endTime": 1580
+          }
+        },
+        {
+          "position": 3,
+          "text": "خَيْرٌۭ",
+          "textIndopak": "خَيۡرٌ",
+          "translation": "(is) better",
+          "transliteration": "khayrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1590,
+            "endTime": 2840
+          }
+        },
+        {
+          "position": 4,
+          "text": "مِّنْ",
+          "textIndopak": "مِّنۡ",
+          "translation": "than",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2850,
+            "endTime": 3150
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَلْفِ",
+          "textIndopak": "اَلۡفِ",
+          "translation": "a thousand",
+          "transliteration": "alfi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3160,
+            "endTime": 3690
+          }
+        },
+        {
+          "position": 6,
+          "text": "شَهْرٍۢ",
+          "textIndopak": "شَهۡرٍؕ‏",
+          "translation": "month(s)",
+          "transliteration": "shahrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3700,
+            "endTime": 4160
+          }
+        },
+        {
+          "position": 7,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "97:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 598,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "The angels and the Spirit descend in it, with the leave of your Lord, along with every command.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/097004.mp3",
+        "duration": 9,
+        "segments": [
+          [
+            "1",
+            "170",
+            "990"
+          ],
+          [
+            "2",
+            "1000",
+            "3560"
+          ],
+          [
+            "3",
+            "3570",
+            "4520"
+          ],
+          [
+            "4",
+            "4530",
+            "5300"
+          ],
+          [
+            "5",
+            "5310",
+            "6020"
+          ],
+          [
+            "6",
+            "6030",
+            "7310"
+          ],
+          [
+            "7",
+            "7320",
+            "7850"
+          ],
+          [
+            "8",
+            "7860",
+            "8470"
+          ],
+          [
+            "9",
+            "8480",
+            "8930"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "تَنَزَّلُ",
+          "textIndopak": "تَنَزَّلُ",
+          "translation": "Descend",
+          "transliteration": "tanazzalu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 170,
+            "endTime": 990
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْمَلَـٰٓئِكَةُ",
+          "textIndopak": "الۡمَلٰٓٮِٕكَةُ",
+          "translation": "the Angels",
+          "transliteration": "l-malāikatu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1000,
+            "endTime": 3560
+          }
+        },
+        {
+          "position": 3,
+          "text": "وَٱلرُّوحُ",
+          "textIndopak": "وَالرُّوۡحُ",
+          "translation": "and the Spirit",
+          "transliteration": "wal-rūḥu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3570,
+            "endTime": 4520
+          }
+        },
+        {
+          "position": 4,
+          "text": "فِيهَا",
+          "textIndopak": "فِيۡهَا",
+          "translation": "therein",
+          "transliteration": "fīhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 4530,
+            "endTime": 5300
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِإِذْنِ",
+          "textIndopak": "بِاِذۡنِ",
+          "translation": "by (the) permission",
+          "transliteration": "bi-idh'ni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 5310,
+            "endTime": 6020
+          }
+        },
+        {
+          "position": 6,
+          "text": "رَبِّهِم",
+          "textIndopak": "رَبِّهِمۡ​ۚ",
+          "translation": "(of) their Lord",
+          "transliteration": "rabbihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 6030,
+            "endTime": 7310
+          }
+        },
+        {
+          "position": 7,
+          "text": "مِّن",
+          "textIndopak": "مِّنۡ",
+          "translation": "for",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 7320,
+            "endTime": 7850
+          }
+        },
+        {
+          "position": 8,
+          "text": "كُلِّ",
+          "textIndopak": "كُلِّ",
+          "translation": "every",
+          "transliteration": "kulli",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 7860,
+            "endTime": 8470
+          }
+        },
+        {
+          "position": 9,
+          "text": "أَمْرٍۢ",
+          "textIndopak": "اَمۡرٍ ۛۙ‏",
+          "translation": "affair",
+          "transliteration": "amrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 8480,
+            "endTime": 8930
+          }
+        },
+        {
+          "position": 10,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "97:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 598,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "Peace it is till the debut of dawn.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/097005.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "110",
+            "1230"
+          ],
+          [
+            "2",
+            "1240",
+            "1740"
+          ],
+          [
+            "3",
+            "1750",
+            "2880"
+          ],
+          [
+            "4",
+            "2890",
+            "4090"
+          ],
+          [
+            "5",
+            "4100",
+            "5220"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "سَلَـٰمٌ",
+          "textIndopak": "سَلٰمٌ ",
+          "translation": "Peace",
+          "transliteration": "salāmun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 1230
+          }
+        },
+        {
+          "position": 2,
+          "text": "هِىَ",
+          "textIndopak": " ۛهِىَ",
+          "translation": "it (is)",
+          "transliteration": "hiya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1240,
+            "endTime": 1740
+          }
+        },
+        {
+          "position": 3,
+          "text": "حَتَّىٰ",
+          "textIndopak": "حَتّٰى",
+          "translation": "until",
+          "transliteration": "ḥattā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1750,
+            "endTime": 2880
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَطْلَعِ",
+          "textIndopak": "مَطۡلَعِ",
+          "translation": "(the) emergence",
+          "transliteration": "maṭlaʿi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2890,
+            "endTime": 4090
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْفَجْرِ",
+          "textIndopak": "الۡفَجۡرِ‏",
+          "translation": "(of) the dawn",
+          "transliteration": "l-fajri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4100,
+            "endTime": 5220
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

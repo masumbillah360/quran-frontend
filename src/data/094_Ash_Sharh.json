@@ -1,0 +1,765 @@
+{
+  "surahNumber": 94,
+  "name": "سُورَةُ الشَّرۡحِ",
+  "englishName": "Ash-Sharh",
+  "englishTranslation": "The Consolation",
+  "arabicName": "سُورَةُ الشَّرۡحِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 8,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "94:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 596,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "Have We not caused your bosom to be wide open for you?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094001.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "170",
+            "520"
+          ],
+          [
+            "2",
+            "530",
+            "1190"
+          ],
+          [
+            "3",
+            "1200",
+            "1580"
+          ],
+          [
+            "4",
+            "1590",
+            "2290"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَلَمْ",
+          "textIndopak": "اَلَمۡ",
+          "translation": "Have not",
+          "transliteration": "alam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 170,
+            "endTime": 520
+          }
+        },
+        {
+          "position": 2,
+          "text": "نَشْرَحْ",
+          "textIndopak": "نَشۡرَحۡ",
+          "translation": "We expanded",
+          "transliteration": "nashraḥ",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 530,
+            "endTime": 1190
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَكَ",
+          "textIndopak": "لَـكَ",
+          "translation": "for you",
+          "transliteration": "laka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1200,
+            "endTime": 1580
+          }
+        },
+        {
+          "position": 4,
+          "text": "صَدْرَكَ",
+          "textIndopak": "صَدۡرَكَۙ‏",
+          "translation": "your breast",
+          "transliteration": "ṣadraka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1590,
+            "endTime": 2290
+          }
+        },
+        {
+          "position": 5,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "94:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 596,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "And We removed from you your burden",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094002.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "90",
+            "1050"
+          ],
+          [
+            "2",
+            "1060",
+            "1900"
+          ],
+          [
+            "3",
+            "1910",
+            "2620"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَوَضَعْنَا",
+          "textIndopak": "وَوَضَعۡنَا",
+          "translation": "And We removed",
+          "transliteration": "wawaḍaʿnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 1050
+          }
+        },
+        {
+          "position": 2,
+          "text": "عَنكَ",
+          "textIndopak": "عَنۡكَ",
+          "translation": "from you",
+          "transliteration": "ʿanka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1060,
+            "endTime": 1900
+          }
+        },
+        {
+          "position": 3,
+          "text": "وِزْرَكَ",
+          "textIndopak": "وِزۡرَكَۙ‏",
+          "translation": "your burden",
+          "transliteration": "wiz'raka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1910,
+            "endTime": 2620
+          }
+        },
+        {
+          "position": 4,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "94:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "that had (almost) broken your back,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094003.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "30",
+            "880"
+          ],
+          [
+            "2",
+            "890",
+            "1750"
+          ],
+          [
+            "3",
+            "1760",
+            "2470"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِىٓ",
+          "textIndopak": "الَّذِىۡۤ",
+          "translation": "Which",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَنقَضَ",
+          "textIndopak": "اَنۡقَضَ",
+          "translation": "weighed upon",
+          "transliteration": "anqaḍa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 890,
+            "endTime": 1750
+          }
+        },
+        {
+          "position": 3,
+          "text": "ظَهْرَكَ",
+          "textIndopak": "ظَهۡرَكَۙ‏",
+          "translation": "your back",
+          "transliteration": "ẓahraka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1760,
+            "endTime": 2470
+          }
+        },
+        {
+          "position": 4,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "94:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "and We raised high your name.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094004.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "70",
+            "1010"
+          ],
+          [
+            "2",
+            "1020",
+            "1420"
+          ],
+          [
+            "3",
+            "1430",
+            "2170"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَرَفَعْنَا",
+          "textIndopak": "وَرَفَعۡنَا",
+          "translation": "And We raised high",
+          "transliteration": "warafaʿnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 70,
+            "endTime": 1010
+          }
+        },
+        {
+          "position": 2,
+          "text": "لَكَ",
+          "textIndopak": "لَـكَ",
+          "translation": "for you",
+          "transliteration": "laka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1020,
+            "endTime": 1420
+          }
+        },
+        {
+          "position": 3,
+          "text": "ذِكْرَكَ",
+          "textIndopak": "ذِكۡرَكَؕ‏",
+          "translation": "your reputation",
+          "transliteration": "dhik'raka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1430,
+            "endTime": 2170
+          }
+        },
+        {
+          "position": 4,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "94:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "So, undoubtedly, along with the hardship there is ease.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094005.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "120",
+            "1000"
+          ],
+          [
+            "2",
+            "1010",
+            "1360"
+          ],
+          [
+            "3",
+            "1370",
+            "2140"
+          ],
+          [
+            "4",
+            "2150",
+            "2690"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَإِنَّ",
+          "textIndopak": "فَاِنَّ",
+          "translation": "So indeed",
+          "transliteration": "fa-inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 120,
+            "endTime": 1000
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَعَ",
+          "textIndopak": "مَعَ",
+          "translation": "with",
+          "transliteration": "maʿa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1010,
+            "endTime": 1360
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْعُسْرِ",
+          "textIndopak": "الۡعُسۡرِ",
+          "translation": "the hardship",
+          "transliteration": "l-ʿus'ri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1370,
+            "endTime": 2140
+          }
+        },
+        {
+          "position": 4,
+          "text": "يُسْرًا",
+          "textIndopak": "يُسۡرًا ۙ‏",
+          "translation": "(is) ease",
+          "transliteration": "yus'ran",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2150,
+            "endTime": 2690
+          }
+        },
+        {
+          "position": 5,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "94:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "Undoubtedly, along with the hardship there is ease.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094006.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "30",
+            "880"
+          ],
+          [
+            "2",
+            "890",
+            "1250"
+          ],
+          [
+            "3",
+            "1260",
+            "1940"
+          ],
+          [
+            "4",
+            "1950",
+            "2890"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّ",
+          "textIndopak": "اِنَّ",
+          "translation": "Indeed",
+          "transliteration": "inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَعَ",
+          "textIndopak": "مَعَ",
+          "translation": "with",
+          "transliteration": "maʿa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 890,
+            "endTime": 1250
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْعُسْرِ",
+          "textIndopak": "الۡعُسۡرِ",
+          "translation": "the hardship",
+          "transliteration": "l-ʿus'ri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1260,
+            "endTime": 1940
+          }
+        },
+        {
+          "position": 4,
+          "text": "يُسْرًۭا",
+          "textIndopak": "يُسۡرًا ؕ‏",
+          "translation": "(is) ease",
+          "transliteration": "yus'ran",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1950,
+            "endTime": 2890
+          }
+        },
+        {
+          "position": 5,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 7,
+      "verseKey": "94:7",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "So, when you are free (from collective services), toil hard (in worship),",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094007.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "170",
+            "880"
+          ],
+          [
+            "2",
+            "890",
+            "1650"
+          ],
+          [
+            "3",
+            "1660",
+            "3210"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَإِذَا",
+          "textIndopak": "فَاِذَا",
+          "translation": "So when",
+          "transliteration": "fa-idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 170,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 2,
+          "text": "فَرَغْتَ",
+          "textIndopak": "فَرَغۡتَ",
+          "translation": "you have finished",
+          "transliteration": "faraghta",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 890,
+            "endTime": 1650
+          }
+        },
+        {
+          "position": 3,
+          "text": "فَٱنصَبْ",
+          "textIndopak": "فَانۡصَبۡۙ‏",
+          "translation": "then labor hard",
+          "transliteration": "fa-inṣab",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1660,
+            "endTime": 3210
+          }
+        },
+        {
+          "position": 4,
+          "text": "٧",
+          "textIndopak": "٧",
+          "translation": "(7)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 8,
+      "verseKey": "94:8",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 597,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 239,
+      "sajdah": null,
+      "translation": "and towards your Lord turn with eagerness.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/094008.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "30",
+            "780"
+          ],
+          [
+            "2",
+            "790",
+            "1620"
+          ],
+          [
+            "3",
+            "1630",
+            "2920"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَإِلَىٰ",
+          "textIndopak": "وَاِلٰى",
+          "translation": "And to",
+          "transliteration": "wa-ilā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 780
+          }
+        },
+        {
+          "position": 2,
+          "text": "رَبِّكَ",
+          "textIndopak": "رَبِّكَ",
+          "translation": "your Lord",
+          "transliteration": "rabbika",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 790,
+            "endTime": 1620
+          }
+        },
+        {
+          "position": 3,
+          "text": "فَٱرْغَب",
+          "textIndopak": "فَارۡغَب‏",
+          "translation": "turn your attention",
+          "transliteration": "fa-ir'ghab",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1630,
+            "endTime": 2920
+          }
+        },
+        {
+          "position": 4,
+          "text": "٨",
+          "textIndopak": "٨",
+          "translation": "(8)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -520,3 +520,76 @@ input[type="range"]::-moz-range-thumb {
   font-style: normal;
   font-display: swap;
 }
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   OPTIMIZED WORD STYLES
+   - CSS-only tooltips for performance
+   - DOM-based highlighting (class toggle)
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Word span base styles */
+.word-span {
+  position: relative;
+}
+
+.word-span:hover {
+  color: var(--accent);
+}
+
+/* Active word highlight (toggled via JS class) */
+.word-highlight {
+  color: var(--accent) !important;
+  transform: scale(1.1);
+  text-shadow: 0 0 12px rgba(82, 183, 136, 0.5);
+  font-weight: 700;
+}
+
+/* CSS-only tooltip */
+.word-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--tooltip-bg);
+  border: 1px solid var(--tooltip-border);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  direction: ltr;
+}
+
+.word-span:hover .word-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.word-tooltip-transliteration {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* Ayah card hover state */
+.ayah-card:hover {
+  background-color: color-mix(in srgb, var(--bg-surface) 40%, transparent);
+}
+
+/* ── Word highlight animation ── */
+@keyframes word-glow {
+  0%, 100% { text-shadow: 0 0 8px rgba(82, 183, 136, 0.3); }
+  50% { text-shadow: 0 0 16px rgba(82, 183, 136, 0.6); }
+}
+
+.word-active {
+  color: var(--accent) !important;
+  animation: word-glow 1s ease-in-out infinite;
+}

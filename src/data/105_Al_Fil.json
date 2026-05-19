@@ -1,0 +1,599 @@
+{
+  "surahNumber": 105,
+  "name": "سُورَةُ الفِيلِ",
+  "englishName": "Al-Fil",
+  "englishTranslation": "The Elephant",
+  "arabicName": "سُورَةُ الفِيلِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 5,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "105:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Have you not seen how your Lord dealt with the People of the Elephant?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/105001.mp3",
+        "duration": 6,
+        "segments": [
+          [
+            "1",
+            "140",
+            "660"
+          ],
+          [
+            "2",
+            "670",
+            "1040"
+          ],
+          [
+            "3",
+            "1050",
+            "1670"
+          ],
+          [
+            "4",
+            "1680",
+            "2360"
+          ],
+          [
+            "5",
+            "2370",
+            "3150"
+          ],
+          [
+            "6",
+            "3160",
+            "4320"
+          ],
+          [
+            "7",
+            "4330",
+            "5690"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَلَمْ",
+          "textIndopak": "اَلَمۡ",
+          "translation": "Have not",
+          "transliteration": "alam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 140,
+            "endTime": 660
+          }
+        },
+        {
+          "position": 2,
+          "text": "تَرَ",
+          "textIndopak": "تَرَ",
+          "translation": "you seen",
+          "transliteration": "tara",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 670,
+            "endTime": 1040
+          }
+        },
+        {
+          "position": 3,
+          "text": "كَيْفَ",
+          "textIndopak": "كَيۡفَ",
+          "translation": "how",
+          "transliteration": "kayfa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1050,
+            "endTime": 1670
+          }
+        },
+        {
+          "position": 4,
+          "text": "فَعَلَ",
+          "textIndopak": "فَعَلَ",
+          "translation": "dealt",
+          "transliteration": "faʿala",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1680,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 5,
+          "text": "رَبُّكَ",
+          "textIndopak": "رَبُّكَ",
+          "translation": "your Lord",
+          "transliteration": "rabbuka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2370,
+            "endTime": 3150
+          }
+        },
+        {
+          "position": 6,
+          "text": "بِأَصْحَـٰبِ",
+          "textIndopak": "بِاَصۡحٰبِ",
+          "translation": "with (the) Companions",
+          "transliteration": "bi-aṣḥābi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3160,
+            "endTime": 4320
+          }
+        },
+        {
+          "position": 7,
+          "text": "ٱلْفِيلِ",
+          "textIndopak": "الۡفِيۡلِؕ‏",
+          "translation": "(of the) Elephant",
+          "transliteration": "l-fīli",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4330,
+            "endTime": 5690
+          }
+        },
+        {
+          "position": 8,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "105:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Has He not turned their plan into nullity?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/105002.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "80",
+            "540"
+          ],
+          [
+            "2",
+            "550",
+            "1330"
+          ],
+          [
+            "3",
+            "1340",
+            "2360"
+          ],
+          [
+            "4",
+            "2370",
+            "2770"
+          ],
+          [
+            "5",
+            "2780",
+            "4560"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَلَمْ",
+          "textIndopak": "اَلَمۡ",
+          "translation": "Did not",
+          "transliteration": "alam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 80,
+            "endTime": 540
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَجْعَلْ",
+          "textIndopak": "يَجۡعَلۡ",
+          "translation": "He make",
+          "transliteration": "yajʿal",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 550,
+            "endTime": 1330
+          }
+        },
+        {
+          "position": 3,
+          "text": "كَيْدَهُمْ",
+          "textIndopak": "كَيۡدَهُمۡ",
+          "translation": "their plan",
+          "transliteration": "kaydahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1340,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 4,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "go",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2370,
+            "endTime": 2770
+          }
+        },
+        {
+          "position": 5,
+          "text": "تَضْلِيلٍۢ",
+          "textIndopak": "تَضۡلِيۡلٍۙ‏",
+          "translation": "astray",
+          "transliteration": "taḍlīlin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2780,
+            "endTime": 4560
+          }
+        },
+        {
+          "position": 6,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "105:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "And He sent upon them flying birds in flocks,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/105003.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "90",
+            "1010"
+          ],
+          [
+            "2",
+            "1020",
+            "2150"
+          ],
+          [
+            "3",
+            "2160",
+            "2910"
+          ],
+          [
+            "4",
+            "2920",
+            "5240"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَأَرْسَلَ",
+          "textIndopak": "وَّاَرۡسَلَ",
+          "translation": "And He sent",
+          "transliteration": "wa-arsala",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 1010
+          }
+        },
+        {
+          "position": 2,
+          "text": "عَلَيْهِمْ",
+          "textIndopak": "عَلَيۡهِمۡ",
+          "translation": "against them",
+          "transliteration": "ʿalayhim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1020,
+            "endTime": 2150
+          }
+        },
+        {
+          "position": 3,
+          "text": "طَيْرًا",
+          "textIndopak": "طَيۡرًا",
+          "translation": "birds",
+          "transliteration": "ṭayran",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2160,
+            "endTime": 2910
+          }
+        },
+        {
+          "position": 4,
+          "text": "أَبَابِيلَ",
+          "textIndopak": "اَبَابِيۡلَۙ‏",
+          "translation": "(in) flocks",
+          "transliteration": "abābīla",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2920,
+            "endTime": 5240
+          }
+        },
+        {
+          "position": 5,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "105:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "throwing upon them stones of baked clay,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/105004.mp3",
+        "duration": 7,
+        "segments": [
+          [
+            "1",
+            "110",
+            "1810"
+          ],
+          [
+            "2",
+            "1820",
+            "3870"
+          ],
+          [
+            "3",
+            "3880",
+            "4690"
+          ],
+          [
+            "4",
+            "4700",
+            "6910"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "تَرْمِيهِم",
+          "textIndopak": "تَرۡمِيۡهِمۡ",
+          "translation": "Striking them",
+          "transliteration": "tarmīhim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 1810
+          }
+        },
+        {
+          "position": 2,
+          "text": "بِحِجَارَةٍۢ",
+          "textIndopak": "بِحِجَارَةٍ",
+          "translation": "with stones",
+          "transliteration": "biḥijāratin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1820,
+            "endTime": 3870
+          }
+        },
+        {
+          "position": 3,
+          "text": "مِّن",
+          "textIndopak": "مِّنۡ",
+          "translation": "of",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3880,
+            "endTime": 4690
+          }
+        },
+        {
+          "position": 4,
+          "text": "سِجِّيلٍۢ",
+          "textIndopak": "سِجِّيۡلٍۙ‏",
+          "translation": "baked clay",
+          "transliteration": "sijjīlin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 4700,
+            "endTime": 6910
+          }
+        },
+        {
+          "position": 5,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "105:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and thus He turned them into an eaten-up chaff.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/105005.mp3",
+        "duration": 7,
+        "segments": [
+          [
+            "1",
+            "120",
+            "1760"
+          ],
+          [
+            "2",
+            "1770",
+            "4040"
+          ],
+          [
+            "3",
+            "4050",
+            "7100"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَجَعَلَهُمْ",
+          "textIndopak": "فَجَعَلَهُمۡ",
+          "translation": "Then He made them",
+          "transliteration": "fajaʿalahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 120,
+            "endTime": 1760
+          }
+        },
+        {
+          "position": 2,
+          "text": "كَعَصْفٍۢ",
+          "textIndopak": "كَعَصۡفٍ",
+          "translation": "like straw",
+          "transliteration": "kaʿaṣfin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1770,
+            "endTime": 4040
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَّأْكُولٍۭ",
+          "textIndopak": "مَّاۡكُوۡلٍ‏",
+          "translation": "eaten up",
+          "transliteration": "makūlin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 4050,
+            "endTime": 7100
+          }
+        },
+        {
+          "position": 4,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

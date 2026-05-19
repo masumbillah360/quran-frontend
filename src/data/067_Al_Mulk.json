@@ -1,0 +1,7239 @@
+{
+  "surahNumber": 67,
+  "name": "سُورَةُ المُلۡكِ",
+  "englishName": "Al-Mulk",
+  "englishTranslation": "The Sovereignty",
+  "arabicName": "سُورَةُ المُلۡكِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 30,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "67:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Glorious is the One in whose hand is the Kingdom (of the whole universe), and He is powerful over every thing,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067001.mp3",
+        "duration": 8,
+        "segments": [
+          [
+            "1",
+            "270",
+            "1220"
+          ],
+          [
+            "2",
+            "1230",
+            "2040"
+          ],
+          [
+            "3",
+            "2050",
+            "2790"
+          ],
+          [
+            "4",
+            "2800",
+            "3680"
+          ],
+          [
+            "5",
+            "3690",
+            "4190"
+          ],
+          [
+            "6",
+            "4200",
+            "4830"
+          ],
+          [
+            "7",
+            "4840",
+            "5390"
+          ],
+          [
+            "8",
+            "5400",
+            "6500"
+          ],
+          [
+            "9",
+            "6510",
+            "7750"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "تَبَـٰرَكَ",
+          "textIndopak": "تَبٰرَكَ",
+          "translation": "Blessed is",
+          "transliteration": "tabāraka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 270,
+            "endTime": 1220
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "He",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1230,
+            "endTime": 2040
+          }
+        },
+        {
+          "position": 3,
+          "text": "بِيَدِهِ",
+          "textIndopak": "بِيَدِهِ",
+          "translation": "in Whose Hand",
+          "transliteration": "biyadihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2050,
+            "endTime": 2790
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْمُلْكُ",
+          "textIndopak": "الۡمُلۡكُ",
+          "translation": "(is) the Dominion",
+          "transliteration": "l-mul'ku",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2800,
+            "endTime": 3680
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَهُوَ",
+          "textIndopak": "وَهُوَ",
+          "translation": "and He",
+          "transliteration": "wahuwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3690,
+            "endTime": 4190
+          }
+        },
+        {
+          "position": 6,
+          "text": "عَلَىٰ",
+          "textIndopak": "عَلٰى",
+          "translation": "(is) over",
+          "transliteration": "ʿalā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4200,
+            "endTime": 4830
+          }
+        },
+        {
+          "position": 7,
+          "text": "كُلِّ",
+          "textIndopak": "كُلِّ",
+          "translation": "every",
+          "transliteration": "kulli",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4840,
+            "endTime": 5390
+          }
+        },
+        {
+          "position": 8,
+          "text": "شَىْءٍۢ",
+          "textIndopak": "شَىۡءٍ",
+          "translation": "thing",
+          "transliteration": "shayin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5400,
+            "endTime": 6500
+          }
+        },
+        {
+          "position": 9,
+          "text": "قَدِيرٌ",
+          "textIndopak": "قَدِيۡرُۙ‏ ﻿﻿",
+          "translation": "All-Powerful",
+          "transliteration": "qadīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6510,
+            "endTime": 7750
+          }
+        },
+        {
+          "position": 10,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "67:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "the One who created death and life, so that He may test you as to which of you is better in his deeds. And He is the All-Mighty, the Most-Forgiving,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067002.mp3",
+        "duration": 11,
+        "segments": [
+          [
+            "1",
+            "180",
+            "960"
+          ],
+          [
+            "2",
+            "970",
+            "1600"
+          ],
+          [
+            "3",
+            "1610",
+            "2410"
+          ],
+          [
+            "4",
+            "2420",
+            "3550"
+          ],
+          [
+            "5",
+            "3560",
+            "4880"
+          ],
+          [
+            "6",
+            "4890",
+            "5880"
+          ],
+          [
+            "7",
+            "5890",
+            "6580"
+          ],
+          [
+            "8",
+            "6590",
+            "7950"
+          ],
+          [
+            "9",
+            "7960",
+            "8480"
+          ],
+          [
+            "10",
+            "8490",
+            "9540"
+          ],
+          [
+            "11",
+            "9550",
+            "11370"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِى",
+          "textIndopak": "اۨلَّذِىۡ",
+          "translation": "The One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 180,
+            "endTime": 960
+          }
+        },
+        {
+          "position": 2,
+          "text": "خَلَقَ",
+          "textIndopak": "خَلَقَ",
+          "translation": "created",
+          "transliteration": "khalaqa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 970,
+            "endTime": 1600
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْمَوْتَ",
+          "textIndopak": "الۡمَوۡتَ",
+          "translation": "death",
+          "transliteration": "l-mawta",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1610,
+            "endTime": 2410
+          }
+        },
+        {
+          "position": 4,
+          "text": "وَٱلْحَيَوٰةَ",
+          "textIndopak": "وَالۡحَيٰوةَ",
+          "translation": "and life",
+          "transliteration": "wal-ḥayata",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2420,
+            "endTime": 3550
+          }
+        },
+        {
+          "position": 5,
+          "text": "لِيَبْلُوَكُمْ",
+          "textIndopak": "لِيَبۡلُوَكُمۡ",
+          "translation": "that He may test you",
+          "transliteration": "liyabluwakum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3560,
+            "endTime": 4880
+          }
+        },
+        {
+          "position": 6,
+          "text": "أَيُّكُمْ",
+          "textIndopak": "اَيُّكُمۡ",
+          "translation": "which of you",
+          "transliteration": "ayyukum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4890,
+            "endTime": 5880
+          }
+        },
+        {
+          "position": 7,
+          "text": "أَحْسَنُ",
+          "textIndopak": "اَحۡسَنُ",
+          "translation": "(is) best",
+          "transliteration": "aḥsanu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5890,
+            "endTime": 6580
+          }
+        },
+        {
+          "position": 8,
+          "text": "عَمَلًۭا ۚ",
+          "textIndopak": "عَمَلًا ؕ",
+          "translation": "(in) deed",
+          "transliteration": "ʿamalan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6590,
+            "endTime": 7950
+          }
+        },
+        {
+          "position": 9,
+          "text": "وَهُوَ",
+          "textIndopak": "وَهُوَ",
+          "translation": "And He",
+          "transliteration": "wahuwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7960,
+            "endTime": 8480
+          }
+        },
+        {
+          "position": 10,
+          "text": "ٱلْعَزِيزُ",
+          "textIndopak": "الۡعَزِيۡزُ",
+          "translation": "(is) the All-Mighty",
+          "transliteration": "l-ʿazīzu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8490,
+            "endTime": 9540
+          }
+        },
+        {
+          "position": 11,
+          "text": "ٱلْغَفُورُ",
+          "textIndopak": "الۡغَفُوۡرُۙ‏",
+          "translation": "the Oft-Forgiving",
+          "transliteration": "l-ghafūru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 9550,
+            "endTime": 11370
+          }
+        },
+        {
+          "position": 12,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "67:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "who has created seven skies, one over the other. You will see nothing out of proportion in the creation of the RaHmān (the All-Merciful Allah). So, cast your eye again. Do you see any rifts?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067003.mp3",
+        "duration": 16,
+        "segments": [
+          [
+            "1",
+            "190",
+            "1000"
+          ],
+          [
+            "2",
+            "1010",
+            "1670"
+          ],
+          [
+            "3",
+            "1680",
+            "2300"
+          ],
+          [
+            "4",
+            "2310",
+            "4030"
+          ],
+          [
+            "5",
+            "4040",
+            "4970"
+          ],
+          [
+            "6",
+            "4980",
+            "5750"
+          ],
+          [
+            "7",
+            "5760",
+            "6380"
+          ],
+          [
+            "8",
+            "6390",
+            "6790"
+          ],
+          [
+            "9",
+            "6800",
+            "7400"
+          ],
+          [
+            "10",
+            "7410",
+            "8630"
+          ],
+          [
+            "11",
+            "8640",
+            "9280"
+          ],
+          [
+            "12",
+            "9290",
+            "10910"
+          ],
+          [
+            "13",
+            "10920",
+            "11740"
+          ],
+          [
+            "14",
+            "11750",
+            "12570"
+          ],
+          [
+            "15",
+            "12580",
+            "12910"
+          ],
+          [
+            "16",
+            "12920",
+            "13510"
+          ],
+          [
+            "17",
+            "13520",
+            "14260"
+          ],
+          [
+            "18",
+            "14270",
+            "15720"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "The One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 190,
+            "endTime": 1000
+          }
+        },
+        {
+          "position": 2,
+          "text": "خَلَقَ",
+          "textIndopak": "خَلَقَ",
+          "translation": "created",
+          "transliteration": "khalaqa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1010,
+            "endTime": 1670
+          }
+        },
+        {
+          "position": 3,
+          "text": "سَبْعَ",
+          "textIndopak": "سَبۡعَ",
+          "translation": "seven",
+          "transliteration": "sabʿa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1680,
+            "endTime": 2300
+          }
+        },
+        {
+          "position": 4,
+          "text": "سَمَـٰوَٰتٍۢ",
+          "textIndopak": "سَمٰوٰتٍ",
+          "translation": "heavens",
+          "transliteration": "samāwātin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2310,
+            "endTime": 4030
+          }
+        },
+        {
+          "position": 5,
+          "text": "طِبَاقًۭا ۖ",
+          "textIndopak": "طِبَاقًا​ ؕ",
+          "translation": "one above another",
+          "transliteration": "ṭibāqan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4040,
+            "endTime": 4970
+          }
+        },
+        {
+          "position": 6,
+          "text": "مَّا",
+          "textIndopak": "مَا",
+          "translation": "Not",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4980,
+            "endTime": 5750
+          }
+        },
+        {
+          "position": 7,
+          "text": "تَرَىٰ",
+          "textIndopak": "تَرٰى",
+          "translation": "you see",
+          "transliteration": "tarā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5760,
+            "endTime": 6380
+          }
+        },
+        {
+          "position": 8,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6390,
+            "endTime": 6790
+          }
+        },
+        {
+          "position": 9,
+          "text": "خَلْقِ",
+          "textIndopak": "خَلۡقِ",
+          "translation": "(the) creation",
+          "transliteration": "khalqi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6800,
+            "endTime": 7400
+          }
+        },
+        {
+          "position": 10,
+          "text": "ٱلرَّحْمَـٰنِ",
+          "textIndopak": "الرَّحۡمٰنِ",
+          "translation": "(of) the Most Gracious",
+          "transliteration": "l-raḥmāni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 7410,
+            "endTime": 8630
+          }
+        },
+        {
+          "position": 11,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "any",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 8640,
+            "endTime": 9280
+          }
+        },
+        {
+          "position": 12,
+          "text": "تَفَـٰوُتٍۢ ۖ",
+          "textIndopak": "تَفٰوُتٍ​ ؕ",
+          "translation": "fault",
+          "transliteration": "tafāwutin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 9290,
+            "endTime": 10910
+          }
+        },
+        {
+          "position": 13,
+          "text": "فَٱرْجِعِ",
+          "textIndopak": "فَارۡجِعِ",
+          "translation": "So return",
+          "transliteration": "fa-ir'jiʿi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 10920,
+            "endTime": 11740
+          }
+        },
+        {
+          "position": 14,
+          "text": "ٱلْبَصَرَ",
+          "textIndopak": "الۡبَصَرَۙ",
+          "translation": "the vision",
+          "transliteration": "l-baṣara",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 11750,
+            "endTime": 12570
+          }
+        },
+        {
+          "position": 15,
+          "text": "هَلْ",
+          "textIndopak": "هَلۡ",
+          "translation": "can",
+          "transliteration": "hal",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "15",
+            "startTime": 12580,
+            "endTime": 12910
+          }
+        },
+        {
+          "position": 16,
+          "text": "تَرَىٰ",
+          "textIndopak": "تَرٰى",
+          "translation": "you see",
+          "transliteration": "tarā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "16",
+            "startTime": 12920,
+            "endTime": 13510
+          }
+        },
+        {
+          "position": 17,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "any",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "17",
+            "startTime": 13520,
+            "endTime": 14260
+          }
+        },
+        {
+          "position": 18,
+          "text": "فُطُورٍۢ",
+          "textIndopak": "فُطُوۡرٍ‏",
+          "translation": "flaw",
+          "transliteration": "fuṭūrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "18",
+            "startTime": 14270,
+            "endTime": 15720
+          }
+        },
+        {
+          "position": 19,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "67:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Then cast your eye again and again, and the eye will come back to you abased, in a state of weariness.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067004.mp3",
+        "duration": 10,
+        "segments": [
+          [
+            "1",
+            "130",
+            "880"
+          ],
+          [
+            "2",
+            "890",
+            "1540"
+          ],
+          [
+            "3",
+            "1550",
+            "2300"
+          ],
+          [
+            "4",
+            "2310",
+            "3570"
+          ],
+          [
+            "5",
+            "3580",
+            "4830"
+          ],
+          [
+            "6",
+            "4840",
+            "5650"
+          ],
+          [
+            "7",
+            "5660",
+            "6500"
+          ],
+          [
+            "8",
+            "6510",
+            "7420"
+          ],
+          [
+            "9",
+            "7430",
+            "8710"
+          ],
+          [
+            "10",
+            "8720",
+            "9990"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ثُمَّ",
+          "textIndopak": "ثُمَّ",
+          "translation": "Then",
+          "transliteration": "thumma",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 130,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱرْجِعِ",
+          "textIndopak": "ارۡجِعِ",
+          "translation": "return",
+          "transliteration": "ir'jiʿi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 890,
+            "endTime": 1540
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْبَصَرَ",
+          "textIndopak": "الۡبَصَرَ",
+          "translation": "the vision",
+          "transliteration": "l-baṣara",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1550,
+            "endTime": 2300
+          }
+        },
+        {
+          "position": 4,
+          "text": "كَرَّتَيْنِ",
+          "textIndopak": "كَرَّتَيۡنِ",
+          "translation": "twice (again)",
+          "transliteration": "karratayni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2310,
+            "endTime": 3570
+          }
+        },
+        {
+          "position": 5,
+          "text": "يَنقَلِبْ",
+          "textIndopak": "يَنۡقَلِبۡ",
+          "translation": "Will return",
+          "transliteration": "yanqalib",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3580,
+            "endTime": 4830
+          }
+        },
+        {
+          "position": 6,
+          "text": "إِلَيْكَ",
+          "textIndopak": "اِلَيۡكَ",
+          "translation": "to you",
+          "transliteration": "ilayka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4840,
+            "endTime": 5650
+          }
+        },
+        {
+          "position": 7,
+          "text": "ٱلْبَصَرُ",
+          "textIndopak": "الۡبَصَرُ",
+          "translation": "the vision",
+          "transliteration": "l-baṣaru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5660,
+            "endTime": 6500
+          }
+        },
+        {
+          "position": 8,
+          "text": "خَاسِئًۭا",
+          "textIndopak": "خَاسِئًا",
+          "translation": "humbled",
+          "transliteration": "khāsi-an",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6510,
+            "endTime": 7420
+          }
+        },
+        {
+          "position": 9,
+          "text": "وَهُوَ",
+          "textIndopak": "وَّهُوَ",
+          "translation": "while it",
+          "transliteration": "wahuwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7430,
+            "endTime": 8710
+          }
+        },
+        {
+          "position": 10,
+          "text": "حَسِيرٌۭ",
+          "textIndopak": "حَسِيۡرٌ‏",
+          "translation": "(is) fatigued",
+          "transliteration": "ḥasīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8720,
+            "endTime": 9990
+          }
+        },
+        {
+          "position": 11,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "67:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "And We have decorated the nearest sky with lamps, and have made them devices to stone the devils, and We have prepared for them the punishment of Hell.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067005.mp3",
+        "duration": 16,
+        "segments": [
+          [
+            "1",
+            "300",
+            "960"
+          ],
+          [
+            "2",
+            "970",
+            "2210"
+          ],
+          [
+            "3",
+            "2220",
+            "4310"
+          ],
+          [
+            "4",
+            "4320",
+            "5340"
+          ],
+          [
+            "5",
+            "5350",
+            "6750"
+          ],
+          [
+            "6",
+            "6760",
+            "8310"
+          ],
+          [
+            "7",
+            "8320",
+            "9210"
+          ],
+          [
+            "8",
+            "9220",
+            "12200"
+          ],
+          [
+            "9",
+            "12210",
+            "13540"
+          ],
+          [
+            "10",
+            "13550",
+            "14130"
+          ],
+          [
+            "11",
+            "14140",
+            "14930"
+          ],
+          [
+            "12",
+            "14940",
+            "16510"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَقَدْ",
+          "textIndopak": "وَلَـقَدۡ",
+          "translation": "And certainly",
+          "transliteration": "walaqad",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 300,
+            "endTime": 960
+          }
+        },
+        {
+          "position": 2,
+          "text": "زَيَّنَّا",
+          "textIndopak": "زَيَّـنَّا",
+          "translation": "We have beautified",
+          "transliteration": "zayyannā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 970,
+            "endTime": 2210
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلسَّمَآءَ",
+          "textIndopak": "السَّمَآءَ",
+          "translation": "the heaven",
+          "transliteration": "l-samāa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2220,
+            "endTime": 4310
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلدُّنْيَا",
+          "textIndopak": "الدُّنۡيَا",
+          "translation": "nearest",
+          "transliteration": "l-dun'yā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 4320,
+            "endTime": 5340
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِمَصَـٰبِيحَ",
+          "textIndopak": "بِمَصَابِيۡحَ",
+          "translation": "with lamps",
+          "transliteration": "bimaṣābīḥa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 5350,
+            "endTime": 6750
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَجَعَلْنَـٰهَا",
+          "textIndopak": "وَجَعَلۡنٰهَا",
+          "translation": "and We have made them",
+          "transliteration": "wajaʿalnāhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 6760,
+            "endTime": 8310
+          }
+        },
+        {
+          "position": 7,
+          "text": "رُجُومًۭا",
+          "textIndopak": "رُجُوۡمًا",
+          "translation": "(as) missiles",
+          "transliteration": "rujūman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 8320,
+            "endTime": 9210
+          }
+        },
+        {
+          "position": 8,
+          "text": "لِّلشَّيَـٰطِينِ ۖ",
+          "textIndopak": "لِّلشَّيٰطِيۡنِ​",
+          "translation": "for the devils",
+          "transliteration": "lilshayāṭīni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 9220,
+            "endTime": 12200
+          }
+        },
+        {
+          "position": 9,
+          "text": "وَأَعْتَدْنَا",
+          "textIndopak": "وَاَعۡتَدۡنَا",
+          "translation": "and We have prepared",
+          "transliteration": "wa-aʿtadnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 12210,
+            "endTime": 13540
+          }
+        },
+        {
+          "position": 10,
+          "text": "لَهُمْ",
+          "textIndopak": "لَهُمۡ",
+          "translation": "for them",
+          "transliteration": "lahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 13550,
+            "endTime": 14130
+          }
+        },
+        {
+          "position": 11,
+          "text": "عَذَابَ",
+          "textIndopak": "عَذَابَ",
+          "translation": "punishment",
+          "transliteration": "ʿadhāba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 14140,
+            "endTime": 14930
+          }
+        },
+        {
+          "position": 12,
+          "text": "ٱلسَّعِيرِ",
+          "textIndopak": "السَّعِيۡرِ‏",
+          "translation": "(of) the Blaze",
+          "transliteration": "l-saʿīri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 14940,
+            "endTime": 16510
+          }
+        },
+        {
+          "position": 13,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 6,
+      "verseKey": "67:6",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "And for those who disbelieved in their Lord, there is the punishment of Jahannam , and it is an evil end.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067006.mp3",
+        "duration": 8,
+        "segments": [
+          [
+            "1",
+            "150",
+            "1310"
+          ],
+          [
+            "2",
+            "1320",
+            "2120"
+          ],
+          [
+            "3",
+            "2130",
+            "3220"
+          ],
+          [
+            "4",
+            "3230",
+            "4100"
+          ],
+          [
+            "5",
+            "4110",
+            "5960"
+          ],
+          [
+            "6",
+            "5970",
+            "6780"
+          ],
+          [
+            "7",
+            "6790",
+            "8190"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلِلَّذِينَ",
+          "textIndopak": "وَلِلَّذِيۡنَ",
+          "translation": "And for those who",
+          "transliteration": "walilladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 1310
+          }
+        },
+        {
+          "position": 2,
+          "text": "كَفَرُوا۟",
+          "textIndopak": "كَفَرُوۡا",
+          "translation": "disbelieved",
+          "transliteration": "kafarū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1320,
+            "endTime": 2120
+          }
+        },
+        {
+          "position": 3,
+          "text": "بِرَبِّهِمْ",
+          "textIndopak": "بِرَبِّهِمۡ",
+          "translation": "in their Lord",
+          "transliteration": "birabbihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2130,
+            "endTime": 3220
+          }
+        },
+        {
+          "position": 4,
+          "text": "عَذَابُ",
+          "textIndopak": "عَذَابُ",
+          "translation": "(is the) punishment",
+          "transliteration": "ʿadhābu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3230,
+            "endTime": 4100
+          }
+        },
+        {
+          "position": 5,
+          "text": "جَهَنَّمَ ۖ",
+          "textIndopak": "جَهَنَّمَ​ؕ",
+          "translation": "(of) Hell",
+          "transliteration": "jahannama",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4110,
+            "endTime": 5960
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَبِئْسَ",
+          "textIndopak": "وَبِئۡسَ",
+          "translation": "and wretched is",
+          "transliteration": "wabi'sa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5970,
+            "endTime": 6780
+          }
+        },
+        {
+          "position": 7,
+          "text": "ٱلْمَصِيرُ",
+          "textIndopak": "الۡمَصِيۡرُ‏ ﻿﻿",
+          "translation": "the destination",
+          "transliteration": "l-maṣīru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 6790,
+            "endTime": 8190
+          }
+        },
+        {
+          "position": 8,
+          "text": "٦",
+          "textIndopak": "٦",
+          "translation": "(6)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 7,
+      "verseKey": "67:7",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "When they will be thrown in it, they will hear a terrible sound from it, and it will be boiling,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067007.mp3",
+        "duration": 8,
+        "segments": [
+          [
+            "1",
+            "270",
+            "840"
+          ],
+          [
+            "2",
+            "850",
+            "1610"
+          ],
+          [
+            "3",
+            "1620",
+            "2410"
+          ],
+          [
+            "4",
+            "2420",
+            "3310"
+          ],
+          [
+            "5",
+            "3320",
+            "3900"
+          ],
+          [
+            "6",
+            "3910",
+            "4820"
+          ],
+          [
+            "7",
+            "4830",
+            "6520"
+          ],
+          [
+            "8",
+            "6530",
+            "7910"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِذَآ",
+          "textIndopak": "اِذَاۤ",
+          "translation": "When",
+          "transliteration": "idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 270,
+            "endTime": 840
+          }
+        },
+        {
+          "position": 2,
+          "text": "أُلْقُوا۟",
+          "textIndopak": "اُلۡقُوۡا",
+          "translation": "they are thrown",
+          "transliteration": "ul'qū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 850,
+            "endTime": 1610
+          }
+        },
+        {
+          "position": 3,
+          "text": "فِيهَا",
+          "textIndopak": "فِيۡهَا",
+          "translation": "therein",
+          "transliteration": "fīhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1620,
+            "endTime": 2410
+          }
+        },
+        {
+          "position": 4,
+          "text": "سَمِعُوا۟",
+          "textIndopak": "سَمِعُوۡا",
+          "translation": "they will hear",
+          "transliteration": "samiʿū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2420,
+            "endTime": 3310
+          }
+        },
+        {
+          "position": 5,
+          "text": "لَهَا",
+          "textIndopak": "لَهَا",
+          "translation": "from it",
+          "transliteration": "lahā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3320,
+            "endTime": 3900
+          }
+        },
+        {
+          "position": 6,
+          "text": "شَهِيقًۭا",
+          "textIndopak": "شَهِيۡقًا",
+          "translation": "an inhaling",
+          "transliteration": "shahīqan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3910,
+            "endTime": 4820
+          }
+        },
+        {
+          "position": 7,
+          "text": "وَهِىَ",
+          "textIndopak": "وَّهِىَ",
+          "translation": "while it",
+          "transliteration": "wahiya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4830,
+            "endTime": 6520
+          }
+        },
+        {
+          "position": 8,
+          "text": "تَفُورُ",
+          "textIndopak": "تَفُوۡرُۙ‏",
+          "translation": "boils up",
+          "transliteration": "tafūru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6530,
+            "endTime": 7910
+          }
+        },
+        {
+          "position": 9,
+          "text": "٧",
+          "textIndopak": "٧",
+          "translation": "(7)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 8,
+      "verseKey": "67:8",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "seeming as if it will burst out of fury. Whenever a group is thrown into it, its keepers will say to them, “Had no warner come to you?”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067008.mp3",
+        "duration": 14,
+        "segments": [
+          [
+            "1",
+            "60",
+            "900"
+          ],
+          [
+            "2",
+            "910",
+            "2010"
+          ],
+          [
+            "3",
+            "2020",
+            "2380"
+          ],
+          [
+            "4",
+            "2390",
+            "4700"
+          ],
+          [
+            "5",
+            "4710",
+            "5820"
+          ],
+          [
+            "6",
+            "5830",
+            "6570"
+          ],
+          [
+            "7",
+            "6580",
+            "7380"
+          ],
+          [
+            "8",
+            "7390",
+            "8510"
+          ],
+          [
+            "9",
+            "8520",
+            "9570"
+          ],
+          [
+            "10",
+            "9580",
+            "10930"
+          ],
+          [
+            "11",
+            "10940",
+            "11590"
+          ],
+          [
+            "12",
+            "11600",
+            "12660"
+          ],
+          [
+            "13",
+            "12670",
+            "13870"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "تَكَادُ",
+          "textIndopak": "تَكَادُ",
+          "translation": "It almost",
+          "transliteration": "takādu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 60,
+            "endTime": 900
+          }
+        },
+        {
+          "position": 2,
+          "text": "تَمَيَّزُ",
+          "textIndopak": "تَمَيَّزُ",
+          "translation": "bursts",
+          "transliteration": "tamayyazu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 910,
+            "endTime": 2010
+          }
+        },
+        {
+          "position": 3,
+          "text": "مِنَ",
+          "textIndopak": "مِنَ",
+          "translation": "from",
+          "transliteration": "mina",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2020,
+            "endTime": 2380
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْغَيْظِ ۖ",
+          "textIndopak": "الۡغَيۡظِ​ؕ",
+          "translation": "rage",
+          "transliteration": "l-ghayẓi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2390,
+            "endTime": 4700
+          }
+        },
+        {
+          "position": 5,
+          "text": "كُلَّمَآ",
+          "textIndopak": "كُلَّمَاۤ",
+          "translation": "Every time",
+          "transliteration": "kullamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4710,
+            "endTime": 5820
+          }
+        },
+        {
+          "position": 6,
+          "text": "أُلْقِىَ",
+          "textIndopak": "اُلۡقِىَ",
+          "translation": "is thrown",
+          "transliteration": "ul'qiya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5830,
+            "endTime": 6570
+          }
+        },
+        {
+          "position": 7,
+          "text": "فِيهَا",
+          "textIndopak": "فِيۡهَا",
+          "translation": "therein",
+          "transliteration": "fīhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 6580,
+            "endTime": 7380
+          }
+        },
+        {
+          "position": 8,
+          "text": "فَوْجٌۭ",
+          "textIndopak": "فَوۡجٌ",
+          "translation": "a group",
+          "transliteration": "fawjun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 7390,
+            "endTime": 8510
+          }
+        },
+        {
+          "position": 9,
+          "text": "سَأَلَهُمْ",
+          "textIndopak": "سَاَلَهُمۡ",
+          "translation": "(will) ask them",
+          "transliteration": "sa-alahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 8520,
+            "endTime": 9570
+          }
+        },
+        {
+          "position": 10,
+          "text": "خَزَنَتُهَآ",
+          "textIndopak": "خَزَنَـتُهَاۤ",
+          "translation": "its keepers",
+          "transliteration": "khazanatuhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 9580,
+            "endTime": 10930
+          }
+        },
+        {
+          "position": 11,
+          "text": "أَلَمْ",
+          "textIndopak": "اَلَمۡ",
+          "translation": "Did not",
+          "transliteration": "alam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 10940,
+            "endTime": 11590
+          }
+        },
+        {
+          "position": 12,
+          "text": "يَأْتِكُمْ",
+          "textIndopak": "يَاۡتِكُمۡ",
+          "translation": "come to you",
+          "transliteration": "yatikum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 11600,
+            "endTime": 12660
+          }
+        },
+        {
+          "position": 13,
+          "text": "نَذِيرٌۭ",
+          "textIndopak": "نَذِيۡرٌ‏",
+          "translation": "a warner",
+          "transliteration": "nadhīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 12670,
+            "endTime": 13870
+          }
+        },
+        {
+          "position": 14,
+          "text": "٨",
+          "textIndopak": "٨",
+          "translation": "(8)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 9,
+      "verseKey": "67:9",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "They will say, “Yes, a warner had come to us, but We had rejected, and said, ‘Allah has not revealed anything. You are only in great error.’”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067009.mp3",
+        "duration": 19,
+        "segments": [
+          [
+            "1",
+            "200",
+            "970"
+          ],
+          [
+            "2",
+            "980",
+            "1520"
+          ],
+          [
+            "3",
+            "1530",
+            "1970"
+          ],
+          [
+            "4",
+            "1980",
+            "3890"
+          ],
+          [
+            "5",
+            "3900",
+            "5090"
+          ],
+          [
+            "6",
+            "5100",
+            "6460"
+          ],
+          [
+            "7",
+            "6470",
+            "7490"
+          ],
+          [
+            "8",
+            "7500",
+            "7870"
+          ],
+          [
+            "9",
+            "7880",
+            "8560"
+          ],
+          [
+            "10",
+            "8570",
+            "9330"
+          ],
+          [
+            "11",
+            "9340",
+            "9950"
+          ],
+          [
+            "12",
+            "9960",
+            "11290"
+          ],
+          [
+            "13",
+            "11300",
+            "11710"
+          ],
+          [
+            "14",
+            "11720",
+            "12960"
+          ],
+          [
+            "15",
+            "12970",
+            "13750"
+          ],
+          [
+            "16",
+            "13760",
+            "14260"
+          ],
+          [
+            "17",
+            "14270",
+            "16640"
+          ],
+          [
+            "18",
+            "16650",
+            "18690"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قَالُوا۟",
+          "textIndopak": "قَالُوۡا",
+          "translation": "They will say",
+          "transliteration": "qālū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 200,
+            "endTime": 970
+          }
+        },
+        {
+          "position": 2,
+          "text": "بَلَىٰ",
+          "textIndopak": "بَلٰى",
+          "translation": "Yes",
+          "transliteration": "balā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 980,
+            "endTime": 1520
+          }
+        },
+        {
+          "position": 3,
+          "text": "قَدْ",
+          "textIndopak": "قَدۡ",
+          "translation": "indeed",
+          "transliteration": "qad",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1530,
+            "endTime": 1970
+          }
+        },
+        {
+          "position": 4,
+          "text": "جَآءَنَا",
+          "textIndopak": "جَآءَنَا",
+          "translation": "came to us",
+          "transliteration": "jāanā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1980,
+            "endTime": 3890
+          }
+        },
+        {
+          "position": 5,
+          "text": "نَذِيرٌۭ",
+          "textIndopak": "نَذِيۡرٌ  ۙ",
+          "translation": "a warner",
+          "transliteration": "nadhīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3900,
+            "endTime": 5090
+          }
+        },
+        {
+          "position": 6,
+          "text": "فَكَذَّبْنَا",
+          "textIndopak": "فَكَذَّبۡنَا",
+          "translation": "but we denied",
+          "transliteration": "fakadhabnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5100,
+            "endTime": 6460
+          }
+        },
+        {
+          "position": 7,
+          "text": "وَقُلْنَا",
+          "textIndopak": "وَقُلۡنَا",
+          "translation": "and we said",
+          "transliteration": "waqul'nā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 6470,
+            "endTime": 7490
+          }
+        },
+        {
+          "position": 8,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "Not",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 7500,
+            "endTime": 7870
+          }
+        },
+        {
+          "position": 9,
+          "text": "نَزَّلَ",
+          "textIndopak": "نَزَّلَ",
+          "translation": "has sent down",
+          "transliteration": "nazzala",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7880,
+            "endTime": 8560
+          }
+        },
+        {
+          "position": 10,
+          "text": "ٱللَّهُ",
+          "textIndopak": "اللّٰهُ",
+          "translation": "Allah",
+          "transliteration": "l-lahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8570,
+            "endTime": 9330
+          }
+        },
+        {
+          "position": 11,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "any",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 9340,
+            "endTime": 9950
+          }
+        },
+        {
+          "position": 12,
+          "text": "شَىْءٍ",
+          "textIndopak": "شَىۡءٍ ۖۚ",
+          "translation": "thing",
+          "transliteration": "shayin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 9960,
+            "endTime": 11290
+          }
+        },
+        {
+          "position": 13,
+          "text": "إِنْ",
+          "textIndopak": "اِنۡ",
+          "translation": "Not",
+          "transliteration": "in",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 11300,
+            "endTime": 11710
+          }
+        },
+        {
+          "position": 14,
+          "text": "أَنتُمْ",
+          "textIndopak": "اَنۡتُمۡ",
+          "translation": "you (are)",
+          "transliteration": "antum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 11720,
+            "endTime": 12960
+          }
+        },
+        {
+          "position": 15,
+          "text": "إِلَّا",
+          "textIndopak": "اِلَّا",
+          "translation": "but",
+          "transliteration": "illā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "15",
+            "startTime": 12970,
+            "endTime": 13750
+          }
+        },
+        {
+          "position": 16,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "16",
+            "startTime": 13760,
+            "endTime": 14260
+          }
+        },
+        {
+          "position": 17,
+          "text": "ضَلَـٰلٍۢ",
+          "textIndopak": "ضَلٰلٍ",
+          "translation": "error",
+          "transliteration": "ḍalālin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "17",
+            "startTime": 14270,
+            "endTime": 16640
+          }
+        },
+        {
+          "position": 18,
+          "text": "كَبِيرٍۢ",
+          "textIndopak": "كَبِيۡرٍ‏",
+          "translation": "great",
+          "transliteration": "kabīrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "18",
+            "startTime": 16650,
+            "endTime": 18690
+          }
+        },
+        {
+          "position": 19,
+          "text": "٩",
+          "textIndopak": "٩",
+          "translation": "(9)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 10,
+      "verseKey": "67:10",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "And they will say, “Had we been listening or understanding, we would not have been among the people of the Hell.”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067010.mp3",
+        "duration": 9,
+        "segments": [
+          [
+            "1",
+            "900",
+            "1780"
+          ],
+          [
+            "2",
+            "1790",
+            "2070"
+          ],
+          [
+            "3",
+            "2080",
+            "3230"
+          ],
+          [
+            "4",
+            "3240",
+            "4010"
+          ],
+          [
+            "5",
+            "4020",
+            "4340"
+          ],
+          [
+            "6",
+            "4350",
+            "5100"
+          ],
+          [
+            "7",
+            "5110",
+            "5410"
+          ],
+          [
+            "8",
+            "5420",
+            "6530"
+          ],
+          [
+            "9",
+            "6540",
+            "7030"
+          ],
+          [
+            "10",
+            "7040",
+            "7980"
+          ],
+          [
+            "11",
+            "7990",
+            "9300"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَقَالُوا۟",
+          "textIndopak": "وَقَالُوۡا",
+          "translation": "And they will say",
+          "transliteration": "waqālū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 900,
+            "endTime": 1780
+          }
+        },
+        {
+          "position": 2,
+          "text": "لَوْ",
+          "textIndopak": "لَوۡ",
+          "translation": "If",
+          "transliteration": "law",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1790,
+            "endTime": 2070
+          }
+        },
+        {
+          "position": 3,
+          "text": "كُنَّا",
+          "textIndopak": "كُنَّا",
+          "translation": "we had",
+          "transliteration": "kunnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2080,
+            "endTime": 3230
+          }
+        },
+        {
+          "position": 4,
+          "text": "نَسْمَعُ",
+          "textIndopak": "نَسۡمَعُ",
+          "translation": "listened",
+          "transliteration": "nasmaʿu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3240,
+            "endTime": 4010
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَوْ",
+          "textIndopak": "اَوۡ",
+          "translation": "or",
+          "transliteration": "aw",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4020,
+            "endTime": 4340
+          }
+        },
+        {
+          "position": 6,
+          "text": "نَعْقِلُ",
+          "textIndopak": "نَعۡقِلُ",
+          "translation": "reasoned",
+          "transliteration": "naʿqilu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4350,
+            "endTime": 5100
+          }
+        },
+        {
+          "position": 7,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "not",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5110,
+            "endTime": 5410
+          }
+        },
+        {
+          "position": 8,
+          "text": "كُنَّا",
+          "textIndopak": "كُنَّا",
+          "translation": "we (would) have been",
+          "transliteration": "kunnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5420,
+            "endTime": 6530
+          }
+        },
+        {
+          "position": 9,
+          "text": "فِىٓ",
+          "textIndopak": "فِىۡۤ",
+          "translation": "among",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6540,
+            "endTime": 7030
+          }
+        },
+        {
+          "position": 10,
+          "text": "أَصْحَـٰبِ",
+          "textIndopak": "اَصۡحٰبِ",
+          "translation": "(the) companions",
+          "transliteration": "aṣḥābi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 7040,
+            "endTime": 7980
+          }
+        },
+        {
+          "position": 11,
+          "text": "ٱلسَّعِيرِ",
+          "textIndopak": "السَّعِيۡرِ‏ ﻿﻿",
+          "translation": "(of) the Blaze",
+          "transliteration": "l-saʿīri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 7990,
+            "endTime": 9300
+          }
+        },
+        {
+          "position": 12,
+          "text": "١٠",
+          "textIndopak": "١٠",
+          "translation": "(10)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 11,
+      "verseKey": "67:11",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Thus they will confess their sin. So, away with the people of the Hell!",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067011.mp3",
+        "duration": 7,
+        "segments": [
+          [
+            "1",
+            "110",
+            "1260"
+          ],
+          [
+            "2",
+            "1270",
+            "3050"
+          ],
+          [
+            "3",
+            "3060",
+            "3930"
+          ],
+          [
+            "4",
+            "3940",
+            "5400"
+          ],
+          [
+            "5",
+            "5410",
+            "6780"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَٱعْتَرَفُوا۟",
+          "textIndopak": "فَاعۡتَرَفُوۡا",
+          "translation": "Then they (will) confess",
+          "transliteration": "fa-iʿ'tarafū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 1260
+          }
+        },
+        {
+          "position": 2,
+          "text": "بِذَنۢبِهِمْ",
+          "textIndopak": "بِذَنۡۢبِهِمۡ​ۚ",
+          "translation": "their sins",
+          "transliteration": "bidhanbihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1270,
+            "endTime": 3050
+          }
+        },
+        {
+          "position": 3,
+          "text": "فَسُحْقًۭا",
+          "textIndopak": "فَسُحۡقًا",
+          "translation": "so away with",
+          "transliteration": "fasuḥ'qan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3060,
+            "endTime": 3930
+          }
+        },
+        {
+          "position": 4,
+          "text": "لِّأَصْحَـٰبِ",
+          "textIndopak": "لِّاَصۡحٰبِ",
+          "translation": "(the) companions",
+          "transliteration": "li-aṣḥābi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3940,
+            "endTime": 5400
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلسَّعِيرِ",
+          "textIndopak": "السَّعِيۡرِ‏",
+          "translation": "(of) the Blaze",
+          "transliteration": "l-saʿīri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 5410,
+            "endTime": 6780
+          }
+        },
+        {
+          "position": 6,
+          "text": "١١",
+          "textIndopak": "١١",
+          "translation": "(11)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 12,
+      "verseKey": "67:12",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 562,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Surely, for those who have awe of their Lord without seeing (Him), there is forgiveness and a big reward.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067012.mp3",
+        "duration": 10,
+        "segments": [
+          [
+            "1",
+            "290",
+            "1100"
+          ],
+          [
+            "2",
+            "1110",
+            "1980"
+          ],
+          [
+            "3",
+            "1990",
+            "2940"
+          ],
+          [
+            "4",
+            "2950",
+            "4380"
+          ],
+          [
+            "5",
+            "4390",
+            "5290"
+          ],
+          [
+            "6",
+            "5300",
+            "6570"
+          ],
+          [
+            "7",
+            "6580",
+            "7950"
+          ],
+          [
+            "8",
+            "7960",
+            "9300"
+          ],
+          [
+            "9",
+            "9310",
+            "10590"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّ",
+          "textIndopak": "اِنَّ",
+          "translation": "Indeed",
+          "transliteration": "inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 290,
+            "endTime": 1100
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "those who",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1110,
+            "endTime": 1980
+          }
+        },
+        {
+          "position": 3,
+          "text": "يَخْشَوْنَ",
+          "textIndopak": "يَخۡشَوۡنَ",
+          "translation": "fear",
+          "transliteration": "yakhshawna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1990,
+            "endTime": 2940
+          }
+        },
+        {
+          "position": 4,
+          "text": "رَبَّهُم",
+          "textIndopak": "رَبَّهُمۡ",
+          "translation": "their Lord",
+          "transliteration": "rabbahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2950,
+            "endTime": 4380
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِٱلْغَيْبِ",
+          "textIndopak": "بِالۡغَيۡبِ",
+          "translation": "unseen",
+          "transliteration": "bil-ghaybi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4390,
+            "endTime": 5290
+          }
+        },
+        {
+          "position": 6,
+          "text": "لَهُم",
+          "textIndopak": "لَهُمۡ",
+          "translation": "for them",
+          "transliteration": "lahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5300,
+            "endTime": 6570
+          }
+        },
+        {
+          "position": 7,
+          "text": "مَّغْفِرَةٌۭ",
+          "textIndopak": "مَّغۡفِرَةٌ",
+          "translation": "(is) forgiveness",
+          "transliteration": "maghfiratun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 6580,
+            "endTime": 7950
+          }
+        },
+        {
+          "position": 8,
+          "text": "وَأَجْرٌۭ",
+          "textIndopak": "وَّاَجۡرٌ",
+          "translation": "and a reward",
+          "transliteration": "wa-ajrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 7960,
+            "endTime": 9300
+          }
+        },
+        {
+          "position": 9,
+          "text": "كَبِيرٌۭ",
+          "textIndopak": "كَبِيۡرٌ‏",
+          "translation": "great",
+          "transliteration": "kabīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 9310,
+            "endTime": 10590
+          }
+        },
+        {
+          "position": 10,
+          "text": "١٢",
+          "textIndopak": "١٢",
+          "translation": "(12)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 13,
+      "verseKey": "67:13",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Whether you keep your talk secret or make it aloud, He knows well what lies in the hearts.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067013.mp3",
+        "duration": 9,
+        "segments": [
+          [
+            "1",
+            "180",
+            "1260"
+          ],
+          [
+            "2",
+            "1270",
+            "2280"
+          ],
+          [
+            "3",
+            "2290",
+            "2580"
+          ],
+          [
+            "4",
+            "2590",
+            "3480"
+          ],
+          [
+            "5",
+            "3490",
+            "4100"
+          ],
+          [
+            "6",
+            "4110",
+            "5190"
+          ],
+          [
+            "7",
+            "5200",
+            "6470"
+          ],
+          [
+            "8",
+            "6480",
+            "7310"
+          ],
+          [
+            "9",
+            "7320",
+            "8780"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَأَسِرُّوا۟",
+          "textIndopak": "وَاَسِرُّوۡا",
+          "translation": "And conceal",
+          "transliteration": "wa-asirrū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 180,
+            "endTime": 1260
+          }
+        },
+        {
+          "position": 2,
+          "text": "قَوْلَكُمْ",
+          "textIndopak": "قَوۡلَـكُمۡ",
+          "translation": "your speech",
+          "transliteration": "qawlakum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1270,
+            "endTime": 2280
+          }
+        },
+        {
+          "position": 3,
+          "text": "أَوِ",
+          "textIndopak": "اَوِ",
+          "translation": "or",
+          "transliteration": "awi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2290,
+            "endTime": 2580
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱجْهَرُوا۟",
+          "textIndopak": "اجۡهَرُوۡا",
+          "translation": "proclaim",
+          "transliteration": "ij'harū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2590,
+            "endTime": 3480
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِهِۦٓ ۖ",
+          "textIndopak": "بِهٖؕ",
+          "translation": "it",
+          "transliteration": "bihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3490,
+            "endTime": 4100
+          }
+        },
+        {
+          "position": 6,
+          "text": "إِنَّهُۥ",
+          "textIndopak": "اِنَّهٗ",
+          "translation": "Indeed, He",
+          "transliteration": "innahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4110,
+            "endTime": 5190
+          }
+        },
+        {
+          "position": 7,
+          "text": "عَلِيمٌۢ",
+          "textIndopak": "عَلِيۡمٌۢ",
+          "translation": "(is the) All-Knower",
+          "transliteration": "ʿalīmun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5200,
+            "endTime": 6470
+          }
+        },
+        {
+          "position": 8,
+          "text": "بِذَاتِ",
+          "textIndopak": "بِذَاتِ",
+          "translation": "of what (is in)",
+          "transliteration": "bidhāti",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6480,
+            "endTime": 7310
+          }
+        },
+        {
+          "position": 9,
+          "text": "ٱلصُّدُورِ",
+          "textIndopak": "الصُّدُوۡرِ‏ ﻿﻿",
+          "translation": "the breasts",
+          "transliteration": "l-ṣudūri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7320,
+            "endTime": 8780
+          }
+        },
+        {
+          "position": 10,
+          "text": "١٣",
+          "textIndopak": "١٣",
+          "translation": "(13)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 14,
+      "verseKey": "67:14",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Is it (imaginable) that He who has created (them) will not have (such a) knowledge, while He is the Knower of the finest things, the All-Aware?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067014.mp3",
+        "duration": 7,
+        "segments": [
+          [
+            "1",
+            "120",
+            "1030"
+          ],
+          [
+            "2",
+            "1040",
+            "1930"
+          ],
+          [
+            "3",
+            "1940",
+            "2520"
+          ],
+          [
+            "4",
+            "2530",
+            "3860"
+          ],
+          [
+            "5",
+            "3870",
+            "4460"
+          ],
+          [
+            "6",
+            "4470",
+            "5500"
+          ],
+          [
+            "7",
+            "5510",
+            "7010"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَلَا",
+          "textIndopak": "اَلَا",
+          "translation": "Does not",
+          "transliteration": "alā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 120,
+            "endTime": 1030
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَعْلَمُ",
+          "textIndopak": "يَعۡلَمُ",
+          "translation": "know",
+          "transliteration": "yaʿlamu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1040,
+            "endTime": 1930
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَنْ",
+          "textIndopak": "مَنۡ",
+          "translation": "(the One) Who",
+          "transliteration": "man",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1940,
+            "endTime": 2520
+          }
+        },
+        {
+          "position": 4,
+          "text": "خَلَقَ",
+          "textIndopak": "خَلَقَؕ",
+          "translation": "created",
+          "transliteration": "khalaqa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2530,
+            "endTime": 3860
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَهُوَ",
+          "textIndopak": "وَهُوَ",
+          "translation": "And He",
+          "transliteration": "wahuwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3870,
+            "endTime": 4460
+          }
+        },
+        {
+          "position": 6,
+          "text": "ٱللَّطِيفُ",
+          "textIndopak": "اللَّطِيۡفُ",
+          "translation": "(is) the Subtle",
+          "transliteration": "l-laṭīfu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4470,
+            "endTime": 5500
+          }
+        },
+        {
+          "position": 7,
+          "text": "ٱلْخَبِيرُ",
+          "textIndopak": "الۡخَبِيۡرُ‏",
+          "translation": "the All-Aware",
+          "transliteration": "l-khabīru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5510,
+            "endTime": 7010
+          }
+        },
+        {
+          "position": 8,
+          "text": "١٤",
+          "textIndopak": "١٤",
+          "translation": "(14)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 15,
+      "verseKey": "67:15",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "He is the One who has made the earth subjugated for you, so walk on its shoulders, and eat out of His provision, and to Him is the Resurrection.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067015.mp3",
+        "duration": 14,
+        "segments": [
+          [
+            "1",
+            "40",
+            "300"
+          ],
+          [
+            "2",
+            "310",
+            "1010"
+          ],
+          [
+            "3",
+            "1020",
+            "1660"
+          ],
+          [
+            "4",
+            "1670",
+            "2210"
+          ],
+          [
+            "5",
+            "2220",
+            "2970"
+          ],
+          [
+            "6",
+            "2980",
+            "4220"
+          ],
+          [
+            "7",
+            "4230",
+            "5060"
+          ],
+          [
+            "8",
+            "5070",
+            "5510"
+          ],
+          [
+            "9",
+            "5520",
+            "6920"
+          ],
+          [
+            "10",
+            "6930",
+            "7710"
+          ],
+          [
+            "11",
+            "7720",
+            "7880"
+          ],
+          [
+            "12",
+            "7890",
+            "9120"
+          ],
+          [
+            "13",
+            "9130",
+            "10260"
+          ],
+          [
+            "14",
+            "10270",
+            "14250"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "He",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 300
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "(is) the One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 310,
+            "endTime": 1010
+          }
+        },
+        {
+          "position": 3,
+          "text": "جَعَلَ",
+          "textIndopak": "جَعَلَ",
+          "translation": "made",
+          "transliteration": "jaʿala",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1020,
+            "endTime": 1660
+          }
+        },
+        {
+          "position": 4,
+          "text": "لَكُمُ",
+          "textIndopak": "لَـكُمُ",
+          "translation": "for you",
+          "transliteration": "lakumu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1670,
+            "endTime": 2210
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلْأَرْضَ",
+          "textIndopak": "الۡاَرۡضَ",
+          "translation": "the earth",
+          "transliteration": "l-arḍa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2220,
+            "endTime": 2970
+          }
+        },
+        {
+          "position": 6,
+          "text": "ذَلُولًۭا",
+          "textIndopak": "ذَلُوۡلًا",
+          "translation": "subservient",
+          "transliteration": "dhalūlan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 2980,
+            "endTime": 4220
+          }
+        },
+        {
+          "position": 7,
+          "text": "فَٱمْشُوا۟",
+          "textIndopak": "فَامۡشُوۡا",
+          "translation": "so walk",
+          "transliteration": "fa-im'shū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4230,
+            "endTime": 5060
+          }
+        },
+        {
+          "position": 8,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5070,
+            "endTime": 5510
+          }
+        },
+        {
+          "position": 9,
+          "text": "مَنَاكِبِهَا",
+          "textIndopak": "مَنَاكِبِهَا",
+          "translation": "(the) paths thereof",
+          "transliteration": "manākibihā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 5520,
+            "endTime": 6920
+          }
+        },
+        {
+          "position": 10,
+          "text": "وَكُلُوا۟",
+          "textIndopak": "وَكُلُوۡا",
+          "translation": "and eat",
+          "transliteration": "wakulū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 6930,
+            "endTime": 7710
+          }
+        },
+        {
+          "position": 11,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "of",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 7720,
+            "endTime": 7880
+          }
+        },
+        {
+          "position": 12,
+          "text": "رِّزْقِهِۦ ۖ",
+          "textIndopak": "رِّزۡقِهٖ​ؕ",
+          "translation": "His provision",
+          "transliteration": "riz'qihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 7890,
+            "endTime": 9120
+          }
+        },
+        {
+          "position": 13,
+          "text": "وَإِلَيْهِ",
+          "textIndopak": "وَاِلَيۡهِ",
+          "translation": "and to Him",
+          "transliteration": "wa-ilayhi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 9130,
+            "endTime": 10260
+          }
+        },
+        {
+          "position": 14,
+          "text": "ٱلنُّشُورُ",
+          "textIndopak": "النُّشُوۡرُ‏",
+          "translation": "(is) the Resurrection",
+          "transliteration": "l-nushūru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 10270,
+            "endTime": 14250
+          }
+        },
+        {
+          "position": 15,
+          "text": "١٥",
+          "textIndopak": "١٥",
+          "translation": "(15)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 16,
+      "verseKey": "67:16",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Have you become fearless of Him who is in the sky if He makes you sink into the earth, and it starts trembling at once?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067016.mp3",
+        "duration": 10,
+        "segments": [
+          [
+            "1",
+            "40",
+            "2010"
+          ],
+          [
+            "2",
+            "2020",
+            "2560"
+          ],
+          [
+            "3",
+            "2570",
+            "2760"
+          ],
+          [
+            "4",
+            "2770",
+            "4820"
+          ],
+          [
+            "5",
+            "4830",
+            "5480"
+          ],
+          [
+            "6",
+            "5490",
+            "6160"
+          ],
+          [
+            "7",
+            "6170",
+            "6790"
+          ],
+          [
+            "8",
+            "6800",
+            "7560"
+          ],
+          [
+            "9",
+            "7570",
+            "8400"
+          ],
+          [
+            "10",
+            "8410",
+            "8810"
+          ],
+          [
+            "11",
+            "8820",
+            "10190"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ءَأَمِنتُم",
+          "textIndopak": "ءَاَمِنۡتُمۡ",
+          "translation": "Do you feel secure",
+          "transliteration": "a-amintum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 40,
+            "endTime": 2010
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَّن",
+          "textIndopak": "مَّنۡ",
+          "translation": "(from Him) Who",
+          "transliteration": "man",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 2020,
+            "endTime": 2560
+          }
+        },
+        {
+          "position": 3,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "(is) in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2570,
+            "endTime": 2760
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلسَّمَآءِ",
+          "textIndopak": "السَّمَآءِ",
+          "translation": "the heaven",
+          "transliteration": "l-samāi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2770,
+            "endTime": 4820
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَن",
+          "textIndopak": "اَنۡ",
+          "translation": "not",
+          "transliteration": "an",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4830,
+            "endTime": 5480
+          }
+        },
+        {
+          "position": 6,
+          "text": "يَخْسِفَ",
+          "textIndopak": "يَّخۡسِفَ",
+          "translation": "He will cause to swallow",
+          "transliteration": "yakhsifa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5490,
+            "endTime": 6160
+          }
+        },
+        {
+          "position": 7,
+          "text": "بِكُمُ",
+          "textIndopak": "بِكُمُ",
+          "translation": "you",
+          "transliteration": "bikumu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 6170,
+            "endTime": 6790
+          }
+        },
+        {
+          "position": 8,
+          "text": "ٱلْأَرْضَ",
+          "textIndopak": "الۡاَرۡضَ",
+          "translation": "the earth",
+          "transliteration": "l-arḍa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6800,
+            "endTime": 7560
+          }
+        },
+        {
+          "position": 9,
+          "text": "فَإِذَا",
+          "textIndopak": "فَاِذَا",
+          "translation": "when",
+          "transliteration": "fa-idhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7570,
+            "endTime": 8400
+          }
+        },
+        {
+          "position": 10,
+          "text": "هِىَ",
+          "textIndopak": "هِىَ",
+          "translation": "it",
+          "transliteration": "hiya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8410,
+            "endTime": 8810
+          }
+        },
+        {
+          "position": 11,
+          "text": "تَمُورُ",
+          "textIndopak": "تَمُوۡرُۙ‏",
+          "translation": "sways",
+          "transliteration": "tamūru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 8820,
+            "endTime": 10190
+          }
+        },
+        {
+          "position": 12,
+          "text": "١٦",
+          "textIndopak": "١٦",
+          "translation": "(16)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 17,
+      "verseKey": "67:17",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Or, have you become fearless of Him who is in the sky if He looses a violent wind with stones against you? So, you will soon come to know how was My warning!",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067017.mp3",
+        "duration": 12,
+        "segments": [
+          [
+            "1",
+            "220",
+            "560"
+          ],
+          [
+            "2",
+            "570",
+            "2360"
+          ],
+          [
+            "3",
+            "2370",
+            "2980"
+          ],
+          [
+            "4",
+            "2990",
+            "3170"
+          ],
+          [
+            "5",
+            "3180",
+            "4950"
+          ],
+          [
+            "6",
+            "4960",
+            "5510"
+          ],
+          [
+            "7",
+            "5520",
+            "6360"
+          ],
+          [
+            "8",
+            "6370",
+            "7270"
+          ],
+          [
+            "9",
+            "7280",
+            "8630"
+          ],
+          [
+            "10",
+            "8640",
+            "10100"
+          ],
+          [
+            "11",
+            "10110",
+            "10730"
+          ],
+          [
+            "12",
+            "10740",
+            "11730"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَمْ",
+          "textIndopak": "اَمۡ",
+          "translation": "Or",
+          "transliteration": "am",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 220,
+            "endTime": 560
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَمِنتُم",
+          "textIndopak": "اَمِنۡتُمۡ",
+          "translation": "do you feel secure",
+          "transliteration": "amintum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 570,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 3,
+          "text": "مَّن",
+          "textIndopak": "مَّنۡ",
+          "translation": "(from Him) Who",
+          "transliteration": "man",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2370,
+            "endTime": 2980
+          }
+        },
+        {
+          "position": 4,
+          "text": "فِى",
+          "textIndopak": "فِى",
+          "translation": "(is) in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2990,
+            "endTime": 3170
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلسَّمَآءِ",
+          "textIndopak": "السَّمَآءِ",
+          "translation": "the heaven",
+          "transliteration": "l-samāi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3180,
+            "endTime": 4950
+          }
+        },
+        {
+          "position": 6,
+          "text": "أَن",
+          "textIndopak": "اَنۡ",
+          "translation": "that",
+          "transliteration": "an",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4960,
+            "endTime": 5510
+          }
+        },
+        {
+          "position": 7,
+          "text": "يُرْسِلَ",
+          "textIndopak": "يُّرۡسِلَ",
+          "translation": "He will send",
+          "transliteration": "yur'sila",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5520,
+            "endTime": 6360
+          }
+        },
+        {
+          "position": 8,
+          "text": "عَلَيْكُمْ",
+          "textIndopak": "عَلَيۡكُمۡ",
+          "translation": "against you",
+          "transliteration": "ʿalaykum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6370,
+            "endTime": 7270
+          }
+        },
+        {
+          "position": 9,
+          "text": "حَاصِبًۭا ۖ",
+          "textIndopak": "حَاصِبًا​ ؕ",
+          "translation": "a storm of stones",
+          "transliteration": "ḥāṣiban",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7280,
+            "endTime": 8630
+          }
+        },
+        {
+          "position": 10,
+          "text": "فَسَتَعْلَمُونَ",
+          "textIndopak": "فَسَتَعۡلَمُوۡنَ",
+          "translation": "Then you would know",
+          "transliteration": "fasataʿlamūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8640,
+            "endTime": 10100
+          }
+        },
+        {
+          "position": 11,
+          "text": "كَيْفَ",
+          "textIndopak": "كَيۡفَ",
+          "translation": "how",
+          "transliteration": "kayfa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 10110,
+            "endTime": 10730
+          }
+        },
+        {
+          "position": 12,
+          "text": "نَذِيرِ",
+          "textIndopak": "نَذِيۡرِ‏",
+          "translation": "(was) My warning",
+          "transliteration": "nadhīri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 10740,
+            "endTime": 11730
+          }
+        },
+        {
+          "position": 13,
+          "text": "١٧",
+          "textIndopak": "١٧",
+          "translation": "(17)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 18,
+      "verseKey": "67:18",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "And of course, those before them (also) rejected (the truth). So, how was My censure?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067018.mp3",
+        "duration": 7,
+        "segments": [
+          [
+            "1",
+            "70",
+            "880"
+          ],
+          [
+            "2",
+            "890",
+            "1660"
+          ],
+          [
+            "3",
+            "1670",
+            "2560"
+          ],
+          [
+            "4",
+            "2570",
+            "3210"
+          ],
+          [
+            "5",
+            "3220",
+            "4160"
+          ],
+          [
+            "6",
+            "4170",
+            "4970"
+          ],
+          [
+            "7",
+            "4980",
+            "5640"
+          ],
+          [
+            "8",
+            "5650",
+            "6930"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَقَدْ",
+          "textIndopak": "وَلَـقَدۡ",
+          "translation": "And indeed",
+          "transliteration": "walaqad",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 70,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 2,
+          "text": "كَذَّبَ",
+          "textIndopak": "كَذَّبَ",
+          "translation": "denied",
+          "transliteration": "kadhaba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 890,
+            "endTime": 1660
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "those",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1670,
+            "endTime": 2560
+          }
+        },
+        {
+          "position": 4,
+          "text": "مِن",
+          "textIndopak": "مِنۡ",
+          "translation": "from",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2570,
+            "endTime": 3210
+          }
+        },
+        {
+          "position": 5,
+          "text": "قَبْلِهِمْ",
+          "textIndopak": "قَبۡلِهِمۡ",
+          "translation": "before them",
+          "transliteration": "qablihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3220,
+            "endTime": 4160
+          }
+        },
+        {
+          "position": 6,
+          "text": "فَكَيْفَ",
+          "textIndopak": "فَكَيۡفَ",
+          "translation": "and how",
+          "transliteration": "fakayfa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4170,
+            "endTime": 4970
+          }
+        },
+        {
+          "position": 7,
+          "text": "كَانَ",
+          "textIndopak": "كَانَ",
+          "translation": "was",
+          "transliteration": "kāna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4980,
+            "endTime": 5640
+          }
+        },
+        {
+          "position": 8,
+          "text": "نَكِيرِ",
+          "textIndopak": "نَكِيۡرِ‏",
+          "translation": "My rejection",
+          "transliteration": "nakīri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5650,
+            "endTime": 6930
+          }
+        },
+        {
+          "position": 9,
+          "text": "١٨",
+          "textIndopak": "١٨",
+          "translation": "(18)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 19,
+      "verseKey": "67:19",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Have they not looked to the birds above them spreading their wings, and (at times) they fold (them) in? No one holds them up except the RaHmān (the All-Merciful Allah). Surely He is watchful of every thing.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067019.mp3",
+        "duration": 19,
+        "segments": [
+          [
+            "1",
+            "200",
+            "890"
+          ],
+          [
+            "2",
+            "900",
+            "1530"
+          ],
+          [
+            "3",
+            "1540",
+            "1850"
+          ],
+          [
+            "4",
+            "1860",
+            "2630"
+          ],
+          [
+            "5",
+            "2640",
+            "7200"
+          ],
+          [
+            "6",
+            "7210",
+            "8370"
+          ],
+          [
+            "7",
+            "8380",
+            "10410"
+          ],
+          [
+            "8",
+            "10420",
+            "10750"
+          ],
+          [
+            "9",
+            "10760",
+            "12280"
+          ],
+          [
+            "10",
+            "12290",
+            "12870"
+          ],
+          [
+            "11",
+            "12880",
+            "14940"
+          ],
+          [
+            "12",
+            "14950",
+            "15930"
+          ],
+          [
+            "13",
+            "15940",
+            "16690"
+          ],
+          [
+            "14",
+            "16700",
+            "17990"
+          ],
+          [
+            "15",
+            "18000",
+            "19070"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَوَلَمْ",
+          "textIndopak": "اَوَلَمۡ",
+          "translation": "Do not",
+          "transliteration": "awalam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 200,
+            "endTime": 890
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَرَوْا۟",
+          "textIndopak": "يَرَوۡا",
+          "translation": "they see",
+          "transliteration": "yaraw",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 900,
+            "endTime": 1530
+          }
+        },
+        {
+          "position": 3,
+          "text": "إِلَى",
+          "textIndopak": "اِلَى",
+          "translation": "[to]",
+          "transliteration": "ilā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1540,
+            "endTime": 1850
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلطَّيْرِ",
+          "textIndopak": "الطَّيۡرِ",
+          "translation": "the birds",
+          "transliteration": "l-ṭayri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1860,
+            "endTime": 2630
+          }
+        },
+        {
+          "position": 5,
+          "text": "فَوْقَهُمْ",
+          "textIndopak": "فَوۡقَهُمۡ",
+          "translation": "above them",
+          "transliteration": "fawqahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2640,
+            "endTime": 7200
+          }
+        },
+        {
+          "position": 6,
+          "text": "صَـٰٓفَّـٰتٍۢ",
+          "textIndopak": "صٰٓفّٰتٍ",
+          "translation": "spreading (their wings)",
+          "transliteration": "ṣāffātin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 7210,
+            "endTime": 8370
+          }
+        },
+        {
+          "position": 7,
+          "text": "وَيَقْبِضْنَ ۚ",
+          "textIndopak": "وَّيَقۡبِضۡنَؕ ۘ",
+          "translation": "and folding",
+          "transliteration": "wayaqbiḍ'na",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 8380,
+            "endTime": 10410
+          }
+        },
+        {
+          "position": 8,
+          "text": "مَا",
+          "textIndopak": "مَا",
+          "translation": "Not",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 10420,
+            "endTime": 10750
+          }
+        },
+        {
+          "position": 9,
+          "text": "يُمْسِكُهُنَّ",
+          "textIndopak": "يُمۡسِكُهُنَّ",
+          "translation": "holds them",
+          "transliteration": "yum'sikuhunna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 10760,
+            "endTime": 12280
+          }
+        },
+        {
+          "position": 10,
+          "text": "إِلَّا",
+          "textIndopak": "اِلَّا",
+          "translation": "except",
+          "transliteration": "illā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 12290,
+            "endTime": 12870
+          }
+        },
+        {
+          "position": 11,
+          "text": "ٱلرَّحْمَـٰنُ ۚ",
+          "textIndopak": "الرَّحۡمٰنُ​ؕ",
+          "translation": "the Most Gracious",
+          "transliteration": "l-raḥmānu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 12880,
+            "endTime": 14940
+          }
+        },
+        {
+          "position": 12,
+          "text": "إِنَّهُۥ",
+          "textIndopak": "اِنَّهٗ",
+          "translation": "Indeed, He",
+          "transliteration": "innahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 14950,
+            "endTime": 15930
+          }
+        },
+        {
+          "position": 13,
+          "text": "بِكُلِّ",
+          "textIndopak": "بِكُلِّ",
+          "translation": "(is) of every",
+          "transliteration": "bikulli",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 15940,
+            "endTime": 16690
+          }
+        },
+        {
+          "position": 14,
+          "text": "شَىْءٍۭ",
+          "textIndopak": "شَىۡءٍۢ",
+          "translation": "thing",
+          "transliteration": "shayin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 16700,
+            "endTime": 17990
+          }
+        },
+        {
+          "position": 15,
+          "text": "بَصِيرٌ",
+          "textIndopak": "بَصِيۡرٌ‏",
+          "translation": "All-Seer",
+          "transliteration": "baṣīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "15",
+            "startTime": 18000,
+            "endTime": 19070
+          }
+        },
+        {
+          "position": 16,
+          "text": "١٩",
+          "textIndopak": "١٩",
+          "translation": "(19)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 20,
+      "verseKey": "67:20",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Now, who is there to act as a force for you to help you, except the RaHmān ? The disbelievers are in nothing but delusion.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067020.mp3",
+        "duration": 14,
+        "segments": [
+          [
+            "1",
+            "170",
+            "1160"
+          ],
+          [
+            "2",
+            "1170",
+            "1860"
+          ],
+          [
+            "3",
+            "1870",
+            "2590"
+          ],
+          [
+            "4",
+            "2600",
+            "2990"
+          ],
+          [
+            "5",
+            "3000",
+            "3930"
+          ],
+          [
+            "6",
+            "3940",
+            "4660"
+          ],
+          [
+            "7",
+            "4670",
+            "6790"
+          ],
+          [
+            "8",
+            "6800",
+            "7380"
+          ],
+          [
+            "9",
+            "7390",
+            "7870"
+          ],
+          [
+            "10",
+            "7880",
+            "9800"
+          ],
+          [
+            "11",
+            "9810",
+            "10160"
+          ],
+          [
+            "12",
+            "10170",
+            "11460"
+          ],
+          [
+            "13",
+            "11470",
+            "12230"
+          ],
+          [
+            "14",
+            "12240",
+            "12670"
+          ],
+          [
+            "15",
+            "12680",
+            "13720"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَمَّنْ",
+          "textIndopak": "اَمَّنۡ",
+          "translation": "Who is",
+          "transliteration": "amman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 170,
+            "endTime": 1160
+          }
+        },
+        {
+          "position": 2,
+          "text": "هَـٰذَا",
+          "textIndopak": "هٰذَا",
+          "translation": "this",
+          "transliteration": "hādhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1170,
+            "endTime": 1860
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "the one",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1870,
+            "endTime": 2590
+          }
+        },
+        {
+          "position": 4,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "he",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2600,
+            "endTime": 2990
+          }
+        },
+        {
+          "position": 5,
+          "text": "جُندٌۭ",
+          "textIndopak": "جُنۡدٌ",
+          "translation": "(is) an army",
+          "transliteration": "jundun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3000,
+            "endTime": 3930
+          }
+        },
+        {
+          "position": 6,
+          "text": "لَّكُمْ",
+          "textIndopak": "لَّكُمۡ",
+          "translation": "for you",
+          "transliteration": "lakum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3940,
+            "endTime": 4660
+          }
+        },
+        {
+          "position": 7,
+          "text": "يَنصُرُكُم",
+          "textIndopak": "يَنۡصُرُكُمۡ",
+          "translation": "to help you",
+          "transliteration": "yanṣurukum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4670,
+            "endTime": 6790
+          }
+        },
+        {
+          "position": 8,
+          "text": "مِّن",
+          "textIndopak": "مِّنۡ",
+          "translation": "from",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6800,
+            "endTime": 7380
+          }
+        },
+        {
+          "position": 9,
+          "text": "دُونِ",
+          "textIndopak": "دُوۡنِ",
+          "translation": "besides",
+          "transliteration": "dūni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7390,
+            "endTime": 7870
+          }
+        },
+        {
+          "position": 10,
+          "text": "ٱلرَّحْمَـٰنِ ۚ",
+          "textIndopak": "الرَّحۡمٰنِ​ؕ",
+          "translation": "the Most Gracious",
+          "transliteration": "l-raḥmāni",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 7880,
+            "endTime": 9800
+          }
+        },
+        {
+          "position": 11,
+          "text": "إِنِ",
+          "textIndopak": "اِنِ",
+          "translation": "Not",
+          "transliteration": "ini",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 9810,
+            "endTime": 10160
+          }
+        },
+        {
+          "position": 12,
+          "text": "ٱلْكَـٰفِرُونَ",
+          "textIndopak": "الۡكٰفِرُوۡنَ",
+          "translation": "(are) the disbelievers",
+          "transliteration": "l-kāfirūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 10170,
+            "endTime": 11460
+          }
+        },
+        {
+          "position": 13,
+          "text": "إِلَّا",
+          "textIndopak": "اِلَّا",
+          "translation": "but",
+          "transliteration": "illā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 11470,
+            "endTime": 12230
+          }
+        },
+        {
+          "position": 14,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 12240,
+            "endTime": 12670
+          }
+        },
+        {
+          "position": 15,
+          "text": "غُرُورٍ",
+          "textIndopak": "غُرُوۡرٍ​ۚ‏",
+          "translation": "delusion",
+          "transliteration": "ghurūrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "15",
+            "startTime": 12680,
+            "endTime": 13720
+          }
+        },
+        {
+          "position": 16,
+          "text": "٢٠",
+          "textIndopak": "٢٠",
+          "translation": "(20)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 21,
+      "verseKey": "67:21",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Or, who is there to give you sustenance, if He withholds His sustenance? Still, they persist in rebellion and aversion.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067021.mp3",
+        "duration": 10,
+        "segments": [
+          [
+            "1",
+            "190",
+            "1180"
+          ],
+          [
+            "2",
+            "1190",
+            "1720"
+          ],
+          [
+            "3",
+            "1730",
+            "2550"
+          ],
+          [
+            "4",
+            "2560",
+            "3740"
+          ],
+          [
+            "5",
+            "3750",
+            "4100"
+          ],
+          [
+            "6",
+            "4110",
+            "4880"
+          ],
+          [
+            "7",
+            "4890",
+            "5840"
+          ],
+          [
+            "8",
+            "5850",
+            "5930"
+          ],
+          [
+            "9",
+            "5940",
+            "7020"
+          ],
+          [
+            "10",
+            "7030",
+            "7400"
+          ],
+          [
+            "11",
+            "7410",
+            "8280"
+          ],
+          [
+            "12",
+            "8290",
+            "10070"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَمَّنْ",
+          "textIndopak": "اَمَّنۡ",
+          "translation": "Who is",
+          "transliteration": "amman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 190,
+            "endTime": 1180
+          }
+        },
+        {
+          "position": 2,
+          "text": "هَـٰذَا",
+          "textIndopak": "هٰذَا",
+          "translation": "this",
+          "transliteration": "hādhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1190,
+            "endTime": 1720
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "the one",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1730,
+            "endTime": 2550
+          }
+        },
+        {
+          "position": 4,
+          "text": "يَرْزُقُكُمْ",
+          "textIndopak": "يَرۡزُقُكُمۡ",
+          "translation": "to provide you",
+          "transliteration": "yarzuqukum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2560,
+            "endTime": 3740
+          }
+        },
+        {
+          "position": 5,
+          "text": "إِنْ",
+          "textIndopak": "اِنۡ",
+          "translation": "if",
+          "transliteration": "in",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3750,
+            "endTime": 4100
+          }
+        },
+        {
+          "position": 6,
+          "text": "أَمْسَكَ",
+          "textIndopak": "اَمۡسَكَ",
+          "translation": "He withheld",
+          "transliteration": "amsaka",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4110,
+            "endTime": 4880
+          }
+        },
+        {
+          "position": 7,
+          "text": "رِزْقَهُۥ ۚ",
+          "textIndopak": "رِزۡقَهٗ​ ۚ",
+          "translation": "His provision",
+          "transliteration": "riz'qahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4890,
+            "endTime": 5840
+          }
+        },
+        {
+          "position": 8,
+          "text": "بَل",
+          "textIndopak": "بَلۡ",
+          "translation": "Nay",
+          "transliteration": "bal",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5850,
+            "endTime": 5930
+          }
+        },
+        {
+          "position": 9,
+          "text": "لَّجُّوا۟",
+          "textIndopak": "لَّجُّوۡا",
+          "translation": "they persist",
+          "transliteration": "lajjū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 5940,
+            "endTime": 7020
+          }
+        },
+        {
+          "position": 10,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 7030,
+            "endTime": 7400
+          }
+        },
+        {
+          "position": 11,
+          "text": "عُتُوٍّۢ",
+          "textIndopak": "عُتُوٍّ",
+          "translation": "pride",
+          "transliteration": "ʿutuwwin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 7410,
+            "endTime": 8280
+          }
+        },
+        {
+          "position": 12,
+          "text": "وَنُفُورٍ",
+          "textIndopak": "وَّنُفُوۡرٍ‏",
+          "translation": "and aversion",
+          "transliteration": "wanufūrin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 8290,
+            "endTime": 10070
+          }
+        },
+        {
+          "position": 13,
+          "text": "٢١",
+          "textIndopak": "٢١",
+          "translation": "(21)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 22,
+      "verseKey": "67:22",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Then, is the one who walks falling down (frequently) on his face more right or the one who walks properly on a straight path?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067022.mp3",
+        "duration": 11,
+        "segments": [
+          [
+            "1",
+            "80",
+            "1150"
+          ],
+          [
+            "2",
+            "1160",
+            "1680"
+          ],
+          [
+            "3",
+            "1690",
+            "2580"
+          ],
+          [
+            "4",
+            "2590",
+            "3200"
+          ],
+          [
+            "5",
+            "3210",
+            "4220"
+          ],
+          [
+            "6",
+            "4230",
+            "5080"
+          ],
+          [
+            "7",
+            "5090",
+            "6480"
+          ],
+          [
+            "8",
+            "6490",
+            "7020"
+          ],
+          [
+            "9",
+            "7030",
+            "7950"
+          ],
+          [
+            "10",
+            "7960",
+            "8460"
+          ],
+          [
+            "11",
+            "8470",
+            "9450"
+          ],
+          [
+            "12",
+            "9460",
+            "11330"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "أَفَمَن",
+          "textIndopak": "اَفَمَنۡ",
+          "translation": "Then is he who",
+          "transliteration": "afaman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 80,
+            "endTime": 1150
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَمْشِى",
+          "textIndopak": "يَّمۡشِىۡ",
+          "translation": "walks",
+          "transliteration": "yamshī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1160,
+            "endTime": 1680
+          }
+        },
+        {
+          "position": 3,
+          "text": "مُكِبًّا",
+          "textIndopak": "مُكِبًّا",
+          "translation": "fallen",
+          "transliteration": "mukibban",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1690,
+            "endTime": 2580
+          }
+        },
+        {
+          "position": 4,
+          "text": "عَلَىٰ",
+          "textIndopak": "عَلٰى",
+          "translation": "on",
+          "transliteration": "ʿalā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2590,
+            "endTime": 3200
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَجْهِهِۦٓ",
+          "textIndopak": "وَجۡهِهٖۤ",
+          "translation": "his face",
+          "transliteration": "wajhihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3210,
+            "endTime": 4220
+          }
+        },
+        {
+          "position": 6,
+          "text": "أَهْدَىٰٓ",
+          "textIndopak": "اَهۡدٰٓى",
+          "translation": "better guided",
+          "transliteration": "ahdā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4230,
+            "endTime": 5080
+          }
+        },
+        {
+          "position": 7,
+          "text": "أَمَّن",
+          "textIndopak": "اَمَّنۡ",
+          "translation": "or (he) who",
+          "transliteration": "amman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5090,
+            "endTime": 6480
+          }
+        },
+        {
+          "position": 8,
+          "text": "يَمْشِى",
+          "textIndopak": "يَّمۡشِىۡ",
+          "translation": "walks",
+          "transliteration": "yamshī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 6490,
+            "endTime": 7020
+          }
+        },
+        {
+          "position": 9,
+          "text": "سَوِيًّا",
+          "textIndopak": "سَوِيًّا",
+          "translation": "upright",
+          "transliteration": "sawiyyan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 7030,
+            "endTime": 7950
+          }
+        },
+        {
+          "position": 10,
+          "text": "عَلَىٰ",
+          "textIndopak": "عَلٰى",
+          "translation": "on",
+          "transliteration": "ʿalā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 7960,
+            "endTime": 8460
+          }
+        },
+        {
+          "position": 11,
+          "text": "صِرَٰطٍۢ",
+          "textIndopak": "صِرَاطٍ",
+          "translation": "(the) Path",
+          "transliteration": "ṣirāṭin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 8470,
+            "endTime": 9450
+          }
+        },
+        {
+          "position": 12,
+          "text": "مُّسْتَقِيمٍۢ",
+          "textIndopak": "مُّسۡتَقِيۡمٍ‏",
+          "translation": "Straight",
+          "transliteration": "mus'taqīmin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 9460,
+            "endTime": 11330
+          }
+        },
+        {
+          "position": 13,
+          "text": "٢٢",
+          "textIndopak": "٢٢",
+          "translation": "(22)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 23,
+      "verseKey": "67:23",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “He is the One who has originated you, and made for you ears and eyes and hearts. How little you pay gratitude!”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067023.mp3",
+        "duration": 12,
+        "segments": [
+          [
+            "1",
+            "90",
+            "320"
+          ],
+          [
+            "2",
+            "330",
+            "670"
+          ],
+          [
+            "3",
+            "680",
+            "2130"
+          ],
+          [
+            "4",
+            "2140",
+            "2960"
+          ],
+          [
+            "5",
+            "2970",
+            "3850"
+          ],
+          [
+            "6",
+            "3860",
+            "4400"
+          ],
+          [
+            "7",
+            "4410",
+            "5210"
+          ],
+          [
+            "8",
+            "5220",
+            "6520"
+          ],
+          [
+            "9",
+            "6530",
+            "8090"
+          ],
+          [
+            "10",
+            "8100",
+            "8830"
+          ],
+          [
+            "11",
+            "8840",
+            "9790"
+          ],
+          [
+            "12",
+            "9800",
+            "11700"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 320
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "He",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 330,
+            "endTime": 670
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلَّذِىٓ",
+          "textIndopak": "الَّذِىۡۤ",
+          "translation": "(is) the One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 680,
+            "endTime": 2130
+          }
+        },
+        {
+          "position": 4,
+          "text": "أَنشَأَكُمْ",
+          "textIndopak": "اَنۡشَاَكُمۡ",
+          "translation": "produced you",
+          "transliteration": "ansha-akum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2140,
+            "endTime": 2960
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَجَعَلَ",
+          "textIndopak": "وَجَعَلَ",
+          "translation": "and made",
+          "transliteration": "wajaʿala",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2970,
+            "endTime": 3850
+          }
+        },
+        {
+          "position": 6,
+          "text": "لَكُمُ",
+          "textIndopak": "لَـكُمُ",
+          "translation": "for you",
+          "transliteration": "lakumu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3860,
+            "endTime": 4400
+          }
+        },
+        {
+          "position": 7,
+          "text": "ٱلسَّمْعَ",
+          "textIndopak": "السَّمۡعَ",
+          "translation": "the hearing",
+          "transliteration": "l-samʿa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4410,
+            "endTime": 5210
+          }
+        },
+        {
+          "position": 8,
+          "text": "وَٱلْأَبْصَـٰرَ",
+          "textIndopak": "وَالۡاَبۡصَارَ",
+          "translation": "and the vision",
+          "transliteration": "wal-abṣāra",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5220,
+            "endTime": 6520
+          }
+        },
+        {
+          "position": 9,
+          "text": "وَٱلْأَفْـِٔدَةَ ۖ",
+          "textIndopak": "وَ الۡاَفۡـــِٕدَةَ ​ ؕ",
+          "translation": "and the feelings",
+          "transliteration": "wal-afidata",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6530,
+            "endTime": 8090
+          }
+        },
+        {
+          "position": 10,
+          "text": "قَلِيلًۭا",
+          "textIndopak": "قَلِيۡلًا",
+          "translation": "Little",
+          "transliteration": "qalīlan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 8100,
+            "endTime": 8830
+          }
+        },
+        {
+          "position": 11,
+          "text": "مَّا",
+          "textIndopak": "مَّا",
+          "translation": "(is) what",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 8840,
+            "endTime": 9790
+          }
+        },
+        {
+          "position": 12,
+          "text": "تَشْكُرُونَ",
+          "textIndopak": "تَشۡكُرُوۡنَ‏",
+          "translation": "you give thanks",
+          "transliteration": "tashkurūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 9800,
+            "endTime": 11700
+          }
+        },
+        {
+          "position": 13,
+          "text": "٢٣",
+          "textIndopak": "٢٣",
+          "translation": "(23)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 24,
+      "verseKey": "67:24",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “He is the One who has scattered you on the earth, and to Him you will be assembled.”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067024.mp3",
+        "duration": 8,
+        "segments": [
+          [
+            "1",
+            "100",
+            "440"
+          ],
+          [
+            "2",
+            "450",
+            "880"
+          ],
+          [
+            "3",
+            "890",
+            "1760"
+          ],
+          [
+            "4",
+            "1770",
+            "2940"
+          ],
+          [
+            "5",
+            "2950",
+            "3160"
+          ],
+          [
+            "6",
+            "3170",
+            "4090"
+          ],
+          [
+            "7",
+            "4100",
+            "5320"
+          ],
+          [
+            "8",
+            "5330",
+            "8300"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 100,
+            "endTime": 440
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "He",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 450,
+            "endTime": 880
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "(is) the One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 890,
+            "endTime": 1760
+          }
+        },
+        {
+          "position": 4,
+          "text": "ذَرَأَكُمْ",
+          "textIndopak": "ذَرَاَكُمۡ",
+          "translation": "multiplied you",
+          "transliteration": "dhara-akum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1770,
+            "endTime": 2940
+          }
+        },
+        {
+          "position": 5,
+          "text": "فِى",
+          "textIndopak": "فِى",
+          "translation": "in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2950,
+            "endTime": 3160
+          }
+        },
+        {
+          "position": 6,
+          "text": "ٱلْأَرْضِ",
+          "textIndopak": "الۡاَرۡضِ",
+          "translation": "the earth",
+          "transliteration": "l-arḍi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3170,
+            "endTime": 4090
+          }
+        },
+        {
+          "position": 7,
+          "text": "وَإِلَيْهِ",
+          "textIndopak": "وَاِلَيۡهِ",
+          "translation": "and to Him",
+          "transliteration": "wa-ilayhi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4100,
+            "endTime": 5320
+          }
+        },
+        {
+          "position": 8,
+          "text": "تُحْشَرُونَ",
+          "textIndopak": "تُحۡشَرُوۡنَ‏",
+          "translation": "you will be gathered",
+          "transliteration": "tuḥ'sharūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5330,
+            "endTime": 8300
+          }
+        },
+        {
+          "position": 9,
+          "text": "٢٤",
+          "textIndopak": "٢٤",
+          "translation": "(24)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 25,
+      "verseKey": "67:25",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "And they say, “When will this promise (of the Day of Judgment) be fulfilled, if you are true?”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067025.mp3",
+        "duration": 6,
+        "segments": [
+          [
+            "1",
+            "130",
+            "1390"
+          ],
+          [
+            "2",
+            "1400",
+            "1950"
+          ],
+          [
+            "3",
+            "1960",
+            "2530"
+          ],
+          [
+            "4",
+            "2540",
+            "3260"
+          ],
+          [
+            "5",
+            "3270",
+            "3890"
+          ],
+          [
+            "6",
+            "3900",
+            "4970"
+          ],
+          [
+            "7",
+            "4980",
+            "6490"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَيَقُولُونَ",
+          "textIndopak": "وَيَقُوۡلُوۡنَ",
+          "translation": "And they say",
+          "transliteration": "wayaqūlūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 130,
+            "endTime": 1390
+          }
+        },
+        {
+          "position": 2,
+          "text": "مَتَىٰ",
+          "textIndopak": "مَتٰى",
+          "translation": "When",
+          "transliteration": "matā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1400,
+            "endTime": 1950
+          }
+        },
+        {
+          "position": 3,
+          "text": "هَـٰذَا",
+          "textIndopak": "هٰذَا",
+          "translation": "(is) this",
+          "transliteration": "hādhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1960,
+            "endTime": 2530
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْوَعْدُ",
+          "textIndopak": "الۡوَعۡدُ",
+          "translation": "promise",
+          "transliteration": "l-waʿdu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2540,
+            "endTime": 3260
+          }
+        },
+        {
+          "position": 5,
+          "text": "إِن",
+          "textIndopak": "اِنۡ",
+          "translation": "if",
+          "transliteration": "in",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3270,
+            "endTime": 3890
+          }
+        },
+        {
+          "position": 6,
+          "text": "كُنتُمْ",
+          "textIndopak": "كُنۡتُمۡ",
+          "translation": "you are",
+          "transliteration": "kuntum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3900,
+            "endTime": 4970
+          }
+        },
+        {
+          "position": 7,
+          "text": "صَـٰدِقِينَ",
+          "textIndopak": "صٰدِقِيۡنَ‏",
+          "translation": "truthful",
+          "transliteration": "ṣādiqīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4980,
+            "endTime": 6490
+          }
+        },
+        {
+          "position": 8,
+          "text": "٢٥",
+          "textIndopak": "٢٥",
+          "translation": "(25)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 26,
+      "verseKey": "67:26",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 563,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “The knowledge (of that Day) is only with Allah, and I am only a plain warner.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067026.mp3",
+        "duration": 8,
+        "segments": [
+          [
+            "1",
+            "60",
+            "370"
+          ],
+          [
+            "2",
+            "380",
+            "1320"
+          ],
+          [
+            "3",
+            "1330",
+            "2100"
+          ],
+          [
+            "4",
+            "2110",
+            "2960"
+          ],
+          [
+            "5",
+            "2970",
+            "3760"
+          ],
+          [
+            "6",
+            "3770",
+            "5380"
+          ],
+          [
+            "7",
+            "5390",
+            "5760"
+          ],
+          [
+            "8",
+            "5770",
+            "6380"
+          ],
+          [
+            "9",
+            "6390",
+            "8260"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 60,
+            "endTime": 370
+          }
+        },
+        {
+          "position": 2,
+          "text": "إِنَّمَا",
+          "textIndopak": "اِنَّمَا",
+          "translation": "Only",
+          "transliteration": "innamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 380,
+            "endTime": 1320
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْعِلْمُ",
+          "textIndopak": "الۡعِلۡمُ",
+          "translation": "the knowledge",
+          "transliteration": "l-ʿil'mu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1330,
+            "endTime": 2100
+          }
+        },
+        {
+          "position": 4,
+          "text": "عِندَ",
+          "textIndopak": "عِنۡدَ",
+          "translation": "(is) with",
+          "transliteration": "ʿinda",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2110,
+            "endTime": 2960
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱللَّهِ",
+          "textIndopak": "اللّٰهِ",
+          "translation": "Allah",
+          "transliteration": "l-lahi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2970,
+            "endTime": 3760
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَإِنَّمَآ",
+          "textIndopak": "وَاِنَّمَاۤ",
+          "translation": "and only",
+          "transliteration": "wa-innamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 3770,
+            "endTime": 5380
+          }
+        },
+        {
+          "position": 7,
+          "text": "أَنَا۠",
+          "textIndopak": "اَنَا",
+          "translation": "I am",
+          "transliteration": "anā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5390,
+            "endTime": 5760
+          }
+        },
+        {
+          "position": 8,
+          "text": "نَذِيرٌۭ",
+          "textIndopak": "نَذِيۡرٌ",
+          "translation": "a warner",
+          "transliteration": "nadhīrun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5770,
+            "endTime": 6380
+          }
+        },
+        {
+          "position": 9,
+          "text": "مُّبِينٌۭ",
+          "textIndopak": "مُّبِيۡنٌ‏ ﻿﻿",
+          "translation": "clear",
+          "transliteration": "mubīnun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6390,
+            "endTime": 8260
+          }
+        },
+        {
+          "position": 10,
+          "text": "٢٦",
+          "textIndopak": "٢٦",
+          "translation": "(26)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 27,
+      "verseKey": "67:27",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 564,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Then, once they will see it approaching, the faces of the disbelievers will be turned awkward, and it will be said, “This is what you were calling for!”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067027.mp3",
+        "duration": 14,
+        "segments": [
+          [
+            "1",
+            "260",
+            "1430"
+          ],
+          [
+            "2",
+            "1440",
+            "2190"
+          ],
+          [
+            "3",
+            "2200",
+            "3630"
+          ],
+          [
+            "4",
+            "3640",
+            "5520"
+          ],
+          [
+            "5",
+            "5530",
+            "6370"
+          ],
+          [
+            "6",
+            "6380",
+            "7250"
+          ],
+          [
+            "7",
+            "7260",
+            "8540"
+          ],
+          [
+            "8",
+            "8550",
+            "9400"
+          ],
+          [
+            "9",
+            "9410",
+            "10030"
+          ],
+          [
+            "10",
+            "10040",
+            "10780"
+          ],
+          [
+            "11",
+            "10790",
+            "12290"
+          ],
+          [
+            "12",
+            "12300",
+            "12880"
+          ],
+          [
+            "13",
+            "12890",
+            "14580"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَلَمَّا",
+          "textIndopak": "فَلَمَّا",
+          "translation": "But when",
+          "transliteration": "falammā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 260,
+            "endTime": 1430
+          }
+        },
+        {
+          "position": 2,
+          "text": "رَأَوْهُ",
+          "textIndopak": "رَاَوۡهُ",
+          "translation": "they (will) see it",
+          "transliteration": "ra-awhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1440,
+            "endTime": 2190
+          }
+        },
+        {
+          "position": 3,
+          "text": "زُلْفَةًۭ",
+          "textIndopak": "زُلۡفَةً",
+          "translation": "approaching",
+          "transliteration": "zul'fatan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2200,
+            "endTime": 3630
+          }
+        },
+        {
+          "position": 4,
+          "text": "سِيٓـَٔتْ",
+          "textIndopak": "سِیْٓــَٔتۡ",
+          "translation": "(will be) distressed",
+          "transliteration": "sīat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3640,
+            "endTime": 5520
+          }
+        },
+        {
+          "position": 5,
+          "text": "وُجُوهُ",
+          "textIndopak": "وُجُوۡهُ",
+          "translation": "(the) faces",
+          "transliteration": "wujūhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 5530,
+            "endTime": 6370
+          }
+        },
+        {
+          "position": 6,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "(of) those who",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 6380,
+            "endTime": 7250
+          }
+        },
+        {
+          "position": 7,
+          "text": "كَفَرُوا۟",
+          "textIndopak": "كَفَرُوۡا",
+          "translation": "disbelieved",
+          "transliteration": "kafarū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 7260,
+            "endTime": 8540
+          }
+        },
+        {
+          "position": 8,
+          "text": "وَقِيلَ",
+          "textIndopak": "وَقِيۡلَ",
+          "translation": "and it will be said",
+          "transliteration": "waqīla",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 8550,
+            "endTime": 9400
+          }
+        },
+        {
+          "position": 9,
+          "text": "هَـٰذَا",
+          "textIndopak": "هٰذَا",
+          "translation": "This",
+          "transliteration": "hādhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 9410,
+            "endTime": 10030
+          }
+        },
+        {
+          "position": 10,
+          "text": "ٱلَّذِى",
+          "textIndopak": "الَّذِىۡ",
+          "translation": "(is) that which",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 10040,
+            "endTime": 10780
+          }
+        },
+        {
+          "position": 11,
+          "text": "كُنتُم",
+          "textIndopak": "كُنۡتُمۡ",
+          "translation": "you used to",
+          "transliteration": "kuntum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 10790,
+            "endTime": 12290
+          }
+        },
+        {
+          "position": 12,
+          "text": "بِهِۦ",
+          "textIndopak": "بِهٖ",
+          "translation": "for it",
+          "transliteration": "bihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 12300,
+            "endTime": 12880
+          }
+        },
+        {
+          "position": 13,
+          "text": "تَدَّعُونَ",
+          "textIndopak": "تَدَّعُوۡنَ‏",
+          "translation": "call",
+          "transliteration": "taddaʿūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 12890,
+            "endTime": 14580
+          }
+        },
+        {
+          "position": 14,
+          "text": "٢٧",
+          "textIndopak": "٢٧",
+          "translation": "(27)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 28,
+      "verseKey": "67:28",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 564,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “Tell me, if Allah destroys me and those who are with me (as you wish), or has mercy on us (as we wish), who can (in either case) save the disbelievers from a painful punishment?”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067028.mp3",
+        "duration": 16,
+        "segments": [
+          [
+            "1",
+            "200",
+            "580"
+          ],
+          [
+            "2",
+            "590",
+            "1820"
+          ],
+          [
+            "3",
+            "1830",
+            "2170"
+          ],
+          [
+            "4",
+            "2180",
+            "3410"
+          ],
+          [
+            "5",
+            "3420",
+            "4240"
+          ],
+          [
+            "6",
+            "4250",
+            "4780"
+          ],
+          [
+            "7",
+            "4790",
+            "5970"
+          ],
+          [
+            "8",
+            "5980",
+            "6390"
+          ],
+          [
+            "9",
+            "6400",
+            "9830"
+          ],
+          [
+            "10",
+            "9840",
+            "10810"
+          ],
+          [
+            "11",
+            "10820",
+            "11590"
+          ],
+          [
+            "12",
+            "11600",
+            "13000"
+          ],
+          [
+            "13",
+            "13010",
+            "13320"
+          ],
+          [
+            "14",
+            "13330",
+            "14470"
+          ],
+          [
+            "15",
+            "14480",
+            "15700"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 200,
+            "endTime": 580
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَرَءَيْتُمْ",
+          "textIndopak": "اَرَءَيۡتُمۡ",
+          "translation": "Have you seen",
+          "transliteration": "ara-aytum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 590,
+            "endTime": 1820
+          }
+        },
+        {
+          "position": 3,
+          "text": "إِنْ",
+          "textIndopak": "اِنۡ",
+          "translation": "if",
+          "transliteration": "in",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1830,
+            "endTime": 2170
+          }
+        },
+        {
+          "position": 4,
+          "text": "أَهْلَكَنِىَ",
+          "textIndopak": "اَهۡلَـكَنِىَ",
+          "translation": "destroys me",
+          "transliteration": "ahlakaniya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2180,
+            "endTime": 3410
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱللَّهُ",
+          "textIndopak": "اللّٰهُ",
+          "translation": "Allah",
+          "transliteration": "l-lahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3420,
+            "endTime": 4240
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَمَن",
+          "textIndopak": "وَمَنۡ",
+          "translation": "and whoever",
+          "transliteration": "waman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4250,
+            "endTime": 4780
+          }
+        },
+        {
+          "position": 7,
+          "text": "مَّعِىَ",
+          "textIndopak": "مَّعِىَ",
+          "translation": "(is) with me",
+          "transliteration": "maʿiya",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 4790,
+            "endTime": 5970
+          }
+        },
+        {
+          "position": 8,
+          "text": "أَوْ",
+          "textIndopak": "اَوۡ",
+          "translation": "or",
+          "transliteration": "aw",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 5980,
+            "endTime": 6390
+          }
+        },
+        {
+          "position": 9,
+          "text": "رَحِمَنَا",
+          "textIndopak": "رَحِمَنَا ۙ",
+          "translation": "has mercy upon us",
+          "transliteration": "raḥimanā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 6400,
+            "endTime": 9830
+          }
+        },
+        {
+          "position": 10,
+          "text": "فَمَن",
+          "textIndopak": "فَمَنۡ",
+          "translation": "then who",
+          "transliteration": "faman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 9840,
+            "endTime": 10810
+          }
+        },
+        {
+          "position": 11,
+          "text": "يُجِيرُ",
+          "textIndopak": "يُّجِيۡرُ",
+          "translation": "(can) protect",
+          "transliteration": "yujīru",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 10820,
+            "endTime": 11590
+          }
+        },
+        {
+          "position": 12,
+          "text": "ٱلْكَـٰفِرِينَ",
+          "textIndopak": "الۡكٰفِرِيۡنَ",
+          "translation": "the disbelievers",
+          "transliteration": "l-kāfirīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 11600,
+            "endTime": 13000
+          }
+        },
+        {
+          "position": 13,
+          "text": "مِنْ",
+          "textIndopak": "مِنۡ",
+          "translation": "from",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 13010,
+            "endTime": 13320
+          }
+        },
+        {
+          "position": 14,
+          "text": "عَذَابٍ",
+          "textIndopak": "عَذَابٍ",
+          "translation": "a punishment",
+          "transliteration": "ʿadhābin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "14",
+            "startTime": 13330,
+            "endTime": 14470
+          }
+        },
+        {
+          "position": 15,
+          "text": "أَلِيمٍۢ",
+          "textIndopak": "اَلِيۡمٍ‏",
+          "translation": "painful",
+          "transliteration": "alīmin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "15",
+            "startTime": 14480,
+            "endTime": 15700
+          }
+        },
+        {
+          "position": 16,
+          "text": "٢٨",
+          "textIndopak": "٢٨",
+          "translation": "(28)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 29,
+      "verseKey": "67:29",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 564,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “He is the RaHmān; we have believed in Him, and in Him we placed our trust. So, you will soon come to know who is in open error.”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067029.mp3",
+        "duration": 13,
+        "segments": [
+          [
+            "1",
+            "150",
+            "530"
+          ],
+          [
+            "2",
+            "540",
+            "1170"
+          ],
+          [
+            "3",
+            "1180",
+            "2350"
+          ],
+          [
+            "4",
+            "2360",
+            "4010"
+          ],
+          [
+            "5",
+            "4020",
+            "4640"
+          ],
+          [
+            "6",
+            "4650",
+            "5700"
+          ],
+          [
+            "7",
+            "5710",
+            "7760"
+          ],
+          [
+            "8",
+            "7770",
+            "9310"
+          ],
+          [
+            "9",
+            "9320",
+            "9670"
+          ],
+          [
+            "10",
+            "9680",
+            "10040"
+          ],
+          [
+            "11",
+            "10050",
+            "10420"
+          ],
+          [
+            "12",
+            "10430",
+            "11780"
+          ],
+          [
+            "13",
+            "11790",
+            "12990"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 530
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "He",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 540,
+            "endTime": 1170
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلرَّحْمَـٰنُ",
+          "textIndopak": "الرَّحۡمٰنُ",
+          "translation": "(is) the Most Gracious",
+          "transliteration": "l-raḥmānu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1180,
+            "endTime": 2350
+          }
+        },
+        {
+          "position": 4,
+          "text": "ءَامَنَّا",
+          "textIndopak": "اٰمَنَّا",
+          "translation": "we believe",
+          "transliteration": "āmannā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2360,
+            "endTime": 4010
+          }
+        },
+        {
+          "position": 5,
+          "text": "بِهِۦ",
+          "textIndopak": "بِهٖ",
+          "translation": "in Him",
+          "transliteration": "bihi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4020,
+            "endTime": 4640
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَعَلَيْهِ",
+          "textIndopak": "وَعَلَيۡهِ",
+          "translation": "and upon Him",
+          "transliteration": "waʿalayhi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4650,
+            "endTime": 5700
+          }
+        },
+        {
+          "position": 7,
+          "text": "تَوَكَّلْنَا ۖ",
+          "textIndopak": "تَوَكَّلۡنَا​ۚ",
+          "translation": "we put (our) trust",
+          "transliteration": "tawakkalnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 5710,
+            "endTime": 7760
+          }
+        },
+        {
+          "position": 8,
+          "text": "فَسَتَعْلَمُونَ",
+          "textIndopak": "فَسَتَعۡلَمُوۡنَ",
+          "translation": "So you will know",
+          "transliteration": "fasataʿlamūna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 7770,
+            "endTime": 9310
+          }
+        },
+        {
+          "position": 9,
+          "text": "مَنْ",
+          "textIndopak": "مَنۡ",
+          "translation": "who",
+          "transliteration": "man",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 9320,
+            "endTime": 9670
+          }
+        },
+        {
+          "position": 10,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "(is) it",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 9680,
+            "endTime": 10040
+          }
+        },
+        {
+          "position": 11,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "(that is) in",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "11",
+            "startTime": 10050,
+            "endTime": 10420
+          }
+        },
+        {
+          "position": 12,
+          "text": "ضَلَـٰلٍۢ",
+          "textIndopak": "ضَلٰلٍ",
+          "translation": "error",
+          "transliteration": "ḍalālin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "12",
+            "startTime": 10430,
+            "endTime": 11780
+          }
+        },
+        {
+          "position": 13,
+          "text": "مُّبِينٍۢ",
+          "textIndopak": "مُّبِيۡنٍ‏",
+          "translation": "clear",
+          "transliteration": "mubīnin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "13",
+            "startTime": 11790,
+            "endTime": 12990
+          }
+        },
+        {
+          "position": 14,
+          "text": "٢٩",
+          "textIndopak": "٢٩",
+          "translation": "(29)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 30,
+      "verseKey": "67:30",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 564,
+      "juzNumber": 29,
+      "hizbNumber": 57,
+      "rubNumber": 225,
+      "sajdah": null,
+      "translation": "Say, “Tell me, Should your water vanish into the earth, who will bring you a flowing (stream of) water?",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/067030.mp3",
+        "duration": 16,
+        "segments": [
+          [
+            "1",
+            "170",
+            "520"
+          ],
+          [
+            "2",
+            "530",
+            "1760"
+          ],
+          [
+            "3",
+            "1770",
+            "2140"
+          ],
+          [
+            "4",
+            "2150",
+            "2960"
+          ],
+          [
+            "5",
+            "2970",
+            "5660"
+          ],
+          [
+            "6",
+            "5670",
+            "7150"
+          ],
+          [
+            "7",
+            "7160",
+            "8080"
+          ],
+          [
+            "8",
+            "8090",
+            "9790"
+          ],
+          [
+            "9",
+            "9800",
+            "13680"
+          ],
+          [
+            "10",
+            "13690",
+            "15880"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 170,
+            "endTime": 520
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَرَءَيْتُمْ",
+          "textIndopak": "اَرَءَيۡتُمۡ",
+          "translation": "Have you seen",
+          "transliteration": "ara-aytum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 530,
+            "endTime": 1760
+          }
+        },
+        {
+          "position": 3,
+          "text": "إِنْ",
+          "textIndopak": "اِنۡ",
+          "translation": "if",
+          "transliteration": "in",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1770,
+            "endTime": 2140
+          }
+        },
+        {
+          "position": 4,
+          "text": "أَصْبَحَ",
+          "textIndopak": "اَصۡبَحَ",
+          "translation": "becomes",
+          "transliteration": "aṣbaḥa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2150,
+            "endTime": 2960
+          }
+        },
+        {
+          "position": 5,
+          "text": "مَآؤُكُمْ",
+          "textIndopak": "مَآؤُكُمۡ",
+          "translation": "your water",
+          "transliteration": "māukum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 2970,
+            "endTime": 5660
+          }
+        },
+        {
+          "position": 6,
+          "text": "غَوْرًۭا",
+          "textIndopak": "غَوۡرًا",
+          "translation": "sunken",
+          "transliteration": "ghawran",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 5670,
+            "endTime": 7150
+          }
+        },
+        {
+          "position": 7,
+          "text": "فَمَن",
+          "textIndopak": "فَمَنۡ",
+          "translation": "then who",
+          "transliteration": "faman",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 7160,
+            "endTime": 8080
+          }
+        },
+        {
+          "position": 8,
+          "text": "يَأْتِيكُم",
+          "textIndopak": "يَّاۡتِيۡكُمۡ",
+          "translation": "could bring you",
+          "transliteration": "yatīkum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 8090,
+            "endTime": 9790
+          }
+        },
+        {
+          "position": 9,
+          "text": "بِمَآءٍۢ",
+          "textIndopak": "بِمَآءٍ",
+          "translation": "water",
+          "transliteration": "bimāin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 9800,
+            "endTime": 13680
+          }
+        },
+        {
+          "position": 10,
+          "text": "مَّعِينٍۭ",
+          "textIndopak": "مَّعِيۡنٍ‏",
+          "translation": "flowing",
+          "transliteration": "maʿīnin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "10",
+            "startTime": 13690,
+            "endTime": 15880
+          }
+        },
+        {
+          "position": 11,
+          "text": "٣٠",
+          "textIndopak": "٣٠",
+          "translation": "(30)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

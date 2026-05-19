@@ -1,0 +1,455 @@
+{
+  "surahNumber": 106,
+  "name": "سُورَةُ قُرَيۡشٍ",
+  "englishName": "Quraish",
+  "englishTranslation": "Quraysh",
+  "arabicName": "سُورَةُ قُرَيۡشٍ",
+  "revelationType": "Meccan",
+  "totalAyahs": 4,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "106:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Because of the familiarity of the Quraish,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/106001.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "180",
+            "1620"
+          ],
+          [
+            "2",
+            "1630",
+            "3310"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "لِإِيلَـٰفِ",
+          "textIndopak": "لِاِيۡلٰفِ",
+          "translation": "For (the) familiarity",
+          "transliteration": "liīlāfi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 180,
+            "endTime": 1620
+          }
+        },
+        {
+          "position": 2,
+          "text": "قُرَيْشٍ",
+          "textIndopak": "قُرَيۡشٍۙ‏",
+          "translation": "(of the) Quraish",
+          "transliteration": "qurayshin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1630,
+            "endTime": 3310
+          }
+        },
+        {
+          "position": 3,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "106:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "that is, their familiarity with the trips of winter and summer,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/106002.mp3",
+        "duration": 6,
+        "segments": [
+          [
+            "1",
+            "100",
+            "1590"
+          ],
+          [
+            "2",
+            "1600",
+            "2360"
+          ],
+          [
+            "3",
+            "2370",
+            "5140"
+          ],
+          [
+            "4",
+            "5150",
+            "6670"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِۦلَـٰفِهِمْ",
+          "textIndopak": "اٖلٰفِهِمۡ",
+          "translation": "Their familiarity",
+          "transliteration": "īlāfihim",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 100,
+            "endTime": 1590
+          }
+        },
+        {
+          "position": 2,
+          "text": "رِحْلَةَ",
+          "textIndopak": "رِحۡلَةَ",
+          "translation": "(with the) journey",
+          "transliteration": "riḥ'lata",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1600,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلشِّتَآءِ",
+          "textIndopak": "الشِّتَآءِ",
+          "translation": "(of) winter",
+          "transliteration": "l-shitāi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2370,
+            "endTime": 5140
+          }
+        },
+        {
+          "position": 4,
+          "text": "وَٱلصَّيْفِ",
+          "textIndopak": "وَالصَّيۡفِ​ۚ‏",
+          "translation": "and summer",
+          "transliteration": "wal-ṣayfi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 5150,
+            "endTime": 6670
+          }
+        },
+        {
+          "position": 5,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "106:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "they must worship the Lord of this House,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/106003.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "120",
+            "1810"
+          ],
+          [
+            "2",
+            "1820",
+            "2460"
+          ],
+          [
+            "3",
+            "2470",
+            "3380"
+          ],
+          [
+            "4",
+            "3390",
+            "5310"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فَلْيَعْبُدُوا۟",
+          "textIndopak": "فَلۡيَـعۡبُدُوۡا",
+          "translation": "So let them worship",
+          "transliteration": "falyaʿbudū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 120,
+            "endTime": 1810
+          }
+        },
+        {
+          "position": 2,
+          "text": "رَبَّ",
+          "textIndopak": "رَبَّ",
+          "translation": "(the) Lord",
+          "transliteration": "rabba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1820,
+            "endTime": 2460
+          }
+        },
+        {
+          "position": 3,
+          "text": "هَـٰذَا",
+          "textIndopak": "هٰذَا",
+          "translation": "(of) this",
+          "transliteration": "hādhā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2470,
+            "endTime": 3380
+          }
+        },
+        {
+          "position": 4,
+          "text": "ٱلْبَيْتِ",
+          "textIndopak": "الۡبَيۡتِۙ‏",
+          "translation": "House",
+          "transliteration": "l-bayti",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3390,
+            "endTime": 5310
+          }
+        },
+        {
+          "position": 5,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "106:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 602,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "who gave them food against hunger, and gave them security against fear.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/106004.mp3",
+        "duration": 10,
+        "segments": [
+          [
+            "1",
+            "90",
+            "1620"
+          ],
+          [
+            "2",
+            "1630",
+            "3530"
+          ],
+          [
+            "3",
+            "3540",
+            "4250"
+          ],
+          [
+            "4",
+            "4260",
+            "5160"
+          ],
+          [
+            "5",
+            "5170",
+            "7370"
+          ],
+          [
+            "6",
+            "7380",
+            "8400"
+          ],
+          [
+            "7",
+            "8410",
+            "9700"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱلَّذِىٓ",
+          "textIndopak": "الَّذِىۡۤ",
+          "translation": "The One Who",
+          "transliteration": "alladhī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 1620
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَطْعَمَهُم",
+          "textIndopak": "اَطۡعَمَهُمۡ",
+          "translation": "feeds them",
+          "transliteration": "aṭʿamahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1630,
+            "endTime": 3530
+          }
+        },
+        {
+          "position": 3,
+          "text": "مِّن",
+          "textIndopak": "مِّنۡ",
+          "translation": "[from]",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3540,
+            "endTime": 4250
+          }
+        },
+        {
+          "position": 4,
+          "text": "جُوعٍۢ",
+          "textIndopak": "جُوۡعٍ   ۙ",
+          "translation": "(against) hunger",
+          "transliteration": "jūʿin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 4260,
+            "endTime": 5160
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَءَامَنَهُم",
+          "textIndopak": "وَّاٰمَنَهُمۡ",
+          "translation": "and gives them security",
+          "transliteration": "waāmanahum",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 5170,
+            "endTime": 7370
+          }
+        },
+        {
+          "position": 6,
+          "text": "مِّنْ",
+          "textIndopak": "مِّنۡ",
+          "translation": "from",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 7380,
+            "endTime": 8400
+          }
+        },
+        {
+          "position": 7,
+          "text": "خَوْفٍۭ",
+          "textIndopak": "خَوۡفٍ‏",
+          "translation": "fear",
+          "transliteration": "khawfin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 8410,
+            "endTime": 9700
+          }
+        },
+        {
+          "position": 8,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

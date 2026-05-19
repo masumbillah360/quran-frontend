@@ -1,0 +1,599 @@
+{
+  "surahNumber": 111,
+  "name": "سُورَةُ المَسَدِ",
+  "englishName": "Al-Masad",
+  "englishTranslation": "The Palm Fibre",
+  "arabicName": "سُورَةُ المَسَدِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 5,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "111:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Perish the two hands of Abū Lahab, and perish he!",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/111001.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "140",
+            "930"
+          ],
+          [
+            "2",
+            "940",
+            "1720"
+          ],
+          [
+            "3",
+            "1730",
+            "2360"
+          ],
+          [
+            "4",
+            "2370",
+            "3040"
+          ],
+          [
+            "5",
+            "3050",
+            "4860"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "تَبَّتْ",
+          "textIndopak": "تَبَّتۡ",
+          "translation": "Perish",
+          "transliteration": "tabbat",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 140,
+            "endTime": 930
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَدَآ",
+          "textIndopak": "يَدَاۤ",
+          "translation": "(the) hands",
+          "transliteration": "yadā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 940,
+            "endTime": 1720
+          }
+        },
+        {
+          "position": 3,
+          "text": "أَبِى",
+          "textIndopak": "اَبِىۡ",
+          "translation": "(of) Abu",
+          "transliteration": "abī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1730,
+            "endTime": 2360
+          }
+        },
+        {
+          "position": 4,
+          "text": "لَهَبٍۢ",
+          "textIndopak": "لَهَبٍ",
+          "translation": "Lahab",
+          "transliteration": "lahabin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2370,
+            "endTime": 3040
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَتَبَّ",
+          "textIndopak": "وَّتَبَّؕ‏",
+          "translation": "and perish he",
+          "transliteration": "watabba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3050,
+            "endTime": 4860
+          }
+        },
+        {
+          "position": 6,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "111:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Neither his wealth benefited him, nor what he earned.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/111002.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "340",
+            "1310"
+          ],
+          [
+            "2",
+            "1320",
+            "2170"
+          ],
+          [
+            "3",
+            "2180",
+            "2960"
+          ],
+          [
+            "4",
+            "2970",
+            "3990"
+          ],
+          [
+            "5",
+            "4000",
+            "4560"
+          ],
+          [
+            "6",
+            "4570",
+            "5350"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "مَآ",
+          "textIndopak": "مَاۤ",
+          "translation": "Not",
+          "transliteration": "mā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 340,
+            "endTime": 1310
+          }
+        },
+        {
+          "position": 2,
+          "text": "أَغْنَىٰ",
+          "textIndopak": "اَغۡنٰى",
+          "translation": "(will) avail",
+          "transliteration": "aghnā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1320,
+            "endTime": 2170
+          }
+        },
+        {
+          "position": 3,
+          "text": "عَنْهُ",
+          "textIndopak": "عَنۡهُ",
+          "translation": "him",
+          "transliteration": "ʿanhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2180,
+            "endTime": 2960
+          }
+        },
+        {
+          "position": 4,
+          "text": "مَالُهُۥ",
+          "textIndopak": "مَالُهٗ",
+          "translation": "his wealth",
+          "transliteration": "māluhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2970,
+            "endTime": 3990
+          }
+        },
+        {
+          "position": 5,
+          "text": "وَمَا",
+          "textIndopak": "وَمَا",
+          "translation": "and what",
+          "transliteration": "wamā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 4000,
+            "endTime": 4560
+          }
+        },
+        {
+          "position": 6,
+          "text": "كَسَبَ",
+          "textIndopak": "كَسَبَؕ‏",
+          "translation": "he earned",
+          "transliteration": "kasaba",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 4570,
+            "endTime": 5350
+          }
+        },
+        {
+          "position": 7,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "111:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "He will soon enter a Fire, full of flames,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/111003.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "160",
+            "1220"
+          ],
+          [
+            "2",
+            "1230",
+            "2930"
+          ],
+          [
+            "3",
+            "2940",
+            "3670"
+          ],
+          [
+            "4",
+            "3680",
+            "4460"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "سَيَصْلَىٰ",
+          "textIndopak": "سَيَصۡلٰى",
+          "translation": "He will be burnt",
+          "transliteration": "sayaṣlā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 160,
+            "endTime": 1220
+          }
+        },
+        {
+          "position": 2,
+          "text": "نَارًۭا",
+          "textIndopak": "نَارًا",
+          "translation": "(in) a Fire",
+          "transliteration": "nāran",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1230,
+            "endTime": 2930
+          }
+        },
+        {
+          "position": 3,
+          "text": "ذَاتَ",
+          "textIndopak": "ذَاتَ",
+          "translation": "of",
+          "transliteration": "dhāta",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2940,
+            "endTime": 3670
+          }
+        },
+        {
+          "position": 4,
+          "text": "لَهَبٍۢ",
+          "textIndopak": "لَهَبٍ ۖۚ‏",
+          "translation": "Blazing Flames",
+          "transliteration": "lahabin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3680,
+            "endTime": 4460
+          }
+        },
+        {
+          "position": 5,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "111:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "and his wife as well,-the wicked carrier of firewood.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/111004.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "160",
+            "1700"
+          ],
+          [
+            "2",
+            "1710",
+            "3480"
+          ],
+          [
+            "3",
+            "3490",
+            "4350"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَٱمْرَأَتُهُۥ",
+          "textIndopak": "وَّامۡرَاَ تُهٗ ؕ",
+          "translation": "And his wife",
+          "transliteration": "wa-im'ra-atuhu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 160,
+            "endTime": 1700
+          }
+        },
+        {
+          "position": 2,
+          "text": "حَمَّالَةَ",
+          "textIndopak": "حَمَّالَةَ",
+          "translation": "(the) carrier",
+          "transliteration": "ḥammālata",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1710,
+            "endTime": 3480
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱلْحَطَبِ",
+          "textIndopak": "الۡحَطَبِ​ۚ‏",
+          "translation": "(of) firewood",
+          "transliteration": "l-ḥaṭabi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 3490,
+            "endTime": 4350
+          }
+        },
+        {
+          "position": 4,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 5,
+      "verseKey": "111:5",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 603,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Around her neck, there is (a collar of iron, like) a well-twisted rope.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/111005.mp3",
+        "duration": 5,
+        "segments": [
+          [
+            "1",
+            "50",
+            "460"
+          ],
+          [
+            "2",
+            "470",
+            "1680"
+          ],
+          [
+            "3",
+            "1690",
+            "3240"
+          ],
+          [
+            "4",
+            "3250",
+            "3830"
+          ],
+          [
+            "5",
+            "3840",
+            "5580"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "فِى",
+          "textIndopak": "فِىۡ",
+          "translation": "In",
+          "transliteration": "fī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 50,
+            "endTime": 460
+          }
+        },
+        {
+          "position": 2,
+          "text": "جِيدِهَا",
+          "textIndopak": "جِيۡدِهَا",
+          "translation": "her neck",
+          "transliteration": "jīdihā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 470,
+            "endTime": 1680
+          }
+        },
+        {
+          "position": 3,
+          "text": "حَبْلٌۭ",
+          "textIndopak": "حَبۡلٌ",
+          "translation": "(will be) a rope",
+          "transliteration": "ḥablun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1690,
+            "endTime": 3240
+          }
+        },
+        {
+          "position": 4,
+          "text": "مِّن",
+          "textIndopak": "مِّنۡ",
+          "translation": "of",
+          "transliteration": "min",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 3250,
+            "endTime": 3830
+          }
+        },
+        {
+          "position": 5,
+          "text": "مَّسَدٍۭ",
+          "textIndopak": "مَّسَدٍ‏",
+          "translation": "palm-fiber",
+          "transliteration": "masadin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3840,
+            "endTime": 5580
+          }
+        },
+        {
+          "position": 6,
+          "text": "٥",
+          "textIndopak": "٥",
+          "translation": "(5)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

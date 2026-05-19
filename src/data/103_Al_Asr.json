@@ -1,0 +1,368 @@
+{
+  "surahNumber": 103,
+  "name": "سُورَةُ العَصۡرِ",
+  "englishName": "Al-Asr",
+  "englishTranslation": "The Declining Day, Epoch",
+  "arabicName": "سُورَةُ العَصۡرِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 3,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "103:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "(I swear) by the Time,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/103001.mp3",
+        "duration": 1,
+        "segments": [
+          [
+            "1",
+            "150",
+            "1010"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَٱلْعَصْرِ",
+          "textIndopak": "وَالۡعَصۡرِۙ‏",
+          "translation": "By the time",
+          "transliteration": "wal-ʿaṣri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 150,
+            "endTime": 1010
+          }
+        },
+        {
+          "position": 2,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "103:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "man is in a state of loss indeed,",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/103002.mp3",
+        "duration": 3,
+        "segments": [
+          [
+            "1",
+            "30",
+            "830"
+          ],
+          [
+            "2",
+            "840",
+            "2420"
+          ],
+          [
+            "3",
+            "2430",
+            "2980"
+          ],
+          [
+            "4",
+            "2990",
+            "3530"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِنَّ",
+          "textIndopak": "اِنَّ",
+          "translation": "Indeed",
+          "transliteration": "inna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 30,
+            "endTime": 830
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "textIndopak": "الۡاِنۡسَانَ",
+          "translation": "mankind",
+          "transliteration": "l-insāna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 840,
+            "endTime": 2420
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَفِى",
+          "textIndopak": "لَفِىۡ",
+          "translation": "(is) surely, in",
+          "transliteration": "lafī",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 2430,
+            "endTime": 2980
+          }
+        },
+        {
+          "position": 4,
+          "text": "خُسْرٍ",
+          "textIndopak": "خُسۡرٍۙ‏",
+          "translation": "loss",
+          "transliteration": "khus'rin",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2990,
+            "endTime": 3530
+          }
+        },
+        {
+          "position": 5,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "103:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 601,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "except those who believed and did righteous deeds, and exhorted each other to follow truth, and exhorted each other to observe patience.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/103003.mp3",
+        "duration": 16,
+        "segments": [
+          [
+            "1",
+            "90",
+            "680"
+          ],
+          [
+            "2",
+            "690",
+            "1710"
+          ],
+          [
+            "3",
+            "1720",
+            "2790"
+          ],
+          [
+            "4",
+            "2800",
+            "3540"
+          ],
+          [
+            "5",
+            "3550",
+            "11110"
+          ],
+          [
+            "6",
+            "11120",
+            "12510"
+          ],
+          [
+            "7",
+            "12520",
+            "13780"
+          ],
+          [
+            "8",
+            "13790",
+            "15310"
+          ],
+          [
+            "9",
+            "15320",
+            "16260"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "إِلَّا",
+          "textIndopak": "اِلَّا",
+          "translation": "Except",
+          "transliteration": "illā",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 90,
+            "endTime": 680
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلَّذِينَ",
+          "textIndopak": "الَّذِيۡنَ",
+          "translation": "those who",
+          "transliteration": "alladhīna",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 690,
+            "endTime": 1710
+          }
+        },
+        {
+          "position": 3,
+          "text": "ءَامَنُوا۟",
+          "textIndopak": "اٰمَنُوۡا",
+          "translation": "believe",
+          "transliteration": "āmanū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1720,
+            "endTime": 2790
+          }
+        },
+        {
+          "position": 4,
+          "text": "وَعَمِلُوا۟",
+          "textIndopak": "وَ",
+          "translation": "and do",
+          "transliteration": "waʿamilū",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2800,
+            "endTime": 3540
+          }
+        },
+        {
+          "position": 5,
+          "text": "ٱلصَّـٰلِحَـٰتِ",
+          "textIndopak": "عَمِلُوا",
+          "translation": "righteous deeds",
+          "transliteration": "l-ṣāliḥāti",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3550,
+            "endTime": 11110
+          }
+        },
+        {
+          "position": 6,
+          "text": "وَتَوَاصَوْا۟",
+          "textIndopak": "الصّٰلِحٰتِ",
+          "translation": "and enjoin (each other)",
+          "transliteration": "watawāṣaw",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "6",
+            "startTime": 11120,
+            "endTime": 12510
+          }
+        },
+        {
+          "position": 7,
+          "text": "بِٱلْحَقِّ",
+          "textIndopak": "وَتَوَاصَوۡا",
+          "translation": "to the truth",
+          "transliteration": "bil-ḥaqi",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "7",
+            "startTime": 12520,
+            "endTime": 13780
+          }
+        },
+        {
+          "position": 8,
+          "text": "وَتَوَاصَوْا۟",
+          "textIndopak": "بِالۡحَقِّ   ۙ",
+          "translation": "and enjoin (each other)",
+          "transliteration": "watawāṣaw",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "8",
+            "startTime": 13790,
+            "endTime": 15310
+          }
+        },
+        {
+          "position": 9,
+          "text": "بِٱلصَّبْرِ",
+          "textIndopak": "وَتَوَاصَوۡا بِالصَّبۡرِ‏",
+          "translation": "to [the] patience",
+          "transliteration": "bil-ṣabri",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "9",
+            "startTime": 15320,
+            "endTime": 16260
+          }
+        },
+        {
+          "position": 10,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}

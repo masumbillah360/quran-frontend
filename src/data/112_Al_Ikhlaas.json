@@ -1,0 +1,417 @@
+{
+  "surahNumber": 112,
+  "name": "سُورَةُ الإِخۡلَاصِ",
+  "englishName": "Al-Ikhlaas",
+  "englishTranslation": "Sincerity",
+  "arabicName": "سُورَةُ الإِخۡلَاصِ",
+  "revelationType": "Meccan",
+  "totalAyahs": 4,
+  "bismillahPre": true,
+  "ayahs": [
+    {
+      "ayahNumber": 1,
+      "verseKey": "112:1",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Say, “The truth is that Allah is One.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/112001.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "100",
+            "500"
+          ],
+          [
+            "2",
+            "510",
+            "910"
+          ],
+          [
+            "3",
+            "920",
+            "1930"
+          ],
+          [
+            "4",
+            "1940",
+            "2800"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "قُلْ",
+          "textIndopak": "قُلۡ",
+          "translation": "Say",
+          "transliteration": "qul",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 100,
+            "endTime": 500
+          }
+        },
+        {
+          "position": 2,
+          "text": "هُوَ",
+          "textIndopak": "هُوَ",
+          "translation": "He",
+          "transliteration": "huwa",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 510,
+            "endTime": 910
+          }
+        },
+        {
+          "position": 3,
+          "text": "ٱللَّهُ",
+          "textIndopak": "اللّٰهُ",
+          "translation": "(is) Allah",
+          "transliteration": "l-lahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 920,
+            "endTime": 1930
+          }
+        },
+        {
+          "position": 4,
+          "text": "أَحَدٌ",
+          "textIndopak": "اَحَدٌ​ ۚ‏",
+          "translation": "the One",
+          "transliteration": "aḥadun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1940,
+            "endTime": 2800
+          }
+        },
+        {
+          "position": 5,
+          "text": "١",
+          "textIndopak": "١",
+          "translation": "(1)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 2,
+      "verseKey": "112:2",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "Allah is Besought of all, needing none.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/112002.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "180",
+            "1310"
+          ],
+          [
+            "2",
+            "1320",
+            "2260"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "ٱللَّهُ",
+          "textIndopak": "اَللّٰهُ",
+          "translation": "Allah",
+          "transliteration": "al-lahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 180,
+            "endTime": 1310
+          }
+        },
+        {
+          "position": 2,
+          "text": "ٱلصَّمَدُ",
+          "textIndopak": "الصَّمَدُ​ ۚ‏",
+          "translation": "the Eternal, the Absolute",
+          "transliteration": "l-ṣamadu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 1320,
+            "endTime": 2260
+          }
+        },
+        {
+          "position": 3,
+          "text": "٢",
+          "textIndopak": "٢",
+          "translation": "(2)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 3,
+      "verseKey": "112:3",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "He neither begot anyone, nor was he begotten.",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/112003.mp3",
+        "duration": 2,
+        "segments": [
+          [
+            "1",
+            "190",
+            "590"
+          ],
+          [
+            "2",
+            "600",
+            "1210"
+          ],
+          [
+            "3",
+            "1220",
+            "1880"
+          ],
+          [
+            "4",
+            "1890",
+            "2720"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "لَمْ",
+          "textIndopak": "لَمۡ",
+          "translation": "Not",
+          "transliteration": "lam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 190,
+            "endTime": 590
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَلِدْ",
+          "textIndopak": "يَلِدۡ   ۙ",
+          "translation": "He begets",
+          "transliteration": "yalid",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 600,
+            "endTime": 1210
+          }
+        },
+        {
+          "position": 3,
+          "text": "وَلَمْ",
+          "textIndopak": "وَلَمۡ",
+          "translation": "and not",
+          "transliteration": "walam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1220,
+            "endTime": 1880
+          }
+        },
+        {
+          "position": 4,
+          "text": "يُولَدْ",
+          "textIndopak": "يُوۡلَدۡ ۙ‏",
+          "translation": "He is begotten",
+          "transliteration": "yūlad",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 1890,
+            "endTime": 2720
+          }
+        },
+        {
+          "position": 5,
+          "text": "٣",
+          "textIndopak": "٣",
+          "translation": "(3)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    },
+    {
+      "ayahNumber": 4,
+      "verseKey": "112:4",
+      "textIndopak": "",
+      "textSimple": "",
+      "pageNumber": 604,
+      "juzNumber": 30,
+      "hizbNumber": 60,
+      "rubNumber": 240,
+      "sajdah": null,
+      "translation": "And equal to Him has never been any one.”",
+      "translationName": "The Clear Quran",
+      "audio": {
+        "url": "https://audio.qurancdn.com/Sudais/mp3/112004.mp3",
+        "duration": 4,
+        "segments": [
+          [
+            "1",
+            "110",
+            "660"
+          ],
+          [
+            "2",
+            "670",
+            "1200"
+          ],
+          [
+            "3",
+            "1210",
+            "2190"
+          ],
+          [
+            "4",
+            "2200",
+            "3270"
+          ],
+          [
+            "5",
+            "3280",
+            "4250"
+          ]
+        ]
+      },
+      "words": [
+        {
+          "position": 1,
+          "text": "وَلَمْ",
+          "textIndopak": "وَلَمۡ",
+          "translation": "And not",
+          "transliteration": "walam",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "1",
+            "startTime": 110,
+            "endTime": 660
+          }
+        },
+        {
+          "position": 2,
+          "text": "يَكُن",
+          "textIndopak": "يَكُنۡ",
+          "translation": "is",
+          "transliteration": "yakun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "2",
+            "startTime": 670,
+            "endTime": 1200
+          }
+        },
+        {
+          "position": 3,
+          "text": "لَّهُۥ",
+          "textIndopak": "لَّهٗ",
+          "translation": "for Him",
+          "transliteration": "lahu",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "3",
+            "startTime": 1210,
+            "endTime": 2190
+          }
+        },
+        {
+          "position": 4,
+          "text": "كُفُوًا",
+          "textIndopak": "كُفُوًا",
+          "translation": "equivalent",
+          "transliteration": "kufuwan",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "4",
+            "startTime": 2200,
+            "endTime": 3270
+          }
+        },
+        {
+          "position": 5,
+          "text": "أَحَدٌۢ",
+          "textIndopak": "اَحَدٌ‏",
+          "translation": "any [one]",
+          "transliteration": "aḥadun",
+          "audio": null,
+          "charType": "word",
+          "audioSegment": {
+            "wordIndex": "5",
+            "startTime": 3280,
+            "endTime": 4250
+          }
+        },
+        {
+          "position": 6,
+          "text": "٤",
+          "textIndopak": "٤",
+          "translation": "(4)",
+          "transliteration": "",
+          "audio": null,
+          "charType": "end"
+        }
+      ]
+    }
+  ]
+}
