@@ -119,9 +119,9 @@ export default function SurahReader() {
     return () => window.removeEventListener('jump-to-ayah', handleJump);
   }, []);
 
-  // ── Scroll to jump target after data renders ──
+  // ── Scroll to jump target after data renders (reading mode only) ──
   useEffect(() => {
-    if (jumpTargetAyah === null) return;
+    if (jumpTargetAyah === null || viewMode !== 'reading') return;
 
     const tryScroll = (attempts: number) => {
       const el = document.getElementById(`ayah-${currentSurah}-${jumpTargetAyah}`);
@@ -136,7 +136,7 @@ export default function SurahReader() {
     };
 
     tryScroll(20);
-  }, [currentSurah, jumpTargetAyah, surahData]);
+  }, [currentSurah, jumpTargetAyah, surahData, viewMode]);
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';

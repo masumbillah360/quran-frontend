@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/refs */
 /* eslint-disable react-hooks/set-state-in-effect */
 'use client';
 
@@ -27,6 +28,7 @@ export default function VirtualizedAyahList({
   jumpTargetAyah = null,
 }: VirtualizedAyahListProps) {
   const { fontSettings, audioState } = useApp();
+  const [visibleRange, setVisibleRange] = useState({ start: 0, end: 15 });
   const heightCacheRef = useRef<Map<number, number>>(new Map());
   const lastScrollTime = useRef(0);
   const hasJumpScrolled = useRef(false);
@@ -35,28 +37,12 @@ export default function VirtualizedAyahList({
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
 
   const estimatedHeight = useMemo(() => {
-    const arabicLines = 2;
-    const translationLines = 3;
-    const padding = 50;
     return (
-      arabicLines * fontSettings.arabicFontSize * 2.8 +
-      translationLines * fontSettings.translationFontSize * 1.6 +
-      padding
+      2 * fontSettings.arabicFontSize * 2.8 +
+      3 * fontSettings.translationFontSize * 1.6 +
+      50
     );
   }, [fontSettings.arabicFontSize, fontSettings.translationFontSize]);
-
-  const computeInitialRange = useCallback(() => {
-    if (jumpTargetAyah !== null && ayahs.length > 0) {
-      const idx = ayahs.findIndex((a) => a.ayahNumber === jumpTargetAyah);
-      if (idx >= 0) {
-        const start = Math.max(0, idx - 3);
-        return { start, end: Math.min(ayahs.length - 1, idx + 12) };
-      }
-    }
-    return { start: 0, end: Math.min(15, ayahs.length - 1) };
-  }, [jumpTargetAyah, ayahs.length]);
-
-  const [visibleRange, setVisibleRange] = useState(computeInitialRange);
 
   const getHeight = useCallback(
     (index: number): number => {
@@ -78,149 +64,111 @@ export default function VirtualizedAyahList({
 
     let accumulatedHeight = 0;
     let startIndex = 0;
-
     for (let i = 0; i < ayahs.length; i++) {
-      const height = getHeight(i);
-      if (accumulatedHeight + height > scrollTop) {
-        startIndex = i;
-        break;
-      }
-      accumulatedHeight += height;
+      if (accumulatedHeight + getHeight(i) > scrollTop) { startIndex = i; break; }
+      accumulatedHeight += getHeight(i);
     }
 
     let endIndex = startIndex;
     let visibleHeight = 0;
-
     for (let i = startIndex; i < ayahs.length; i++) {
-      const height = getHeight(i);
-      visibleHeight += height;
+      visibleHeight += getHeight(i);
       endIndex = i;
       if (visibleHeight > viewportHeight + estimatedHeight * 2) break;
     }
 
     const bufferedStart = Math.max(0, startIndex - BUFFER_COUNT);
     const bufferedEnd = Math.min(ayahs.length - 1, endIndex + BUFFER_COUNT);
-
-    setVisibleRange((prev) => {
-      if (prev.start === bufferedStart && prev.end === bufferedEnd) {
-        return prev;
-      }
-      return { start: bufferedStart, end: bufferedEnd };
-    });
+    setVisibleRange((prev) =>
+      prev.start === bufferedStart && prev.end === bufferedEnd
+        ? prev
+        : { start: bufferedStart, end: bufferedEnd }
+    );
   }, [ayahs.length, containerRef, getHeight, estimatedHeight, headerOffset]);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-
     let rafId: number | null = null;
-
     const handleScroll = () => {
       if (rafId) return;
-      rafId = requestAnimationFrame(() => {
-        updateVisibleRange();
-        rafId = null;
-      });
+      rafId = requestAnimationFrame(() => { updateVisibleRange(); rafId = null; });
     };
-
     container.addEventListener('scroll', handleScroll, { passive: true });
     updateVisibleRange();
-
     return () => {
       container.removeEventListener('scroll', handleScroll);
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [containerRef, updateVisibleRange]);
 
+  // Reset range & scroll on surah/jump change
   useEffect(() => {
     heightCacheRef.current.clear();
     hasJumpScrolled.current = false;
-    if (jumpTargetAyah === null) {
-      setVisibleRange({ start: 0, end: 15 });
+
+    if (jumpTargetAyah !== null && ayahs.length > 0) {
+      const idx = ayahs.findIndex((a) => a.ayahNumber === jumpTargetAyah);
+      if (idx >= 0) {
+        setVisibleRange({ start: Math.max(0, idx - 3), end: Math.min(ayahs.length - 1, idx + 12) });
+      } else {
+        setVisibleRange({ start: 0, end: 15 });
+      }
     } else {
-      setVisibleRange(computeInitialRange());
+      setVisibleRange({ start: 0, end: 15 });
     }
 
-    const timer = setTimeout(updateVisibleRange, 50);
+    const timer = setTimeout(updateVisibleRange, 100);
     return () => clearTimeout(timer);
-  }, [ayahs, fontSettings, updateVisibleRange, jumpTargetAyah, computeInitialRange]);
+  }, [ayahs, fontSettings, updateVisibleRange, jumpTargetAyah]);
 
+  // Scroll to target after DOM renders
   useEffect(() => {
     if (jumpTargetAyah === null || hasJumpScrolled.current) return;
-
     const tryScroll = (attempts: number) => {
       const el = document.getElementById(`ayah-${surahNumber}-${jumpTargetAyah}`);
       if (el) {
         el.scrollIntoView({ behavior: 'auto', block: 'center' });
         hasJumpScrolled.current = true;
       } else if (attempts > 0) {
-        setTimeout(() => tryScroll(attempts - 1), 100);
+        setTimeout(() => tryScroll(attempts - 1), 150);
       }
     };
-
-    tryScroll(15);
+    tryScroll(20);
   }, [surahNumber, jumpTargetAyah, visibleRange]);
 
   useEffect(() => {
-    let debounceTimer: ReturnType<typeof setTimeout>;
-
-    const handleResize = () => {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(() => {
-        heightCacheRef.current.clear();
-        updateVisibleRange();
-      }, RESIZE_DEBOUNCE);
+    let t: ReturnType<typeof setTimeout>;
+    const handler = () => {
+      clearTimeout(t);
+      t = setTimeout(() => { heightCacheRef.current.clear(); updateVisibleRange(); }, RESIZE_DEBOUNCE);
     };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      clearTimeout(debounceTimer);
-    };
+    window.addEventListener('resize', handler);
+    return () => { window.removeEventListener('resize', handler); clearTimeout(t); };
   }, [updateVisibleRange]);
 
   const measureHeight = useCallback((index: number, height: number) => {
     const cached = heightCacheRef.current.get(index);
-    if (cached !== height && height > 0) {
-      heightCacheRef.current.set(index, height);
-    }
+    if (cached !== height && height > 0) heightCacheRef.current.set(index, height);
   }, []);
 
   const { topSpacer, bottomSpacer, visibleAyahs } = useMemo(() => {
     let top = 0;
-    for (let i = 0; i < visibleRange.start; i++) {
-      top += getHeight(i);
-    }
-
+    for (let i = 0; i < visibleRange.start; i++) top += getHeight(i);
     let bottom = 0;
-    for (let i = visibleRange.end + 1; i < ayahs.length; i++) {
-      bottom += getHeight(i);
-    }
-
-    const visible = ayahs.slice(visibleRange.start, visibleRange.end + 1);
-
-    return { topSpacer: top, bottomSpacer: bottom, visibleAyahs: visible };
+    for (let i = visibleRange.end + 1; i < ayahs.length; i++) bottom += getHeight(i);
+    return { topSpacer: top, bottomSpacer: bottom, visibleAyahs: ayahs.slice(visibleRange.start, visibleRange.end + 1) };
   }, [visibleRange, ayahs, getHeight]);
 
-  const activeAyahNumber =
-    audioState.currentSurah === surahNumber ? audioState.currentAyah : null;
-  const activeWordPosition =
-    audioState.currentSurah === surahNumber ? audioState.currentWord : null;
+  const activeAyahNumber = audioState.currentSurah === surahNumber ? audioState.currentAyah : null;
+  const activeWordPosition = audioState.currentSurah === surahNumber ? audioState.currentWord : null;
 
   return (
     <div role="list" aria-label="Ayahs">
-      {topSpacer > 0 && (
-        <div
-          style={{ height: topSpacer }}
-          aria-hidden="true"
-          className="pointer-events-none"
-        />
-      )}
-
+      {topSpacer > 0 && <div style={{ height: topSpacer }} aria-hidden="true" className="pointer-events-none" />}
       {visibleAyahs.map((ayah, idx) => {
         const actualIndex = visibleRange.start + idx;
         const isActive = activeAyahNumber === ayah.ayahNumber;
-
         return (
           <div key={ayah.id} role="listitem">
             <OptimizedAyahCard
@@ -231,26 +179,14 @@ export default function VirtualizedAyahList({
               arabicFontSize={fontSettings.arabicFontSize}
               arabicFontFamily={arabicFontFamily}
               translationFontSize={fontSettings.translationFontSize}
-              onMeasure={(height) => measureHeight(actualIndex, height)}
+              onMeasure={(h) => measureHeight(actualIndex, h)}
             />
           </div>
         );
       })}
-
-      {bottomSpacer > 0 && (
-        <div
-          style={{ height: bottomSpacer }}
-          aria-hidden="true"
-          className="pointer-events-none"
-        />
-      )}
-
+      {bottomSpacer > 0 && <div style={{ height: bottomSpacer }} aria-hidden="true" className="pointer-events-none" />}
       {ayahs.length > visibleRange.end + 1 && (
-        <div
-          className="text-center py-4 text-sm"
-          style={{ color: 'var(--text-muted)' }}
-          aria-live="polite"
-        >
+        <div className="text-center py-4 text-sm" style={{ color: 'var(--text-muted)' }} aria-live="polite">
           {ayahs.length - visibleRange.end - 1} more ayahs below
         </div>
       )}
