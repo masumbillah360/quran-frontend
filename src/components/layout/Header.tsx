@@ -90,7 +90,7 @@ export default function Header() {
           </button>
 
           {themeOpen && (
-            <div className="absolute right-0 top-full mt-2 w-40 bg-(--bg-surface) border border-(--border-subtle) rounded-xl shadow-xl overflow-hidden z-50">
+            <div className="fixed right-6 top-16 w-40 bg-(--bg-surface) border border-(--border-subtle) rounded-xl shadow-xl overflow-hidden z-50">
               {THEME_OPTIONS.map(({ id, icon: Icon, label }) => (
                 <button
                   key={id}
