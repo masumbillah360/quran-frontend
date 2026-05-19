@@ -15,12 +15,12 @@
 
 import { useRef, useEffect, memo, useCallback, useState } from 'react';
 import { Play, Pause, Copy, Check, Share2, Bookmark } from 'lucide-react';
-import { LocalAyahData, toArabicNumerals } from '@/types/surahs.types';
+import { AyahData, toArabicNumerals } from '@/types/surahs.types';
 import { useApp } from '@/context/AppContext';
 import { cleanArabicText } from '@/utils';
 
 interface OptimizedAyahCardProps {
-  ayah: LocalAyahData;
+  ayah: AyahData;
   surahNumber: number;
   isActive: boolean;
   activeWordPosition: number | null;

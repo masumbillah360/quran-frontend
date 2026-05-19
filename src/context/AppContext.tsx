@@ -1,6 +1,6 @@
 'use client';
 
-import { ThemeMode, FontSettings, Ayah, AudioState, LocalSurahData, LocalAyahData } from '@/types';
+import { ThemeMode, FontSettings, AudioState, SurahData, AyahData } from '@/types';
 import React, {
   createContext,
   useContext,
@@ -17,7 +17,7 @@ interface AppContextType {
   setCurrentSurah: (n: number) => void;
   currentAyah: number;
   setCurrentAyah: (n: number) => void;
-  surahData: LocalSurahData | null;
+  surahData: SurahData | null;
   surahLoading: boolean;
   surahError: string | null;
   reloadSurah: () => void;
@@ -41,7 +41,7 @@ interface AppContextType {
   setViewMode: (m: 'translation' | 'reading') => void;
   audioState: AudioState;
   audioRef: React.RefObject<HTMLAudioElement | null>;
-  playAyah: (surah: number, ayah: LocalAyahData) => void;
+  playAyah: (surah: number, ayah: AyahData) => void;
   pauseAudio: () => void;
   resumeAudio: () => void;
   stopAudio: () => void;
@@ -49,9 +49,9 @@ interface AppContextType {
   goToPrevAyah: () => void;
   seekAudio: (time: number) => void;
   clearAudioError: () => void;
-  toggleAyahAudio: (surahNum: number, ayah: Ayah) => void;
+  toggleAyahAudio: (surahNum: number, ayah: AyahData) => void;
   playSurahFrom: (surahNum: number, fromAyahIdx: number) => void;
-  setSurahAudioData: (surahNum: number, url: string, ayahs: Ayah[]) => void;
+  setSurahAudioData: (surahNum: number, url: string, ayahs: AyahData[]) => void;
   currentAudioRef: React.RefObject<HTMLAudioElement | null>;
   activeIconTab: string;
   setActiveIconTab: (tab: string) => void;
@@ -130,10 +130,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // ── Surah Data ──
   const [currentSurah, setCurrentSurahState] = useState(() => loadFromStorage(STORAGE_KEYS.SURAH, 1));
-  const [surahData, setSurahData] = useState<LocalSurahData | null>(null);
+  const [surahData, setSurahData] = useState<SurahData | null>(null);
   const [surahLoading, setSurahLoading] = useState(false);
   const [surahError, setSurahError] = useState<string | null>(null);
-  const surahDataRef = useRef<LocalSurahData | null>(null);
+  const surahDataRef = useRef<SurahData | null>(null);
   const [currentAyah, setCurrentAyah] = useState<number>(1);
 
   const setCurrentSurah = useCallback((n: number) => {
@@ -259,10 +259,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null); // Legacy compatibility
   const wordTimerRef = useRef<number>(0);
-  const currentAyahRef = useRef<LocalAyahData | null>(null);
+  const currentAyahRef = useRef<AyahData | null>(null);
   const audioStateRef = useRef(audioState);
   const generationRef = useRef(0); // ← ownership token
-  const surahAudioDataRef = useRef<{ audioUrl: string; ayahs: Ayah[] } | null>(null);
+  const surahAudioDataRef = useRef<{ audioUrl: string; ayahs: AyahData[] } | null>(null);
   const currentAyahIdxRef = useRef(-1);
   const currentSurahRef = useRef<number | null>(null);
   const rafRef = useRef<number | null>(null);
@@ -292,7 +292,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }
 
   // ── Word Tracking ──
-  function startTracking(ayah: LocalAyahData, gen: number) {
+  function startTracking(ayah: AyahData, gen: number) {
     cancelAnimationFrame(wordTimerRef.current);
 
     // Pre-build segment lookup
@@ -339,7 +339,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }
 
   // ── Core: play a specific ayah ──
-  const playAyahInternal = useCallback((surah: number, ayah: LocalAyahData) => {
+  const playAyahInternal = useCallback((surah: number, ayah: AyahData) => {
     // 1) Kill the old element completely
     destroyAudio();
 
@@ -426,7 +426,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // ── Public: play/toggle an ayah ──
-  const playAyah = useCallback((surah: number, ayah: LocalAyahData) => {
+  const playAyah = useCallback((surah: number, ayah: AyahData) => {
     const s = audioStateRef.current;
 
     // Same ayah → toggle
@@ -507,57 +507,24 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setAudioState(prev => ({ ...prev, error: null }));
   }, []);
 
-  // ── Legacy compatibility functions ──
   const setSurahAudioData = useCallback(
-    (_surahNum: number, audioUrl: string, ayahs: Ayah[]) => {
+    (_surahNum: number, audioUrl: string, ayahs: AyahData[]) => {
       surahAudioDataRef.current = { audioUrl, ayahs };
     },
     [],
   );
 
   const toggleAyahAudio = useCallback(
-    (surahNum: number, ayah: Ayah) => {
-      // Convert legacy Ayah to LocalAyahData format
-      const ayahData: LocalAyahData = {
-        id: `${surahNum}:${ayah.ayah_number}`,
-        ayahNumber: ayah.ayah_number,
-        verseKey: ayah.verse_key,
-        pageNumber: ayah.page_number,
-        juzNumber: ayah.juz_number,
-        hizbNumber: ayah.hizb_number,
-        rubNumber: ayah.rub_number,
-        sajdah: ayah.sajdah_type ? true : null,
-        translation: ayah.translation?.translation ?? '',
-        translationName: ayah.translation?.translation_name ?? 'Saheeh International',
-        audio: {
-          url: ayah.audio?.audio_url ?? '',
-          duration: ayah.audio?.duration ?? 0,
-          segments: ayah.audio?.segments?.map(s => [String(s.wordIndex), String(s.startTime), String(s.endTime)]) as [string, string, string][],
-        },
-        words: ayah.words.map(w => ({
-          id: String(w.id),
-          position: w.position,
-          text: w.text,
-          translation: w.translation,
-          transliteration: w.transliteration,
-          charType: w.char_type,
-          audioSegment: w.audioSegment ? {
-            wordIndex: parseInt(w.audioSegment.wordIndex),
-            startTime: w.audioSegment.startTime,
-            endTime: w.audioSegment.endTime,
-          } : undefined,
-        })),
-      };
-
+    (surahNum: number, ayah: AyahData) => {
       const s = audioStateRef.current;
-      if (s.currentAyah === ayah.ayah_number && s.currentSurah === surahNum) {
+      if (s.currentAyah === ayah.ayahNumber && s.currentSurah === surahNum) {
         if (s.isPlaying) {
           pauseAudio();
         } else {
           resumeAudio();
         }
       } else {
-        playAyah(surahNum, ayahData);
+        playAyah(surahNum, ayah);
       }
     },
     [playAyah, pauseAudio, resumeAudio],

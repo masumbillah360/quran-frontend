@@ -3,13 +3,13 @@
 'use client';
 
 import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
-import { LocalAyahData } from '@/types/surahs.types';
+import { AyahData } from '@/types/surahs.types';
 import OptimizedAyahCard from './OptimizedAyahCard';
 import { useApp } from '@/context/AppContext';
 import { ARABIC_FONTS } from '@/constants/fonts';
 
 interface VirtualizedAyahListProps {
-  ayahs: LocalAyahData[];
+  ayahs: AyahData[];
   surahNumber: number;
   containerRef: React.RefObject<HTMLElement | null>;
   headerOffset?: number;

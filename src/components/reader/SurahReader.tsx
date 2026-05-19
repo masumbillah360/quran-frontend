@@ -15,7 +15,7 @@ import {
 import { ARABIC_FONTS } from '@/constants/fonts';
 import AyahSkeleton from '../ui/ayah-skeleton';
 import VirtualizedAyahList from './VirtualizedAyahList';
-import { LocalAyahData } from '@/types';
+import { AyahData } from '@/types';
 import { SURAHS } from '@/data/surahs';
 import { toArabicNumerals } from '@/utils';
 
@@ -278,7 +278,7 @@ export default function SurahReader() {
                 }}
                 lang="ar"
                 dir="rtl">
-                {surahData?.ayahs.map((ayah: LocalAyahData) => {
+                {surahData?.ayahs.map((ayah: AyahData) => {
                   const words = ayah.words.filter((w) => w.charType === 'word');
                   return (
                     <span key={ayah.id} id={`ayah-${currentSurah}-${ayah.ayahNumber}`}>

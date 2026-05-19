@@ -7,7 +7,7 @@
  */
 
 import { SURAHS } from '@/data/surahs';
-import { LocalSurahData } from '@/types/surahs.types';
+import { SurahData } from '@/types/surahs.types';
 
 export interface SearchResult {
   type: 'surah' | 'ayah';
@@ -21,7 +21,7 @@ export interface SearchResult {
   matchType: 'name' | 'translation' | 'arabic' | 'english';
 }
 
-const surahModules: Record<number, () => Promise<LocalSurahData>> = {
+const surahModules: Record<number, () => Promise<SurahData>> = {
   1: () => import('@/data/001_Al_Faatiha.json').then(normalize),
   2: () => import('@/data/002_Al_Baqara.json').then(normalize),
   3: () => import('@/data/003_Aal_i_Imraan.json').then(normalize),
@@ -138,7 +138,7 @@ const surahModules: Record<number, () => Promise<LocalSurahData>> = {
   114: () => import('@/data/114_An_Naas.json').then(normalize),
 };
 
-function normalize(m: { default: unknown }): LocalSurahData {
+function normalize(m: { default: unknown }): SurahData {
   const raw = m.default as Record<string, unknown>;
   const surahNumber = (raw.surahNumber as number) ?? 1;
   return {

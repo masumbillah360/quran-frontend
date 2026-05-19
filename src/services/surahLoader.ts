@@ -8,18 +8,18 @@
  * Uses local JSON data files from src/data/ instead of API calls.
  */
 
-import { LocalSurahData, LocalCachedSurah } from '@/types/surahs.types';
+import { SurahData, CachedSurah } from '@/types/surahs.types';
 
 // ── Cache Configuration ──────────────────────────────────────────────────────
 const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
 const MAX_CACHED_SURAHS = 5; // Keep max 5 surahs in memory
 
 // ── In-Memory Cache ──────────────────────────────────────────────────────────
-const surahCache = new Map<number, LocalCachedSurah>();
-const loadingPromises = new Map<number, Promise<LocalSurahData>>();
+const surahCache = new Map<number, CachedSurah>();
+const loadingPromises = new Map<number, Promise<SurahData>>();
 
 // ── Dynamic import map for all 114 surahs ────────────────────────────────────
-const surahModules: Record<number, () => Promise<LocalSurahData>> = {
+const surahModules: Record<number, () => Promise<SurahData>> = {
     1: () =>
         import('@/data/001_Al_Faatiha.json').then((m) =>
             normalizeSurahData(m.default, 1),
@@ -479,10 +479,10 @@ const surahModules: Record<number, () => Promise<LocalSurahData>> = {
 };
 
 /**
- * Normalize raw JSON data to match our LocalSurahData interface.
+ * Normalize raw JSON data to match our SurahData interface.
  * Adds missing `id` fields and ensures consistent structure.
  */
-function normalizeSurahData(raw: any, surahNumber: number): LocalSurahData {
+function normalizeSurahData(raw: any, surahNumber: number): SurahData {
     return {
         surahNumber: raw.surahNumber ?? surahNumber,
         name: raw.name ?? '',
@@ -536,7 +536,7 @@ function normalizeSurahData(raw: any, surahNumber: number): LocalSurahData {
 /**
  * Load a surah by number. Returns cached data if available.
  */
-export async function loadSurah(surahNumber: number): Promise<LocalSurahData> {
+export async function loadSurah(surahNumber: number): Promise<SurahData> {
     // Validate range
     if (surahNumber < 1 || surahNumber > 114) {
         throw new Error(`Invalid surah number: ${surahNumber}`);
