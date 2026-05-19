@@ -4,7 +4,6 @@ import * as React from "react"
 import { Slider as SliderPrimitive } from "radix-ui"
 import { cn } from "@/utils/cn"
 
-
 function Slider({
   className,
   defaultValue,
@@ -13,14 +12,23 @@ function Slider({
   max = 100,
   ...props
 }: React.ComponentProps<typeof SliderPrimitive.Root>) {
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Safely fallback to a consistent 1-thumb array structure on the server side
   const _values = React.useMemo(
-    () =>
-      Array.isArray(value)
+    () => {
+      if (!mounted) return [min]; // Match a predictable array length for single value sliders on server
+      return Array.isArray(value)
         ? value
         : Array.isArray(defaultValue)
           ? defaultValue
-          : [min, max],
-    [value, defaultValue, min, max]
+          : [min]; // For single sliders, prefer single fallback instead of double [min, max]
+    },
+    [value, defaultValue, min, max, mounted]
   )
 
   return (
@@ -43,9 +51,10 @@ function Slider({
         <SliderPrimitive.Range
           data-slot="slider-range"
           className="absolute bg-(--accent) select-none data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
+          suppressHydrationWarning
         />
       </SliderPrimitive.Track>
-      {Array.from({ length: _values.length }, (_, index) => (
+      {_values.map((_, index) => (
         <SliderPrimitive.Thumb
           data-slot="slider-thumb"
           key={index}

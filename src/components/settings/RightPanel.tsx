@@ -6,6 +6,7 @@ import {
   BookOpen,
   Settings,
   Sun,
+  X,
 } from "lucide-react";
 import { useApp } from "@/context/AppContext";
 import { SliderControl } from "./SliderControl";
@@ -17,6 +18,7 @@ import { ThemePicker } from "./ThemePicker";
 export default function RightPanel() {
   const {
     isRightPanelOpen,
+    setIsRightPanelOpen,
     viewMode,
     setViewMode,
     fontSettings,
@@ -31,8 +33,8 @@ export default function RightPanel() {
 
   if (!isRightPanelOpen) return null;
 
-  return (
-    <aside className={`${isRightPanelOpen ? 'flex' : ''} flex-col w-72 xl:w-80 shrink-0 bg-(--bg-canvas) border-l border-(--border-default) overflow-y-auto`}>
+  const panelContent = (
+    <aside className="flex flex-col w-72 xl:w-80 bg-(--bg-canvas) border-l border-(--border-default) overflow-y-auto h-full">
       {/* ── View mode toggle ── */}
       <div className="p-4 border-b border-(--border-default)">
         <div className="flex bg-(--bg-surface) rounded-xl p-1 gap-1 border border-(--border-subtle)">
@@ -186,5 +188,30 @@ export default function RightPanel() {
         ))}
       </div>
     </aside>
+  );
+
+  return (
+    <>
+      {/* Mobile overlay drawer */}
+      <div className="fixed inset-0 z-50 flex justify-end xl:hidden">
+        <div
+          className="absolute inset-0 bg-black/60 backdrop-blur-xs"
+          onClick={() => setIsRightPanelOpen(false)}
+        />
+        <div className="relative animate-in slide-in-from-right duration-300">
+          {panelContent}
+          <button
+            onClick={() => setIsRightPanelOpen(false)}
+            className="absolute top-3 right-3 w-8 h-8 rounded-lg flex items-center justify-center text-(--text-muted) hover:bg-(--bg-surface) hover:text-(--text-primary) transition-all">
+            <X size={16} />
+          </button>
+        </div>
+      </div>
+
+      {/* Desktop inline panel */}
+      <div className="hidden xl:flex">
+        {panelContent}
+      </div>
+    </>
   );
 }

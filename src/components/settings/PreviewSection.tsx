@@ -35,6 +35,7 @@ export function PreviewSection({
           }}
           lang="ar"
           dir="rtl"
+          suppressHydrationWarning
         >
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </p>
