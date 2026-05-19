@@ -186,6 +186,7 @@ export default function SurahReader({ surahNumber }: SurahReaderProps) {
           <div className="relative w-28 sm:w-36 lg:w-44 aspect-376/254 shrink-0 opacity-80">
             {surahMeta?.revelationType === 'Meccan' ? (
               <Image
+                loading="eager"
                 src="/makkah.avif"
                 alt="Makkah"
                 fill
@@ -194,6 +195,7 @@ export default function SurahReader({ surahNumber }: SurahReaderProps) {
               />
             ) : (
                 <Image
+                  loading="eager"
                   src="/madinah.avif"
                   alt="Madinah"
                   fill

@@ -370,10 +370,31 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       currentAyahIndex: idx,
     });
 
+    // Track whether playback has successfully started
+    let playStarted = false;
+
     // 5) Event handlers — all gated on `gen`
     audio.oncanplay = () => {
       if (gen !== generationRef.current) return;
       setAudioState(prev => ({ ...prev, isLoading: false }));
+      // If initial play() rejected, retry now that audio is ready
+      if (!playStarted && gen === generationRef.current) {
+        audio.play().then(() => {
+          if (gen === generationRef.current) {
+            playStarted = true;
+            startTracking(ayah, gen);
+          }
+        }).catch(() => {
+          if (gen === generationRef.current) {
+            setAudioState(prev => ({
+              ...prev,
+              isPlaying: false,
+              isLoading: false,
+              error: 'Playback blocked. Tap play again.',
+            }));
+          }
+        });
+      }
     };
 
     audio.onended = () => {
@@ -410,18 +431,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     audio.play()
       .then(() => {
         if (gen === generationRef.current) {
+          playStarted = true;
           startTracking(ayah, gen);
         }
       })
       .catch(() => {
-        if (gen === generationRef.current) {
-          setAudioState(prev => ({
-            ...prev,
-            isPlaying: false,
-            isLoading: false,
-            error: 'Playback blocked. Tap play again.',
-          }));
-        }
+        // Don't set error yet - audio may still be loading
+        // oncanplay will retry playback if needed
+        if (gen !== generationRef.current) return;
+        // If already playing, ignore the rejection
+        if (playStarted) return;
       });
   }, []);
 

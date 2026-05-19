@@ -20,6 +20,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`h-full antialiased`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
         <AppProvider>
