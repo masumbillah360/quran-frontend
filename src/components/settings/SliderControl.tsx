@@ -15,7 +15,7 @@ export function SliderControl({ label, value, min, max, onChange }: SliderContro
     <div className="space-y-2.5">
       <div className="flex items-center justify-between">
         <span className="text-sm text-(--text-secondary)">{label}</span>
-        <span className="text-sm font-mono text-(--text-accent) min-w-9 text-center">
+        <span className="text-sm font-mono text-(--text-accent) min-w-9 text-center" suppressHydrationWarning>
           {value}
         </span>
       </div>
