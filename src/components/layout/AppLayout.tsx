@@ -18,7 +18,7 @@ interface AppLayoutProps {
 }
 
 // ── inner layout ──────────────────────────────────────────────────────────────
-function AppLayoutInner() {
+function AppLayoutInner({ initialSurah }: { initialSurah: number }) {
     const {
         audioState,
         setIsSearchOpen,
@@ -82,7 +82,7 @@ function AppLayoutInner() {
                 <div className="flex flex-1 overflow-hidden">
                     <SurahSidebar />
                     <div className="flex flex-1 overflow-hidden">
-                        <SurahReader />
+                        <SurahReader surahNumber={initialSurah} />
                         <RightPanel />
                     </div>
                 </div>
@@ -115,6 +115,6 @@ export default function AppLayout({ initialSurah }: AppLayoutProps) {
     }, []);
 
     return (
-        <AppLayoutInner />
+        <AppLayoutInner initialSurah={initialSurah} />
     );
 }

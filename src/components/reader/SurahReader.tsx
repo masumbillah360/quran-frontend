@@ -22,11 +22,11 @@ import { toArabicNumerals } from '@/utils';
 const NO_BISMILLAH = [1, 9];
 const SCROLL_THRESHOLD = 8;
 
-// interface SurahReaderProps {
-//   surahNumber: number;
-// }
+interface SurahReaderProps {
+  surahNumber: number;
+}
 
-export default function SurahReader() {
+export default function SurahReader({ surahNumber }: SurahReaderProps) {
   const {
     setCurrentSurah,
     currentSurah,
@@ -42,6 +42,14 @@ export default function SurahReader() {
     reloadSurah,
     setIsBarsVisible,
   } = useApp();
+
+  const activeSurah = currentSurah || surahNumber;
+
+  useEffect(() => {
+    if (surahNumber !== currentSurah) {
+      setCurrentSurah(surahNumber);
+    }
+  }, []);
 
   const [jumpTargetAyah, setJumpTargetAyah] = useState<number | null>(null);
 
@@ -97,7 +105,7 @@ export default function SurahReader() {
     if (raw) {
       try {
         const t = JSON.parse(raw);
-        if (t.surah === currentSurah) targetAyah = t.ayah;
+        if (t.surah === activeSurah) targetAyah = t.ayah;
       } catch { /* ignore */ }
     }
 
@@ -106,7 +114,7 @@ export default function SurahReader() {
     if (targetAyah === null && readerRef.current) {
       readerRef.current.scrollTop = 0;
     }
-  }, [currentSurah]);
+  }, [activeSurah]);
 
   // ── Same-surah jump (via custom event) ──
   useEffect(() => {
@@ -124,7 +132,7 @@ export default function SurahReader() {
     if (jumpTargetAyah === null || viewMode !== 'reading') return;
 
     const tryScroll = (attempts: number) => {
-      const el = document.getElementById(`ayah-${currentSurah}-${jumpTargetAyah}`);
+      const el = document.getElementById(`ayah-${activeSurah}-${jumpTargetAyah}`);
       if (el && readerRef.current) {
         el.scrollIntoView({ behavior: 'auto', block: 'center' });
         setJumpTargetAyah(null);
@@ -136,13 +144,13 @@ export default function SurahReader() {
     };
 
     tryScroll(20);
-  }, [currentSurah, jumpTargetAyah, surahData, viewMode]);
+  }, [activeSurah, jumpTargetAyah, surahData, viewMode]);
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
-  const surahMeta = SURAHS.find((s) => s.number === currentSurah);
-  const isSurahPlaying = audioState.isPlaying && audioState.currentSurah === currentSurah;
-  const isSurahActive = audioState.currentSurah === currentSurah && audioState.currentAyah !== null;
+  const surahMeta = SURAHS.find((s) => s.number === activeSurah);
+  const isSurahPlaying = audioState.isPlaying && audioState.currentSurah === activeSurah;
+  const isSurahActive = audioState.currentSurah === activeSurah && audioState.currentAyah !== null;
 
   const handlePlaySurah = () => {
     if (isSurahPlaying) {
@@ -150,23 +158,23 @@ export default function SurahReader() {
     } else if (isSurahActive && !isSurahPlaying) {
       resumeAudio();
     } else if (surahData && surahData.ayahs.length > 0) {
-      playSurahFrom(currentSurah, 0);
+      playSurahFrom(activeSurah, 0);
     }
   };
 
   const handlePrev = () => {
-    if (currentSurah > 1) setCurrentSurah(currentSurah - 1);
+    if (activeSurah > 1) setCurrentSurah(activeSurah - 1);
   };
   const handleNext = () => {
-    if (currentSurah < 114) setCurrentSurah(currentSurah + 1);
+    if (activeSurah < 114) setCurrentSurah(activeSurah + 1);
   };
 
-  const prevSurah = currentSurah > 1 ? SURAHS[currentSurah - 2] : null;
-  const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
+  const prevSurah = activeSurah > 1 ? SURAHS[activeSurah - 2] : null;
+  const nextSurah = activeSurah < 114 ? SURAHS[activeSurah] : null;
 
   // ── JSX ────────────────────────────────────────────────────────────────────
   return (
-    <main ref={readerRef} className="flex-1 overflow-y-auto bg-(--bg-canvas) relative">
+    <main ref={readerRef} className="flex-1 overflow-y-auto overflow-x-hidden bg-(--bg-canvas) relative">
       <div ref={topRef} className="scroll-mt-0" />
 
       <div className="relative overflow-hidden border-b border-(--border-default)">
@@ -197,7 +205,7 @@ export default function SurahReader() {
 
           <div className="flex flex-col items-center text-center">
             <h1 className="text-xl sm:text-2xl font-bold text-(--text-primary)">
-              {surahMeta ? `Surah ${surahMeta.englishName}` : `Surah ${currentSurah}`}
+              {surahMeta ? `Surah ${surahMeta.englishName}` : `Surah ${activeSurah}`}
             </h1>
             <p className="mt-1 text-sm text-(--text-quaternary)">
               Ayah‑{surahMeta?.numberOfAyahs ?? '…'},{' '}
@@ -237,7 +245,7 @@ export default function SurahReader() {
           </div>
 
           <div className="relative w-32 sm:w-40 lg:w-48 aspect-176/36 shrink-0">
-            {!NO_BISMILLAH.includes(currentSurah) && (
+            {!NO_BISMILLAH.includes(activeSurah) && (
               <Image
                 src="/bismillah.53600316.svg"
                 alt="Bismillah"
@@ -281,7 +289,7 @@ export default function SurahReader() {
                 {surahData?.ayahs.map((ayah: AyahData) => {
                   const words = ayah.words.filter((w) => w.charType === 'word');
                   return (
-                    <span key={ayah.id} id={`ayah-${currentSurah}-${ayah.ayahNumber}`}>
+                    <span key={ayah.id} id={`ayah-${activeSurah}-${ayah.ayahNumber}`}>
                       {words.map((word) => (
                         <span
                           key={word.id}
@@ -307,7 +315,7 @@ export default function SurahReader() {
                 {surahData && (
                   <VirtualizedAyahList
                     ayahs={surahData.ayahs}
-                    surahNumber={currentSurah}
+                    surahNumber={activeSurah}
                     containerRef={readerRef as React.RefObject<HTMLElement>}
                     jumpTargetAyah={jumpTargetAyah}
                   />
@@ -325,7 +333,7 @@ export default function SurahReader() {
             <span className="hidden sm:inline">{prevSurah?.englishName ?? 'Previous'}</span>
             <span className="sm:hidden">Prev</span>
           </button>
-          <span className="text-xs text-(--text-muted) font-mono">{currentSurah} / 114</span>
+          <span className="text-xs text-(--text-muted) font-mono">{activeSurah} / 114</span>
           <button
             onClick={handleNext}
             disabled={!nextSurah}
