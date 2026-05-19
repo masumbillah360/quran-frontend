@@ -1,20 +1,7 @@
-/**
- * ══════════════════════════════════════════════════════════════════════════════
- * OPTIMIZED AYAH CARD (Production-Ready)
- * ══════════════════════════════════════════════════════════════════════════════
- * 
- * Improvements:
- * - Better accessibility (ARIA labels, roles, focus management)
- * - Optimized word highlighting (no querySelectorAll on each update)
- * - Proper error handling for copy
- * - Touch-friendly interactions
- * - Reduced auto-scroll frequency
- */
-
 'use client';
 
 import { useRef, useEffect, memo, useCallback, useState } from 'react';
-import { Play, Pause, Copy, Check, Share2, Bookmark } from 'lucide-react';
+import { Play, Pause, Copy, Check, Bookmark, MoreHorizontal } from 'lucide-react';
 import { AyahData, toArabicNumerals } from '@/types/surahs.types';
 import { useApp } from '@/context/AppContext';
 import { cleanArabicText } from '@/utils';
@@ -52,10 +39,9 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
   // ── Measure height for virtualization ──
   useEffect(() => {
     if (cardRef.current && onMeasure) {
-      // Use ResizeObserver for more accurate measurements
       const observer = new ResizeObserver((entries) => {
         for (const entry of entries) {
-          onMeasure(entry.contentRect.height + 40); // +40 for padding
+          onMeasure(entry.contentRect.height + 40);
         }
       });
 
@@ -66,12 +52,10 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
 
   // ── Optimized word highlighting using refs ──
   useEffect(() => {
-    // Remove highlight from all words
     wordRefsMap.current.forEach((el) => {
       el.classList.remove('word-highlight');
     });
 
-    // Add highlight to active word
     if (isActive && activeWordPosition !== null) {
       const activeEl = wordRefsMap.current.get(activeWordPosition);
       if (activeEl) {
@@ -80,20 +64,18 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
     }
   }, [isActive, activeWordPosition]);
 
-  // ── Auto-scroll (only once when ayah starts playing) ──
+  // ── Auto-scroll ──
   useEffect(() => {
     if (isActive && isPlaying && !hasScrolledRef.current && cardRef.current) {
       hasScrolledRef.current = true;
       cardRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
-    // Reset when ayah changes
     if (!isActive) {
       hasScrolledRef.current = false;
     }
   }, [isActive, isPlaying]);
 
-  // ── Word ref registration ──
   const registerWordRef = useCallback((position: number, el: HTMLSpanElement | null) => {
     if (el) {
       wordRefsMap.current.set(position, el);
@@ -102,7 +84,6 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
     }
   }, []);
 
-  // ── Handlers ──
   const handleTogglePlay = useCallback(() => {
     playAyah(surahNumber, ayah);
   }, [playAyah, surahNumber, ayah]);
@@ -122,7 +103,6 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
       setCopyError(true);
       setTimeout(() => setCopyError(false), 2000);
 
-      // Fallback for older browsers
       const textarea = document.createElement('textarea');
       textarea.value = textToCopy;
       textarea.style.position = 'fixed';
@@ -133,9 +113,7 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
         document.execCommand('copy');
         setCopied(true);
         setCopyError(false);
-      } catch {
-        // Truly failed
-      }
+      } catch { }
       document.body.removeChild(textarea);
     }
   }, [ayah, surahNumber]);
@@ -151,9 +129,8 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
           text: `${arabicText}\n\n${ayah.translation}`,
         });
       } catch (err) {
-        // User cancelled or share failed
         if ((err as Error).name !== 'AbortError') {
-          handleCopy(); // Fallback to copy
+          handleCopy();
         }
       }
     } else {
@@ -167,7 +144,7 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
     <article
       ref={cardRef}
       id={`ayah-${surahNumber}-${ayah.ayahNumber}`}
-      className="border-b px-4 sm:px-6 py-5 transition-colors duration-200"
+      className="border-b px-4 sm:px-6 py-5 transition-colors duration-200 flex flex-col sm:flex-row gap-4 sm:gap-6"
       style={{
         borderColor: 'var(--border-default)',
         backgroundColor: isActive
@@ -177,124 +154,141 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
       aria-label={`Ayah ${ayah.ayahNumber} of Surah ${surahNumber}`}
       role="article"
     >
-      {/* Header */}
-      <header className="flex items-center justify-between mb-3">
+      {/* ── LEFT SIDEBAR ACTIONS PANEL (Hidden on Mobile) ── */}
+      <div
+        className="hidden sm:flex flex-col items-center gap-4 select-none sticky top-4 h-fit"
+        style={{ minWidth: '50px' }}
+        role="toolbar"
+        aria-label="Ayah side actions"
+      >
+        {/* Verse Key Identifier */}
         <span
-          className="text-[11px] font-bold px-2.5 py-1 rounded-md tracking-wide"
+          className="text-[12px] font-bold px-2 py-1 rounded-md tracking-wide text-center block w-full"
           style={{ color: 'var(--text-accent)', background: 'var(--badge-bg)' }}
           aria-label={`Verse ${ayah.verseKey}`}
         >
           {ayah.verseKey}
         </span>
 
-        <div className="flex items-center gap-0.5" role="toolbar" aria-label="Ayah actions">
-          <button
-            onClick={handleTogglePlay}
-            className={`w-9 h-9 rounded-full flex items-center justify-center transition-all ${isPlaying ? 'play-pulse' : 'hover:opacity-80'
-              }`}
-            style={{
-              background: isPlaying ? 'var(--accent)' : 'transparent',
-              color: isPlaying ? 'white' : 'var(--text-muted)',
-            }}
-            aria-label={isPlaying ? 'Pause ayah' : 'Play ayah'}
-            aria-pressed={isPlaying}
-          >
-            {isPlaying ? <Pause size={16} /> : <Play size={16} />}
-          </button>
-
-          <button
-            className="w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:opacity-80"
-            style={{
-              color: copied ? 'var(--text-accent)' : copyError ? 'var(--text-danger)' : 'var(--text-muted)'
-            }}
-            onClick={handleCopy}
-            aria-label={copied ? 'Copied!' : copyError ? 'Copy failed' : 'Copy ayah'}
-          >
-            {copied ? <Check size={16} /> : <Copy size={16} />}
-          </button>
-
-          <button
-            className="w-9 h-9 rounded-full items-center justify-center transition-colors hover:opacity-80 hidden sm:flex"
-            style={{ color: 'var(--text-muted)' }}
-            onClick={handleShare}
-            aria-label="Share ayah"
-          >
-            <Share2 size={16} />
-          </button>
-
-          <button
-            className="w-9 h-9 rounded-full items-center justify-center transition-colors hover:opacity-80 hidden sm:flex"
-            style={{ color: 'var(--text-muted)' }}
-            aria-label="Bookmark ayah"
-          >
-            <Bookmark size={16} />
-          </button>
-        </div>
-      </header>
-
-      {/* Arabic Text */}
-      <div
-        className="text-right mb-4 leading-[2.8]"
-        style={{
-          fontFamily: arabicFontFamily,
-          fontSize: `${arabicFontSize}px`,
-          direction: 'rtl',
-          color: 'var(--text-primary)',
-        }}
-        dir="rtl"
-        lang="ar"
-        role="text"
-        aria-label="Arabic text"
-      >
-        {words.map((word) => (
-          <WordSpan
-            key={word.id ?? `w-${word.position}`}
-            word={word}
-            registerRef={registerWordRef}
-          />
-        ))}
-        {/* Ayah number marker */}
-        <span
-          className="inline-flex items-center justify-center rounded-full mx-1.5 align-middle select-none"
+        {/* Play/Pause Button */}
+        <button
+          onClick={handleTogglePlay}
+          className={`w-9 h-9 rounded-full flex items-center justify-center transition-all ${isPlaying ? 'play-pulse' : 'hover:opacity-80'}`}
           style={{
-            fontFamily: arabicFontFamily,
-            color: 'var(--text-accent)',
-            borderColor: 'color-mix(in srgb, var(--accent) 40%, transparent)',
+            background: isPlaying ? 'var(--accent)' : 'transparent',
+            color: isPlaying ? 'white' : 'var(--text-muted)',
           }}
-          aria-hidden="true"
+          aria-label={isPlaying ? 'Pause ayah' : 'Play ayah'}
+          aria-pressed={isPlaying}
         >
-          {toArabicNumerals(ayah.ayahNumber)}
-        </span>
+          {isPlaying ? <Pause size={18} /> : <Play size={18} />}
+        </button>
+
+        {/* Copy/Check Button */}
+        <button
+          className="w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:opacity-80"
+          style={{
+            color: copied ? 'var(--text-accent)' : copyError ? 'var(--text-danger)' : 'var(--text-muted)'
+          }}
+          onClick={handleCopy}
+          aria-label={copied ? 'Copied!' : copyError ? 'Copy failed' : 'Copy ayah'}
+        >
+          {copied ? <Check size={18} /> : <Copy size={18} />}
+        </button>
+
+        {/* Bookmark Button */}
+        <button
+          className="w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:opacity-80"
+          style={{ color: 'var(--text-muted)' }}
+          aria-label="Bookmark ayah"
+        >
+          <Bookmark size={18} />
+        </button>
+
+        {/* More Menu / Share Button */}
+        <button
+          className="w-9 h-9 rounded-full flex items-center justify-center transition-colors hover:opacity-80"
+          style={{ color: 'var(--text-muted)' }}
+          onClick={handleShare}
+          aria-label="More options"
+        >
+          <MoreHorizontal size={18} />
+        </button>
       </div>
 
-      {/* Translation */}
-      <footer className="mt-4 pl-0 sm:pl-2">
-        <p
-          className="text-[10px] font-bold uppercase tracking-widest mb-1.5"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {ayah.translationName}
-        </p>
-        <p
-          className="leading-relaxed"
+      {/* ── MAIN CONTENT AREA (Right/Center Side) ── */}
+      <div className="flex-1 flex flex-col w-full">
+
+        {/* Mobile-Only Header fallback (Just showing the Verse key tag on mobile, no action buttons) */}
+        <header className="flex sm:hidden items-center justify-between mb-3">
+          <span
+            className="text-[11px] font-bold px-2.5 py-1 rounded-md tracking-wide"
+            style={{ color: 'var(--text-accent)', background: 'var(--badge-bg)' }}
+          >
+            {ayah.verseKey}
+          </span>
+        </header>
+
+        {/* Arabic Text */}
+        <div
+          className="text-right mb-4 leading-[2.8]"
           style={{
-            fontSize: `${translationFontSize}px`,
-            color: 'var(--text-secondary)',
+            fontFamily: arabicFontFamily,
+            fontSize: `${arabicFontSize}px`,
+            direction: 'rtl',
+            color: 'var(--text-primary)',
           }}
-          lang="en"
+          dir="rtl"
+          lang="ar"
+          role="text"
+          aria-label="Arabic text"
         >
-          {ayah.translation}
-        </p>
-      </footer>
+          {words.map((word) => (
+            <WordSpan
+              key={word.id ?? `w-${word.position}`}
+              word={word}
+              registerRef={registerWordRef}
+            />
+          ))}
+          {/* Ayah number marker */}
+          <span
+            className="inline-flex items-center justify-center rounded-full mx-1.5 align-middle select-none"
+            style={{
+              fontFamily: arabicFontFamily,
+              color: 'var(--text-accent)',
+              borderColor: 'color-mix(in srgb, var(--accent) 40%, transparent)',
+            }}
+            aria-hidden="true"
+          >
+            {toArabicNumerals(ayah.ayahNumber)}
+          </span>
+        </div>
+
+        {/* Translation */}
+        <footer className="mt-2">
+          <p
+            className="text-[10px] font-bold uppercase tracking-widest mb-1.5"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {ayah.translationName}
+          </p>
+          <p
+            className="leading-relaxed"
+            style={{
+              fontSize: `${translationFontSize}px`,
+              color: 'var(--text-secondary)',
+            }}
+            lang="en"
+          >
+            {ayah.translation}
+          </p>
+        </footer>
+      </div>
     </article>
   );
 }, arePropsEqual);
 
-// ── Custom comparison for memo ──
-function arePropsEqual(
-  prev: OptimizedAyahCardProps,
-  next: OptimizedAyahCardProps
-): boolean {
+function arePropsEqual(prev: OptimizedAyahCardProps, next: OptimizedAyahCardProps): boolean {
   return (
     prev.ayah.id === next.ayah.id &&
     prev.isActive === next.isActive &&
@@ -305,10 +299,7 @@ function arePropsEqual(
   );
 }
 
-// ══════════════════════════════════════════════════════════════════════════════
-// WORD SPAN COMPONENT
-// ══════════════════════════════════════════════════════════════════════════════
-
+// ── WORD SPAN COMPONENT ──
 interface WordSpanProps {
   word: {
     id?: string;
@@ -336,7 +327,6 @@ const WordSpan = memo(function WordSpan({ word, registerRef }: WordSpanProps) {
       aria-label={`${word.text}: ${word.translation}`}
     >
       <span dangerouslySetInnerHTML={{ __html: cleanArabicText(word.text) }} />
-      {/* CSS-only tooltip */}
       <span className="word-tooltip" role="tooltip">
         {word.transliteration && (
           <span className="word-tooltip-transliteration">{word.transliteration}</span>
