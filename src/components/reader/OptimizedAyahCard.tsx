@@ -254,12 +254,11 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
         ))}
         {/* Ayah number marker */}
         <span
-          className="inline-flex items-center justify-center w-7 h-7 rounded-full border mx-1.5 text-sm align-middle select-none"
+          className="inline-flex items-center justify-center rounded-full mx-1.5 align-middle select-none"
           style={{
             fontFamily: arabicFontFamily,
             color: 'var(--text-accent)',
             borderColor: 'color-mix(in srgb, var(--accent) 40%, transparent)',
-            fontSize: '16px',
           }}
           aria-hidden="true"
         >
