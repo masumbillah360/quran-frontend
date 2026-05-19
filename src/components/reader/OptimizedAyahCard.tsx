@@ -24,6 +24,7 @@ interface OptimizedAyahCardProps {
   isActive: boolean;
   activeWordPosition: number | null;
   arabicFontSize: number;
+  arabicFontFamily: string;
   translationFontSize: number;
   onMeasure?: (height: number) => void;
 }
@@ -34,6 +35,7 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
   isActive,
   activeWordPosition,
   arabicFontSize,
+  arabicFontFamily,
   translationFontSize,
   onMeasure,
 }: OptimizedAyahCardProps) {
@@ -233,7 +235,7 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
       <div
         className="text-right mb-4 leading-[2.8]"
         style={{
-          fontFamily: "'Amiri Quran', serif",
+          fontFamily: arabicFontFamily,
           fontSize: `${arabicFontSize}px`,
           direction: 'rtl',
           color: 'var(--text-primary)',
@@ -254,7 +256,7 @@ const OptimizedAyahCard = memo(function OptimizedAyahCard({
         <span
           className="inline-flex items-center justify-center w-7 h-7 rounded-full border mx-1.5 text-sm align-middle select-none"
           style={{
-            fontFamily: "'Amiri Quran', serif",
+            fontFamily: arabicFontFamily,
             color: 'var(--text-accent)',
             borderColor: 'color-mix(in srgb, var(--accent) 40%, transparent)',
             fontSize: '16px',
@@ -298,6 +300,7 @@ function arePropsEqual(
     prev.isActive === next.isActive &&
     prev.activeWordPosition === next.activeWordPosition &&
     prev.arabicFontSize === next.arabicFontSize &&
+    prev.arabicFontFamily === next.arabicFontFamily &&
     prev.translationFontSize === next.translationFontSize
   );
 }

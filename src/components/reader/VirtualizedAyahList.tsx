@@ -17,6 +17,7 @@ import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
 import { LocalAyahData } from '@/types/surahs.types';
 import OptimizedAyahCard from './OptimizedAyahCard';
 import { useApp } from '@/context/AppContext';
+import { ARABIC_FONTS } from '@/constants/fonts';
 
 interface VirtualizedAyahListProps {
   ayahs: LocalAyahData[];
@@ -41,6 +42,9 @@ export default function VirtualizedAyahList({
   const [visibleRange, setVisibleRange] = useState({ start: 0, end: 15 });
   const heightCacheRef = useRef<Map<number, number>>(new Map());
   const lastScrollTime = useRef(0);
+
+  const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
+  const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
 
   // ── Calculate estimated height based on font size ──
   const estimatedHeight = useMemo(() => {
@@ -222,6 +226,7 @@ export default function VirtualizedAyahList({
               isActive={isActive}
               activeWordPosition={isActive ? activeWordPosition : null}
               arabicFontSize={fontSettings.arabicFontSize}
+              arabicFontFamily={arabicFontFamily}
               translationFontSize={fontSettings.translationFontSize}
               onMeasure={(height) => measureHeight(actualIndex, height)}
             />

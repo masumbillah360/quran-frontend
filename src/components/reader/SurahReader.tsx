@@ -58,6 +58,7 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
   const readerRef = useRef<HTMLDivElement>(null);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
+  const lastBarsVisible = useRef(true);
 
   // Use optimized surah data if available, otherwise fall back to API
   const useOptimizedData = surahData !== null;
@@ -109,17 +110,20 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
       requestAnimationFrame(() => {
         const currentY = el.scrollTop;
         const delta = currentY - lastScrollY.current;
+        const isAtBottom = currentY + el.clientHeight >= el.scrollHeight - 100;
+        const isAtTop = currentY < 50;
 
-        if (Math.abs(delta) > SCROLL_THRESHOLD) {
-          if (delta > 0) {
-            setIsBarsVisible(false);
-          } else {
-            setIsBarsVisible(true);
-          }
+        let nextVisible = lastBarsVisible.current;
+
+        if (isAtBottom || isAtTop) {
+          nextVisible = true;
+        } else if (Math.abs(delta) > SCROLL_THRESHOLD) {
+          nextVisible = delta < 0;
         }
 
-        if (currentY < 50) {
-          setIsBarsVisible(true);
+        if (nextVisible !== lastBarsVisible.current) {
+          lastBarsVisible.current = nextVisible;
+          setIsBarsVisible(nextVisible);
         }
 
         lastScrollY.current = currentY;
@@ -158,7 +162,7 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
         }
       }
     } else {
-    // Use legacy API data
+      // Use legacy API data
       if (!surahAudio || surahAudio.length === 0) return;
       if (isSurahPlaying) {
         pauseAudio();
@@ -339,7 +343,7 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
               </p>
             </div>
           ) : (
-              <div className="h-full">
+              <div>
                 {useOptimizedData && surahData ? (
                   // Use virtualized list for optimized data
                   <VirtualizedAyahList
