@@ -31,11 +31,13 @@ export default function IconSidebar() {
     } = useApp();
 
     const handleClick = (id: string) => {
+        if (id === 'go_to_ayah') {
+            setIsJumpOpen(!isJumpOpen);
+            return;
+        }
+
         if (activeIconTab === id) {
             setIsSurahSidebarOpen(!isSurahSidebarOpen);
-            if (id === 'go_to_ayah') {
-                setIsJumpOpen(!isJumpOpen)
-            }
         } else {
             setActiveIconTab(id);
             setIsSurahSidebarOpen(true);

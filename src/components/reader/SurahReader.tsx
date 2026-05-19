@@ -1,8 +1,7 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/set-state-in-effect */
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useApp } from '@/context/AppContext';
 import Image from 'next/image';
 import {
@@ -15,23 +14,19 @@ import {
 } from 'lucide-react';
 import { ARABIC_FONTS } from '@/constants/fonts';
 import AyahSkeleton from '../ui/ayah-skeleton';
-import AyahCard from './AyahCard';
 import VirtualizedAyahList from './VirtualizedAyahList';
-import { Ayah, SurahAudioItem, LocalAyahData } from '@/types';
-import { fetchSurah } from '@/services/quranApi';
+import { LocalAyahData } from '@/types';
 import { SURAHS } from '@/data/surahs';
-import { cleanArabicText, toArabicNumerals } from '@/utils';
+import { toArabicNumerals } from '@/utils';
 
 const NO_BISMILLAH = [1, 9];
 const SCROLL_THRESHOLD = 8;
 
-interface SurahReaderProps {
-  initialAyahs: Ayah[];
-  initialAudio: SurahAudioItem[] | null;
-  surahNumber: number;
-}
+// interface SurahReaderProps {
+//   surahNumber: number;
+// }
 
-export default function SurahReader({ initialAyahs, initialAudio, surahNumber }: SurahReaderProps) {
+export default function SurahReader() {
   const {
     setCurrentSurah,
     currentSurah,
@@ -39,7 +34,6 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
     viewMode,
     audioState,
     playSurahFrom,
-    setSurahAudioData,
     pauseAudio,
     resumeAudio,
     surahData,
@@ -49,54 +43,13 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
     setIsBarsVisible,
   } = useApp();
 
-  const [ayahs, setAyahs] = useState<Ayah[]>(initialAyahs);
-  const [surahAudio, setSurahAudio] = useState<SurahAudioItem[] | null>(initialAudio);
-  const [localLoading, setLocalLoading] = useState(initialAyahs.length === 0);
-  const [localError, setLocalError] = useState<string | null>(null);
+  const [jumpTargetAyah, setJumpTargetAyah] = useState<number | null>(null);
 
   const topRef = useRef<HTMLDivElement>(null);
   const readerRef = useRef<HTMLDivElement>(null);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
   const lastBarsVisible = useRef(true);
-
-  // Use optimized surah data if available, otherwise fall back to API
-  const useOptimizedData = surahData !== null;
-
-  const doFetch = useCallback(async (surahNum: number) => {
-    setLocalLoading(true);
-    setLocalError(null);
-    setAyahs([]);
-    setSurahAudio(null);
-    topRef.current?.scrollIntoView({ behavior: 'auto' });
-
-    try {
-      const data = await fetchSurah(surahNum);
-      setAyahs(data.ayahs);
-      setSurahAudio(data.audio);
-      setSurahAudioData(surahNum, data.audio[0]?.audio_url ?? '', data.ayahs);
-    } catch {
-      setLocalError('Failed to load surah. Please check your internet connection and try again.');
-    } finally {
-      setLocalLoading(false);
-    }
-  }, [setSurahAudioData]);
-
-  useEffect(() => {
-    if (initialAyahs.length > 0) {
-      setAyahs(initialAyahs);
-    }
-    if (initialAudio && initialAudio.length > 0 && initialAyahs.length > 0) {
-      setSurahAudioData(surahNumber, initialAudio[0]?.audio_url ?? '', initialAyahs);
-    }
-  }, [surahNumber]);
-
-  // Only fetch from API if optimized data is not available
-  useEffect(() => {
-    if (!useOptimizedData) {
-      doFetch(currentSurah);
-    }
-  }, [currentSurah, doFetch, useOptimizedData]);
 
   // ── Scroll-direction bar visibility ──
   useEffect(() => {
@@ -135,12 +88,55 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
     return () => el.removeEventListener('scroll', handleScroll);
   }, [setIsBarsVisible]);
 
-  // ── Scroll to top on surah change ──
+  // ── Scroll to top or jump target on surah change ──
   useEffect(() => {
-    if (readerRef.current) {
+    const raw = sessionStorage.getItem('jump-target');
+    sessionStorage.removeItem('jump-target');
+
+    let targetAyah: number | null = null;
+    if (raw) {
+      try {
+        const t = JSON.parse(raw);
+        if (t.surah === currentSurah) targetAyah = t.ayah;
+      } catch { /* ignore */ }
+    }
+
+    setJumpTargetAyah(targetAyah);
+
+    if (targetAyah === null && readerRef.current) {
       readerRef.current.scrollTop = 0;
     }
   }, [currentSurah]);
+
+  // ── Same-surah jump (via custom event) ──
+  useEffect(() => {
+    const handleJump = (e: Event) => {
+      const { ayah } = (e as CustomEvent).detail as { surah: number; ayah: number };
+      setJumpTargetAyah(ayah);
+    };
+
+    window.addEventListener('jump-to-ayah', handleJump);
+    return () => window.removeEventListener('jump-to-ayah', handleJump);
+  }, []);
+
+  // ── Scroll to jump target after data renders ──
+  useEffect(() => {
+    if (jumpTargetAyah === null) return;
+
+    const tryScroll = (attempts: number) => {
+      const el = document.getElementById(`ayah-${currentSurah}-${jumpTargetAyah}`);
+      if (el && readerRef.current) {
+        el.scrollIntoView({ behavior: 'auto', block: 'center' });
+        setJumpTargetAyah(null);
+      } else if (attempts > 0) {
+        setTimeout(() => tryScroll(attempts - 1), 100);
+      } else {
+        setJumpTargetAyah(null);
+      }
+    };
+
+    tryScroll(20);
+  }, [currentSurah, jumpTargetAyah, surahData]);
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
@@ -149,29 +145,12 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
   const isSurahActive = audioState.currentSurah === currentSurah && audioState.currentAyah !== null;
 
   const handlePlaySurah = () => {
-    if (useOptimizedData && surahData) {
-      // Use optimized data
-      if (isSurahPlaying) {
-        pauseAudio();
-      } else if (isSurahActive && !isSurahPlaying) {
-        resumeAudio();
-      } else {
-        // Play from first ayah using optimized format
-        if (surahData.ayahs.length > 0) {
-          playSurahFrom(currentSurah, 0);
-        }
-      }
-    } else {
-      // Use legacy API data
-      if (!surahAudio || surahAudio.length === 0) return;
-      if (isSurahPlaying) {
-        pauseAudio();
-      } else if (isSurahActive && !isSurahPlaying) {
-        resumeAudio();
-      } else {
-        setSurahAudioData(currentSurah, surahAudio[0].audio_url, ayahs);
-        playSurahFrom(currentSurah, 0);
-      }
+    if (isSurahPlaying) {
+      pauseAudio();
+    } else if (isSurahActive && !isSurahPlaying) {
+      resumeAudio();
+    } else if (surahData && surahData.ayahs.length > 0) {
+      playSurahFrom(currentSurah, 0);
     }
   };
 
@@ -184,19 +163,6 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
 
   const prevSurah = currentSurah > 1 ? SURAHS[currentSurah - 2] : null;
   const nextSurah = currentSurah < 114 ? SURAHS[currentSurah] : null;
-
-  // ── retry handler ─────────────────────────────────────────────────────────
-  const handleRetry = () => {
-    if (useOptimizedData) {
-      reloadSurah();
-    } else {
-      doFetch(currentSurah);
-    }
-  };
-
-  const loading = useOptimizedData ? surahLoading : localLoading;
-  const error = useOptimizedData ? surahError : localError;
-  const currentAyahs = useOptimizedData ? surahData?.ayahs ?? [] : ayahs;
 
   // ── JSX ────────────────────────────────────────────────────────────────────
   return (
@@ -249,7 +215,7 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
 
               <button
                 onClick={handlePlaySurah}
-                disabled={loading}
+                disabled={surahLoading}
                 className={`flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-lg border transition-all ${isSurahPlaying
                   ? 'bg-(--bg-accent) border-(--accent)/50 text-white'
                   : isSurahActive && !isSurahPlaying
@@ -284,18 +250,18 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
         </div>
       </div>
 
-      {loading ? (
+      {surahLoading ? (
         <>
           {Array.from({ length: 6 }).map((_, i) => (
             <AyahSkeleton key={i} />
           ))}
         </>
-      ) : error ? (
+      ) : surahError ? (
         <div className="flex flex-col items-center justify-center py-24 gap-4 px-6 text-center">
           <AlertCircle size={36} className="text-(--text-danger)" />
-            <p className="text-(--text-tertiary) text-sm max-w-sm">{error}</p>
+            <p className="text-(--text-tertiary) text-sm max-w-sm">{surahError}</p>
             <button
-              onClick={handleRetry}
+              onClick={reloadSurah}
               className="flex items-center gap-2 px-4 py-2 bg-(--bg-elevated) hover:bg-(--border-accent) text-(--text-primary) text-sm rounded-lg border border-(--border-accent) transition-all">
               <RefreshCw size={14} />
               Retry
@@ -312,30 +278,24 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
                 }}
                 lang="ar"
                 dir="rtl">
-                {currentAyahs.map((ayah: LocalAyahData | Ayah) => {
-                  // Handle both optimized and legacy formats
-                  const isOptimized = 'ayahNumber' in ayah;
-                  const ayahNum = isOptimized ? (ayah as LocalAyahData).ayahNumber : (ayah as Ayah).ayah_number;
-                  const words = isOptimized
-                    ? (ayah as LocalAyahData).words.filter((w) => w.charType === 'word')
-                    : (ayah as Ayah).words.filter((w) => w.char_type === 'word');
-
+                {surahData?.ayahs.map((ayah: LocalAyahData) => {
+                  const words = ayah.words.filter((w) => w.charType === 'word');
                   return (
-                    <span key={isOptimized ? (ayah as LocalAyahData).id : (ayah as Ayah).id}>
+                    <span key={ayah.id} id={`ayah-${currentSurah}-${ayah.ayahNumber}`}>
                       {words.map((word) => (
                         <span
                           key={word.id}
                           dangerouslySetInnerHTML={{
-                            __html: cleanArabicText(word.text),
-                          }}
-                        />
-                      ))}{' '}
+                        __html: word.text,
+                      }}
+                    />
+                  ))}{' '}
                       <span
                         className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-(--accent-dark)/60 text-(--text-accent) mx-1"
                         style={{
                           fontFamily: ARABIC_FONTS[0]?.family ?? '"Amiri Quran", serif',
                         }}>
-                        {toArabicNumerals(ayahNum)}
+                        {toArabicNumerals(ayah.ayahNumber)}
                       </span>{' '}
                     </span>
                   );
@@ -344,23 +304,18 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
             </div>
           ) : (
               <div>
-                {useOptimizedData && surahData ? (
-                  // Use virtualized list for optimized data
+                {surahData && (
                   <VirtualizedAyahList
                     ayahs={surahData.ayahs}
                     surahNumber={currentSurah}
                     containerRef={readerRef as React.RefObject<HTMLElement>}
+                    jumpTargetAyah={jumpTargetAyah}
                   />
-                ) : (
-                  // Fall back to regular rendering for API data
-                  ayahs.map((ayah) => (
-                    <AyahCard key={ayah.id} ayah={ayah} surahNumber={currentSurah} />
-                  ))
                 )}
         </div>
       )}
 
-      {!loading && !error && currentAyahs.length > 0 && (
+      {!surahLoading && !surahError && surahData && surahData.ayahs.length > 0 && (
         <div className="flex items-center justify-between px-4 sm:px-6 py-6 border-t border-(--border-default) mt-2">
           <button
             onClick={handlePrev}
@@ -382,7 +337,7 @@ export default function SurahReader({ initialAyahs, initialAudio, surahNumber }:
         </div>
       )}
 
-      <div className="h-32 md:h-4" />
+      <div className="h-40 md:h-24" />
     </main>
   );
 }

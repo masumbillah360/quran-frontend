@@ -17,6 +17,7 @@ import { useRef, useEffect, memo, useCallback, useState } from 'react';
 import { Play, Pause, Copy, Check, Share2, Bookmark } from 'lucide-react';
 import { LocalAyahData, toArabicNumerals } from '@/types/surahs.types';
 import { useApp } from '@/context/AppContext';
+import { cleanArabicText } from '@/utils';
 
 interface OptimizedAyahCardProps {
   ayah: LocalAyahData;
@@ -334,7 +335,7 @@ const WordSpan = memo(function WordSpan({ word, registerRef }: WordSpanProps) {
       role="button"
       aria-label={`${word.text}: ${word.translation}`}
     >
-      {word.text}
+      <span dangerouslySetInnerHTML={{ __html: cleanArabicText(word.text) }} />
       {/* CSS-only tooltip */}
       <span className="word-tooltip" role="tooltip">
         {word.transliteration && (

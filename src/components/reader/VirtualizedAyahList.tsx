@@ -1,16 +1,4 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-/**
- * ══════════════════════════════════════════════════════════════════════════════
- * VIRTUALIZED AYAH LIST (Production-Ready)
- * ══════════════════════════════════════════════════════════════════════════════
- * 
- * Improvements:
- * - Better height estimation
- * - Scroll offset for sticky header
- * - Debounced resize handling
- * - Intersection Observer for better performance
- */
-
 'use client';
 
 import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
@@ -23,36 +11,33 @@ interface VirtualizedAyahListProps {
   ayahs: LocalAyahData[];
   surahNumber: number;
   containerRef: React.RefObject<HTMLElement | null>;
-  /** Offset for sticky header height */
   headerOffset?: number;
+  jumpTargetAyah?: number | null;
 }
 
-// ── Configuration ────────────────────────────────────────────────────────────
-const BUFFER_COUNT = 5; // Render 5 extra ayahs above/below viewport
-const SCROLL_DEBOUNCE = 8; // ~120fps max update rate
+const BUFFER_COUNT = 5;
+const SCROLL_DEBOUNCE = 8;
 const RESIZE_DEBOUNCE = 150;
 
 export default function VirtualizedAyahList({
   ayahs,
   surahNumber,
   containerRef,
-  headerOffset = 180, // Sticky header + surah header
+  headerOffset = 180,
+  jumpTargetAyah = null,
 }: VirtualizedAyahListProps) {
   const { fontSettings, audioState } = useApp();
-  const [visibleRange, setVisibleRange] = useState({ start: 0, end: 15 });
   const heightCacheRef = useRef<Map<number, number>>(new Map());
   const lastScrollTime = useRef(0);
+  const hasJumpScrolled = useRef(false);
 
   const arabicFont = ARABIC_FONTS.find((f) => f.id === fontSettings.arabicFont);
   const arabicFontFamily = arabicFont?.family ?? '"Amiri Quran", serif';
 
-  // ── Calculate estimated height based on font size ──
   const estimatedHeight = useMemo(() => {
-    // Base height scales with font size
-    const arabicLines = 2; // Average lines of Arabic text
-    const translationLines = 3; // Average translation lines
+    const arabicLines = 2;
+    const translationLines = 3;
     const padding = 50;
-
     return (
       arabicLines * fontSettings.arabicFontSize * 2.8 +
       translationLines * fontSettings.translationFontSize * 1.6 +
@@ -60,7 +45,19 @@ export default function VirtualizedAyahList({
     );
   }, [fontSettings.arabicFontSize, fontSettings.translationFontSize]);
 
-  // ── Get height for an ayah (cached or estimated) ──
+  const computeInitialRange = useCallback(() => {
+    if (jumpTargetAyah !== null && ayahs.length > 0) {
+      const idx = ayahs.findIndex((a) => a.ayahNumber === jumpTargetAyah);
+      if (idx >= 0) {
+        const start = Math.max(0, idx - 3);
+        return { start, end: Math.min(ayahs.length - 1, idx + 12) };
+      }
+    }
+    return { start: 0, end: Math.min(15, ayahs.length - 1) };
+  }, [jumpTargetAyah, ayahs.length]);
+
+  const [visibleRange, setVisibleRange] = useState(computeInitialRange);
+
   const getHeight = useCallback(
     (index: number): number => {
       return heightCacheRef.current.get(index) ?? estimatedHeight;
@@ -68,7 +65,6 @@ export default function VirtualizedAyahList({
     [estimatedHeight]
   );
 
-  // ── Calculate total height and visible range ──
   const updateVisibleRange = useCallback(() => {
     const container = containerRef.current;
     if (!container || ayahs.length === 0) return;
@@ -80,7 +76,6 @@ export default function VirtualizedAyahList({
     const scrollTop = Math.max(0, container.scrollTop - headerOffset);
     const viewportHeight = container.clientHeight;
 
-    // Linear search for start index (fine for < 300 items)
     let accumulatedHeight = 0;
     let startIndex = 0;
 
@@ -93,7 +88,6 @@ export default function VirtualizedAyahList({
       accumulatedHeight += height;
     }
 
-    // Find last visible ayah
     let endIndex = startIndex;
     let visibleHeight = 0;
 
@@ -104,7 +98,6 @@ export default function VirtualizedAyahList({
       if (visibleHeight > viewportHeight + estimatedHeight * 2) break;
     }
 
-    // Apply buffer
     const bufferedStart = Math.max(0, startIndex - BUFFER_COUNT);
     const bufferedEnd = Math.min(ayahs.length - 1, endIndex + BUFFER_COUNT);
 
@@ -116,7 +109,6 @@ export default function VirtualizedAyahList({
     });
   }, [ayahs.length, containerRef, getHeight, estimatedHeight, headerOffset]);
 
-  // ── Attach scroll listener ──
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -140,17 +132,35 @@ export default function VirtualizedAyahList({
     };
   }, [containerRef, updateVisibleRange]);
 
-  // ── Recalculate on ayahs/font change ──
   useEffect(() => {
     heightCacheRef.current.clear();
-    setVisibleRange({ start: 0, end: 15 });
+    hasJumpScrolled.current = false;
+    if (jumpTargetAyah === null) {
+      setVisibleRange({ start: 0, end: 15 });
+    } else {
+      setVisibleRange(computeInitialRange());
+    }
 
-    // Delay recalculation to allow DOM update
     const timer = setTimeout(updateVisibleRange, 50);
     return () => clearTimeout(timer);
-  }, [ayahs, fontSettings, updateVisibleRange]);
+  }, [ayahs, fontSettings, updateVisibleRange, jumpTargetAyah, computeInitialRange]);
 
-  // ── Handle window resize ──
+  useEffect(() => {
+    if (jumpTargetAyah === null || hasJumpScrolled.current) return;
+
+    const tryScroll = (attempts: number) => {
+      const el = document.getElementById(`ayah-${surahNumber}-${jumpTargetAyah}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'auto', block: 'center' });
+        hasJumpScrolled.current = true;
+      } else if (attempts > 0) {
+        setTimeout(() => tryScroll(attempts - 1), 100);
+      }
+    };
+
+    tryScroll(15);
+  }, [surahNumber, jumpTargetAyah, visibleRange]);
+
   useEffect(() => {
     let debounceTimer: ReturnType<typeof setTimeout>;
 
@@ -169,7 +179,6 @@ export default function VirtualizedAyahList({
     };
   }, [updateVisibleRange]);
 
-  // ── Measure callback ──
   const measureHeight = useCallback((index: number, height: number) => {
     const cached = heightCacheRef.current.get(index);
     if (cached !== height && height > 0) {
@@ -177,17 +186,14 @@ export default function VirtualizedAyahList({
     }
   }, []);
 
-  // ── Calculate spacer heights ──
   const { topSpacer, bottomSpacer, visibleAyahs } = useMemo(() => {
     let top = 0;
     for (let i = 0; i < visibleRange.start; i++) {
-      // eslint-disable-next-line react-hooks/refs
       top += getHeight(i);
     }
 
     let bottom = 0;
     for (let i = visibleRange.end + 1; i < ayahs.length; i++) {
-      // eslint-disable-next-line react-hooks/refs
       bottom += getHeight(i);
     }
 
@@ -196,7 +202,6 @@ export default function VirtualizedAyahList({
     return { topSpacer: top, bottomSpacer: bottom, visibleAyahs: visible };
   }, [visibleRange, ayahs, getHeight]);
 
-  // ── Current playing state ──
   const activeAyahNumber =
     audioState.currentSurah === surahNumber ? audioState.currentAyah : null;
   const activeWordPosition =
@@ -204,7 +209,6 @@ export default function VirtualizedAyahList({
 
   return (
     <div role="list" aria-label="Ayahs">
-      {/* Top spacer */}
       {topSpacer > 0 && (
         <div
           style={{ height: topSpacer }}
@@ -213,7 +217,6 @@ export default function VirtualizedAyahList({
         />
       )}
 
-      {/* Visible ayahs */}
       {visibleAyahs.map((ayah, idx) => {
         const actualIndex = visibleRange.start + idx;
         const isActive = activeAyahNumber === ayah.ayahNumber;
@@ -234,7 +237,6 @@ export default function VirtualizedAyahList({
         );
       })}
 
-      {/* Bottom spacer */}
       {bottomSpacer > 0 && (
         <div
           style={{ height: bottomSpacer }}
@@ -243,7 +245,6 @@ export default function VirtualizedAyahList({
         />
       )}
 
-      {/* Loading indicator for more items */}
       {ayahs.length > visibleRange.end + 1 && (
         <div
           className="text-center py-4 text-sm"

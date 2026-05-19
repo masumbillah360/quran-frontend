@@ -32,6 +32,7 @@ interface AppContextType {
   setIsSearchOpen: (v: boolean) => void;
   isJumpOpen: boolean;
   setIsJumpOpen: (v: boolean) => void;
+  jumpToAyah: (surah: number, ayah: number) => void;
   isMobileMenuOpen: boolean;
   setIsMobileMenuOpen: (v: boolean) => void;
   isFontSettingsExpanded: boolean;
@@ -216,6 +217,26 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [isBarsVisible, setIsBarsVisible] = useState(true);
   const lastScrollYRef = useRef(0);
+
+  const jumpToAyah = useCallback((surah: number, ayah: number) => {
+    if (surah < 1 || surah > 114) return;
+    setIsJumpOpen(false);
+
+    if (surah === currentSurah) {
+      window.dispatchEvent(new CustomEvent('jump-to-ayah', { detail: { surah, ayah } }));
+    } else {
+      destroyAudio();
+      generationRef.current++;
+      currentAyahRef.current = null;
+      setAudioState({
+        isPlaying: false, isLoading: false, error: null,
+        currentSurah: 0, currentAyah: null, currentWord: null, currentAyahIndex: -1,
+      });
+      setCurrentSurahState(surah);
+      saveToStorage(STORAGE_KEYS.SURAH, surah);
+      sessionStorage.setItem('jump-target', JSON.stringify({ surah, ayah }));
+    }
+  }, [currentSurah]);
 
   // ══════════════════════════════════════════════════════════════════════════════
   // AUDIO ENGINE (Optimized - Generation-based)
@@ -594,6 +615,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setIsSearchOpen,
     isJumpOpen,
     setIsJumpOpen,
+    jumpToAyah,
     isMobileMenuOpen,
     setIsMobileMenuOpen,
     isFontSettingsExpanded,

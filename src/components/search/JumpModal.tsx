@@ -1,88 +1,112 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { SURAHS } from '@/data/surahs';
 import { useApp } from '@/context/AppContext';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowUpCircle, BookOpen } from 'lucide-react';
 
 export default function JumpModal() {
-    // Assuming your AppContext handles the state for this modal as well
-    const { isJumpOpen, setIsJumpOpen, setCurrentSurah, setCurrentAyah } = useApp();
+    const { isJumpOpen, setIsJumpOpen, jumpToAyah, currentSurah } = useApp();
 
-    // Defaulting to Al Fatihah (Surah 1)
-    const [selectedSurah, setSelectedSurah] = useState<number>(1);
-    const [selectedAyah, setSelectedAyah] = useState<number>(1);
+    const [selectedSurah, setSelectedSurah] = useState(currentSurah);
+    const [selectedAyah, setSelectedAyah] = useState(1);
+    const [surahSearch, setSurahSearch] = useState('');
+    const [surahDropdownOpen, setSurahDropdownOpen] = useState(false);
+    const [ayahDropdownOpen, setAyahDropdownOpen] = useState(false);
 
-    // Reset or focus logic when modal opens
+    const modalRef = useRef<HTMLDivElement>(null);
+    const surahInputRef = useRef<HTMLInputElement>(null);
+
     useEffect(() => {
         if (isJumpOpen) {
-            // You can reset states here if needed when opened
-            // setSelectedSurah(1);
-            // setSelectedAyah(1);
+            setSelectedSurah(currentSurah);
+            setSelectedAyah(1);
+            setSurahSearch('');
+            setSurahDropdownOpen(false);
+            setAyahDropdownOpen(false);
+            setTimeout(() => surahInputRef.current?.focus(), 100);
         }
-    }, [isJumpOpen]);
+    }, [isJumpOpen, currentSurah]);
 
-    // Keyboard shortcut: Escape to close
     useEffect(() => {
         const handler = (e: KeyboardEvent) => {
             if (e.key === 'Escape') setIsJumpOpen(false);
+            if (e.key === 'Enter' && isJumpOpen) {
+                jumpToAyah(selectedSurah, selectedAyah);
+            }
         };
         if (isJumpOpen) {
             window.addEventListener('keydown', handler);
         }
         return () => window.removeEventListener('keydown', handler);
-    }, [isJumpOpen, setIsJumpOpen]);
+    }, [isJumpOpen, setIsJumpOpen, selectedSurah, selectedAyah, jumpToAyah]);
 
-    // Generate an array of Ayah numbers based on the selected Surah's total ayahs
-    // (Assuming your SURAHS data has an 'ayahCount' or 'numberOfAyahs' property)
+    useEffect(() => {
+        const handler = (e: MouseEvent) => {
+            if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+                setSurahDropdownOpen(false);
+                setAyahDropdownOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handler);
+        return () => document.removeEventListener('mousedown', handler);
+    }, []);
+
     const currentSurahData = useMemo(() => {
         return SURAHS.find(s => s.number === selectedSurah) || SURAHS[0];
     }, [selectedSurah]);
 
-    const ayahOptions = useMemo(() => {
-        // Fallback to 7 if property is missing just for Al Fatihah default
-        const count = currentSurahData?.numberOfAyahs || 7;
-        return Array.from({ length: count }, (_, i) => i + 1);
-    }, [currentSurahData]);
+    const ayahCount = currentSurahData?.numberOfAyahs || 7;
 
-    // Handle Surah change, reset Ayah to 1
-    const handleSurahChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedSurah(Number(e.target.value));
+    const ayahOptions = useMemo(() => {
+        return Array.from({ length: ayahCount }, (_, i) => i + 1);
+    }, [ayahCount]);
+
+    useEffect(() => {
+        if (selectedAyah > ayahCount) {
+            setSelectedAyah(ayahCount);
+        }
+    }, [selectedAyah, ayahCount]);
+
+    const filteredSurahs = useMemo(() => {
+        const query = surahSearch.toLowerCase().trim();
+        if (!query) return SURAHS;
+        return SURAHS.filter(s =>
+            s.number.toString().includes(query) ||
+            s.englishName.toLowerCase().includes(query) ||
+            s.englishNameTranslation.toLowerCase().includes(query) ||
+            s.name.includes(query)
+        );
+    }, [surahSearch]);
+
+    const handleSurahSelect = (num: number) => {
+        setSelectedSurah(num);
         setSelectedAyah(1);
+        setSurahSearch('');
+        setSurahDropdownOpen(false);
     };
 
     const handleJumpToAyah = () => {
-        setCurrentSurah(selectedSurah);
-        setCurrentAyah(selectedAyah);
-        setIsJumpOpen(false);
-    };
-
-    const handleJumpToTafsir = () => {
-        // Implement your Tafsir navigation logic here
-        setCurrentSurah(selectedSurah);
-        setCurrentAyah(selectedAyah);
-        // e.g., router.push(`/tafsir/${selectedSurah}/${selectedAyah}`)
-        setIsJumpOpen(false);
+        jumpToAyah(selectedSurah, selectedAyah);
     };
 
     if (!isJumpOpen) return null;
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
-            {/* Backdrop */}
             <div
-                className="absolute inset-0 bg-black/70 modal-backdrop transition-opacity"
+                className="absolute inset-0 bg-black/70 transition-opacity"
                 onClick={() => setIsJumpOpen(false)}
             />
 
-            {/* Modal Container */}
             <div
+                ref={modalRef}
                 className="relative w-full max-w-md bg-(--bg-surface) rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200"
                 onClick={e => e.stopPropagation()}
             >
                 <div className="p-6 md:p-8">
                     <h2 className="text-center font-bold text-lg text-(--text-primary) mb-6">
-                        Jump to Ayah/Tafsir
+                        Jump to Ayah
                     </h2>
 
                     <div className="space-y-5">
@@ -92,21 +116,38 @@ export default function JumpModal() {
                                 Select Surah
                             </label>
                             <div className="relative">
-                                <select
-                                    value={selectedSurah}
-                                    onChange={handleSurahChange}
-                                    className="w-full appearance-none bg-[#fdfaf6] dark:bg-(--bg-elevated) border border-(--border-subtle) text-(--text-primary) text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-(--border-accent) focus:ring-1 focus:ring-(--border-accent) transition-all cursor-pointer"
-                                >
-                                    {SURAHS.map((surah) => (
-                                        <option key={surah.number} value={surah.number}>
-                                            {surah.englishName}
-                                        </option>
-                                    ))}
-                                </select>
+                                <input
+                                    ref={surahInputRef}
+                                    type="text"
+                                    value={surahSearch}
+                                    onChange={e => { setSurahSearch(e.target.value); setSurahDropdownOpen(true); }}
+                                    onFocus={() => setSurahDropdownOpen(true)}
+                                    placeholder={`Surah ${currentSurahData.englishName} (#${currentSurahData.number})`}
+                                    className="w-full bg-[#fdfaf6] dark:bg-(--bg-elevated) border border-(--border-subtle) text-(--text-primary) text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-(--border-accent) focus:ring-1 focus:ring-(--border-accent) transition-all placeholder:text-(--text-muted)"
+                                />
                                 <ChevronDown
                                     size={18}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-(--text-muted) pointer-events-none"
+                                    className={`absolute right-4 top-1/2 -translate-y-1/2 text-(--text-muted) transition-transform ${surahDropdownOpen ? 'rotate-180' : ''}`}
                                 />
+
+                                {surahDropdownOpen && (
+                                    <div className="absolute left-0 right-0 top-full mt-1 max-h-52 overflow-y-auto bg-(--bg-surface) border border-(--border-subtle) rounded-xl shadow-xl z-50">
+                                        {filteredSurahs.length === 0 ? (
+                                            <div className="px-4 py-3 text-sm text-(--text-muted)">No surah found</div>
+                                        ) : (
+                                            filteredSurahs.map(surah => (
+                                                <button
+                                                    key={surah.number}
+                                                    onClick={() => handleSurahSelect(surah.number)}
+                                                    className={`w-full flex items-center justify-between px-4 py-2.5 text-sm transition-all hover:bg-(--bg-elevated) ${selectedSurah === surah.number ? 'text-(--text-accent) bg-(--badge-bg) font-medium' : 'text-(--text-secondary)'}`}
+                                                >
+                                                    <span>{surah.number}. {surah.englishName}</span>
+                                                    <span className="text-xs text-(--text-muted)">{surah.numberOfAyahs} ayahs</span>
+                                                </button>
+                                            ))
+                                        )}
+                                    </div>
+                                )}
                             </div>
                         </div>
 
@@ -116,39 +157,53 @@ export default function JumpModal() {
                                 Select Ayah
                             </label>
                             <div className="relative">
-                                <select
-                                    value={selectedAyah}
-                                    onChange={(e) => setSelectedAyah(Number(e.target.value))}
-                                    className="w-full appearance-none bg-[#fdfaf6] dark:bg-(--bg-elevated) border border-(--border-subtle) text-(--text-primary) text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-(--border-accent) focus:ring-1 focus:ring-(--border-accent) transition-all cursor-pointer"
+                                <button
+                                    onClick={() => setAyahDropdownOpen(!ayahDropdownOpen)}
+                                    className="w-full appearance-none bg-[#fdfaf6] dark:bg-(--bg-elevated) border border-(--border-subtle) text-(--text-primary) text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-(--border-accent) focus:ring-1 focus:ring-(--border-accent) transition-all cursor-pointer text-left flex items-center justify-between"
                                 >
-                                    {ayahOptions.map((num) => (
-                                        <option key={num} value={num}>
-                                            {String(num).padStart(2, '0')} - {String(ayahOptions.length).padStart(2, '0')}
-                                        </option>
-                                    ))}
-                                </select>
-                                <ChevronDown
-                                    size={18}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-(--text-muted) pointer-events-none"
-                                />
+                                    <span>Ayah {selectedAyah} of {ayahCount}</span>
+                                    <ChevronDown
+                                        size={18}
+                                        className={`text-(--text-muted) transition-transform ${ayahDropdownOpen ? 'rotate-180' : ''}`}
+                                    />
+                                </button>
+
+                                {ayahDropdownOpen && (
+                                    <div className="absolute left-0 right-0 top-full mt-1 max-h-52 overflow-y-auto bg-(--bg-surface) border border-(--border-subtle) rounded-xl shadow-xl z-50">
+                                        {ayahOptions.map(num => (
+                                            <button
+                                                key={num}
+                                                onClick={() => { setSelectedAyah(num); setAyahDropdownOpen(false); }}
+                                                className={`w-full px-4 py-2 text-sm text-left transition-all hover:bg-(--bg-elevated) ${selectedAyah === num ? 'text-(--text-accent) bg-(--badge-bg) font-medium' : 'text-(--text-secondary)'}`}
+                                            >
+                                                Ayah {num}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
+
+                    <p className="mt-4 text-xs text-(--text-muted) text-center">
+                        Press <kbd className="px-1.5 py-0.5 bg-(--bg-elevated) rounded text-[10px] font-mono">Enter</kbd> to jump
+                    </p>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="flex w-full">
                     <button
-                        onClick={handleJumpToTafsir}
+                        onClick={() => setIsJumpOpen(false)}
                         className="flex-1 py-4 text-sm font-medium bg-[#fcf9f5] dark:bg-(--bg-canvas) text-(--text-secondary) hover:bg-(--bg-elevated) hover:text-(--text-primary) transition-colors"
                     >
-                        Jump To Tafsir
+                        Cancel
                     </button>
                     <button
                         onClick={handleJumpToAyah}
-                        className="flex-1 py-4 text-sm font-medium bg-[#8e735b] hover:bg-[#7a624d] text-white transition-colors"
+                        className="flex-1 py-4 text-sm font-medium bg-[#8e735b] hover:bg-[#7a624d] text-white transition-colors flex items-center justify-center gap-2"
                     >
-                        Jump To Ayah
+                        <ArrowUpCircle size={15} />
+                        Jump
                     </button>
                 </div>
             </div>
