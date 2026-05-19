@@ -5,6 +5,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 ## Features
 
 ### Surah Navigation
+
 - **Complete Surah List** — Browse all 114 surahs with English names, Arabic names, translations, and ayah counts
 - **Surah Search** — Filter surahs by name (English/Arabic), number, or translation
 - **Quick Navigation** — Navigate between previous/next surahs with one click
@@ -12,6 +13,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Revelation Info** — Displays whether each surah is Meccan or Medinan with corresponding imagery
 
 ### Quran Reader
+
 - **Translation Mode** — View Arabic text alongside English translations with word-by-word breakdown
 - **Reading Mode** — Continuous Arabic text view for uninterrupted reading
 - **Virtualized Ayah List** — Optimized rendering for smooth scrolling through large surahs
@@ -21,6 +23,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Error Recovery** — Retry mechanism for failed data loads
 
 ### Audio Player
+
 - **Full Audio Playback** — Listen to verse-byverse recitation (Abdul Rahman Al-Sudais)
 - **Word-Level Tracking** — Real-time word highlighting synchronized with audio
 - **Playback Controls** — Play, pause, stop, previous/next ayah
@@ -31,6 +34,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Error Handling** — Graceful error messages with recovery options
 
 ### Search
+
 - **Global Search Modal** (`Ctrl+K`) — Search across all 6,236 ayahs
 - **Multi-Language Search** — Search in English translations and Arabic text
 - **Surah Name Search** — Find surahs by name match
@@ -40,6 +44,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Debounced Search** — Optimized API calls with 400ms debounce
 
 ### Jump to Ayah
+
 - **Direct Navigation** — Jump to any specific ayah in any surah
 - **Surah Selector** — Searchable dropdown with all 114 surahs
 - **Ayah Selector** — Dynamic dropdown showing valid ayah range for selected surah
@@ -47,6 +52,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Same-Surah Jump** — Instant scroll to ayah within current surah
 
 ### Themes
+
 - **Dark Mode** — Optimized for low-light reading
 - **Light Mode** — Clean, bright interface
 - **Sepia Mode** — Warm, paper-like reading experience
@@ -54,6 +60,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Persistent Theme** — Theme preference saved to localStorage
 
 ### Font Customization
+
 - **8 Arabic Fonts** — KFGQ Uthmanic, Hafs, Amiri Quran, Noto Naskh Arabic, Al Mushaf, Al Qalam Quran Majeed, ME Quran, PDMS Saleem Quran
 - **Adjustable Arabic Font Size** — Range from 18px to 100px
 - **Adjustable Translation Font Size** — Range from 14px to 100px
@@ -62,6 +69,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Persistent Settings** — Font preferences saved to localStorage
 
 ### Reading Settings
+
 - **View Mode Toggle** — Switch between Translation and Reading modes
 - **Collapsible Settings** — Expandable reading settings panel
 - **Quran Statistics** — Display of total surahs (114), ayahs (6,236), and pages (604)
@@ -80,6 +88,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 | `Ctrl+,` | Toggle settings panel |
 
 ### UI/UX
+
 - **Responsive Design** — Fully responsive layout for desktop, tablet, and mobile
 - **Auto-Hiding Bars** — Header and bars hide/show based on scroll direction
 - **Mobile Menu** — Full-screen mobile navigation overlay
@@ -88,6 +97,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 - **Toast Notifications** — Audio error alerts with dismiss capability
 
 ### Performance
+
 - **Surah Preloading** — Adjacent surahs preloaded in background
 - **Virtualized Rendering** — Efficient rendering of large ayah lists
 - **Generation-Based Audio** — Clean audio lifecycle management without stale callbacks
@@ -109,7 +119,7 @@ A modern, feature-rich Quran reading application built with **Next.js 16**, **Re
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 22+
 - npm, yarn, pnpm, or bun
 
 ### Installation
@@ -153,7 +163,7 @@ npm run dev
 
 ## Project Structure
 
-```
+```bash
 src/
 ├── app/                    # Next.js App Router
 │   ├── layout.tsx          # Root layout with providers
